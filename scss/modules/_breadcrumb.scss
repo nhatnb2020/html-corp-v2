@@ -1,0 +1,27 @@
+.breadcrumb{
+  >li{
+    display: inline-block;
+    +li{
+      &:before{
+        content:'\003e';
+        padding: 0 10px;
+        color:#878787;
+      }
+    }
+    >a{
+      font-size: $size-14;
+      line-height: 19px;
+      color: #878787;
+      transition: .3s;
+      &:hover{
+        @include breakpoint(md){color: $yellow-1;}
+      }
+    }
+  }
+  >.active{
+    font-size: $size-14;
+    line-height: 19px;
+    color:$text-color;
+    font-weight: $semibold;
+  }
+}

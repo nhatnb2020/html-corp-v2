@@ -1,0 +1,223 @@
+.form-group{
+  margin-bottom: 10px;
+  label{
+    font-weight: $bold;
+  }
+}
+.form-control{
+  display: block;
+  padding: 15px;
+  font-size: $size-14;
+  color: $base-font-color;
+  @include add-border(1px,$border-color,all);
+  @include add-background($white-1);
+  @include border-radius(6px);
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  &:focus{
+    outline: none;
+  }
+}
+.form-control_round{
+  border-radius: 30px;
+}
+.form-control[disabled]{
+  background-color:$gray-1!important;
+  cursor: not-allowed;
+}
+
+.select-control{
+  .dropdown-toggle{
+    border: 1px solid $border-color;
+    background: #fff;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 6px;
+    color: #878787;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+      text-transform: initial;
+    }
+  }
+  .dropdown-menu{
+    border: 1px solid $border-color;
+    border-top: none;
+    overflow-y: auto;
+    @include breakpoint(max-sm){
+      max-height: 165px;
+      -webkit-overflow-scrolling: touch;
+    }
+    @include breakpoint(md){
+      max-height: 250px;
+      &::-webkit-scrollbar {
+        width:4px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background-color: #f2f2f2;
+        border-radius: 16px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background:#bcbcbc;
+        border-radius: 16px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #bcbcbc;
+      }
+    }
+  }
+  .dropdown-item{
+    &.active{
+      background-color: $hover-color;
+      color: $yellow-2;
+    }
+  }
+}
+.input-inline{
+  position: relative;
+  .form-control{
+    padding: 15px 15px 15px 50px;
+    font-size: 13px;
+    line-height: 18px;
+    width: 100%;
+    background: transparent;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  > svg{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+.input-group{
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  padding: 0 0 0 20px;
+  display: flex;
+  align-items: center;
+  .svg-icon{
+    margin-right: 10px;
+  }
+  input{
+    border: none;
+    background: none;
+    padding: 15px;
+    flex: 1 1 auto;
+    &:focus{
+      outline: none;
+    }
+  }
+  .dropdown-toggle{
+    span{
+      text-transform: initial;
+      font-size: 13px;
+    }
+  }
+  .dropdown-item{
+    p{
+      margin: 0;
+      font-size: 13px;
+    }
+  }
+}
+.input-currency{
+  display: flex;
+  .form-control{
+    width: calc(100% - 90px);
+    border-radius: 6px 0 0 6px;
+  }
+  .dropdown-menu{
+    border: 1px solid $border-color;
+    border-top: none;
+    box-shadow: none!important;
+  }
+  .dropdown-toggle{
+    width: 90px;
+    height: 100%;
+    border: 1px solid $border-color;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    box-shadow: none!important;
+  }
+}
+
+.out-box{
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 15px;
+  @include breakpoint(md){
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 30px;
+  }
+  .d-icon{
+    @include breakpoint(md){
+      width: 130px;
+    }
+  }
+  .d-text{
+    @include breakpoint(md){
+      width: calc(100% - 130px);
+      padding-left: 30px;
+    }
+  }
+  p{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0;
+    color: #878787;
+    &.p1{
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 30px;
+      color: $text-color;
+    }
+    span{
+      padding-left: 5px;
+    }
+  }
+}
+.dropdown.dropdown-tree-branch{
+  .dropdown-menu{
+    @include breakpoint(max-sm){
+      max-height: 300px;
+    }
+    > div{
+      @include breakpoint(max-sm){
+        position: initial!important;
+      }
+    }
+    .ant-select{
+      @include breakpoint(max-sm){
+        padding: 10px;
+      }
+    }
+    .ant-select-dropdown{
+      @include breakpoint(max-sm){
+        max-height: initial!important;
+        min-width: 100%!important;
+        position: initial!important;
+        box-shadow: none!important;
+      }
+    }
+  }
+}

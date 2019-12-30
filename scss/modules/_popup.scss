@@ -1,0 +1,38 @@
+.header-popup{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: #fff;
+  height: 50px;
+  margin-bottom: 4px;
+  @include breakpoint(md){
+    display: none;
+  }
+  &__title{
+    font-weight: $semibold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 14px;
+    line-height: 19px;
+    width: calc(100% - 80px);
+    text-align: center;
+  }
+  &__close{
+    padding: 10px 10px 10px 0!important;
+  }
+  &__remove{
+    font-size: 12px;
+    color: $red-2;
+  }
+  button{
+    padding:0;
+    background: none;
+    border: none;
+    display: flex;
+  }
+}
