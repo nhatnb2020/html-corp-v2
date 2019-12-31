@@ -1,0 +1,51 @@
+.fa, .fas, .far, .fal, .fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+.fa-bolt:before {
+  content: "\f0e7";
+}
+
+.fa-spinner:before {
+  content: "\f110";
+}
+
+.fa-hourglass:before {
+  content: "\f254";
+}
+.fa-long-arrow-alt-right:before {
+  content: "\f30b";
+}
+.fa-eye:before {
+  content: "\f06e";
+}
+.fa-ticket-alt:before {
+  content: "\f3ff";
+}
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+}
+
+.fa, .fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}

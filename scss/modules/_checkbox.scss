@@ -8,6 +8,9 @@
     cursor: pointer;
     margin-bottom: 0;
     padding-left: 25px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color;
     &:hover{
       @include breakpoint(md){color: $yellow-2;}
     }
@@ -15,24 +18,24 @@
   }
   input[type="checkbox"] + label:before {
     content: "";
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
     background-color:$white-1;
     position: absolute;
     left: 0;
-    top:0;
+    top:3px;
     display: inline-block;
     text-align: center;
     @include add-border(1px, #ccc,all);
-    border-radius: 3px;
+    border-radius: 2px;
   }
   input[type="checkbox"]:checked + label:before {
     font-family:'Font Awesome\ 5 Free';
     content: '\f00c';
     font-weight:$extrabold;
-    background-color:$yellow-2;
-    color:#000;
+    background-color:#1890FF;
+    color:#fff;
     font-size:$size-10;
     border: none;
   }

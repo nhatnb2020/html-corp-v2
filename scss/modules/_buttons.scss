@@ -1,12 +1,12 @@
 .btn{
   position: relative;
   display: inline-block;
-  padding:13px 15px;
+  padding:5px 15px;
   font-size: $size-14;
-  font-weight: $bold;
+  font-weight: $semibold;
+  line-height: 22px;
   text-align: center;
-  color: $text-color;
-  text-transform: uppercase;
+  color:#fff;
   white-space: nowrap;
   vertical-align: middle;
   touch-action: manipulation;
@@ -39,7 +39,11 @@
   &:active{
     //opacity: 0.8;
   }
-  .fas{padding: 0 5px;}
+  &.btn_lg{
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 15px;
+  }
 }
 .btn_outline{
   color: #878787;
