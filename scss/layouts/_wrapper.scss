@@ -2,11 +2,12 @@
   width: 100%;
   height: 100%;
 }
-.pageBody{
+.pageBody,
+.mainWrapper{
   width: 100%;
   height: 100%;
 }
-.wrapper{
+.main{
   min-height: 100%;
   width: calc(100% - 255px);
   margin-left: 255px;
