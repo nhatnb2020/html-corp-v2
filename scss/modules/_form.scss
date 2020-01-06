@@ -9,13 +9,14 @@
 }
 .form-control{
   display: block;
-  padding: 6px 15px;
+  padding: 5px 15px;
   font-size: $size-14;
-  color: $base-font-color;
+  color: $text-color;
   @include add-border(1px,$border-color,all);
   background: #fff;
   @include border-radius(4px);
   width: 100%;
+  height: 32px;
   -webkit-appearance: none;
   -moz-appearance: none;
   &:focus{
