@@ -133,6 +133,7 @@
       transition: all .2s;
       &:hover{
         background: #fafafa;
+        color: $text-color;
       }
       svg{
         position: absolute;

@@ -1,6 +1,26 @@
+.searchBox{
+  &__banner{
+    width: 100%;
+    height: 180px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__cont{
+    padding: 0 15px;
+    margin-top: -75px;
+    position: relative;
+  }
+  .heading2{
+    background-color: #fff;
+  }
+}
 .vntSearch{
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0 15px;
   &__tab{
     display: flex;
     border-bottom: 1px solid $border-color;
@@ -34,18 +54,31 @@
 
     }
   }
-  &__body{}
+  &__body{
+    padding: 15px 0 25px;
+  }
   &__hotel{
     display: flex;
     align-items: flex-end;
+    &__btn{
+      .btn{
+        width: 100px;
+      }
+    }
+    .placeInput,
+    .dateInput,
+    .memberBtn{
+      padding-right: 15px;
+    }
   }
 }
+
 .placeInput{
-  width: 305px;
+  width: 330px;
 }
 .dateInput{
-  width: 325px;
+  width: 330px;
 }
 .memberBtn{
-  width: 180px;
+  width: 200px;
 }
