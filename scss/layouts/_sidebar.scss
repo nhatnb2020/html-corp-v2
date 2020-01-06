@@ -1,0 +1,173 @@
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 255px;
+  background-color: #fff;
+  &__header{
+    padding: 25px;
+  }
+  &__logo{
+    a{
+      display: block;
+    }
+    p{
+      font-size: 12px;
+      line-height: 20px;
+      margin: 5px 0 0;
+      color: #8C8C8C;
+    }
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+  }
+  &__ava{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  &__name{
+    width: calc(100% - 40px);
+    padding-left: 12px;
+    p{
+      font-size: 12px;
+      line-height: 20px;
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      &.p1{
+        color: $text-color;
+        font-weight: $medium;
+      }
+      &.p2{
+        color: #8c8c8c;
+      }
+    }
+  }
+  &__body{
+    height: calc(100% - 177px - 42px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    border-bottom: 1px solid $border-color;
+    &::-webkit-scrollbar {
+      width:4px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: #f2f2f2;
+      border-radius: 16px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background:#bcbcbc;
+      border-radius: 16px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+    }
+  }
+  &__nav{
+    &__list{}
+    &__item{
+      &.active{
+        .sidebar{
+          &__nav{
+            &__link{
+              background: #FFF7E6;
+              color: $yellow-2;
+              font-weight: $medium;
+            }
+          }
+        }
+      }
+      &.nav-sub{
+        >.sidebar{
+          &__nav{
+            &__link{
+              &:after{
+                content: '\f078';
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 12px;
+                position: absolute;
+                top: 11px;
+                right: 20px;
+              }
+            }
+          }
+        }
+        &.open{
+          >.sidebar{
+            &__nav{
+              &__child{
+                display: block;
+              }
+              &__link{
+                &:after{
+                  transform: rotate(180deg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &__link{
+      font-size: 14px;
+      line-height: 22px;
+      color: $text-color;
+      display: block;
+      position: relative;
+      padding: 10px 25px;
+      transition: all .2s;
+      &:hover{
+        background: #fafafa;
+      }
+      svg{
+        position: absolute;
+        top: 13px;
+        left: 25px;
+      }
+      span{
+        padding-left: 25px;
+      }
+    }
+    &__child{
+      display: none;
+    }
+  }
+  &__footer{}
+  &__logout{
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color;
+    display: block;
+    position: relative;
+    padding: 10px 25px;
+    transition: all .2s;
+    width: 100%;
+    text-align: left;
+    &:hover{
+      background: #fafafa;
+    }
+    svg{
+      position: absolute;
+      top: 13px;
+      left: 25px;
+    }
+    span{
+      padding-left: 25px;
+    }
+  }
+}
