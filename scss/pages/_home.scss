@@ -1,3 +1,16 @@
 .vntHome{
-
+  &__hotel{
+    padding: 15px;
+    width: 75%;
+    .heading2{
+      padding: 10px 0;
+    }
+  }
+  &__hot{
+    width: 75%;
+    padding: 15px;
+    .heading2{
+      padding: 10px 0;
+    }
+  }
 }
