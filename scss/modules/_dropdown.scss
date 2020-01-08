@@ -3,29 +3,30 @@
   &.dropdown-open,
   &.show{
     .dropdown-toggle{
-      border-radius: 6px 6px 0 0;
-      box-shadow: 0 1px 2px rgba(0,0,0,.1);
       > svg{
         transform: rotate(180deg);
       }
     }
     .dropdown-menu {
       display: block;
-      box-shadow: 0 1px 2px rgba(0,0,0,.1);
-      border-radius: 0 0 6px 6px;
     }
   }
 }
 .dropdown-toggle{
-  background: none;
-  border: none;
-  padding: 0 15px;
-  span,svg{
-    vertical-align: middle;
-  }
-  span{
-    padding-right: 5px;
-    text-transform: uppercase;
+  color: $text-color;
+  @include add-border(1px,$border-color,all);
+  background: #fff;
+  @include border-radius(4px);
+  width: 100%;
+  height: 32px;
+  text-align: left;
+  padding: 5px 15px;
+  font-size: $size-14;
+  position: relative;
+  > svg{
+    position: absolute;
+    top: 11px;
+    right: 15px;
   }
 }
 .dropdown-menu {
@@ -36,23 +37,40 @@
   width: 100%;
   background-color:$white-1;
   @include border-radius(3px);
-  padding: 5px 0;
-  transition: 0.3s;
   display: none;
   transform: none!important;
-  .company-box{
-    padding: 10px 15px;
+  max-height: 200px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    width:4px;
   }
-  .vnt-tree{
-    padding: 10px 15px;
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+    border-radius: 16px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background:#bcbcbc;
+    border-radius: 16px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #bcbcbc;
   }
 }
 .dropdown-item{
-  padding: 5px 15px;
-  color: #878787;
+  padding: 7px 15px;
+  color:$text-color;
   cursor: pointer;
-  transition: .2s;
-  &:hover{
+  transition: all .2s;
+  font-size: 14px;
+  &:hover,
+  &.active{
     background-color: $hover-color;
     color: $yellow-2;
   }

@@ -1,0 +1,32 @@
+.stBusiness{
+  &__row{
+    display: flex;
+  }
+  &__left{
+    width: 40%;
+    padding-right: 80px;
+  }
+  &__right{
+    width: 60%;
+  }
+  &__upload{
+    p{
+      font-size: 14px;
+      &.p1{
+        color: #262626;
+      }
+      &.p2{
+        color: #8c8c8c;
+      }
+    }
+    img{
+      width: 90px;
+    }
+  }
+  .form-group{
+    margin-bottom: 24px;
+    .dropdown{
+      margin-bottom: 8px;
+    }
+  }
+}
