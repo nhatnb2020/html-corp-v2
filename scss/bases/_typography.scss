@@ -1,119 +1,18 @@
 @font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/Light/OpenSans-Light.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/Light/OpenSans-Light.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Light/OpenSans-Light.eot?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Light/OpenSans-Light.svg?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Light/OpenSans-Light.ttf?v=1.101) format("ttf");
-  font-weight: $light;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/LightItalic/OpenSans-LightItalic.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/LightItalic/OpenSans-LightItalic.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/LightItalic/OpenSans-LightItalic.eot?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/LightItalic/OpenSans-LightItalic.svg?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/LightItalic/OpenSans-LightItalic.ttf?v=1.101) format("ttf");
-  font-weight: $light;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/Regular/OpenSans-Regular.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/Regular/OpenSans-Regular.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Regular/OpenSans-Regular.eot?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Regular/OpenSans-Regular.svg?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Regular/OpenSans-Regular.ttf?v=1.101) format("ttf");
+  font-family: "IBMPlexSans";
+  src: url(https://statics.vntrip.vn/fonts/IBMPlexSans/IBMPlexSans-Regular.woff) format("woff");
   font-weight: $regular;
   font-style: normal;
 }
-
-
 @font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/Italic/OpenSans-Italic.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/Italic/OpenSans-Italic.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Italic/OpenSans-Italic.eot?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Italic/OpenSans-Italic.svg?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Italic/OpenSans-Italic.ttf?v=1.101) format("ttf");
-  font-weight: $regular;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/SemiBold/OpenSans-SemiBold.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/SemiBold/OpenSans-SemiBold.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/SemiBold/OpenSans-SemiBold.eot?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/SemiBold/OpenSans-SemiBold.svg?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/SemiBold/OpenSans-SemiBold.ttf?v=1.101) format("ttf");
-  font-weight: $semibold;
+  font-family: "IBMPlexSans";
+  src: url(https://statics.vntrip.vn/fonts/IBMPlexSans/IBMPlexSans-Medium.woff) format("woff");
+  font-weight: $medium;
   font-style: normal;
 }
 
 
-@font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/SemiBoldItalic/OpenSans-SemiBoldItalic.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/SemiBoldItalic/OpenSans-SemiBoldItalic.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/SemiBoldItalic/OpenSans-SemiBoldItalic.eot?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/SemiBoldItalic/OpenSans-SemiBoldItalic.svg?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/SemiBoldItalic/OpenSans-SemiBoldItalic.ttf?v=1.101) format("ttf");
-  font-weight: $semibold;
-  font-style: italic;
-}
 
-
-@font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/Bold/OpenSans-Bold.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/Bold/OpenSans-Bold.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Bold/OpenSans-Bold.woff?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Bold/OpenSans-Bold.woff?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/Bold/OpenSans-Bold.woff?v=1.101) format("ttf");
-  font-weight: $bold;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.eot?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.svg?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/BoldItalic/OpenSans-BoldItalic.ttf?v=1.101) format("ttf");
-  font-weight: $bold;
-  font-style: italic;
-}
-
-
-@font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.eot?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.svg?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBold/OpenSans-ExtraBold.ttf?v=1.101) format("ttf");
-  font-weight: $extrabold;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: "Open Sans";
-  src: //url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff2?v=1.101) format("woff2"),
-  url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.woff?v=1.101) format("woff");
-  //url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.eot?v=1.101) format("eot"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.svg?v=1.101) format("svg"),
-  //url(https://statics.vntrip.vn/fonts/OpenSans/ExtraBoldItalic/OpenSans-ExtraBoldItalic.ttf?v=1.101) format("ttf");
-  font-weight: $extrabold;
-  font-style: italic;
-}
 
 // Font Awesome
 @font-face {
