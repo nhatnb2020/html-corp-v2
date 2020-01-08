@@ -1,0 +1,30 @@
+//ant-menu
+.ant-menu{
+  color: $text-color;
+}
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
+  color: $yellow-2;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color: $hover-color;
+}
+.ant-menu-item-selected{
+  color: $yellow-2;
+  font-weight: $medium;
+}
+.ant-menu-submenu-selected{
+  color: $yellow-2;
+}
+.ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::after, .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before, .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before, .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before, .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow::before{
+  background: linear-gradient(to right, $yellow-2, $yellow-2);
+}
+.ant-menu-inline .ant-menu-item, .ant-menu-inline .ant-menu-submenu-title{
+  width: 100%;
+}
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left{
+  border-right: none;
+}
+.ant-menu-inline .ant-menu-selected::after, .ant-menu-inline .ant-menu-item-selected::after{
+  display: none;
+}
+//end ant-menu
