@@ -13,6 +13,9 @@
   &__logo{
     a{
       display: block;
+      img{
+        width: 120px;
+      }
     }
     p{
       font-size: 12px;
@@ -51,11 +54,10 @@
       }
     }
   }
-  &__body{
-    height: calc(100% - 177px - 42px);
-    overflow: auto;
+  &__main{
     -webkit-overflow-scrolling: touch;
-    border-bottom: 1px solid $border-color;
+    height: calc(100% - 42px);
+    overflow-y: auto;
     &::-webkit-scrollbar {
       width:4px;
     }
@@ -148,7 +150,16 @@
       display: none;
     }
   }
-  &__footer{}
+  &__footer{
+    width: 255px;
+    height: 42px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    border-top: 1px solid $border-color;
+    background-color: #fff;
+  }
   &__logout{
     font-size: 14px;
     line-height: 22px;
