@@ -1,0 +1,18 @@
+image: cr-hn-1.vccloud.vn/5e0d3b732dba433682cd405d7fb210a0/docker:git
+variables:
+  REPO_NAME: $CI_PROJECT_NAME
+  SERVICE_NAME: $CI_PROJECT_NAME
+  GIT_STRATEGY: none
+
+deploy:live:
+  image: cr-hn-1.vccloud.vn/5e0d3b732dba433682cd405d7fb210a0/docker:git
+  stage: deploy
+  before_script:
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+    - ssh -p22 root@172.16.8.74 "sh /opt/deploy_html_corp_v2.sh"
+  only:
+    - master
