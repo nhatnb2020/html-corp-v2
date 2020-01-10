@@ -1,28 +1,29 @@
 .table{
   width: 100%;
   max-width: 100%;
-  margin-bottom:15px;
   tr{
     th{
-      vertical-align: bottom;
-      background-color: rgba(253, 185, 19, 0.3);
+      vertical-align: center;
+      background-color: #fafafa;
       text-align: left;
-      &:first-child{
-        border-radius: 6px 0 0 0;
-      }
-      &:last-child{
-        border-radius: 0 6px 0 0;
-      }
+      font-size: 14px;
+      font-weight: $medium;
+      color: #262626;
+      @include add-border(1px,$gray-1,top);
     }
   }
   tr{
     td{
-      @include add-border(1px,$gray-1,bottom);
       vertical-align: top;
     }
   }
   th, td{
-    padding: 15px;
+    padding: 10px 12px;
+    @include add-border(1px,$gray-1,bottom);
+    @include add-border(1px,$gray-1,right);
+    &:first-child{
+      @include add-border(1px,$gray-1,left);
+    }
   }
 }
 .table-responsive{

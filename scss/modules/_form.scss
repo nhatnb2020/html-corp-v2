@@ -23,9 +23,13 @@
   &:focus{
     outline: none;
   }
-}
-.form-control_round{
-  border-radius: 30px;
+  &_round{
+    border-radius: 30px;
+  }
+  &_sm{
+    height: 24px;
+    padding: 3px 15px;
+  }
 }
 .form-control[disabled]{
   background-color:$gray-1!important;

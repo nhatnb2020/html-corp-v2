@@ -1,0 +1,54 @@
+.stPosition{
+  &__btn{
+    margin-bottom: 15px;
+  }
+  &__table{
+    .table{
+      td{
+        vertical-align: middle;
+        p{
+          margin: 0;
+          color: #262626;
+          font-size: 14px;
+        }
+        .btnGroup{
+          button{
+            margin: 0 3px;
+            svg{
+              display: block;
+            }
+          }
+        }
+      }
+      th,td{
+        &:nth-child(1){
+          width: 30%;
+        }
+        &:nth-child(2){
+          width: 20%;
+        }
+        &:nth-child(3){
+          width: 40%;
+        }
+        &:nth-child(4){
+          width: 10%;
+        }
+      }
+      .btnGroup{
+        position: relative;
+      }
+    }
+  }
+}
+.addPosition{
+  display: none;
+  &.open{
+    display: table-row;
+  }
+}
+.editPosition{
+  display: none;
+  &.open{
+    display: table-row;
+  }
+}
