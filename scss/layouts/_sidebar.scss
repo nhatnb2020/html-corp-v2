@@ -9,18 +9,21 @@
   background-color: #fff;
   &__header{
     padding: 25px;
+    transition: all .3s;
   }
   &__logo{
     a{
       display: block;
       img{
-        width: 120px;
+        width: 105px;
+        transition: all .3s;
       }
     }
     p{
       font-size: 12px;
       line-height: 20px;
-      margin: 5px 0 0;
+      margin-top: 10px;
+      margin-bottom: 0;
       color: #8C8C8C;
     }
   }
@@ -34,10 +37,10 @@
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
+    padding-right: 12px;
   }
   &__name{
     width: calc(100% - 40px);
-    padding-left: 12px;
     p{
       font-size: 12px;
       line-height: 20px;
@@ -55,9 +58,9 @@
     }
   }
   &__main{
-    -webkit-overflow-scrolling: touch;
     height: calc(100% - 42px);
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     &::-webkit-scrollbar {
       width:4px;
     }
@@ -161,6 +164,8 @@
     background-color: #fff;
   }
   &__logout{
+    width: 100%;
+    height: 100%;
     font-size: 14px;
     line-height: 22px;
     color: $text-color;
@@ -168,18 +173,88 @@
     position: relative;
     padding: 10px 25px;
     transition: all .2s;
-    width: 100%;
     text-align: left;
     &:hover{
       background: #fafafa;
     }
     svg{
-      position: absolute;
-      top: 13px;
-      left: 25px;
+      vertical-align: middle;
     }
     span{
-      padding-left: 25px;
+      padding-left: 15px;
+      vertical-align: middle;
+    }
+  }
+  .ant-layout-sider-trigger{
+    display: none!important;
+  }
+  .ant-layout-sider-children{
+    height: 100%;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .trigger{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    background: #f5f5f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+  }
+}
+.ant-layout-sider{
+  flex: 0 0 255px!important;
+  max-width: 255px!important;
+  min-width: 255px!important;
+  width: 255px!important;
+  padding-bottom: 0;
+  &.ant-layout-sider-collapsed{
+    flex: 0 0 88px!important;
+    max-width: 88px!important;
+    min-width: 88px!important;
+    width: 88px!important;
+    .trigger{
+      right: -15px;
+    }
+    .ant-menu{
+      .anticon{
+        svg{
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .sidebar{
+      &__header{
+        padding: 25px 15px;
+      }
+      &__info{
+        display: none;
+      }
+      &__logo{
+        a{
+          img{
+            width: 50px;
+          }
+        }
+        p{
+          display: none;
+        }
+      }
+      &__footer{
+        width: 88px;
+      }
+      &__logout{
+        text-align: center;
+        span{
+          display: none;
+        }
+      }
     }
   }
 }
