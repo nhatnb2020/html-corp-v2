@@ -75,4 +75,10 @@
       color: $yellow-1;
     }
   }
+  .ant-form-item-label{
+    line-height: initial;
+    label{
+      margin-bottom: 0;
+    }
+  }
 }
