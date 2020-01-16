@@ -9,4 +9,9 @@
 }
 .main{
   min-height: 100%;
+  margin-left: 255px;
+  transition: all .3s;
+  &.main-collapsed{
+    margin-left: 88px;
+  }
 }
