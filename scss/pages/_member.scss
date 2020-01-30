@@ -15,7 +15,57 @@
   }
   &__btn{
     .btn{
-      margin: 0 2px;
+      + .btn{
+        margin-left: 8px;
+      }
+      svg{
+        margin-right: 5px;
+      }
+    }
+  }
+  &__table{
+    .table{
+      th{
+        .dropdown-menu{
+          width: 290px;
+          padding: 8px 0;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+          top: calc(100% + 10px)!important;
+        }
+        .dropdown-toggle{
+          border: none;
+          background: transparent;
+          padding: 0;
+          color: inherit;
+          font-weight: inherit;
+          height: auto;
+          > svg{
+            right: 0;
+          }
+        }
+        .checkbox{
+          label{
+            width: 100%;
+          }
+        }
+      }
+      td{
+        p{
+          margin: 0;
+          font-size: 14px;
+          &.p1{
+            color: $text-color;
+          }
+          &.p2{
+            color: #8c8c8c;
+            font-size: 12px;
+          }
+        }
+        .btnSvg{
+          display: flex;
+          justify-content: center;
+        }
+      }
     }
   }
 }

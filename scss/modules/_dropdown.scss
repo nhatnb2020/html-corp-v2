@@ -2,13 +2,20 @@
   position: relative;
   &.dropdown-open,
   &.show{
-    .dropdown-toggle{
-      > svg{
-        transform: rotate(180deg);
-      }
-    }
     .dropdown-menu {
       display: block;
+    }
+  }
+  &_form{
+    .dropdown-item{
+      cursor: auto;
+      &:hover{
+        background-color: initial;
+        color: initial;
+      }
+    }
+    .input-inline{
+      margin-bottom: 13px;
     }
   }
 }
@@ -25,8 +32,9 @@
   position: relative;
   > svg{
     position: absolute;
-    top: 11px;
+    top: 50%;
     right: 15px;
+    transform: translateY(-50%);
   }
 }
 .dropdown-menu {
