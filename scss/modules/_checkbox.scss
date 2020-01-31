@@ -27,7 +27,7 @@
     top:3px;
     display: inline-block;
     text-align: center;
-    @include add-border(1px, #ccc,all);
+    @include add-border(1px, #d9d9d9,all);
     border-radius: 2px;
   }
   input[type="checkbox"]:checked + label:before {

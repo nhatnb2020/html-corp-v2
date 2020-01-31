@@ -36,63 +36,6 @@
   cursor: not-allowed;
 }
 
-.select-control{
-  .dropdown-toggle{
-    border: 1px solid $border-color;
-    background: #fff;
-    width: 100%;
-    text-align: left;
-    padding: 15px;
-    font-size: 14px;
-    line-height: 18px;
-    border-radius: 6px;
-    color: #878787;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    span{
-      text-transform: initial;
-    }
-  }
-  .dropdown-menu{
-    border: 1px solid $border-color;
-    border-top: none;
-    overflow-y: auto;
-    @include breakpoint(max-sm){
-      max-height: 165px;
-      -webkit-overflow-scrolling: touch;
-    }
-    @include breakpoint(md){
-      max-height: 250px;
-      &::-webkit-scrollbar {
-        width:4px;
-      }
-
-      /* Track */
-      &::-webkit-scrollbar-track {
-        background-color: #f2f2f2;
-        border-radius: 16px;
-      }
-
-      /* Handle */
-      &::-webkit-scrollbar-thumb {
-        background:#bcbcbc;
-        border-radius: 16px;
-      }
-
-      /* Handle on hover */
-      &::-webkit-scrollbar-thumb:hover {
-        background: #bcbcbc;
-      }
-    }
-  }
-  .dropdown-item{
-    &.active{
-      background-color: $hover-color;
-      color: $yellow-2;
-    }
-  }
-}
 .input-inline{
   position: relative;
   .form-control{

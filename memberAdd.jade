@@ -87,9 +87,80 @@ html(lang="vi")
                             a(href='#') Thành viên
                         li.active Thêm thành viên
                     h2.heading2 Thêm Thành viên
-                section.vntContent.vntMember
-                    .memberAdd
+                section.vntContent
+                    .memberForm
+                        .form-group
+                            label Danh xưng
+                            .radioInline
+                                .radio
+                                    input(type='radio' id='gender1' name='gender')
+                                    label(for='gender1') Ông
 
+
+                                .radio
+                                    input(type='radio' id='gender2' name='gender')
+                                    label(for='gender2') Bà
+
+
+                        .form-group
+                            label Họ và tên
+                            input.form-control(type='text' placeholder='Nhập họ và tên thành viên')
+                        .form-group
+                            label Bộ phận
+                            .dropdown
+                                button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                    span Chọn bộ phận
+                                    svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
+
+                                ul.dropdown-menu
+                                    li.dropdown-item.active Kế toán
+                                    li.dropdown-item Kinh doanh
+                                    li.dropdown-item Tech
+                                    li.dropdown-item TMC
+                        .form-group
+                            label Email
+                            input.form-control(type='text' placeholder='Nhập địa chỉ email')
+                        .form-group
+                            label Chức vụ
+                            .dropdown
+                                button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                    span Chọn chức vụ
+                                    svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
+
+                                ul.dropdown-menu
+                                    li.dropdown-item.active Trưởng phòng
+                                    li.dropdown-item Phó phòng
+                                    li.dropdown-item Nhân viên
+                                    li.dropdown-item Leader
+                        .form-group
+                            label Số điện thoại
+                            input.form-control(type='text' placeholder='Nhập số điện thoại')
+                        .form-group
+                            label Vai trò
+                            .dropdown
+                                button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                    span Chọn vai trò
+                                    svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
+
+                                ul.dropdown-menu
+                                    li.dropdown-item.active Người duyệt
+                                    li.dropdown-item Người đi
+                                    li.dropdown-item Người đặt
+                        .form-group
+                            label Trạng thái
+                            .btnSwitch
+                                label.switch
+                                    input(type='checkbox', checked='')
+                                    span.slider
+
+
+                                span Hoạt động
+                    .memberBtnAction
+                        button.btn(type='button') Thêm thành viên
+                        button.btn.btn_outline(type='button') Huỷ
         script(src="js/libs/jquery.min.js")
         script(src="js/libs/slick.min.js")
         script(src="js/main.js")
