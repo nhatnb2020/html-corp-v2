@@ -145,19 +145,149 @@
                 <div class="filterBox__body">
                   <div class="filterBox__item">
                     <p class="filterBox__title">Sắp xếp theo</p>
+                    <div class="filterBox__cont">
+                      <div class="radio">
+                        <input type="radio" id="pr1" name="price">
+                        <label for="pr1">Giá thấp → cao</label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" id="pr2" name="price">
+                        <label for="pr2">Giá cao → thấp</label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" id="pr3" name="price">
+                        <label for="pr3">Đề xuất tốt nhất</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="filterBox__cont">
-                    <div class="radio">
-                      <input type="radio" id="pr1" name="price">
-                      <label for="pr1">Giá thấp → cao</label>
+                  <div class="filterBox__item">
+                    <p class="filterBox__title">Xem giá</p>
+                    <div class="filterBox__cont">
+                      <div class="checkbox">
+                        <input type="checkbox" id="c1">
+                        <label for="c1">Giá trên hạn mức</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c2">
+                        <label for="c2">Giá 1 đêm</label>
+                      </div>
                     </div>
-                    <div class="radio">
-                      <input type="radio" id="pr2" name="price">
-                      <label for="pr2">Giá cao → thấp</label>
+                  </div>
+                  <div class="filterBox__item">
+                    <p class="filterBox__title">Hạn mức</p>
+                    <div class="filterBox__cont">
+                      <div class="checkbox">
+                        <input type="checkbox" id="c3">
+                        <label for="c3">Dưới 500.000 ₫</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c4">
+                        <label for="c4">500.000 ₫ – 1.000.000 ₫</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c5">
+                        <label for="c5">1.000.000 ₫ – 2.000.000 ₫</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c6">
+                        <label for="c6">2.000.000 ₫ – 5.000.000 ₫</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c7">
+                        <label for="c7">Trên 5.000.000 ₫</label>
+                      </div>
+                      <div class="price-slider"><span id="min-price" data-min="3000000" data-currency="đ" class="slider-price">3000000</span><span id="max-price" data-max="14500000" data-currency="đ" class="slider-price">14500000</span>
+                        <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                          <div class="ui-slider-range ui-corner-all ui-widget-header"></div><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span><span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default"></span>
+                        </div>
+                      </div>
                     </div>
-                    <div class="radio">
-                      <input type="radio" id="pr3" name="price">
-                      <label for="pr3">Đề xuất tốt nhất</label>
+                  </div>
+                  <div class="filterBox__item">
+                    <p class="filterBox__title">Quy chuẩn khách sạn</p>
+                    <div class="filterBox__cont">
+                      <div class="checkbox">
+                        <input type="checkbox" id="c8">
+                        <label for="c8"><span>Khách sạn 1</span>
+                          <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.64179 4.1378L6.6664 3.70538L5.33632 1.00889C5.29999 0.935063 5.24023 0.875297 5.1664 0.838969C4.98124 0.747563 4.75624 0.823735 4.66366 1.00889L3.33358 3.70538L0.358195 4.1378C0.276163 4.14952 0.201163 4.18819 0.143741 4.24678C0.0743216 4.31813 0.0360681 4.41413 0.0373865 4.51367C0.0387049 4.61321 0.0794874 4.70815 0.150773 4.77764L2.30351 6.87647L1.79491 9.84014C1.78299 9.90908 1.79062 9.97999 1.81694 10.0448C1.84325 10.1096 1.88721 10.1658 1.94382 10.2069C2.00043 10.248 2.06743 10.2725 2.13722 10.2774C2.20701 10.2824 2.27679 10.2677 2.33866 10.2351L4.99999 8.83584L7.66132 10.2351C7.73398 10.2737 7.81835 10.2866 7.89921 10.2726C8.10312 10.2374 8.24023 10.044 8.20507 9.84014L7.69648 6.87647L9.84921 4.77764C9.9078 4.72022 9.94648 4.64522 9.95819 4.56319C9.98983 4.35811 9.84687 4.16827 9.64179 4.1378Z" fill="#FADB14"></path>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c9">
+                        <label for="c9"><span>Khách sạn 2</span>
+                          <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.64179 4.1378L6.6664 3.70538L5.33632 1.00889C5.29999 0.935063 5.24023 0.875297 5.1664 0.838969C4.98124 0.747563 4.75624 0.823735 4.66366 1.00889L3.33358 3.70538L0.358195 4.1378C0.276163 4.14952 0.201163 4.18819 0.143741 4.24678C0.0743216 4.31813 0.0360681 4.41413 0.0373865 4.51367C0.0387049 4.61321 0.0794874 4.70815 0.150773 4.77764L2.30351 6.87647L1.79491 9.84014C1.78299 9.90908 1.79062 9.97999 1.81694 10.0448C1.84325 10.1096 1.88721 10.1658 1.94382 10.2069C2.00043 10.248 2.06743 10.2725 2.13722 10.2774C2.20701 10.2824 2.27679 10.2677 2.33866 10.2351L4.99999 8.83584L7.66132 10.2351C7.73398 10.2737 7.81835 10.2866 7.89921 10.2726C8.10312 10.2374 8.24023 10.044 8.20507 9.84014L7.69648 6.87647L9.84921 4.77764C9.9078 4.72022 9.94648 4.64522 9.95819 4.56319C9.98983 4.35811 9.84687 4.16827 9.64179 4.1378Z" fill="#FADB14"></path>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c10">
+                        <label for="c10"><span>Khách sạn 3</span>
+                          <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.64179 4.1378L6.6664 3.70538L5.33632 1.00889C5.29999 0.935063 5.24023 0.875297 5.1664 0.838969C4.98124 0.747563 4.75624 0.823735 4.66366 1.00889L3.33358 3.70538L0.358195 4.1378C0.276163 4.14952 0.201163 4.18819 0.143741 4.24678C0.0743216 4.31813 0.0360681 4.41413 0.0373865 4.51367C0.0387049 4.61321 0.0794874 4.70815 0.150773 4.77764L2.30351 6.87647L1.79491 9.84014C1.78299 9.90908 1.79062 9.97999 1.81694 10.0448C1.84325 10.1096 1.88721 10.1658 1.94382 10.2069C2.00043 10.248 2.06743 10.2725 2.13722 10.2774C2.20701 10.2824 2.27679 10.2677 2.33866 10.2351L4.99999 8.83584L7.66132 10.2351C7.73398 10.2737 7.81835 10.2866 7.89921 10.2726C8.10312 10.2374 8.24023 10.044 8.20507 9.84014L7.69648 6.87647L9.84921 4.77764C9.9078 4.72022 9.94648 4.64522 9.95819 4.56319C9.98983 4.35811 9.84687 4.16827 9.64179 4.1378Z" fill="#FADB14"></path>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c11">
+                        <label for="c11"><span>Khách sạn 4</span>
+                          <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.64179 4.1378L6.6664 3.70538L5.33632 1.00889C5.29999 0.935063 5.24023 0.875297 5.1664 0.838969C4.98124 0.747563 4.75624 0.823735 4.66366 1.00889L3.33358 3.70538L0.358195 4.1378C0.276163 4.14952 0.201163 4.18819 0.143741 4.24678C0.0743216 4.31813 0.0360681 4.41413 0.0373865 4.51367C0.0387049 4.61321 0.0794874 4.70815 0.150773 4.77764L2.30351 6.87647L1.79491 9.84014C1.78299 9.90908 1.79062 9.97999 1.81694 10.0448C1.84325 10.1096 1.88721 10.1658 1.94382 10.2069C2.00043 10.248 2.06743 10.2725 2.13722 10.2774C2.20701 10.2824 2.27679 10.2677 2.33866 10.2351L4.99999 8.83584L7.66132 10.2351C7.73398 10.2737 7.81835 10.2866 7.89921 10.2726C8.10312 10.2374 8.24023 10.044 8.20507 9.84014L7.69648 6.87647L9.84921 4.77764C9.9078 4.72022 9.94648 4.64522 9.95819 4.56319C9.98983 4.35811 9.84687 4.16827 9.64179 4.1378Z" fill="#FADB14"></path>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c12">
+                        <label for="c12"><span>Khách sạn 5</span>
+                          <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.64179 4.1378L6.6664 3.70538L5.33632 1.00889C5.29999 0.935063 5.24023 0.875297 5.1664 0.838969C4.98124 0.747563 4.75624 0.823735 4.66366 1.00889L3.33358 3.70538L0.358195 4.1378C0.276163 4.14952 0.201163 4.18819 0.143741 4.24678C0.0743216 4.31813 0.0360681 4.41413 0.0373865 4.51367C0.0387049 4.61321 0.0794874 4.70815 0.150773 4.77764L2.30351 6.87647L1.79491 9.84014C1.78299 9.90908 1.79062 9.97999 1.81694 10.0448C1.84325 10.1096 1.88721 10.1658 1.94382 10.2069C2.00043 10.248 2.06743 10.2725 2.13722 10.2774C2.20701 10.2824 2.27679 10.2677 2.33866 10.2351L4.99999 8.83584L7.66132 10.2351C7.73398 10.2737 7.81835 10.2866 7.89921 10.2726C8.10312 10.2374 8.24023 10.044 8.20507 9.84014L7.69648 6.87647L9.84921 4.77764C9.9078 4.72022 9.94648 4.64522 9.95819 4.56319C9.98983 4.35811 9.84687 4.16827 9.64179 4.1378Z" fill="#FADB14"></path>
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filterBox__item">
+                    <p class="filterBox__title">Khu vực</p>
+                    <div class="filterBox__cont">
+                      <div class="checkbox">
+                        <input type="checkbox" id="c13">
+                        <label for="c13">Quận 1</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c14">
+                        <label for="c14">Quận 2</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c15">
+                        <label for="c15">Quận 3</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c16">
+                        <label for="c16">Quận 4</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filterBox__item">
+                    <p class="filterBox__title">Tiện ích xung quanh</p>
+                    <div class="filterBox__cont">
+                      <div class="checkbox">
+                        <input type="checkbox" id="c17">
+                        <label for="c17">Gần sân bay</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c18">
+                        <label for="c18">Gần biển</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c19">
+                        <label for="c19">Gần bến xe</label>
+                      </div>
+                      <div class="checkbox">
+                        <input type="checkbox" id="c20">
+                        <label for="c20">Có xe đưa đón sân bay</label>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -172,12 +302,27 @@
       </main>
     </section>
     <script src="js/libs/jquery.min.js"></script>
-    <script src="js/libs/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
     <script src="js/main.js"></script>
     <script>
       $('.nav-sub').click(function () {
           $(this).toggleClass('open');
       });
+    </script>
+    <script>
+      $("#slider-range").slider({
+          range: true,
+          min: 67500,
+          max: 14500000,
+          step: 50,
+          values: [3000000, 10000000],
+          slide: function (event, ui) {
+              $("#min-price").html(ui.values[0]);
+      
+              $("#max-price").html(ui.values[1]);
+          }
+      })
     </script>
   </body>
 </html>
