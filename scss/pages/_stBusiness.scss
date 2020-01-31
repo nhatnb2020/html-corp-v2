@@ -3,11 +3,22 @@
     display: flex;
   }
   &__left{
-    width: 40%;
+    width: 50%;
     padding-right: 80px;
   }
   &__right{
-    width: 60%;
+    width: 50%;
+  }
+  &__btn{
+    padding: 15px;
+    .btn{
+      + .btn{
+        margin-left: 8px;
+      }
+    }
+    .w100{
+      width: 100px;
+    }
   }
   &__upload{
     p{
@@ -27,6 +38,16 @@
     margin-bottom: 24px;
     .dropdown{
       margin-bottom: 8px;
+    }
+    > p{
+      margin-bottom: 0;
+    }
+  }
+  .vntBox{
+    width: 80%;
+    display: none;
+    &.open{
+      display: block;
     }
   }
 }

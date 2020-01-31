@@ -82,7 +82,34 @@
         </section>
         <section class="vntContent vntSetting">
           <div class="stBusiness">
-            <div class="vntBox">
+            <div id="vntBox1" class="vntBox open">
+              <div class="stBusiness__row">
+                <div class="stBusiness__left">
+                  <div class="form-group">
+                    <label for="name">Tên công ty</label>
+                    <p>CTY TNHH SMARTPAY</p>
+                  </div>
+                  <div class="form-group">
+                    <label>Địa chỉ công ty</label>
+                    <p>285 Cách mạng tháng 8, Phường 12, Quận 10, Hồ chí minh</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="hotline">Hotline</label>
+                    <p>19001234</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="tax">Mã số thuế</label>
+                    <p>8591924</p>
+                  </div>
+                </div>
+                <div class="stBusiness__right">
+                  <div class="stBusiness__upload">
+                    <p class="p1">Logo công ty</p><img src="https://statics.vntrip.vn/images//svg/logo-vntrip-black.svg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="vntBox2" class="vntBox">
               <div class="stBusiness__row">
                 <div class="stBusiness__left">
                   <div class="form-group">
@@ -148,9 +175,6 @@
                     <label for="tax">Mã số thuế</label>
                     <input type="text" name="tax" id="tax" value="8591924" class="form-control">
                   </div>
-                  <div class="stBusiness__btn">
-                    <button type="text" class="btn btn_lg">Cập nhật thông tin</button>
-                  </div>
                 </div>
                 <div class="stBusiness__right">
                   <div class="stBusiness__upload">
@@ -166,6 +190,11 @@
                 </div>
               </div>
             </div>
+            <div class="stBusiness__btn">
+              <button id="btnUpdate" type="button" class="btn">Cập nhật thông tin</button>
+              <button id="btnSave" type="button" class="btn w100 hidden">Lưu</button>
+              <button id="btnCancel" type="button" class="btn btn_outline w100 hidden">Hủy</button>
+            </div>
           </div>
         </section>
       </main>
@@ -176,6 +205,23 @@
     <script>
       $('.nav-sub').click(function () {
           $(this).toggleClass('open');
+      });
+    </script>
+    <script>
+      $('#btnUpdate').click(function () {
+          $(this).addClass('hidden');
+          $('#btnSave').removeClass('hidden');
+          $('#btnCancel').removeClass('hidden');
+          $('#vntBox1').removeClass('open');
+          $('#vntBox2').addClass('open');
+      });
+      
+      $('#btnSave').click(function () {
+          $(this).addClass('hidden');
+          $('#btnUpdate').removeClass('hidden');
+          $('#btnCancel').addClass('hidden');
+          $('#vntBox1').addClass('open');
+          $('#vntBox2').removeClass('open');
       });
     </script>
   </body>

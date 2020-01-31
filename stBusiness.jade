@@ -85,7 +85,28 @@ html(lang="vi")
                     h2.heading2.vntHeading Thông tin tổ chức
                 section.vntContent.vntSetting
                     .stBusiness
-                        .vntBox
+                        .vntBox.open#vntBox1
+                            .stBusiness__row
+                                .stBusiness__left
+                                    .form-group
+                                        label(for='name') Tên công ty
+                                        p CTY TNHH SMARTPAY
+
+                                    .form-group
+                                        label Địa chỉ công ty
+                                        p 285 Cách mạng tháng 8, Phường 12, Quận 10, Hồ chí minh
+                                    .form-group
+                                        label(for='hotline') Hotline
+                                        p 19001234
+
+                                    .form-group
+                                        label(for='tax') Mã số thuế
+                                        p 8591924
+                                .stBusiness__right
+                                    .stBusiness__upload
+                                        p.p1 Logo công ty
+                                        img(src='https://statics.vntrip.vn/images//svg/logo-vntrip-black.svg')
+                        .vntBox#vntBox2
                             .stBusiness__row
                                 .stBusiness__left
                                     .form-group
@@ -144,8 +165,6 @@ html(lang="vi")
                                     .form-group
                                         label(for='tax') Mã số thuế
                                         input.form-control(type='text' name='tax' id='tax' value='8591924')
-                                    .stBusiness__btn
-                                        button.btn.btn_lg(type='text') Cập nhật thông tin
                                 .stBusiness__right
                                     .stBusiness__upload
                                         p.p1 Logo công ty
@@ -157,12 +176,32 @@ html(lang="vi")
                                                 path(d='M4.46875 2.34353H5.4791V6.96872C5.4791 7.02888 5.52832 7.0781 5.58848 7.0781H6.40879C6.46895 7.0781 6.51816 7.02888 6.51816 6.96872V2.34353H7.53125C7.62285 2.34353 7.67344 2.23825 7.61738 2.16716L6.08613 0.228489C6.0759 0.215416 6.06283 0.204844 6.04791 0.197573C6.03298 0.190302 6.0166 0.186523 6 0.186523C5.9834 0.186523 5.96702 0.190302 5.95209 0.197573C5.93717 0.204844 5.9241 0.215416 5.91387 0.228489L4.38262 2.16579C4.32656 2.23825 4.37715 2.34353 4.46875 2.34353ZM11.0039 6.55857H10.1836C10.1234 6.55857 10.0742 6.60779 10.0742 6.66794V8.77341H1.92578V6.66794C1.92578 6.60779 1.87656 6.55857 1.81641 6.55857H0.996094C0.935937 6.55857 0.886719 6.60779 0.886719 6.66794V9.37497C0.886719 9.61697 1.08223 9.81247 1.32422 9.81247H10.6758C10.9178 9.81247 11.1133 9.61697 11.1133 9.37497V6.66794C11.1133 6.60779 11.0641 6.55857 11.0039 6.55857Z', fill='#595959')
 
                                             span Tải lên
+                        .stBusiness__btn
+                            button.btn#btnUpdate(type='button') Cập nhật thông tin
+                            button.btn.w100.hidden#btnSave(type='button') Lưu
+                            button.btn.btn_outline.w100.hidden#btnCancel(type='button') Hủy
         script(src="js/libs/jquery.min.js")
         script(src="js/libs/slick.min.js")
         script(src="js/main.js")
         script.
             $('.nav-sub').click(function () {
                 $(this).toggleClass('open');
+            });
+        script.
+            $('#btnUpdate').click(function () {
+                $(this).addClass('hidden');
+                $('#btnSave').removeClass('hidden');
+                $('#btnCancel').removeClass('hidden');
+                $('#vntBox1').removeClass('open');
+                $('#vntBox2').addClass('open');
+            });
+
+            $('#btnSave').click(function () {
+                $(this).addClass('hidden');
+                $('#btnUpdate').removeClass('hidden');
+                $('#btnCancel').addClass('hidden');
+                $('#vntBox1').addClass('open');
+                $('#vntBox2').removeClass('open');
             });
 
 
