@@ -81,6 +81,10 @@
 .gray-5{color: $gray-5!important;}
 //...
 
+.p0{
+  padding: 0!important;
+}
+
 .pt-0{padding-top: 0!important;}
 .pt-5{padding-top: 5px!important;}
 .pt-10{padding-top: 10px!important;}
@@ -149,6 +153,7 @@
 .w-50{width: 50%!important;}
 .w-75{width: 75%!important;}
 .w-100{width: 100%!important;}
+.w100{width: 100px!important;}
 
 .h-25{height: 25%!important;}
 .h-50{height: 50%!important;}

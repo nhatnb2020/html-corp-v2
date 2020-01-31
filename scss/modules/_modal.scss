@@ -22,11 +22,9 @@
 .modal-dialog {
   width: calc(100% - 10px);
   margin: 30px auto;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  @include border-radius(6px);
   @include add-background($white-1);
   @include breakpoint(sm){
-    width: 480px;
+    width: 396px;
   }
   @include breakpoint(md){
     margin: 70px auto;
@@ -42,36 +40,51 @@
 }
 .modal-header {
   position: relative;
-  padding:45px 15px 15px;
+  padding: 16px 24px;
+  border-bottom: 1px solid $border-color;
 }
 .modal-title {
   font-size: $size-16;
-  font-weight: $bold;
-  text-transform: uppercase;
-  text-align: center;
+  font-weight: $medium;
+  color: #262626;
+
 }
 .modal-close{
   position: absolute;
-  top: -15px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 50%;
+  right:20px;
+  transform: translateY(-50%);
   z-index: 1;
-  padding: 0;
+  padding: 5px;
   cursor: pointer;
   background: none;
   border:none;
-  display: flex;
+  svg{
+    display: block;
+  }
   &:focus{
     outline: none;
   }
 }
 .modal-body {
-  padding: 15px;
+  padding: 24px;
+  .form-group{
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 }
 .modal-footer {
-  padding: 15px;
+  padding: 12px 24px;
+  border-top: 1px solid $border-color;
+}
+.modal-btn{
+  text-align: right;
   .btn{
-    margin: 0 7px;
+    + .btn{
+      margin-left: 8px;
+    }
   }
 }
 .modal-open .modal {
@@ -85,33 +98,14 @@
   bottom: 0;
   left: 0;
   z-index: 999;
-  @include add-background($black-1);
+  background-color: rgb(32, 48, 72);
   &.fade {opacity: 0; }
-  &.in { opacity:.7; }
-  &.show { opacity:.7; }
+  &.in { opacity:.8; }
+  &.show { opacity:.8; }
 }
 
 .modal-dialog.modal_lg{
   @include breakpoint(sm){
     width: 750px;
-  }
-}
-
-.modal-dialog.modal-noti{
-  @include breakpoint(md){
-    width: 415px;
-  }
-  .modal-header{
-    padding: 30px 15px 15px;
-  }
-  .modal-body{
-    text-align: center;
-  }
-  .modal-footer{
-    text-align: center;
-    border-top: 1px solid $border-color;
-    .btn{
-      width: 125px;
-    }
   }
 }
