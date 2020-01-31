@@ -1,6 +1,22 @@
 .stPosition{
-  &__btn{
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  &__btn{
+    .btn{
+      + .btn{
+        margin-left: 8px;
+      }
+      svg{
+        margin-right: 6px;
+      }
+    }
   }
   &__table{
     .table{
