@@ -1,7 +1,12 @@
 .hotelList{
   &__body{
     display: flex;
+    margin: 15px;
   }
-  &__left{}
-  &__right{}
+  &__left{
+    width: 356px;
+  }
+  &__right{
+    width: calc(100% - 356px);
+  }
 }
