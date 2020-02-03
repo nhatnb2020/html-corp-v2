@@ -8,10 +8,10 @@
   background-color: #fff;
   display: flex;
   padding: 8px 15px 8px 8px;
-  height: 150px;
+  min-height: 150px;
   &__img{
     width: 240px;
-    height: 100%;
+    height: 152px;
     img{
       width: 100%;
       height: 100%;
@@ -21,7 +21,6 @@
   }
   &__cont{
     width: calc(100% - 240px);
-    height: 100%;
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
@@ -46,6 +45,9 @@
   }
   &__btn{
     text-align: right;
+  }
+  .hotelFaci{
+    width: 70%;
   }
 }
 .rateStar{
@@ -89,9 +91,11 @@
   }
 }
 .hotelFaci{
+  display: flex;
+  flex-wrap: wrap;
   &__item{
     display: inline-block;
-    padding: 1px 5px;
+    width: 50%;
     span{
       font-size: 12px;
       color: #595959;

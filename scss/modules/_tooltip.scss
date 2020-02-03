@@ -1,0 +1,21 @@
+.tooltip{
+  position: relative;
+  > svg{
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  &:hover{
+    .tooltip{
+      &__cont{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  &__cont{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+  }
+}

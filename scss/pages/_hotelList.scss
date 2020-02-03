@@ -8,5 +8,57 @@
   }
   &__right{
     width: calc(100% - 356px);
+    padding-left: 15px;
+  }
+  &__top{
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    margin-bottom: 15px;
+    > ul{
+      display: flex;
+      align-items: center;
+      li{
+        + li{
+          padding-left: 8px;
+        }
+        &.active{
+          button{
+            color: $yellow-2;
+            font-weight: 500;
+            border-bottom: 2px solid $yellow-2;
+            svg{
+              path{
+                fill: $yellow-2;
+              }
+            }
+          }
+        }
+        button{
+          font-size: 14px;
+          padding: 11px 15px;
+          &:hover{
+            color: $yellow-2;
+            svg{
+              path{
+                fill: $yellow-2;
+              }
+            }
+          }
+          span,svg{
+            vertical-align: middle;
+          }
+          span{
+            padding-left: 6px;
+          }
+        }
+      }
+    }
+  }
+  .pagination{
+    padding-right: 0;
   }
 }

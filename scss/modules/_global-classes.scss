@@ -255,3 +255,16 @@
     border-color: $border-color;
   }
 }
+.levelTotal{
+  display: flex;
+  > p{
+    color: #262626;
+    margin-bottom: 0;
+    margin-right: 5px;
+    span{
+      color: #096DD9;
+      font-weight: 500;
+      padding-left: 5px;
+    }
+  }
+}
