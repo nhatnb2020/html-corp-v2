@@ -150,3 +150,48 @@
     }
   }
 }
+.hotelCard{
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  display: flex;
+  color: inherit;
+  &__img{
+    width: 110px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__cont{
+    width: calc(100% - 110px);
+    padding: 12px;
+  }
+  &__add{
+    font-size: 12px;
+    color: #595959;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__price{
+    font-size: 12px;
+    margin-bottom: 0;
+    span{
+      color: #096DD9;
+      font-size: 14px;
+      font-weight: $medium;
+      padding-left: 5px;
+    }
+  }
+  .rateStar{
+    margin-bottom: 5px;
+  }
+  .heading4{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+  }
+}

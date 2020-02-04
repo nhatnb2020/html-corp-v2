@@ -1,16 +1,46 @@
 .vntHome{
-  &__hotel{
+  &__body{
+    display: flex;
     padding: 15px;
-    width: 75%;
     .heading2{
-      padding: 10px 0;
+      padding-bottom: 15px;
     }
+  }
+  &__left{
+    width: calc(100% - 345px);
+    padding-right: 20px;
+  }
+  &__right{
+    width: 345px;
   }
   &__hot{
     width: 75%;
     padding: 15px;
     .heading2{
       padding: 10px 0;
+    }
+  }
+  &__tab{
+    background-color: #fff;
+    display: flex;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    li{
+      &.active{
+        button{
+          color: $yellow-2;
+          border-color: $yellow-2;
+        }
+      }
+      button{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 12px 24px;
+        border-bottom: 2px solid transparent;
+        &:hover{
+          color: $yellow-2;
+        }
+      }
     }
   }
 }
