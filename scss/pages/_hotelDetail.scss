@@ -1,13 +1,43 @@
 .hotelDetail{
   display: flex;
   &__left{
-    width: calc(100% - 356px);
+    width: calc(100% - 386px);
   }
   &__right{
-    width: 356px;
+    width: 386px;
+    padding: 15px;
   }
   &__header{
     background-color: #fff;
     padding: 12px 24px;
+    .hotelFaci{
+      &__item{
+        width: auto;
+        + .hotelFaci__item{
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  &__main{
+    padding: 15px 0 15px 15px;
+  }
+  &__filter{
+    background-color: #fff;
+    box-shadow: $shadow;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    li{
+      + li{
+        padding-left: 24px;
+      }
+      p{
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: $medium;
+        color: #262626;
+      }
+    }
   }
 }
