@@ -1,0 +1,13 @@
+.hotelDetail{
+  display: flex;
+  &__left{
+    width: calc(100% - 356px);
+  }
+  &__right{
+    width: 356px;
+  }
+  &__header{
+    background-color: #fff;
+    padding: 12px 24px;
+  }
+}
