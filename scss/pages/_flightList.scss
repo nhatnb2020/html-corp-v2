@@ -1,0 +1,43 @@
+.flightList{
+  &__body{
+    padding: 15px;
+  }
+}
+
+.flightDest{
+  display: flex;
+  padding-bottom: 12px;
+  p{
+    margin-bottom: 0;
+    font-size: 24px;
+    &.p1{
+      padding-right: 5px;
+    }
+    &.p2{
+      font-weight: 500;
+      color: #262626;
+    }
+  }
+}
+.flightDate{
+  background-color: #fff;
+  box-shadow: $shadow;
+  &__item{
+    text-align: center;
+    height: 56px;
+    padding: 10px 0;
+    border-right: 1px solid $border-color;
+
+    p{
+      color: #262626;
+      margin-bottom: 0;
+      &.p1{
+        font-size: 14px;
+        font-weight: 500;
+      }
+      &.p2{
+        font-size: 12px;
+      }
+    }
+  }
+}

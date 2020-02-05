@@ -165,7 +165,70 @@
               </div>
             </div>
           </div>
-          <div class="flightDest"></div>
+          <div class="flightList__body">
+            <div class="flightDest">
+              <p class="p1">Chuyến đi:</p>
+              <p class="p2">Hà Nội - Hồ Chí Minh</p>
+            </div>
+            <div class="flightDate">
+              <div class="flightDate__item">
+                <p class="p1">Thứ 2</p>
+                <p class="p2">15/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 3</p>
+                <p class="p2">16/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 4</p>
+                <p class="p2">17/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 5</p>
+                <p class="p2">18/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 6</p>
+                <p class="p2">19/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 7</p>
+                <p class="p2">20/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Chủ nhật</p>
+                <p class="p2">21/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 2</p>
+                <p class="p2">22/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 3</p>
+                <p class="p2">23/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 4</p>
+                <p class="p2">24/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 5</p>
+                <p class="p2">25/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 6</p>
+                <p class="p2">26/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Thứ 7</p>
+                <p class="p2">27/01/2020</p>
+              </div>
+              <div class="flightDate__item">
+                <p class="p1">Chủ nhật</p>
+                <p class="p2">28/01/2020</p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </section>
@@ -180,6 +243,15 @@
     <script>
       $('.flightToggle').click(function () {
           $(this).toggleClass('rotate');
+      });
+    </script>
+    <script>
+      $('.flightDate').slick({
+          slidesToShow: 7,
+          slidesToScroll: 1,
+          //autoplay: true,
+          speed: 500,
+          infinite: false,
       });
     </script>
   </body>
