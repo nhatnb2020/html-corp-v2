@@ -1,0 +1,90 @@
+.flightRecent{
+  padding-bottom: 40px;
+  &__cont{
+    display: flex;
+  }
+  &__item{
+    width: 257px;
+    background-color: #fff;
+    box-shadow: $shadow;
+    display: flex;
+    padding: 12px;
+    + .flightRecent__item{
+      margin-left: 15px;
+    }
+  }
+  &__icon{
+    padding-top: 5px;
+  }
+  &__info{
+    padding-left: 12px;
+    p{
+      &.p1{
+        font-size: 16px;
+        font-weight: 500;
+        color: #262626;
+        span,svg{
+          vertical-align: middle;
+        }
+        svg{
+          margin: 0 5px;
+        }
+      }
+      &.p2{
+        font-size: 12px;
+        margin-bottom: 0;
+        color: $text-color;
+      }
+    }
+  }
+}
+.flightHot{
+  &__cont{
+    display: flex;
+  }
+  &__item{
+    width: 187px;
+    display: block;
+    background-color: #fff;
+    box-shadow: $shadow;
+    border-radius: 4px;
+    overflow: hidden;
+    + .flightHot__item{
+      margin-left: 15px;
+    }
+    img{
+      width: 100%;
+      height: 126px;
+      object-fit: cover;
+    }
+    p{
+      margin-bottom: 0;
+      &.p1{
+        font-size: 16px;
+        color: #262626;
+        font-weight: 500;
+        padding: 8px 8px 5px;
+
+        span,svg{
+          vertical-align: middle;
+        }
+        svg{
+          margin: 0 5px;
+        }
+      }
+      &.p2{
+        font-size: 12px;
+        color: $text-color;
+        padding: 0 8px 8px;
+      }
+    }
+  }
+}
+.vntHome{
+  &__flight{
+    padding: 24px 15px;
+    .heading2{
+      padding-bottom: 15px;
+    }
+  }
+}

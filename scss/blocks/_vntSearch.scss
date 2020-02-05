@@ -62,15 +62,52 @@
   &__hotel{
     display: flex;
     align-items: flex-end;
-    &__btn{
-      .btn{
-        width: 100px;
-      }
-    }
     .placeInput,
     .dateInput,
     .memberBtn{
       padding-right: 15px;
+    }
+  }
+  &__btn{
+    .btn{
+      width: 100px;
+    }
+  }
+  &__flex{
+    display: flex;
+    align-items: flex-end;
+  }
+  &__radio{
+    display: flex;
+    padding-bottom: 20px;
+    .radio{
+      + .radio{
+        padding-left: 24px;
+      }
+    }
+  }
+  &__flight{
+    .placeInput{
+      width: 184px;
+    }
+    .flightToggle{
+      padding: 0 10px;
+      transform: translateY(-6px);
+      &.rotate{
+        svg{
+          transform: rotate(180deg);
+        }
+      }
+      svg{
+        display: block;
+        transition: all .3s;
+      }
+    }
+    .dateInput{
+      padding: 0 16px;
+    }
+    .memberBtn{
+      padding-right: 16px;
     }
   }
 }
