@@ -55,6 +55,11 @@
     background-color: #fff;
     border: 1px solid $border-color;
   }
+  &.btn_outlineOrange{
+    color: $yellow-2;
+    background-color: #fff;
+    border: 1px solid $yellow-2;
+  }
   &.btn_light{
     @include add-background(#f2f2f2);
   }

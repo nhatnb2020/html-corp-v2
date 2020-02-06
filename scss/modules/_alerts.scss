@@ -1,0 +1,12 @@
+.textNote{
+  font-size: 14px;
+  color: $red-1;
+  display: flex;
+  margin-bottom: 0;
+  svg{
+    margin-top: 3px;
+  }
+  span{
+    padding-left: 8px;
+  }
+}

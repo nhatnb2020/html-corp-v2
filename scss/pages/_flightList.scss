@@ -2,8 +2,13 @@
   &__body{
     padding: 15px;
   }
+  &__active{
+    padding-bottom: 32px;
+  }
 }
-
+.listFlight{
+  margin-bottom: 30px;
+}
 .flightDest{
   display: flex;
   padding-bottom: 12px;
@@ -22,14 +27,20 @@
 .flightDate{
   background-color: #fff;
   box-shadow: $shadow;
+  padding: 10px 100px;
+  margin-bottom: 15px;
   &__item{
     text-align: center;
-    height: 56px;
-    padding: 10px 0;
     border-right: 1px solid $border-color;
-
+    color: #262626;
+    transition: all .2s;
+    &.active{
+      color: $yellow-2;
+    }
+    &:hover{
+      color: $yellow-2;
+    }
     p{
-      color: #262626;
       margin-bottom: 0;
       &.p1{
         font-size: 14px;
@@ -37,6 +48,317 @@
       }
       &.p2{
         font-size: 12px;
+      }
+    }
+  }
+  .slick-list{
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
+  .slick-prev{
+    left: 60px;
+  }
+  .slick-next{
+    right: 60px;
+  }
+}
+.flightFilter{
+  background-color: #fff;
+  box-shadow: $shadow;
+  padding: 15px 15px 5px;
+  margin-bottom: 15px;
+  &__row{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    li{
+      &:first-child{
+        width: 110px;
+      }
+      + li{
+        padding-left: 24px;
+      }
+      p{
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 500;
+         color: #262626;
+      }
+      .radio{
+        img{
+          width: 80px;
+          &.logoVnairline{
+            width: 60px;
+          }
+          &.logoBamboo{
+            width: 60px;
+          }
+        }
+        input[type="radio"] + label:before{
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+.flightSort{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+  li{
+    &:first-child{
+      width: 110px;
+    }
+    + li{
+      padding-left: 39px;
+    }
+    &.liTax{
+      position: absolute;
+      top: 0;
+      right: 15px;
+    }
+    p{
+      margin-bottom: 0;
+      font-size: 16px;
+      font-weight: 500;
+      color: #262626;
+    }
+    .radio{
+      input[type="radio"] + label:before{
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+.flightTrip{
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  .d-block{
+    text-align: center;
+    p{
+      margin-bottom: 0;
+      &.p1{
+        font-size: 16px;
+        color: #262626;
+        font-weight: 500;
+      }
+      &.p2{
+        font-size: 12px;
+      }
+    }
+  }
+  .d-svg{
+    padding: 0 15px;
+    text-align: center;
+    svg{
+      display: block;
+      margin: auto;
+    }
+    p{
+      margin-bottom: 0;
+      color: #8c8c8c;
+      font-weight: 500;
+    }
+  }
+  &_lg{
+    width: auto;
+    padding: 0;
+    .d-block{
+      text-align: left;
+      p{
+        &.p1{
+          font-size: 20px;
+        }
+        &.p2{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+}
+.flightAirline{
+  display: flex;
+  align-items: center;
+  &__logo{
+    width: 70px;
+    img{
+      width: 100%;
+    }
+  }
+  &__cont{
+    width: calc(100% - 70px);
+    padding-left: 5px;
+    p{
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+  }
+}
+.flightTicket{
+  margin-bottom: 8px;
+  &__info{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  &__logo{
+    width: 70px;
+    img{
+      width: 100%;
+    }
+  }
+  &__code{
+    width: 75px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #262626;
+    text-align: center;
+    padding-left: 15px;
+  }
+  &__seat{
+    width: calc(100% - 595px);
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    li{
+      padding-bottom: 4px;
+      padding-right: 4px;
+      &.tooltip{
+        z-index: 10;
+        .btnSeat{
+          background-color: #40A9FF;
+          border-color: #40A9FF;
+          color: #fff;
+        }
+      }
+      .tooltip{
+        &__cont{
+          top: 100%;
+        }
+      }
+      .btnSeat{
+        background: #fff;
+        border: 1px solid #D9D9D9;
+        box-sizing: border-box;
+        border-radius: 4px;
+        height: 32px;
+        padding: 0 16px;
+        font-size: 14px;
+      }
+    }
+  }
+  &__click{
+    width: 60px;
+    font-size: 12px;
+    color: #1890FF;
+    &:hover{
+      color: $yellow-2;
+    }
+    span,svg{
+      vertical-align: middle;
+    }
+    span{
+      padding-right: 5px;
+    }
+  }
+  &__btn{
+    width: 110px;
+    padding-left: 15px;
+    .btn{
+      width: 100%;
+    }
+  }
+  &__detail{
+    background-color: #fff;
+    padding: 24px 220px 64px 175px;
+    position: relative;
+    animation: opacityShow .3s ease-in-out;
+    display: none;
+    margin-bottom: 8px;
+    .flightTicket{
+      &__btn{
+        position: absolute;
+        bottom: 110px;
+        right: 16px;
+      }
+    }
+  }
+  &__trip{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 34px;
+  }
+  &__policy{
+    margin-bottom: 15px;
+    p{
+      &.pTitle{
+        font-size: 16px;
+        font-weight: 500;
+        color: #262626;
+        span{
+          padding-left: 5px;
+        }
+      }
+      &.pLine{
+        display: flex;
+        font-size: 14px;
+        color: #262626;
+        span{
+          &:first-child{
+            width: 200px;
+          }
+          &:last-child{
+            width: calc(100% - 200px);
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+    .table{
+      margin: 16px 0 10px;
+    }
+    .textNote{
+      justify-content: flex-end;
+    }
+  }
+  &__airline{
+    p{
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+  }
+  &.open{
+    .flightTicket{
+      &__detail{
+        display: block;
+      }
+      &__click{
+        svg{
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+.flightActive{
+  .flightTicket{
+    box-shadow: $shadow;
+    &__airline{}
+    &__info{
+      padding: 9px 16px;
+      .flightTicket__btn{
+        width: auto;
+        padding-left: 0;
       }
     }
   }
