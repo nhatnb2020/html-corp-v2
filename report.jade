@@ -1,4 +1,4 @@
-- var page = "home";
+- var page = "report";
 doctype html
 html(lang="vi")
     head
@@ -32,7 +32,7 @@ html(lang="vi")
                                         li.sidebar__nav__item
                                             a.sidebar__nav__link(href='homeFlight.html')
                                                 span Đặt vé máy bay
-                                li.sidebar__nav__item
+                                li.sidebar__nav__item.active
                                     a.sidebar__nav__link(href='report.html')
                                         svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
                                             path(d='M12.4999 7.09374H6.90614V1.49999C6.90614 1.43124 6.84989 1.37499 6.78114 1.37499H6.37489C5.55411 1.37364 4.74116 1.53461 3.98282 1.84861C3.22447 2.16262 2.53571 2.62348 1.95614 3.20467C1.38537 3.77368 0.93059 4.44815 0.617075 5.19061C0.290833 5.96067 0.123426 6.78867 0.124887 7.62499C0.123543 8.44577 0.284506 9.25872 0.598516 10.0171C0.912525 10.7754 1.37338 11.4642 1.95458 12.0437C2.52801 12.6172 3.19676 13.0687 3.94051 13.3828C4.71057 13.709 5.53857 13.8764 6.37489 13.875C7.19567 13.8763 8.00862 13.7154 8.76696 13.4014C9.5253 13.0873 10.2141 12.6265 10.7936 12.0453C11.3671 11.4719 11.8186 10.8031 12.1327 10.0594C12.4589 9.2893 12.6263 8.4613 12.6249 7.62499V7.21874C12.6249 7.14999 12.5686 7.09374 12.4999 7.09374ZM10.0265 11.3094C9.54262 11.7894 8.96882 12.1693 8.33793 12.4272C7.70704 12.6852 7.03146 12.8161 6.34989 12.8125C4.97332 12.8062 3.67957 12.2672 2.70614 11.2937C1.72645 10.314 1.18739 9.01092 1.18739 7.62499C1.18739 6.23905 1.72645 4.93592 2.70614 3.95624C3.55926 3.10311 4.6577 2.5828 5.84364 2.46405V8.15624H11.5358C11.4155 9.34842 10.8905 10.4531 10.0265 11.3094ZM13.8749 6.22499L13.8343 5.78436C13.7015 4.3453 13.0624 2.98749 12.0343 1.96249C11.0054 0.935606 9.65039 0.300089 8.20301 0.165611L7.76083 0.124986C7.68739 0.118736 7.62489 0.174986 7.62489 0.248424V6.24999C7.62489 6.31874 7.68114 6.37499 7.74989 6.37499L13.7499 6.35936C13.8233 6.35936 13.8811 6.29686 13.8749 6.22499ZM8.68426 5.31561V1.30624C9.66854 1.51225 10.5718 1.9997 11.2843 2.70936C11.9983 3.42186 12.4874 4.32811 12.6905 5.30467L8.68426 5.31561Z', fill='#595959')
@@ -57,7 +57,7 @@ html(lang="vi")
 
                                         span Cài đặt
                                     ul.sidebar__nav__child
-                                        li.sidebar__nav__item.active
+                                        li.sidebar__nav__item
                                             a.sidebar__nav__link(href='stBusiness.html')
                                                 span Thông tin tổ chức
                                         li.sidebar__nav__item
@@ -85,125 +85,105 @@ html(lang="vi")
                         span Đăng xuất
             main.main
                 section.vntHeader
-                    h2.heading2.vntHeading Thông tin tổ chức
-                section.vntContent.stBusiness
-                    .vntBox.open#vntBox1
-                        .stBusiness__row
-                            .stBusiness__left
-                                .form-group
-                                    label(for='name') Tên công ty
-                                    p CTY TNHH SMARTPAY
+                    h2.heading2 Báo cáo chi phí
+                section.vntContent.report
+                    .d-flex
+                        .checkbox
+                            input#cn1(type='checkbox')
+                            label(for='cn1') Chỉ hiển thị các đơn hàng thanh toán công nợ
 
-                                .form-group
-                                    label Địa chỉ công ty
-                                    p 285 Cách mạng tháng 8, Phường 12, Quận 10, Hồ chí minh
-                                .form-group
-                                    label(for='hotline') Hotline
-                                    p 19001234
-
-                                .form-group
-                                    label(for='tax') Mã số thuế
-                                    p 8591924
-                            .stBusiness__right
-                                .stBusiness__upload
-                                    p.p1 Logo công ty
-                                    img(src='https://statics.vntrip.vn/images//svg/logo-vntrip-black.svg')
-                    .vntBox#vntBox2
-                        .stBusiness__row
-                            .stBusiness__left
-                                .form-group
-                                    label(for='name') Tên công ty
-                                    input.form-control(type='text' name='name' id='name' value='CTY TNHH SMARTPAY')
-
-                                .form-group
-                                    label Địa chỉ công ty
+                        button.btn(type='button')
+                            svg(width='10', height='14', viewBox='0 0 10 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M9.68398 3.94707C9.76602 4.0291 9.8125 4.13984 9.8125 4.25605V12.6875C9.8125 12.9295 9.61699 13.125 9.375 13.125H0.625C0.383008 13.125 0.1875 12.9295 0.1875 12.6875V1.3125C0.1875 1.07051 0.383008 0.875 0.625 0.875H6.43145C6.54766 0.875 6.65977 0.921484 6.7418 1.00352L9.68398 3.94707ZM8.80352 4.45703L6.23047 1.88398V4.45703H8.80352ZM5.86598 6.53297L5.02898 7.9316L4.18379 6.53242C4.16918 6.50826 4.14857 6.48828 4.12398 6.47441C4.09938 6.46054 4.07162 6.45326 4.04338 6.45326H3.51783C3.48686 6.45327 3.45653 6.46203 3.43033 6.47855C3.41209 6.49005 3.39629 6.50502 3.38384 6.52262C3.37139 6.54022 3.36253 6.56011 3.35777 6.58113C3.35301 6.60216 3.35244 6.62392 3.35609 6.64516C3.35975 6.66641 3.36755 6.68673 3.37906 6.70496L4.5048 8.48805L3.36389 10.3034C3.34744 10.3296 3.33872 10.3599 3.33873 10.3908C3.33873 10.4343 3.35602 10.476 3.38678 10.5068C3.41755 10.5375 3.45928 10.5548 3.50279 10.5548H3.97393C4.00191 10.5548 4.02942 10.5477 4.05386 10.534C4.07829 10.5204 4.09883 10.5007 4.11352 10.4769L4.97074 9.08961L5.8225 10.4766C5.83718 10.5005 5.85775 10.5203 5.88223 10.534C5.90672 10.5477 5.93431 10.5548 5.96236 10.5548H6.47478C6.50619 10.5548 6.53694 10.5458 6.56338 10.5288C6.58151 10.5172 6.59718 10.5021 6.60948 10.4844C6.62178 10.4667 6.63048 10.4468 6.63507 10.4258C6.63967 10.4047 6.64007 10.383 6.63626 10.3618C6.63245 10.3405 6.62451 10.3203 6.61287 10.3022L5.46676 8.5173L6.63297 6.70619C6.64998 6.67968 6.659 6.64883 6.65895 6.61732C6.65895 6.57381 6.64166 6.53208 6.61089 6.50131C6.58012 6.47055 6.5384 6.45326 6.49488 6.45326H6.0068C5.97845 6.45328 5.95059 6.46065 5.92593 6.47464C5.90128 6.48863 5.88067 6.50878 5.86611 6.53311L5.86598 6.53297Z', fill='white')
+                            span Xuất báo cáo
+                    .report__body
+                        .report__item
+                            .report__title
+                                h2.heading2 Báo cáo theo chi phí
+                                .dropdownGroup
                                     .dropdown
                                         button.dropdown-toggle(type='button', data-toggle='dropdown')
-                                            span Hồ Chí Minh
+                                            span Theo tháng
                                             svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
                                                 path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
 
                                         ul.dropdown-menu
-                                            li.dropdown-item.active Hồ Chí Minh
-                                            li.dropdown-item Hà Nội
-                                            li.dropdown-item Đà Nẵng
-                                            li.dropdown-item Quảng Trị
-                                            li.dropdown-item Nghệ An
-                                            li.dropdown-item Hải Phòng
-                                            li.dropdown-item Nha Trang
+                                            li.dropdown-item.active 1
+                                            li.dropdown-item 2
+                                            li.dropdown-item 3
+                                            li.dropdown-item 4
+                                            li.dropdown-item 5
+                                            li.dropdown-item 6
+                                            li.dropdown-item 7
+                                            li.dropdown-item 8
+                                            li.dropdown-item 9
+                                            li.dropdown-item 10
+                                            li.dropdown-item 11
+                                            li.dropdown-item 12
                                     .dropdown
                                         button.dropdown-toggle(type='button', data-toggle='dropdown')
-                                            span Quận 10
+                                            span Theo năm
                                             svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
                                                 path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
 
                                         ul.dropdown-menu
-                                            li.dropdown-item.active Quận 10
-                                            li.dropdown-item Quận 10
-                                            li.dropdown-item Quận 9
-                                            li.dropdown-item Quận 8
-                                            li.dropdown-item Quận 7
-                                            li.dropdown-item Quận 6
-                                            li.dropdown-item Quận 5
-                                    .dropdown
-                                        button.dropdown-toggle(type='button', data-toggle='dropdown')
-                                            span Phường 12
-                                            svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
+                                            li.dropdown-item.active 2019
+                                            li.dropdown-item 2020
 
-                                        ul.dropdown-menu
-                                            li.dropdown-item.active Phường 12
-                                            li.dropdown-item Phường 11
-                                            li.dropdown-item Phường 10
-                                            li.dropdown-item Phường 9
-                                            li.dropdown-item Phường 8
-                                            li.dropdown-item Phường 7
-                                    input.form-control(type='text' value='285 Cách mạng tháng 8')
-                                .form-group
-                                    label(for='hotline') Hotline
-                                    input.form-control(type='text' name='hotline' id='hotline' value='19001234')
+                            .report__cont
+                                .report__info
+                                    .d-block
+                                        p.p1 Tổng hạn mức
+                                        p.p2 12 tỷ
 
+                                    .d-block
+                                        p.p1 Tổng chi phí
+                                        p.p2 5.2 tỷ
 
-                                .form-group
-                                    label(for='tax') Mã số thuế
-                                    input.form-control(type='text' name='tax' id='tax' value='8591924')
-                            .stBusiness__right
-                                .stBusiness__upload
-                                    p.p1 Logo công ty
-                                    img(src='https://statics.vntrip.vn/images//svg/logo-vntrip-black.svg')
-                                    p.p2 Kích thước nhỏ nhất 300x300. Chấp nhận định dạng ảnh PNG, JPEAG, SVG
-                                    label.upload
-                                        input(type='file')
-                                        svg(width='12', height='10', viewBox='0 0 12 10', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                            path(d='M4.46875 2.34353H5.4791V6.96872C5.4791 7.02888 5.52832 7.0781 5.58848 7.0781H6.40879C6.46895 7.0781 6.51816 7.02888 6.51816 6.96872V2.34353H7.53125C7.62285 2.34353 7.67344 2.23825 7.61738 2.16716L6.08613 0.228489C6.0759 0.215416 6.06283 0.204844 6.04791 0.197573C6.03298 0.190302 6.0166 0.186523 6 0.186523C5.9834 0.186523 5.96702 0.190302 5.95209 0.197573C5.93717 0.204844 5.9241 0.215416 5.91387 0.228489L4.38262 2.16579C4.32656 2.23825 4.37715 2.34353 4.46875 2.34353ZM11.0039 6.55857H10.1836C10.1234 6.55857 10.0742 6.60779 10.0742 6.66794V8.77341H1.92578V6.66794C1.92578 6.60779 1.87656 6.55857 1.81641 6.55857H0.996094C0.935937 6.55857 0.886719 6.60779 0.886719 6.66794V9.37497C0.886719 9.61697 1.08223 9.81247 1.32422 9.81247H10.6758C10.9178 9.81247 11.1133 9.61697 11.1133 9.37497V6.66794C11.1133 6.60779 11.0641 6.55857 11.0039 6.55857Z', fill='#595959')
+                                    .d-block
+                                        p.p1 Chi phí tiết kiệm
+                                        p.p2 6.8 tỷ
 
-                                        span Tải lên
-                    .stBusiness__btn
-                        button.btn#btnUpdate(type='button') Cập nhật thông tin
-                        button.btn.w100.hidden#btnSave(type='button') Lưu
-                        button.btn.btn_outline.w100.hidden#btnCancel(type='button') Hủy
+                                .report__chart
+                                    canvas#myChart
+
         script(src="js/libs/jquery.min.js")
-        script(src="js/libs/slick.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0")
         script(src="js/main.js")
         script.
             $('.nav-sub').click(function () {
                 $(this).toggleClass('open');
             });
         script.
-            $('#btnUpdate').click(function () {
-                $(this).addClass('hidden');
-                $('#btnSave').removeClass('hidden');
-                $('#btnCancel').removeClass('hidden');
-                $('#vntBox1').removeClass('open');
-                $('#vntBox2').addClass('open');
-            });
-
-            $('#btnSave').click(function () {
-                $(this).addClass('hidden');
-                $('#btnUpdate').removeClass('hidden');
-                $('#btnCancel').addClass('hidden');
-                $('#vntBox1').addClass('open');
-                $('#vntBox2').removeClass('open');
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var myBarChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['TH 1', 'TH 2', 'TH 3', 'TH 4', 'TH 5', 'TH 6', 'TH 7', 'TH 8', 'TH 9', 'TH 10', 'TH 11', 'TH 12'],
+                    datasets: [
+                        {
+                        label: 'Tổng hạn mức',
+                        data: [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100],
+                        backgroundColor: '#FAB516'
+                        },
+                        {
+                            label: 'Chi phí ghi nhận',
+                            data: [40, 20, 50, 88, 76, 85, 90, 77, 76, 49, 87, 93],
+                            backgroundColor: '#1890FF',
+                        },
+                        {
+                            type: 'line',
+                            label: 'Chi phí tiết kiệm',
+                            data: [32, 18, 40, 66, 36, 45, 80, 67, 56, 79, 77, 63],
+                            borderColor : '#096DD9',
+                            borderWidth : '2',
+                            backgroundColor : 'transparent',
+                            pointBackgroundColor : '#fff',
+                            pointBorderColor : '#003A8C',
+                            pointBorderWidth : 2
+                        }
+                    ],
+                },
             });
 
 

@@ -36,7 +36,7 @@
   }
 }
 
-.vnt-loading{
+.vntLoading{
   position: fixed;
   top: 0;
   left: 0;
@@ -75,27 +75,6 @@
   background-size: 800px 104px;
   height: 96px;
   position: relative;
-}
-.svg-loader{
-  animation: rotate 2s linear infinite;
-  transform-origin: center center;
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  circle{
-    stroke-dasharray: 1, 200;
-    stroke-dashoffset: 0;
-    animation: dash 1s ease-in-out infinite, color 6s ease-in-out infinite;
-    stroke-linecap: round;
-  }
-}
-.vnt-loader{
-  text-align: center;
-  margin: 15px 0;
-  .svg-loader{
-    width: 25px;
-    height: 25px;
-  }
 }
 
 
