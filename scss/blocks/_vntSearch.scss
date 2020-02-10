@@ -109,15 +109,239 @@
     .memberBtn{
       padding-right: 16px;
     }
+    .listPlace{
+      &__text{
+        width: 100%;
+        padding-right: 0;
+      }
+    }
   }
 }
 
 .placeInput{
   width: 330px;
+  position: relative;
 }
 .dateInput{
   width: 330px;
 }
 .memberBtn{
   width: 200px;
+}
+
+.suggestDefault{
+  background-color: #fff;
+  box-shadow: $shadow;
+  width: 360px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  max-height: 418px;
+  overflow-y: auto;
+  display: none;
+  &.open{
+    display: block;
+  }
+  &::-webkit-scrollbar {
+    width:4px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+    border-radius: 16px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background:#bcbcbc;
+    border-radius: 16px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #bcbcbc;
+  }
+  &__title{
+    background-color: #fafafa;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 500;
+    padding: 12px;
+  }
+}
+.listPlace{
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover{
+      background-color: #fafafa;
+    }
+  }
+  &__text{
+    width: calc(100% - 88px);
+    padding-right: 16px;
+    p{
+      margin-bottom: 0;
+      &.p1{
+        font-size: 14px;
+        color: #262626;
+      }
+      &.p2{
+        font-size: 12px;
+      }
+    }
+  }
+  &__label{
+    width: 88px;
+    height: 22px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border: 1px solid $border-color;
+    background-color: #fff;
+  }
+}
+.suggestPlace{
+  background-color: #fff;
+  box-shadow: $shadow;
+  width: 360px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  display: none;
+  &.open{
+    display: block;
+  }
+
+  &__tab{
+    display: flex;
+    align-items: center;
+    li{
+      width: 33.333%;
+      &.active{
+        button{
+          border-color: $yellow-2;
+        }
+      }
+      button{
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+        color: #262626;
+        font-weight: 500;
+        border-bottom: 2px solid $border-color;
+        transition: all .2s;
+        &:hover{
+          color: $yellow-2;
+        }
+      }
+    }
+  }
+  &__body{
+    max-height: 374px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width:4px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: #f2f2f2;
+      border-radius: 16px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background:#bcbcbc;
+      border-radius: 16px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+    }
+  }
+
+}
+
+.modal-dialog.modal-member{
+  width: 734px;
+  .vntMember{
+    &__table{
+      margin-bottom: 16px;
+      .table{
+        td{
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  p{
+    &.pSelected{
+      font-size: 14px;
+      color: #262626;
+      margin-bottom: 16px;
+    }
+  }
+}
+.addForm{
+  &__item{
+    padding-bottom: 16px;
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+  &__btn{
+    font-size: 14px;
+    color: #096DD9;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    &:hover{
+      text-decoration: underline;
+    }
+    span{
+      padding-left: 6px;
+    }
+  }
+  &__cont{
+    margin: 0 -12px;
+    padding-top: 16px;
+    display: none;
+    animation: opacityShow .3s ease-in-out;
+    &.open{
+      display: block;
+    }
+    .memberForm{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      .form-group{
+        &.addForm__title{
+          padding: 0 12px;
+          p{
+            font-size: 16px;
+            color: #262626;
+            font-weight: 500;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .memberBtnAction{
+      padding: 12px;
+    }
+  }
 }

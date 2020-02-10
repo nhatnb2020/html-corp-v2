@@ -112,6 +112,9 @@ html(lang="vi")
                                                 input.form-control(type='text' placeholder='Thành phố, vùng quận, khách sạn cụ thể' name='place' id='place')
                                                 svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
                                                     path(d='M13.2125 12.3516L9.15469 8.29375C9.78438 7.47969 10.125 6.48438 10.125 5.4375C10.125 4.18438 9.63594 3.00937 8.75156 2.12344C7.86719 1.2375 6.68906 0.75 5.4375 0.75C4.18594 0.75 3.00781 1.23906 2.12344 2.12344C1.2375 3.00781 0.75 4.18438 0.75 5.4375C0.75 6.68906 1.23906 7.86719 2.12344 8.75156C3.00781 9.6375 4.18438 10.125 5.4375 10.125C6.48438 10.125 7.47813 9.78438 8.29219 9.15625L12.35 13.2125C12.3619 13.2244 12.376 13.2338 12.3916 13.2403C12.4071 13.2467 12.4238 13.2501 12.4406 13.2501C12.4575 13.2501 12.4741 13.2467 12.4897 13.2403C12.5052 13.2338 12.5194 13.2244 12.5312 13.2125L13.2125 12.5328C13.2244 12.5209 13.2338 12.5068 13.2403 12.4912C13.2467 12.4757 13.2501 12.459 13.2501 12.4422C13.2501 12.4254 13.2467 12.4087 13.2403 12.3931C13.2338 12.3776 13.2244 12.3635 13.2125 12.3516ZM7.9125 7.9125C7.25 8.57344 6.37187 8.9375 5.4375 8.9375C4.50312 8.9375 3.625 8.57344 2.9625 7.9125C2.30156 7.25 1.9375 6.37187 1.9375 5.4375C1.9375 4.50312 2.30156 3.62344 2.9625 2.9625C3.625 2.30156 4.50312 1.9375 5.4375 1.9375C6.37187 1.9375 7.25156 2.3 7.9125 2.9625C8.57344 3.625 8.9375 4.50312 8.9375 5.4375C8.9375 6.37187 8.57344 7.25156 7.9125 7.9125Z', fill='#8C8C8C')
+                                            include jades/blocks/_suggestDefault
+                                            include jades/blocks/_suggestPlace
+
                                         .dateInput
                                             label(for='date') Ngày nhận phòng / trả phòng
                                             .input-inline
@@ -122,10 +125,11 @@ html(lang="vi")
                                         .memberBtn
                                             label(for='member') Chọn người ở
                                             .input-inline
-                                                button.form-control(type='button' name='date' id='member') Chọn người ở
+                                                button.form-control(type='button' name='date' id='member' data-toggle="modal" data-target="#memberPopup") Chọn người ở
                                                 svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
                                                     path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
 
+                                            include jades/blocks/_memberPopup
                                         .vntSearch__btn
                                             button.btn(type='button' onclick="location.href='hotelList.html';") Tìm kiếm
                     .vntHome__body
@@ -313,12 +317,48 @@ html(lang="vi")
                                             p.hotelCard__price
                                                 | Chỉ từ
                                                 span 100.455.606 ₫/đêm
+
         script(src="js/libs/jquery.min.js")
         script(src="js/libs/slick.min.js")
         script(src="js/main.js")
         script.
             $('.nav-sub').click(function () {
                 $(this).toggleClass('open');
+            });
+        script.
+            // vntSearch hotel
+            $(".placeInput .form-control").click(function () {
+                $(this).parents('.placeInput').find('.suggestDefault').addClass('open');
+            });
+            $(document).mouseup(function (e) {
+                var suggestDefault = $('.suggestDefault');
+                if (!suggestDefault.is(e.target) && suggestDefault.has(e.target).length === 0) {
+                    $('.suggestDefault').removeClass('open');
+                };
+            });
+            $(".placeInput .form-control").on('input', function () {
+                $(this).parents('.placeInput').find('.suggestDefault').removeClass('open');
+                $(this).parents('.placeInput').find('.suggestPlace').addClass('open');
+            });
+            $(document).mouseup(function (e) {
+                var suggestPlace = $('.suggestPlace');
+                if (!suggestPlace.is(e.target) && suggestPlace.has(e.target).length === 0) {
+                    $('.suggestPlace').removeClass('open');
+                };
+            });
+        script.
+            function close_addForm() {
+                $('.addForm__cont.open').removeClass('open');
+            };
+
+            $(".addForm__btn").click(function () {
+                var formCollapse = $(this).next('.addForm__cont');
+                if (formCollapse.is('.open')) {
+                    close_addForm();
+                } else {
+                    close_addForm();
+                    formCollapse.addClass('open');
+                }
             });
 
 

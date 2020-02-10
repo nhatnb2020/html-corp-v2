@@ -65,6 +65,17 @@
           display: flex;
           justify-content: center;
         }
+        > .checkbox{
+          justify-content: center;
+          label{
+            width: 16px;
+            height: 16px;
+            padding: 0;
+          }
+          input[type="checkbox"] + label:before {
+            top:0;
+          }
+        }
       }
     }
   }

@@ -363,3 +363,31 @@
     }
   }
 }
+.flightTotal{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 16px 0;
+  &__price{
+    text-align: right;
+    padding-right: 24px;
+    p{
+      margin-bottom: 0;
+      &.p1{
+        font-size: 14px;
+        span{
+          color: #1890FF;
+          padding-left: 5px;
+        }
+      }
+      &.p2{
+        font-size: 12px;
+      }
+    }
+  }
+  &__btn{
+    .btn{
+      width: 150px;
+    }
+  }
+}
