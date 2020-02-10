@@ -1,0 +1,10 @@
+.vntCheckout{
+  display: flex;
+  &__left{
+    width: calc(100% - 386px);
+  }
+  &__right{
+    width: 386px;
+    padding-left: 15px;
+  }
+}

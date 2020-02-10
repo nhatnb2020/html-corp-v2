@@ -1,0 +1,71 @@
+.vntStep{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 31px 15px;
+  margin-bottom: 16px;
+  &__item{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+    &:after{
+      content: '';
+      width: 120px;
+      height: 1px;
+      background-color: #e8e8e8;
+      margin: 0 15px;
+    }
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+    &.active{
+      &:after{
+        background-color: $yellow-2;
+      }
+      .vntStep{
+        &__numb{
+          background-color: $yellow-2;
+          color: #fff;
+          border-color: $yellow-2;
+        }
+        &__text{
+          color: #282828;
+          font-weight: 500;
+        }
+      }
+
+    }
+    &.visited{
+      &:after{
+        background-color: $yellow-2;
+      }
+      .vntStep{
+        &__numb{
+          color: $yellow-2;
+          border-color: $yellow-2;
+        }
+        &__text{
+          color: #282828;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  &__numb{
+    width: 32px;
+    height: 32px;
+    color: #BFBFBF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #bfbfbf;
+  }
+  &__text{
+    color: #8c8c8c;
+    padding-left: 8px;
+  }
+}
