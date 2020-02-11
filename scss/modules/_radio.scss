@@ -16,8 +16,6 @@
     }
     &:active{color:$yellow-2; }
   }
-
-
   input[type="radio"] + label:before {
     content: "";
     width: 16px;
@@ -35,6 +33,20 @@
     border: 3px solid #fff;
     box-shadow: 0 0 0 1px #1890FF;
     background: #1890FF;
+  }
+  &.radio_lg{
+    label{
+      padding-left: 40px;
+      line-height: 1.5;
+    }
+    input[type="radio"] + label:before {
+      width: 24px;
+      height: 24px;
+      top:0;
+    }
+    input[type="radio"]:checked + label:before {
+      border-width: 7px;
+    }
   }
 }
 .radioInline{
