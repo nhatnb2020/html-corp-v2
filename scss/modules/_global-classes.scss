@@ -240,6 +240,9 @@
   &__checkout{
     text-align: center;
     padding: 30px 15px;
+    > img{
+      width: 240px;
+    }
     p{
       font-size: 14px;
       &.p1{
