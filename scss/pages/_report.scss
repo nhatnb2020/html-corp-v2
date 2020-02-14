@@ -16,13 +16,15 @@
   }
   &__title{
     display: flex;
+    align-items: center;
     padding-bottom: 16px;
     .heading2{
       padding-right: 16px;
+      font-size: 16px;
     }
     .dropdownGroup{
       .dropdown{
-        width: 138px;
+        width: 120px;
       }
     }
   }
