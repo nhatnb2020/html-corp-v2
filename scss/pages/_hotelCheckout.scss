@@ -1,0 +1,45 @@
+.btnCheckin{
+  width: 255px;
+}
+.checkinInfo{
+  display: none;
+  &.open{
+    display: block;
+  }
+  &__name{
+    font-size: 16px;
+    font-weight: 500;
+    color: #262626;
+  }
+  ul{
+    margin-bottom: 15px;
+    li{
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      padding-bottom: 5px;
+      span{
+        &:first-child{
+          width: 100px;
+        }
+        &:last-child{
+          width: calc(100% - 100px);
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  button{
+    font-size: 14px;
+    color: #096DD9;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    &:hover{
+      text-decoration: underline;
+    }
+    span{
+      padding-left: 6px;
+    }
+  }
+}

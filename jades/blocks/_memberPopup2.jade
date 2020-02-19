@@ -1,0 +1,171 @@
+#memberPopup.modal.fade(role='dialog')
+    .modal-dialog.modal-member
+        .modal-content
+            .modal-header
+                h5.modal-title Chọn người nhận
+                button.modal-close(data-dismiss='modal')
+                    svg(width='10', height='12', viewBox='0 0 10 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M5.8095 6L9.91106 1.11094C9.97981 1.02969 9.922 0.90625 9.81575 0.90625H8.56888C8.49544 0.90625 8.42512 0.939062 8.37669 0.995312L4.99388 5.02813L1.61106 0.995312C1.56419 0.939062 1.49388 0.90625 1.41888 0.90625H0.172C0.0657503 0.90625 0.00793765 1.02969 0.0766877 1.11094L4.17825 6L0.0766877 10.8891C0.061287 10.9072 0.0514069 10.9293 0.04822 10.9529C0.0450331 10.9764 0.0486732 11.0004 0.0587085 11.022C0.0687439 11.0435 0.0847529 11.0617 0.104835 11.0745C0.124916 11.0872 0.148227 11.0939 0.172 11.0938H1.41888C1.49231 11.0938 1.56263 11.0609 1.61106 11.0047L4.99388 6.97188L8.37669 11.0047C8.42356 11.0609 8.49388 11.0938 8.56888 11.0938H9.81575C9.922 11.0938 9.97981 10.9703 9.91106 10.8891L5.8095 6Z', fill='#262626')
+
+            .modal-body
+                .vntMember__table
+                    table.table
+                        thead
+                            tr
+                                th &nbsp;
+                                th
+                                    .dropdown.dropdown_form
+                                        button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                            span Họ và tên
+                                            svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M13.2125 12.3516L9.15469 8.29375C9.78438 7.47969 10.125 6.48438 10.125 5.4375C10.125 4.18438 9.63594 3.00937 8.75156 2.12344C7.86719 1.2375 6.68906 0.75 5.4375 0.75C4.18594 0.75 3.00781 1.23906 2.12344 2.12344C1.2375 3.00781 0.75 4.18438 0.75 5.4375C0.75 6.68906 1.23906 7.86719 2.12344 8.75156C3.00781 9.6375 4.18438 10.125 5.4375 10.125C6.48438 10.125 7.47813 9.78438 8.29219 9.15625L12.35 13.2125C12.3619 13.2244 12.376 13.2338 12.3916 13.2403C12.4071 13.2467 12.4238 13.2501 12.4406 13.2501C12.4575 13.2501 12.4741 13.2467 12.4897 13.2403C12.5052 13.2338 12.5194 13.2244 12.5312 13.2125L13.2125 12.5328C13.2244 12.5209 13.2338 12.5068 13.2403 12.4912C13.2467 12.4757 13.2501 12.459 13.2501 12.4422C13.2501 12.4254 13.2467 12.4087 13.2403 12.3931C13.2338 12.3776 13.2244 12.3635 13.2125 12.3516ZM7.9125 7.9125C7.25 8.57344 6.37187 8.9375 5.4375 8.9375C4.50312 8.9375 3.625 8.57344 2.9625 7.9125C2.30156 7.25 1.9375 6.37187 1.9375 5.4375C1.9375 4.50312 2.30156 3.62344 2.9625 2.9625C3.625 2.30156 4.50312 1.9375 5.4375 1.9375C6.37187 1.9375 7.25156 2.3 7.9125 2.9625C8.57344 3.625 8.9375 4.50312 8.9375 5.4375C8.9375 6.37187 8.57344 7.25156 7.9125 7.9125Z', fill='#8C8C8C')
+
+                                        ul.dropdown-menu
+                                            li.dropdown-item
+                                                .input-inline
+                                                    input.form-control(type='text')
+                                                    svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M13.2125 12.3516L9.15469 8.29375C9.78438 7.47969 10.125 6.48438 10.125 5.4375C10.125 4.18438 9.63594 3.00937 8.75156 2.12344C7.86719 1.2375 6.68906 0.75 5.4375 0.75C4.18594 0.75 3.00781 1.23906 2.12344 2.12344C1.2375 3.00781 0.75 4.18438 0.75 5.4375C0.75 6.68906 1.23906 7.86719 2.12344 8.75156C3.00781 9.6375 4.18438 10.125 5.4375 10.125C6.48438 10.125 7.47813 9.78438 8.29219 9.15625L12.35 13.2125C12.3619 13.2244 12.376 13.2338 12.3916 13.2403C12.4071 13.2467 12.4238 13.2501 12.4406 13.2501C12.4575 13.2501 12.4741 13.2467 12.4897 13.2403C12.5052 13.2338 12.5194 13.2244 12.5312 13.2125L13.2125 12.5328C13.2244 12.5209 13.2338 12.5068 13.2403 12.4912C13.2467 12.4757 13.2501 12.459 13.2501 12.4422C13.2501 12.4254 13.2467 12.4087 13.2403 12.3931C13.2338 12.3776 13.2244 12.3635 13.2125 12.3516ZM7.9125 7.9125C7.25 8.57344 6.37187 8.9375 5.4375 8.9375C4.50312 8.9375 3.625 8.57344 2.9625 7.9125C2.30156 7.25 1.9375 6.37187 1.9375 5.4375C1.9375 4.50312 2.30156 3.62344 2.9625 2.9625C3.625 2.30156 4.50312 1.9375 5.4375 1.9375C6.37187 1.9375 7.25156 2.3 7.9125 2.9625C8.57344 3.625 8.9375 4.50312 8.9375 5.4375C8.9375 6.37187 8.57344 7.25156 7.9125 7.9125Z', fill='#8C8C8C')
+                                                .btnInline
+                                                    button.btn.btn_sm(type='button') Tìm kiếm
+                                                    button.btn.btn_sm.btn_outline(type='button') Hủy bỏ
+                                th
+                                    .dropdown
+                                        button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                            span Chi nhánh & bộ phận
+                                            svg(width='14', height='12', viewBox='0 0 14 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M4.45307 11.0938C4.45307 11.3703 4.67494 11.5938 4.94994 11.5938H9.04994C9.32494 11.5938 9.54681 11.3703 9.54681 11.0938V8.03125H4.45307V11.0938ZM12.7515 0.40625H1.24838C0.865565 0.40625 0.626503 0.823438 0.81869 1.15625L4.2765 7.03125H9.7265L13.1843 1.15625C13.3734 0.823438 13.1343 0.40625 12.7515 0.40625Z', fill='#8C8C8C')
+
+                                        ul.dropdown-menu
+                                            li.dropdown-item
+                                                .checkbox
+                                                    input#cn1(type='checkbox')
+                                                    label(for='cn1') Hà Nội
+
+
+                                            li.dropdown-item
+                                                .checkbox
+                                                    input#cn2(type='checkbox')
+                                                    label(for='cn2') Đà Nẵng
+
+
+                                            li.dropdown-item
+                                                .checkbox
+                                                    input#cn3(type='checkbox')
+                                                    label(for='cn3') Tp Hồ Chí Minh
+
+
+                                            li.dropdown-item
+                                                .checkbox
+                                                    input#cn4(type='checkbox')
+                                                    label(for='cn4') Nha Trang
+
+                                th
+                                    .dropdown
+                                        button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                            span Chức vụ
+                                            svg(width='14', height='12', viewBox='0 0 14 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M4.45307 11.0938C4.45307 11.3703 4.67494 11.5938 4.94994 11.5938H9.04994C9.32494 11.5938 9.54681 11.3703 9.54681 11.0938V8.03125H4.45307V11.0938ZM12.7515 0.40625H1.24838C0.865565 0.40625 0.626503 0.823438 0.81869 1.15625L4.2765 7.03125H9.7265L13.1843 1.15625C13.3734 0.823438 13.1343 0.40625 12.7515 0.40625Z', fill='#8C8C8C')
+
+                                        ul.dropdown-menu
+                                            li.dropdown-item
+                                                .checkbox
+                                                    input#cv1(type='checkbox')
+                                                    label(for='cv1') Tất cả
+
+
+                                            li.dropdown-item
+                                                .checkbox
+                                                    input#cv2(type='checkbox')
+                                                    label(for='cv2') Tổng giám đốc
+
+
+                                            li.dropdown-item
+                                                .checkbox
+                                                    input#cv3(type='checkbox')
+                                                    label(for='cv3') Phó giám đốc
+
+
+                                            li.dropdown-item
+                                                .checkbox
+                                                    input#cv4(type='checkbox')
+                                                    label(for='cv4') Trưởng phòng
+
+
+                        tbody
+                            tr
+                                td
+                                    .checkbox
+                                        input#member1(type='checkbox')
+                                        label(for='member1')
+
+                                td
+                                    p.p1 Nguyễn Thanh Tuấn
+                                    p.p2 nguyenvana@gmail.com | 0982433361
+
+
+                                td
+                                    p.p1 be Sài Gòn
+                                    p.p2 Product
+
+                                td
+                                    p.p1 Product Designer
+
+                            tr
+                                td
+                                    .checkbox
+                                        input#member2(type='checkbox')
+                                        label(for='member2')
+
+                                td
+                                    p.p1 Nguyễn Thanh Tuấn
+                                    p.p2 nguyenvana@gmail.com | 0982433361
+
+
+                                td
+                                    p.p1 be Sài Gòn
+                                    p.p2 Product
+
+                                td
+                                    p.p1 Product Designer
+
+                            tr
+                                td
+                                    .checkbox
+                                        input#member3(type='checkbox')
+                                        label(for='member3')
+
+                                td
+                                    p.p1 Nguyễn Thanh Tuấn
+                                    p.p2 nguyenvana@gmail.com | 0982433361
+
+
+                                td
+                                    p.p1 be Sài Gòn
+                                    p.p2 Product
+
+                                td
+                                    p.p1 Product Designer
+
+                            tr
+                                td
+                                    .checkbox
+                                        input#member4(type='checkbox')
+                                        label(for='member4')
+
+                                td
+                                    p.p1 Nguyễn Thanh Tuấn
+                                    p.p2 nguyenvana@gmail.com | 0982433361
+
+
+                                td
+                                    p.p1 be Sài Gòn
+                                    p.p2 Product
+
+                                td
+                                    p.p1 Product Designer
+
+            .modal-footer
+                .modal-btn
+                    button.btn.btn_outline.w100(type='button') Huỷ
+                    button.btn.w100#btnAdd(type='button' data-dismiss='modal') Thêm
