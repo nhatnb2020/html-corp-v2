@@ -278,6 +278,12 @@
 
 .modal-dialog.modal-member{
   width: 734px;
+  .modal-title{
+    span{
+      font-weight: 400;
+      padding-left: 10px;
+    }
+  }
   .vntMember{
     &__table{
       margin-bottom: 16px;

@@ -43,3 +43,71 @@
     }
   }
 }
+.roomInfo{
+  margin-bottom: 30px;
+  &__title{
+    font-size: 14px;
+    color: #262626;
+    font-weight: 500;
+
+  }
+  &__item{
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 15px;
+    p{
+      &.p1{
+        font-size: 16px;
+        font-weight: 500;
+        color: #262626;
+      }
+    }
+    .form-group{
+      margin-bottom: 0;
+      margin-top: 15px;
+      > label{
+        color: #000;
+        font-weight: 500;
+      }
+    }
+    .formText{
+      display: none;
+      animation: opacityShow .3s ease-in-out;
+      &.open{
+        display: block;
+      }
+    }
+    > .vntMember__table{
+        margin-top: 15px;
+    }
+  }
+  &__radio{
+    margin-bottom: 10px;
+    .radio{
+      margin-bottom: 3px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__btn{
+    font-size: 14px;
+    color: #096DD9;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    &:hover{
+      text-decoration: underline;
+    }
+    span{
+      padding-left: 8px;
+    }
+  }
+}
+.formText{
+  margin: 15px 0;
+  textarea{
+    height: 64px;
+  }
+}
