@@ -272,6 +272,16 @@
     &::-webkit-scrollbar-thumb:hover {
       background: #bcbcbc;
     }
+    .pGoogle{
+      text-align: right;
+      margin-bottom: 0;
+      font-size: 14px;
+      padding: 5px 15px;
+      border-top: 1px solid $border-color;
+      strong {
+        padding-left: 5px;
+      }
+    }
   }
 
 }
