@@ -153,7 +153,10 @@ html(lang="vi")
                                     li.dropdown-item Người đi
                                     li.dropdown-item Người đặt
                         .form-group
-                            label Trạng thái
+                            .checkbox
+                                input#send(type='checkbox')
+                                label(for='send') Gửi xác nhận
+                        .form-group
                             .btnSwitch
                                 label.switch
                                     input(type='checkbox', checked='')
