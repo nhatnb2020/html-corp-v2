@@ -131,6 +131,96 @@
 .dateInput{
   width: 330px;
 }
+.suggestFlight{
+  &__header{
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    h5{
+      font-size: 12px;
+      line-height: 16px;
+      color: #878787;
+      font-weight: 400;
+    }
+  }
+  &__body{
+    display: flex;
+  }
+  &__tab{
+    width: 180px;
+    li{
+      width: 100%;
+      &:last-child{
+        button{
+          border: none;
+        }
+      }
+      &.active{
+        button{
+          background: #fff;
+          font-weight: 600;
+          border-right: 1px solid $border-color;
+        }
+      }
+      button{
+        background: #FDB913;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 19px;
+        color: $text-color;
+        display: block;
+        padding: 15px;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+  &__content{
+    width: calc(100% - 180px);
+    max-height: 249px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      width:5px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: #f2f2f2;
+      border-radius: 16px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background:#bcbcbc;
+      border-radius: 16px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+    }
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    li{
+      width: 33.333%;
+      button{
+        font-size: 14px;
+        line-height: 19px;
+        padding: 10px 15px;
+        width: 100%;
+        text-align: left;
+        transition: all .2s;
+        &:hover{
+          color: #FDB913;
+        }
+      }
+    }
+  }
+}
 .memberBtn{
   width: 200px;
 }
@@ -177,6 +267,11 @@
     color: #262626;
     font-weight: 500;
     padding: 12px;
+  }
+  &.suggestDefault{
+    &_flight{
+      width: 760px;
+    }
   }
 }
 .listPlace{
