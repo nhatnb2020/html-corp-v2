@@ -78,7 +78,7 @@
         </div>
       </aside>
       <main class="main">
-        <section class="vntContent hotelCheckout2">
+        <section class="vntContent hotelCheckout3">
           <div class="vntStep">
             <div class="vntStep__item visited"><span class="vntStep__numb">1</span><span class="vntStep__text">Thông tin đặt phòng</span></div>
             <div class="vntStep__item active"><span class="vntStep__numb">2</span><span class="vntStep__text">Thanh toán</span></div>
@@ -86,77 +86,126 @@
           </div>
           <div class="vntCheckout">
             <div class="vntCheckout__left">
-              <h2 class="heading2">Chọn hình thức thanh toán</h2>
+              <h2 class="heading2">Hướng dẫn chuyển khoản</h2>
               <div class="vntCheckout__box">
-                <div class="payments">
-                  <div class="payments__item">
-                    <div class="radio radio_lg">
-                      <input type="radio" id="pm1" name="payments">
-                      <label for="pm1">
-                        <p class="p1">Thanh toán công nợ</p>
-                        <p class="p2">Mô tả thanh toán công nợ sẽ đc ghi ở đây</p>
-                      </label>
+                <p class="pTitle">Chọn ngân hàng</p>
+                <ul class="listBank">
+                  <li class="listBank__item active">
+                    <button type="button" class="listBank__btn"><img src="https://statics.vntrip.vn/images/logo/mbbank.png">
+                      <p>MBbank</p>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z" fill="#FA8C16"></path>
+                        <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="listBank__item">
+                    <button type="button" class="listBank__btn"><img src="https://statics.vntrip.vn/images/logo/sacombank.png">
+                      <p>Sacombank</p>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z" fill="#FA8C16"></path>
+                        <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="listBank__item">
+                    <button type="button" class="listBank__btn"><img src="https://statics.vntrip.vn/images/logo/techcombank.png">
+                      <p>Techcombank</p>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z" fill="#FA8C16"></path>
+                        <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="listBank__item">
+                    <button type="button" class="listBank__btn"><img src="https://statics.vntrip.vn/images/logo/agribank.png">
+                      <p>Agribank</p>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z" fill="#FA8C16"></path>
+                        <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="listBank__item">
+                    <button type="button" class="listBank__btn"><img src="https://statics.vntrip.vn/images/logo/bidv.png">
+                      <p>BIDV</p>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z" fill="#FA8C16"></path>
+                        <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="listBank__item">
+                    <button type="button" class="listBank__btn"><img src="https://statics.vntrip.vn/images/logo/vpbank.png">
+                      <p>VPBank</p>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z" fill="#FA8C16"></path>
+                        <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="listBank__item">
+                    <button type="button" class="listBank__btn"><img src="https://statics.vntrip.vn/images/logo/viettinbank.png">
+                      <p>Vietinbank</p>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z" fill="#FA8C16"></path>
+                        <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </li>
+                  <li class="listBank__item">
+                    <button type="button" class="listBank__btn"><img src="https://statics.vntrip.vn/images/logo/vietcombank.png">
+                      <p>Vietcombank</p>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z" fill="#FA8C16"></path>
+                        <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="white"></path>
+                      </svg>
+                    </button>
+                  </li>
+                </ul>
+                <p class="pTitle">Vui lòng chuyển khoản theo thông tin</p>
+                <div class="bankInfo">
+                  <ul class="bankInfo__list">
+                    <li>
+                      <p class="p1">Số tài khoản:</p>
+                      <p class="p2">126940386
+                        <button type="button" class="btnCopy">
+                          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 0H2.625C2.55625 0 2.5 0.05625 2.5 0.125V1C2.5 1.06875 2.55625 1.125 2.625 1.125H10.375V11.875C10.375 11.9438 10.4312 12 10.5 12H11.375C11.4438 12 11.5 11.9438 11.5 11.875V0.5C11.5 0.223437 11.2766 0 11 0ZM9 2H1C0.723437 2 0.5 2.22344 0.5 2.5V10.7922C0.5 10.925 0.553125 11.0516 0.646875 11.1453L3.35469 13.8531C3.38906 13.8875 3.42813 13.9156 3.47031 13.9391V13.9688H3.53594C3.59062 13.9891 3.64844 14 3.70781 14H9C9.27656 14 9.5 13.7766 9.5 13.5V2.5C9.5 2.22344 9.27656 2 9 2ZM3.46875 12.3781L2.12344 11.0312H3.46875V12.3781ZM8.375 12.875H4.46875V10.6562C4.46875 10.3109 4.18906 10.0312 3.84375 10.0312H1.625V3.125H8.375V12.875Z" fill="#595959"></path>
+                          </svg>
+                        </button>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="p1">Ngân hàng:</p>
+                      <p class="p2">VPBank – Ngân hàng Việt Nam Thịnh Vượng</p>
+                    </li>
+                    <li>
+                      <p class="p1">Chi nhánh:</p>
+                      <p class="p2">Hà Thành</p>
+                    </li>
+                    <li>
+                      <p class="p1">Tên chủ tài khoản:</p>
+                      <p class="p2">Công ty TNHH VNTRIP OTA</p>
+                    </li>
+                    <li>
+                      <p class="p1">Nội dung chuyển khoản:</p>
+                      <p class="p2">VNTRIP2020C0VUZ
+                        <button type="button" class="btnCopy">
+                          <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 0H2.625C2.55625 0 2.5 0.05625 2.5 0.125V1C2.5 1.06875 2.55625 1.125 2.625 1.125H10.375V11.875C10.375 11.9438 10.4312 12 10.5 12H11.375C11.4438 12 11.5 11.9438 11.5 11.875V0.5C11.5 0.223437 11.2766 0 11 0ZM9 2H1C0.723437 2 0.5 2.22344 0.5 2.5V10.7922C0.5 10.925 0.553125 11.0516 0.646875 11.1453L3.35469 13.8531C3.38906 13.8875 3.42813 13.9156 3.47031 13.9391V13.9688H3.53594C3.59062 13.9891 3.64844 14 3.70781 14H9C9.27656 14 9.5 13.7766 9.5 13.5V2.5C9.5 2.22344 9.27656 2 9 2ZM3.46875 12.3781L2.12344 11.0312H3.46875V12.3781ZM8.375 12.875H4.46875V10.6562C4.46875 10.3109 4.18906 10.0312 3.84375 10.0312H1.625V3.125H8.375V12.875Z" fill="#595959"></path>
+                          </svg>
+                        </button>
+                      </p>
+                    </li>
+                  </ul>
+                  <div class="bankInfo__flex">
+                    <div class="bankInfo__price"><span class="span1">Số tiền bạn cần phải chuyển khoản</span><span class="span2">16.000.000 ₫</span></div>
+                    <div class="bankInfo__btn">
+                      <button type="button" onclick="location.href='flightCheckout4.html';" class="btn btn_lg">Tôi đã thanh toán xong</button>
                     </div>
                   </div>
-                  <div class="payments__item">
-                    <div class="radio radio_lg">
-                      <input type="radio" id="pm2" name="payments">
-                      <label for="pm2">
-                        <p class="p1">Thanh toán trực tiếp</p>
-                        <p class="p2">Bằng các phương thức chuyển khoản, ví điện tử Momo, ví điện tử AirPay</p>
-                      </label>
-                    </div>
-                    <ul class="payments__child">
-                      <li>
-                        <div class="radio radio_lg">
-                          <input type="radio" id="pmc1" name="paymentsChild">
-                          <label for="pmc1">
-                            <div class="payments__logo"><img src="https://statics.vntrip.vn/images/checkout/i-airpay.png"></div>
-                            <div class="payments__text">
-                              <p class="p1">Thanh toán bằng ví Airpay</p>
-                              <p class="p2">Quý khách vui lòng cài app AirPay trước khi chọn hình thức này để thuận tiện cho việc thanh toán.</p>
-                            </div>
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio radio_lg">
-                          <input type="radio" id="pmc2" name="paymentsChild">
-                          <label for="pmc2">
-                            <div class="payments__logo"><img src="https://statics.vntrip.vn/images/checkout/i-zalopay.png"></div>
-                            <div class="payments__text">
-                              <p class="p1">Thanh toán bằng ví ZaloPay</p>
-                              <p class="p2">Quý khách vui lòng cài app Zalopay trước khi chọn hình thức thanh toán này để thuận lợi việc thanh toán</p>
-                            </div>
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio radio_lg">
-                          <input type="radio" id="pmc3" name="paymentsChild">
-                          <label for="pmc3">
-                            <div class="payments__logo"><img src="https://statics.vntrip.vn/images/checkout/i-momo.png"></div>
-                            <div class="payments__text">
-                              <p class="p1">Thanh toán bằng ví MoMo</p>
-                              <p class="p2">Mô tả phương thức thanh toán</p>
-                            </div>
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio radio_lg">
-                          <input type="radio" id="pmc4" name="paymentsChild">
-                          <label for="pmc4">
-                            <div class="payments__logo"><img src="https://statics.vntrip.vn/images/checkout/i-domestic.png"></div>
-                            <div class="payments__text">
-                              <p class="p1">Thanh toán bằng thẻ ATM nội địa</p>
-                              <p class="p2">Quý khách vui lòng cài app MoMo trước khi chọn hình thức này để thuận tiện cho việc thanh toán.</p>
-                            </div>
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                  <p class="bankInfo__note"><strong>LƯU Ý!</strong>Chuyển số tiền chính xác 16.000.000₫ trong mọi trường hợp</p>
                 </div>
               </div>
             </div>

@@ -1,4 +1,4 @@
-- var page = "hotelCheckout2";
+- var page = "hotelCheckout3";
 doctype html
 html(lang="vi")
     head
@@ -84,7 +84,7 @@ html(lang="vi")
                             path(d='M10.0247 0.951563C10.0056 0.941926 9.98433 0.937363 9.96294 0.938312C9.94154 0.939262 9.92075 0.945691 9.90256 0.956985C9.88436 0.968278 9.86938 0.984056 9.85903 1.00281C9.84869 1.02156 9.84333 1.04265 9.84348 1.06406V2.06719C9.84348 2.15313 9.88879 2.23281 9.96067 2.27969C10.313 2.50146 10.6391 2.76251 10.9325 3.05781C11.4435 3.57031 11.845 4.16563 12.1247 4.82812C12.414 5.51396 12.5622 6.25098 12.5607 6.99531C12.5607 7.74688 12.4138 8.47656 12.1247 9.1625C11.8454 9.82404 11.4405 10.4252 10.9325 10.9328C10.4263 11.4421 9.82545 11.8476 9.16379 12.1266C8.47942 12.4172 7.74973 12.5641 6.99973 12.5641C6.24973 12.5641 5.52004 12.4172 4.83567 12.1266C4.17401 11.8476 3.57319 11.4421 3.06692 10.9328C2.55895 10.4252 2.1541 9.82404 1.87473 9.1625C1.58549 8.47667 1.43723 7.73964 1.43879 6.99531C1.43879 6.24375 1.58567 5.51406 1.87473 4.82812C2.15442 4.16563 2.55598 3.57031 3.06692 3.05781C3.36379 2.76094 3.68879 2.50156 4.03879 2.27969C4.11223 2.23437 4.15598 2.15313 4.15598 2.06719V1.0625C4.15598 0.96875 4.05754 0.909375 3.97473 0.95C1.78879 2.05 0.280982 4.30156 0.249732 6.91094C0.205982 10.6422 3.25754 13.7422 6.98723 13.75C10.7216 13.7578 13.7497 10.7297 13.7497 6.99375C13.7497 4.35 12.2341 2.06094 10.0247 0.951563ZM6.49973 7.75H7.49973C7.56848 7.75 7.62473 7.69375 7.62473 7.625V0.375C7.62473 0.30625 7.56848 0.25 7.49973 0.25H6.49973C6.43098 0.25 6.37473 0.30625 6.37473 0.375V7.625C6.37473 7.69375 6.43098 7.75 6.49973 7.75Z', fill='#595959')
                         span Đăng xuất
             main.main
-                section.vntContent.hotelCheckout2
+                section.vntContent.hotelCheckout3
                     .vntStep
                         .vntStep__item.visited
                             span.vntStep__numb 1
@@ -97,62 +97,117 @@ html(lang="vi")
                             span.vntStep__text Hoàn tất
                     .vntCheckout
                         .vntCheckout__left
-                            h2.heading2 Chọn hình thức thanh toán
+                            h2.heading2 Hướng dẫn chuyển khoản
                             .vntCheckout__box
-                                .payments
-                                    .payments__item
-                                        .radio.radio_lg
-                                            input(type='radio' id='pm1' name='payments')
-                                            label(for='pm1')
-                                                p.p1 Thanh toán công nợ
-                                                p.p2 Mô tả thanh toán công nợ sẽ đc ghi ở đây
-                                    .payments__item
-                                        .radio.radio_lg
-                                            input(type='radio' id='pm2' name='payments')
-                                            label(for='pm2')
-                                                p.p1 Thanh toán trực tiếp
-                                                p.p2 Bằng các phương thức chuyển khoản, ví điện tử Momo, ví điện tử AirPay
-                                        ul.payments__child
-                                            li
-                                                .radio.radio_lg
-                                                    input(type='radio' id='pmc1' name='paymentsChild')
-                                                    label(for='pmc1')
-                                                        .payments__logo
-                                                            img(src='https://statics.vntrip.vn/images/checkout/i-airpay.png')
-                                                        .payments__text
-                                                            p.p1 Thanh toán bằng ví Airpay
-                                                            p.p2 Quý khách vui lòng cài app AirPay trước khi chọn hình thức này để thuận tiện cho việc thanh toán.
+                                p.pTitle Chọn ngân hàng
+                                ul.listBank
+                                    li.listBank__item.active
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/mbbank.png')
+                                            p MBbank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
 
-                                            li
-                                                .radio.radio_lg
-                                                    input(type='radio' id='pmc2' name='paymentsChild')
-                                                    label(for='pmc2')
-                                                        .payments__logo
-                                                            img(src='https://statics.vntrip.vn/images/checkout/i-zalopay.png')
-                                                        .payments__text
-                                                            p.p1 Thanh toán bằng ví ZaloPay
-                                                            p.p2 Quý khách vui lòng cài app Zalopay trước khi chọn hình thức thanh toán này để thuận lợi việc thanh toán
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/sacombank.png')
+                                            p Sacombank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
 
-                                            li
-                                                .radio.radio_lg
-                                                    input(type='radio' id='pmc3' name='paymentsChild')
-                                                    label(for='pmc3')
-                                                        .payments__logo
-                                                            img(src='https://statics.vntrip.vn/images/checkout/i-momo.png')
-                                                        .payments__text
-                                                            p.p1 Thanh toán bằng ví MoMo
-                                                            p.p2 Mô tả phương thức thanh toán
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/techcombank.png')
+                                            p Techcombank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
 
-                                            li
-                                                .radio.radio_lg
-                                                    input(type='radio' id='pmc4' name='paymentsChild')
-                                                    label(for='pmc4')
-                                                        .payments__logo
-                                                            img(src='https://statics.vntrip.vn/images/checkout/i-domestic.png')
-                                                        .payments__text
-                                                            p.p1 Thanh toán bằng thẻ ATM nội địa
-                                                            p.p2 Quý khách vui lòng cài app MoMo trước khi chọn hình thức này để thuận tiện cho việc thanh toán.
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/agribank.png')
+                                            p Agribank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
 
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/bidv.png')
+                                            p BIDV
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/vpbank.png')
+                                            p VPBank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/viettinbank.png')
+                                            p Vietinbank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/vietcombank.png')
+                                            p Vietcombank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+
+                                p.pTitle Vui lòng chuyển khoản theo thông tin
+                                .bankInfo
+                                    ul.bankInfo__list
+                                        li
+                                            p.p1 Số tài khoản:
+                                            p.p2
+                                                | 126940386
+                                                button.btnCopy(type='button')
+                                                    svg(width='12', height='14', viewBox='0 0 12 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M11 0H2.625C2.55625 0 2.5 0.05625 2.5 0.125V1C2.5 1.06875 2.55625 1.125 2.625 1.125H10.375V11.875C10.375 11.9438 10.4312 12 10.5 12H11.375C11.4438 12 11.5 11.9438 11.5 11.875V0.5C11.5 0.223437 11.2766 0 11 0ZM9 2H1C0.723437 2 0.5 2.22344 0.5 2.5V10.7922C0.5 10.925 0.553125 11.0516 0.646875 11.1453L3.35469 13.8531C3.38906 13.8875 3.42813 13.9156 3.47031 13.9391V13.9688H3.53594C3.59062 13.9891 3.64844 14 3.70781 14H9C9.27656 14 9.5 13.7766 9.5 13.5V2.5C9.5 2.22344 9.27656 2 9 2ZM3.46875 12.3781L2.12344 11.0312H3.46875V12.3781ZM8.375 12.875H4.46875V10.6562C4.46875 10.3109 4.18906 10.0312 3.84375 10.0312H1.625V3.125H8.375V12.875Z', fill='#595959')
+
+                                        li
+                                            p.p1 Ngân hàng:
+                                            p.p2
+                                                | VPBank – Ngân hàng Việt Nam Thịnh Vượng
+
+                                        li
+                                            p.p1 Chi nhánh:
+                                            p.p2
+                                                | Hà Thành
+
+                                        li
+                                            p.p1 Tên chủ tài khoản:
+                                            p.p2
+                                                | Công ty TNHH VNTRIP OTA
+
+                                        li
+                                            p.p1 Nội dung chuyển khoản:
+                                            p.p2
+                                                | VNTRIP2020C0VUZ
+                                                button.btnCopy(type='button')
+                                                    svg(width='12', height='14', viewBox='0 0 12 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M11 0H2.625C2.55625 0 2.5 0.05625 2.5 0.125V1C2.5 1.06875 2.55625 1.125 2.625 1.125H10.375V11.875C10.375 11.9438 10.4312 12 10.5 12H11.375C11.4438 12 11.5 11.9438 11.5 11.875V0.5C11.5 0.223437 11.2766 0 11 0ZM9 2H1C0.723437 2 0.5 2.22344 0.5 2.5V10.7922C0.5 10.925 0.553125 11.0516 0.646875 11.1453L3.35469 13.8531C3.38906 13.8875 3.42813 13.9156 3.47031 13.9391V13.9688H3.53594C3.59062 13.9891 3.64844 14 3.70781 14H9C9.27656 14 9.5 13.7766 9.5 13.5V2.5C9.5 2.22344 9.27656 2 9 2ZM3.46875 12.3781L2.12344 11.0312H3.46875V12.3781ZM8.375 12.875H4.46875V10.6562C4.46875 10.3109 4.18906 10.0312 3.84375 10.0312H1.625V3.125H8.375V12.875Z', fill='#595959')
+                                    .bankInfo__flex
+                                        .bankInfo__price
+                                            span.span1 Số tiền bạn cần phải chuyển khoản
+                                            span.span2 16.000.000 ₫
+                                        .bankInfo__btn
+                                            button.btn.btn_lg(type='button' onclick="location.href='flightCheckout4.html';") Tôi đã thanh toán xong
+                                    p.bankInfo__note
+                                        strong LƯU Ý!
+                                        | Chuyển số tiền chính xác 16.000.000₫ trong mọi trường hợp
                         .vntCheckout__right
                             .hotelInfo
                                 .rateStar
