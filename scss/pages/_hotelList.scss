@@ -125,3 +125,57 @@
     width: 80px;
   }
 }
+.levelBox{
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  padding: 16px;
+  margin-bottom: 15px;
+  &__title{
+    font-size: 16px;
+    color: #262626;
+    font-weight: $medium;
+    margin-bottom: 8px;
+  }
+  ul{
+    li{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 5px;
+      &:last-child{
+        padding-bottom: 0;
+      }
+      p{
+        margin-bottom: 0;
+        font-size: 14px;
+        &.p1{}
+        &.p2{
+          font-weight: $medium;
+          color: #262626;
+        }
+      }
+    }
+  }
+}
+.soldOut{
+  background-color: #fff;
+  text-align: center;
+  padding: 100px 50px;
+  img{
+    width: 285px;
+    margin: auto;
+  }
+  p{
+    &.p1{
+      font-size: 24px;
+      color: #262626;
+      margin-bottom: 8px;
+      margin-top: 16px;
+      font-weight: $medium;
+    }
+    &.p2{
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+  }
+}
