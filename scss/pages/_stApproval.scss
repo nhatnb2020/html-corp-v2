@@ -1,0 +1,145 @@
+.stApproval{
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 24px;
+  }
+  &__left{
+    width: 220px;
+    padding-right: 20px;
+  }
+  &__right{
+    width: calc(100% - 220px);
+    padding-left: 20px;
+  }
+  &__name{
+    color: #262626;
+  }
+  .vntBox{
+    margin: 0 0 16px;
+    box-shadow: $shadow;
+  }
+}
+.stTitle{
+  font-size: 16px;
+  font-weight: $medium;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.stTab{
+  li{
+    margin-bottom: 16px;
+    &.active{
+      .btn{
+        color: $yellow-2;
+        border-color: $yellow-2;
+      }
+    }
+    .btn{
+      width: 100%;
+      font-weight: $regular;
+    }
+  }
+}
+.approvalInfo{
+  &__item{
+    padding: 16px 0;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid $border-color;
+    .d-block{
+      &:nth-child(1){
+        width: 40%;
+      }
+      &:nth-child(2){
+        width: 30%;
+      }
+      &:nth-child(3){
+        width: 25%;
+      }
+      &:nth-child(4){
+        width: 5%;
+        text-align: right;
+      }
+      p{
+        font-size: 14px;
+        color: #262626;
+        margin-bottom: 0;
+        &.p2{
+          color: #8c8c8c;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  &__add{
+    padding-bottom: 16px;
+    button{
+      font-size: 14px;
+      font-weight: $medium;
+      color: $yellow-2;
+    }
+  }
+}
+.objApply{
+  ul{
+    li{
+      padding: 16px 0;
+      border-bottom: 1px solid $border-color;
+      p{
+        font-size: 14px;
+        color: #1890FF;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.modal-dialog.popupMember{
+  width: 1154px;
+  .modal-body{
+    padding: 0;
+  }
+}
+.popupMember{
+  &__tab{
+    width: 154px;
+    border-right: 1px solid $border-color;
+    li{
+      &.active{
+        button{
+          color: $yellow-2;
+          font-weight: $medium;
+          border-left: 3px solid $yellow-2;
+        }
+      }
+      button{
+        font-size: 14px;
+        color: #8c8c8c;
+        padding: 8px 16px;
+        width: 100%;
+        border-bottom: 1px solid $border-color;
+        text-align: left;
+        &:hover{
+          color: $yellow-2;
+        }
+      }
+    }
+  }
+  &__group{
+    display: flex;
+  }
+  .vntTree{
+    width: 290px;
+    padding: 16px;
+  }
+  .vntMember{
+    &__table{
+      width: calc(100% - 444px);
+      padding-top: 16px;
+    }
+  }
+}

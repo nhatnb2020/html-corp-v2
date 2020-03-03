@@ -1,0 +1,103 @@
+.vntBox{
+  background-color: #fff;
+  margin: 15px;
+  padding: 15px;
+  position: relative;
+  &__checkout{
+    text-align: center;
+    padding: 50px;
+    > img{
+      width: 200px;
+    }
+    p{
+      font-size: 14px;
+      &.p1{
+        font-size: 24px;
+        color: #262626;
+        font-weight: 500;
+        margin-top: 30px;
+      }
+      &.p2{}
+      &.p3{
+        color: #1890FF;
+      }
+    }
+    .btnGroup{
+      width: 210px;
+      margin: 30px auto;
+      .btn{
+        display: block;
+
+        + .btn{
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  &__edit{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  &__btn{
+    .btn{
+      + .btn{
+        margin-left: 8px;
+      }
+    }
+  }
+  &__title{
+    font-size: 16px;
+    color: #262626;
+    font-weight: $medium;
+    margin: 0 -15px;
+    padding: 4px 15px 14px;
+    border-bottom: 1px solid $border-color;
+    min-height: 47px;
+  }
+  &__table{
+    margin: 0 -15px;
+    .d-row{
+      display: flex;
+      border-bottom: 1px solid $border-color;
+    }
+    .d-left{
+      border-right: 1px solid $border-color;
+      width: 200px;
+    }
+    .d-right{
+      width: calc(100% - 200px);
+      .d-block{
+        border-bottom: 1px solid $border-color;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+    .d-block{
+      padding: 15px;
+      p{
+        font-size: 14px;
+        font-weight: $medium;
+        margin-bottom: 0;
+        &.p2{
+          font-size: 12px;
+          color: #8c8c8c;
+          font-weight: $regular;
+        }
+      }
+    }
+  }
+  .radioInline{
+    .radio {
+      &.active {
+        cursor: not-allowed;
+
+        label {
+          pointer-events: none;
+          opacity: .6;
+        }
+      }
+    }
+  }
+}
