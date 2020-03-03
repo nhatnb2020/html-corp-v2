@@ -140,6 +140,20 @@
     &__table{
       width: calc(100% - 444px);
       padding-top: 16px;
+      border-left: 1px solid $border-color;
+      .pSelected{
+        padding-left: 16px;
+      }
     }
+  }
+}
+.stAddApproval{
+  .stApproval{
+    &__right{
+      padding-left: 0;
+    }
+  }
+  .vntBox{
+    margin: 0 0 15px;
   }
 }
