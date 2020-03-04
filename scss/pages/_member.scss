@@ -116,3 +116,21 @@
     }
   }
 }
+.memberDropdown{
+  position: relative;
+  &__cont{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background: #fff;
+    box-shadow: $shadow;
+    padding: 16px;
+    border-radius: 4px;
+    display: none;
+    &.open{
+      display: block;
+    }
+  }
+}
