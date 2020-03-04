@@ -166,9 +166,10 @@
   overflow: hidden!important;
 }
 
-.flex-group{
+.flexGroup{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .caret-down{
   position: relative;
@@ -269,4 +270,18 @@
   font-size: 14px;
   color: #262626;
   margin-bottom: 16px;
+}
+img{
+  &.logoVietjet{
+    width: 80px;
+  }
+  &.logoJetstar{
+    width: 80px;
+  }
+  &.logoVnairline{
+    width: 60px;
+  }
+  &.logoBamboo{
+    width: 60px;
+  }
 }

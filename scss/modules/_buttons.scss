@@ -101,7 +101,23 @@
     display: block;
   }
 }
-
+.btnAdd{
+  font-size: 14px;
+  color: $yellow-2;
+  font-weight: $medium;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.btnSeat{
+  background: #fff;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 16px;
+  font-size: 14px;
+}
 .btnSwitch{
   .switch {
     position: relative;
