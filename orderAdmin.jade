@@ -1,4 +1,4 @@
-- var page = "vntLoading";
+- var page = "orderAdmin";
 doctype html
 html(lang="vi")
     head
@@ -7,10 +7,10 @@ html(lang="vi")
         section.pageBody
             include jades/includes/_sidebar
             main.main
-                section.vntContent
-                    .vntLoading
-                        svg(viewBox='25 25 50 50')
-                            circle(cx='50', cy='50', r='20', fill='none', stroke-width='5', stroke-miterlimit='10')
+                section.vntHeader
+                    h2.heading2 Quản lý đơn hàng
+                section.vntContent.orderAdmin
+
 
         script(src="js/libs/jquery.min.js")
         script(src="js/main.js")
