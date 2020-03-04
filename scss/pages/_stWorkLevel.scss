@@ -1,0 +1,42 @@
+.stWorkLevel{
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  &__table{
+    .table{
+      td{
+        vertical-align: middle;
+        table{
+          width: 100%;
+          td{
+            padding: 0;
+            border: none;
+            p{
+              padding: 5px 12px;
+              border-bottom: 1px solid #f1f1f1;
+              &:last-child{
+                border-bottom: none;
+              }
+            }
+          }
+        }
+        p{
+          margin-bottom: 0;
+        }
+        .btnGroup{
+          button{
+            + button{
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
