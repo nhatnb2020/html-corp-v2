@@ -94,35 +94,42 @@
   }
 }
 .flightSort{
-  display: flex;
-  align-items: center;
   margin-bottom: 15px;
-  position: relative;
-  li{
-    &:first-child{
-      width: 110px;
-    }
-    + li{
-      padding-left: 39px;
-    }
-    &.liTax{
-      position: absolute;
-      top: 0;
-      right: 15px;
-    }
-    p{
-      margin-bottom: 0;
-      font-size: 16px;
-      font-weight: 500;
-      color: #262626;
-    }
-    .radio{
-      input[type="radio"] + label:before{
-        top: 50%;
-        transform: translateY(-50%);
+  .ant-radio-group{
+    width: 100%;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    li{
+      &:first-child{
+        width: 110px;
+      }
+      + li{
+        padding-left: 39px;
+      }
+      &.liTax{
+        position: absolute;
+        top: 0;
+        right: 15px;
+      }
+      p{
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #262626;
+      }
+      .radio{
+        input[type="radio"] + label:before{
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
   }
+
 }
 .flightTrip{
   width: 280px;

@@ -1,0 +1,124 @@
+.orderAdmin{
+  padding: 24px 15px;
+  &__title{
+    font-size: 14px;
+    font-weight: $medium;
+    color: #262626;
+  }
+  &__tab{
+    display: flex;
+    margin-bottom: 12px;
+    li{
+      &.active{
+        button{
+          font-weight: $medium;
+          color: $yellow-2;
+          border-color: $yellow-2;
+        }
+      }
+      button{
+        font-size: 14px;
+        color: $text-color;
+        padding: 0 10px;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 8px;
+        &:hover{
+          color: $yellow-2;
+        }
+      }
+    }
+  }
+  &__form{
+    display: flex;
+    margin-bottom: 12px;
+    .input-inline{
+      + .input-inline{
+        padding-left: 8px;
+      }
+      &.inputSearch{
+        .form-control{
+          width: 340px;
+        }
+      }
+      .form-control{
+        background: #fff;
+      }
+    }
+  }
+  &__row{
+    display: flex;
+    margin-bottom: 16px;
+  }
+  &__col{
+    padding-right: 30px;
+    .btnInline{
+      .btn{
+        &.active{
+          background-color: $yellow-2;
+          border-color: $yellow-2;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &__progress{
+    padding-left: 70px;
+    p{
+      margin-bottom: 0;
+      &.p1{
+        font-size: 12px;
+        color: #8c8c8c;
+      }
+      &.p2{
+        font-size: 14px;
+        font-weight: 500;
+        color: #262626;
+        margin-bottom: 8px;
+      }
+    }
+    progress{
+      width: 265px;
+      background: #E4E9F2;
+    }
+    progress::-webkit-progress-value {
+      background:#52C41A;
+    }
+    //Firefox
+    progress::-moz-progress-bar {
+      background:#52C41A;
+    }
+    //IE
+    progress[value]::-ms-fill {
+      background:#52C41A;
+    }
+  }
+  &__main{
+    background-color: #fff;
+    box-shadow: $shadow;
+    padding: 16px;
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    p{
+      &.p1{
+        font-size: 14px;
+        margin-bottom: 0;
+        color: #262626;
+      }
+    }
+    button{
+      span,svg{
+        vertical-align: middle;
+      }
+      span{
+        padding:0 5px;
+      }
+      &.btn{
+        margin-left: 18px;
+      }
+    }
+  }
+}
