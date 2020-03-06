@@ -1,3 +1,4 @@
+*, :after, :before{box-sizing: border-box;}
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -24,15 +25,6 @@ html,body{
 }
 html{
   -webkit-tap-highlight-color: transparent;
-}
-body {
-  font-family: $base-font-family;
-  font-size: $size-14;
-  font-weight: $base-font-weight;
-  line-height: $base-line-height;
-  color: $text-color;
-  background-color: $gray-2;
-  -webkit-font-smoothing: antialiased;
 }
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
@@ -134,4 +126,12 @@ input, select, textarea, button {
   vertical-align:middle;
   font-family: $base-font-family;
 }
-*, :after, :before{box-sizing: border-box;}
+body {
+  font-family: $base-font-family;
+  font-size: $size-14;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $text-color;
+  background-color: $gray-2;
+  -webkit-font-smoothing: antialiased;
+}

@@ -167,3 +167,10 @@
   }
 
 }
+.btnLink{
+  color: #096DD9;
+  font-size: 14px;
+  &:hover{
+    text-decoration: underline;
+  }
+}

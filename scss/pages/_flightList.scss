@@ -232,7 +232,6 @@
       padding-bottom: 4px;
       padding-right: 4px;
       &.tooltip{
-        z-index: 10;
         .btnSeat{
           background-color: #40A9FF;
           border-color: #40A9FF;
@@ -242,6 +241,7 @@
       .tooltip{
         &__cont{
           top: 100%;
+          z-index: 5;
         }
       }
     }

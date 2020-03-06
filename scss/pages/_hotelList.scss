@@ -161,6 +161,11 @@
   background-color: #fff;
   text-align: center;
   padding: 100px 50px;
+  &.soldOut_flight{
+    img{
+      width: 150px;
+    }
+  }
   img{
     width: 285px;
     margin: auto;

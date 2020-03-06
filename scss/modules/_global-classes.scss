@@ -252,6 +252,11 @@
     background-color: #f5f5f5;
     border-color: $border-color;
   }
+  &.status_pending{
+    color: #1890FF;
+    background-color: #E6F7FF;
+    border-color: #91D5FF;
+  }
 }
 .levelTotal{
   display: flex;
