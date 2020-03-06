@@ -257,6 +257,16 @@
     background-color: #E6F7FF;
     border-color: #91D5FF;
   }
+  &.status_cancel{
+    color: $red-1;
+    background-color: #FFF1F0;
+    border-color: $red-1;
+  }
+  &.status_processing{
+    color: #FAAD14;
+    background-color: #FFFBE6;
+    border-color: #FAAD14;
+  }
 }
 .levelTotal{
   display: flex;

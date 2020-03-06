@@ -29,11 +29,22 @@
       content: '';
       border-width: 5px;
       border-style: solid;
-      border-color: transparent transparent #000 transparent;
+      border-color: transparent transparent #000;
       position: absolute;
       top: -9px;
       left: 50%;
       transform: translateX(-50%);
+    }
+  }
+  &.tooltip_top{
+    .tooltip__cont{
+      top: auto;
+      bottom: calc(100% + 5px);
+      &:before{
+        top: auto;
+        bottom: -9px;
+        border-color: #000 transparent transparent;
+      }
     }
   }
 }

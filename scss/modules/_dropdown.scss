@@ -6,7 +6,7 @@
       display: block;
     }
   }
-  &_form{
+  &.dropdown_form{
     .dropdown-item{
       cursor: auto;
       &:hover{
@@ -16,6 +16,15 @@
     }
     .input-inline{
       margin-bottom: 13px;
+    }
+  }
+  &.dropdown_col{
+    .dropdown-menu{
+      width: 364px;
+      left: auto;
+      right: 0;
+      max-height: initial;
+      overflow: hidden;
     }
   }
 }

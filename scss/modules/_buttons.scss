@@ -174,3 +174,12 @@
     text-decoration: underline;
   }
 }
+.btnShowCol{
+  font-size: 14px;
+  span{
+    padding: 0 5px;
+  }
+  svg,span{
+    vertical-align: middle;
+  }
+}
