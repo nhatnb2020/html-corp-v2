@@ -43,14 +43,12 @@ html(lang="vi")
                                         p.p1 Đơn giá (Đêm)
                                         p.p1 Chi phí khác
                                         p.p1 Tổng chi phí
-                                    .d-flex
+                                    .flexGroup
                                         p.p2 x1 – Deluxe Twin With Balcony
                                         p.p2 3.455.606 ₫
                                         p.p2 555.606 ₫
                                         p.p2 19.224.321 ₫
-
-
-                                    .d-flex
+                                    .flexGroup
                                         p.p2 x1 – Deluxe Twin With Balcony
                                         p.p2 3.455.606 ₫
                                         p.p2 555.606 ₫
@@ -58,7 +56,52 @@ html(lang="vi")
 
 
                             .orderDetail__table
-                            .ordeDetail__price
+                                p.orderDetail__title Danh sách người ở
+                                table.table
+                                    thead
+                                        tr
+                                            th Họ và tên
+                                            th CN & bộ phận
+                                            th Chức vụ
+                                            th.text-right Hạn mức
+                                    tbody
+                                        tr
+                                            td
+                                                p.p1 Vũ Văn Lai
+                                                p.p2 nguyenvana@gmail.com | 0982433361
+                                            td
+                                                p.p1 Vntrip Hà Nội
+                                                p.p2 Product
+                                            td
+                                                p.p1 Product Designer
+                                            td.text-right
+                                                p.p1 10.200.000đ
+                                        tr
+                                            td
+                                                p.p1 Vũ Văn Lai
+                                                p.p2 nguyenvana@gmail.com | 0982433361
+                                            td
+                                                p.p1 Vntrip Hà Nội
+                                                p.p2 Product
+                                            td
+                                                p.p1 Product Designer
+                                            td.text-right
+                                                p.p1 10.200.000đ
+                                        tr
+                                            td
+                                                p.p1 Vũ Văn Lai
+                                                p.p2 nguyenvana@gmail.com | 0982433361
+                                            td
+                                                p.p1 Vntrip Hà Nội
+                                                p.p2 Product
+                                            td
+                                                p.p1 Product Designer
+                                            td.text-right
+                                                p.p1 10.200.000đ
+                                .orderDetail__total
+                                    p Tổng hạn mức (5 người) :
+                                    p 67.000.000 đ
+                            .orderDetail__price
                                 .orderDetail__line
                                     .p1 Hình thức thanh toán
                                     .p2 Công nợ
@@ -74,6 +117,58 @@ html(lang="vi")
                                 .orderDetail__line
                                     .p1 Tổng chi phí thực tính
                                     .p2.red-1 3.000.000 ₫
+                            .orderDetail__info
+                                p.orderDetail__title Thông tin người nhận phòng
+                                .orderInfo
+                                    p.orderInfo__name Đinh Phúc Khánh
+                                    ul
+                                        li
+                                            span Email:
+                                            span khanh.dinh@vntrip.vn
+                                        li
+                                            span Số điện thoại:
+                                            span +84 982 433361
+                                        li
+                                            span Chức vụ:
+                                            span Designer
+
+
+                            .orderDetail__info
+                                p.orderDetail__title Thông tin duyệt đơn
+                                .orderInfo
+                                    p.orderInfo__name Đinh Phúc Khánh
+                                    ul
+                                        li
+                                            span Email:
+                                            span khanh.dinh@vntrip.vn
+                                        li
+                                            span Số điện thoại:
+                                            span +84 982 433361
+                                        li
+                                            span Chức vụ:
+                                            span Designer
+
+
+                            .orderDetail__info
+                                p.orderDetail__title Thông tin người đặt
+                                .orderInfo
+                                    p.orderInfo__name Đinh Phúc Khánh
+                                    ul
+                                        li
+                                            span Email:
+                                            span khanh.dinh@vntrip.vn
+                                        li
+                                            span Chi nhánh:
+                                            span Vntrip Hà Nội
+                                        li
+                                            span Số điện thoại:
+                                            span +84 982 433361
+                                        li
+                                            span Phòng ban:
+                                            span TECH
+                                        li
+                                            span Chức vụ:
+                                            span Designer
 
         script(src="js/libs/jquery.min.js")
         script(src="js/main.js")
