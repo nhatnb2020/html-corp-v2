@@ -176,7 +176,7 @@
     }
   }
   .d-svg{
-    padding: 0 15px;
+    padding: 0 30px;
     text-align: center;
     svg{
       display: block;
@@ -306,11 +306,20 @@
       }
     }
   }
+  &__list{
+    margin-bottom: 24px;
+  }
   &__trip{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 34px;
+    padding: 24px 16px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
   &__policy{
     margin-bottom: 15px;
