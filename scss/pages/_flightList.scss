@@ -29,11 +29,23 @@
   box-shadow: $shadow;
   padding: 10px 100px;
   margin-bottom: 15px;
+  position: relative;
+  &__cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid $border-color;
+  }
   &__item{
     text-align: center;
     border-right: 1px solid $border-color;
     color: #262626;
     transition: all .2s;
+    width: calc(100% / 7);
+    cursor: pointer;
+    &:nth-child(n+8){
+      display: none;
+    }
     &.active{
       color: $yellow-2;
     }
@@ -51,15 +63,17 @@
       }
     }
   }
-  .slick-list{
-    border-left: 1px solid $border-color;
-    border-right: 1px solid $border-color;
-  }
   .slick-prev{
-    left: 60px;
+    left: 35px;
   }
   .slick-next{
-    right: 60px;
+    right: 35px;
+  }
+  .slick-arrow{
+    transition: all .3s;
+    &:hover{
+      background-color: #f7f7f7;
+    }
   }
 }
 .flightFilter{
