@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Authentication with invisible ReCaptcha</title>
+</head>
+<body>
+<div>
+  <header>
+    <div>
+      <div>
+        <h3>Firebase Authentication</h3>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div>
+
+      <!-- Container for the demo -->
+      <div id="sign-in-card">
+        <div>
+          <h2>Phone number authentication with invisible ReCaptcha</h2>
+        </div>
+        <div>
+          <p>Sign in with your phone number below.</p>
+
+          <form id="sign-in-form" action="#">
+            <!-- Input to enter the phone number -->
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input type="text" pattern="\+[0-9\s\-\(\)]+" id="phone-number">
+            </div>
+
+            <!-- Sign-in button -->
+            <button id="sign-in-button">Sign-in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Import and configure the Firebase SDK -->
+<!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+<!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+<script type="text/javascript">
+    var config = {
+            apiKey: "AIzaSyCPsQB-Z32iGCxoLEmZZJilIWW3nqC7fNQ",
+            authDomain: "my-test-project-8757d.firebaseapp.com",
+            databaseURL: "https://my-test-project-8757d.firebaseio.com",
+            projectId: "my-test-project-8757d",
+            storageBucket: "my-test-project-8757d.appspot.com",
+            messagingSenderId: "655829200149",
+            appId: "1:655829200149:web:99e9df544721cf7ff08d1c",
+            measurementId: "G-1ZME9YNSWC"
+        };
+    firebase.initializeApp(config);
+</script>
+
+<script type="text/javascript">
+  window.onload = function() {
+
+    // [START appVerifier]
+    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('sign-in-button', {
+      'size': 'invisible',
+      'callback': function(recapchaToken) {
+        // reCAPTCHA solved, allow signInWithPhoneNumber.
+        var phoneNumber = document.getElementById('phone-number').value
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://test-micro-services.vntrip.vn/core-user-service/verification/vefirication-request', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+            feature: 'register',
+            type: 'phone',
+            phone: phoneNumber,
+            country_phone_code: '84',
+            recaptcha_token: recapchaToken
+        }));
+        xhr.onload = function() {
+          console.log("HELLO")
+          console.log(this.responseText);
+          var data = JSON.parse(this.responseText);
+          console.log(data);
+        }
+      }
+    });
+    // [END appVerifier]
+
+    recaptchaVerifier.render().then(function(widgetId) {
+      window.recaptchaWidgetId = widgetId;
+    });
+  };
+</script>
+</body>
+</html>
