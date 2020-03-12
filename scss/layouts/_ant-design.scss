@@ -60,3 +60,22 @@
 .ant-layout{
   background: transparent;
 }
+
+
+// ant v3
+.ant-form-item-explain, .ant-form-item-extra{
+  min-height: auto;
+}
+.ant-picker{
+  justify-content: space-between;
+  width: 100%;
+}
+.ant-picker-input{
+  width: auto;
+}
+.ant-picker-active-bar{
+  display: none;
+}
+.ant-row{
+  display: block;
+}
