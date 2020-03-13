@@ -13,7 +13,8 @@
     box-shadow: $shadow;
     padding: 15px;
     margin-bottom: 15px;
-    > .checkbox{
+    > .checkbox,
+    > .ant-checkbox-wrapper{
       margin-bottom: 15px;
     }
     > .pTitle{
@@ -207,6 +208,47 @@
       &__box{
         display: none;
         animation: opacityShow .3s ease-in-out;
+      }
+    }
+    .ant-collapse{
+      background: transparent;
+      border: none;
+      border-radius: 0;
+    }
+    .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header{
+      padding: 0 20px 0 0;
+      margin-bottom: 5px;
+      p{
+        margin-bottom: 0;
+      }
+    }
+    .ant-collapse-item{
+      border-bottom: none;
+      border-radius: 0;
+    }
+    .ant-collapse-content{
+      border: 1px solid $border-color;
+    }
+    .ant-collapse-item:last-child > .ant-collapse-content{
+      border-radius: 4px;
+    }
+    .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow{
+      right: 0;
+    }
+    .ant-collapse-content > .ant-collapse-content-box{
+      padding: 8px 12px;
+      ul{
+        li{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 12px;
+          span{
+            &.span2{
+              color: #262626;
+            }
+          }
+        }
       }
     }
   }
