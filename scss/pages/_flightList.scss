@@ -231,7 +231,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 16px;
+    .alert{
+      width: 100%;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
   }
   &__logo{
     width: 70px;
@@ -362,6 +368,14 @@
       font-size: 14px;
     }
   }
+  &__price{
+    p{
+      font-size: 20px;
+      font-weight: $medium;
+      color: #262626;
+      margin-bottom: 0;
+    }
+  }
   &.open{
     .flightTicket{
       &__detail{
@@ -393,6 +407,7 @@
   align-items: center;
   justify-content: flex-end;
   padding: 16px 0;
+  position: relative;
   &__price{
     text-align: right;
     padding-right: 24px;
@@ -414,5 +429,11 @@
     .btn{
       width: 150px;
     }
+  }
+  .btnBack{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
   }
 }

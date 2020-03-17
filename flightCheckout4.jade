@@ -1,4 +1,4 @@
-- var page = "flightCheckout4";
+- var page = "flightCheckout3";
 doctype html
 html(lang="vi")
     head
@@ -7,95 +7,213 @@ html(lang="vi")
         section.pageBody
             include jades/includes/_sidebar
             main.main
-                section.vntContent.flightCheckout4
+                section.vntContent.flightCheckout
                     .vntStep
                         .vntStep__item.visited
                             span.vntStep__numb 1
                             span.vntStep__text Thông tin đặt vé
-                        .vntStep__item.visited
+                        .vntStep__item.active
                             span.vntStep__numb 2
                             span.vntStep__text Thanh toán
-                        .vntStep__item.active
+                        .vntStep__item
                             span.vntStep__numb 3
                             span.vntStep__text Hoàn tất
+                    .vntCheckout
+                        .vntCheckout__left
+                            h2.heading2 Hướng dẫn chuyển khoản
+                            .vntCheckout__box
+                                p.pTitle Chọn ngân hàng
+                                ul.listBank
+                                    li.listBank__item.active
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/mbbank.png')
+                                            p MBbank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/sacombank.png')
+                                            p Sacombank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/techcombank.png')
+                                            p Techcombank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/agribank.png')
+                                            p Agribank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/bidv.png')
+                                            p BIDV
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/vpbank.png')
+                                            p VPBank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/viettinbank.png')
+                                            p Vietinbank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
+
+                                    li.listBank__item
+                                        button.listBank__btn(type='button')
+                                            img(src='https://statics.vntrip.vn/images/logo/vietcombank.png')
+                                            p Vietcombank
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5Z', fill='#FA8C16')
+                                                path(d='M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z', fill='white')
 
 
-                    .vntBox
-                        .vntBox__checkout
-                            img(src='https://statics.vntrip.vn/images/imgCheckoutFlight2x.png')
-                            p.p1 Đặt vé thành công
-                            p.p2 Cảm ơn bạn đã đặt phòng tại Vntrip.vn. Thông tin đặt phòng sẽ gửi vào E-mail của bạn. Chúc chuyến công tác của bạn thành công tốt đẹp.
-                            p.p3 Gửi thông tin đặt phòng thành công cho E-mail khác
-                            .btnGroup
-                                a.btn.btn_lg(href='#') Thêm email
-                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
-                    .vntBox
-                        .vntBox__checkout
-                            img(src='https://statics.vntrip.vn/images/imgCheckoutFlight2x.png')
-                            p.p1 Gửi yêu cầu đặt vé thành công
-                            p.p2 Cảm ơn bạn đã đặt phòng tại Vntrip.vn. Yêu cầu đặt vé sẽ được gửi đến người kiểm duyệt. Vui lòng liên hệ với người kiểm duyệt hệ thống của bạn và không đặt lại đơn hàng.
-                            p.p3 Gửi thông tin đặt phòng thành công cho E-mail khác
-                            .btnGroup
-                                a.btn.btn_lg(href='#') Thêm email
-                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
-                    .vntBox
-                        .vntBox__checkout
-                            svg(width='88', height='88', viewBox='0 0 88 88', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                path(d='M64.6875 87.1875C77.1139 87.1875 87.1875 77.1139 87.1875 64.6875C87.1875 52.2611 77.1139 42.1875 64.6875 42.1875C52.2611 42.1875 42.1875 52.2611 42.1875 64.6875C42.1875 77.1139 52.2611 87.1875 64.6875 87.1875Z', fill='#FF4D4F')
-                                path(d='M73.125 56.25L56.25 73.125', stroke='white', stroke-width='3', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M56.25 56.25L73.125 73.125', stroke='white', stroke-width='3', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M13.5 25.5H49.5', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M13.5 42H33', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M13.5 58.5H24', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M28.125 75.9375H8.4375C6.94566 75.9375 5.51492 75.3449 4.46002 74.29C3.40513 73.2351 2.8125 71.8043 2.8125 70.3125V8.4375C2.8125 6.94566 3.40513 5.51492 4.46002 4.46002C5.51492 3.40513 6.94566 2.8125 8.4375 2.8125H48.2962C49.7871 2.81282 51.2168 3.40493 52.2713 4.45875L63.0413 15.2287C64.0951 16.2832 64.6872 17.7129 64.6875 19.2037V28.125', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
+                                p.pTitle Vui lòng chuyển khoản theo thông tin
+                                .bankInfo
+                                    ul.bankInfo__list
+                                        li
+                                            p.p1 Số tài khoản:
+                                            p.p2
+                                                | 126940386
+                                                button.btnCopy(type='button')
+                                                    svg(width='12', height='14', viewBox='0 0 12 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M11 0H2.625C2.55625 0 2.5 0.05625 2.5 0.125V1C2.5 1.06875 2.55625 1.125 2.625 1.125H10.375V11.875C10.375 11.9438 10.4312 12 10.5 12H11.375C11.4438 12 11.5 11.9438 11.5 11.875V0.5C11.5 0.223437 11.2766 0 11 0ZM9 2H1C0.723437 2 0.5 2.22344 0.5 2.5V10.7922C0.5 10.925 0.553125 11.0516 0.646875 11.1453L3.35469 13.8531C3.38906 13.8875 3.42813 13.9156 3.47031 13.9391V13.9688H3.53594C3.59062 13.9891 3.64844 14 3.70781 14H9C9.27656 14 9.5 13.7766 9.5 13.5V2.5C9.5 2.22344 9.27656 2 9 2ZM3.46875 12.3781L2.12344 11.0312H3.46875V12.3781ZM8.375 12.875H4.46875V10.6562C4.46875 10.3109 4.18906 10.0312 3.84375 10.0312H1.625V3.125H8.375V12.875Z', fill='#595959')
 
-                            p.p1 Đặt vé thất bại
-                            p.p2 Rất tiếc, yêu cầu đặt vé của bạn không thành công. Bạn vui lòng tiến hành đặt lại đơn hàng.
-                            .btnGroup
-                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
-                    .vntBox
-                        .vntBox__checkout
-                            svg(width='150', height='105', viewBox='0 0 150 105', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                path(d='M35.5 82L40.5 101H35.5H26.5L25 95.5L26.5 46L35.5 82Z', fill='#E4E9F2')
-                                path(d='M48 58.5V3.5C46.8 3.5 43.1667 5.16667 41.5 6V54.5L48 58.5Z', fill='#E4E9F2')
-                                path(d='M41.6875 36.0938L29.2675 43.2973C26.8 44.7285 25.2812 47.3651 25.2812 50.2176V95.7187C25.2812 99.0325 27.9675 101.719 31.2812 101.719H117.719C121.032 101.719 123.719 99.0325 123.719 95.7187V50.2176C123.719 47.3651 122.2 44.7285 119.732 43.2973L107.312 36.0938', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
-                                path(d='M41.6875 54.7969V7.28125C41.6875 5.07211 43.4784 3.28125 45.6875 3.28125H103.313C105.522 3.28125 107.312 5.07211 107.312 7.28125V54.4688', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
-                                path(d='M27 47.5L121.5 100', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
-                                path(d='M122 46.5L73.1875 72.8398', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
-                                path(d='M74 47C82.2843 47 89 40.2843 89 32C89 23.7157 82.2843 17 74 17C65.7157 17 59 23.7157 59 32C59 40.2843 65.7157 47 74 47Z', fill='#52C41A')
-                                path(d='M67 33L71 37L81 27', fill='#52C41A')
-                                path(d='M67 33L71 37L81 27', stroke='white', stroke-width='3', stroke-miterlimit='10', stroke-linecap='square')
-                                line(x1='134', y1='30.8787', x2='142.879', y2='22', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='136.035', y1='54.4014', x2='144.401', y2='58.9649', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='134.5', y1='42.5', x2='148.5', y2='42.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='12.5059', y1='32.9635', x2='3.96298', y2='24.121', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='13.8084', y1='56.957', x2='1.95655', y2='61.8185', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='14.5', y1='45.5', x2='1.5', y2='45.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                        li
+                                            p.p1 Ngân hàng:
+                                            p.p2
+                                                | VPBank – Ngân hàng Việt Nam Thịnh Vượng
 
-                            p.p1 Thông tin đặt vé cần xét duyệt
-                            p.p2 Cảm ơn bạn đã đặt vé tại VNtrip.vn. Người quản lý cần xét duyệt thông tin của bạn trước khi gửi email
-                            .btnGroup
-                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
-                    .vntBox
-                        .vntBox__checkout
-                            svg(width='101', height='101', viewBox='0 0 101 101', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                path(d='M55.9991 59C50.3991 81.8 69.3324 93.1667 79.4991 96C74.6658 97.6667 63.1992 99.3 55.9991 92.5C46.999 84 48.4991 66.5 55.9991 59Z', fill='#FAB516', fill-opacity='0.2')
-                                path(d='M73.5 98C87.031 98 98 87.031 98 73.5C98 59.969 87.031 49 73.5 49C59.969 49 49 59.969 49 73.5C49 87.031 59.969 98 73.5 98Z', stroke='#FAB516', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M83.492 76.492H72V65', stroke='#FAB516', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M32.25 87.5H9.5C7.77609 87.5 6.12279 86.8152 4.90381 85.5962C3.68482 84.3772 3 82.7239 3 81V9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3H55.559C57.2817 3.00037 58.9338 3.68459 60.1523 4.90233L72.5977 17.3477C73.8154 18.5662 74.4996 20.2183 74.5 21.941V32.25', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M21 26H57', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M21 42.5H40.5', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M21 59H31.5', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
+                                        li
+                                            p.p1 Chi nhánh:
+                                            p.p2
+                                                | Hà Thành
 
-                            p.p1 Đang xử lý thông tin đặt vé
-                            p.p2 Thông tin đặt vé của bạn đang được xử lý...
-                            .btnGroup
-                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                                        li
+                                            p.p1 Tên chủ tài khoản:
+                                            p.p2
+                                                | Công ty TNHH VNTRIP OTA
+
+                                        li
+                                            p.p1 Nội dung chuyển khoản:
+                                            p.p2
+                                                | VNTRIP2020C0VUZ
+                                                button.btnCopy(type='button')
+                                                    svg(width='12', height='14', viewBox='0 0 12 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M11 0H2.625C2.55625 0 2.5 0.05625 2.5 0.125V1C2.5 1.06875 2.55625 1.125 2.625 1.125H10.375V11.875C10.375 11.9438 10.4312 12 10.5 12H11.375C11.4438 12 11.5 11.9438 11.5 11.875V0.5C11.5 0.223437 11.2766 0 11 0ZM9 2H1C0.723437 2 0.5 2.22344 0.5 2.5V10.7922C0.5 10.925 0.553125 11.0516 0.646875 11.1453L3.35469 13.8531C3.38906 13.8875 3.42813 13.9156 3.47031 13.9391V13.9688H3.53594C3.59062 13.9891 3.64844 14 3.70781 14H9C9.27656 14 9.5 13.7766 9.5 13.5V2.5C9.5 2.22344 9.27656 2 9 2ZM3.46875 12.3781L2.12344 11.0312H3.46875V12.3781ZM8.375 12.875H4.46875V10.6562C4.46875 10.3109 4.18906 10.0312 3.84375 10.0312H1.625V3.125H8.375V12.875Z', fill='#595959')
+                                    .bankInfo__flex
+                                        .bankInfo__price
+                                            span.span1 Số tiền bạn cần phải chuyển khoản
+                                            span.span2 16.000.000 ₫
+                                        .bankInfo__btn
+                                            button.btn.btn_lg(type='button' onclick="location.href='flightCheckout5.html';") Tôi đã thanh toán xong
+                                    p.bankInfo__note
+                                        strong LƯU Ý!
+                                        | Chuyển số tiền chính xác 16.000.000₫ trong mọi trường hợp
+                        .vntCheckout__right
+                            .flightInfo
+                                p.flightPlace
+                                    span Hà Nội
+                                    svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M3.4 0.862793L1 3.22615L3.4 5.58951', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+                                        path(d='M10.6 3.22607H1', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+                                        path(d='M10.5996 7.95166L12.9996 10.315L10.5996 12.6784', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+                                        path(d='M3.40039 10.3154H13.0004', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+
+                                    span TP Hồ Chí Minh
+                                .dateInput
+                                    label(for='date') Ngày đi / ngày về
+                                    .input-inline
+                                        input.form-control(type='text' value='25/12/2019 – 31/12/2019 (5 đêm)' name='date' id='date')
+                                        svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M12.75 1.875H10.125V0.875C10.125 0.80625 10.0688 0.75 10 0.75H9.125C9.05625 0.75 9 0.80625 9 0.875V1.875H5V0.875C5 0.80625 4.94375 0.75 4.875 0.75H4C3.93125 0.75 3.875 0.80625 3.875 0.875V1.875H1.25C0.973437 1.875 0.75 2.09844 0.75 2.375V12.75C0.75 13.0266 0.973437 13.25 1.25 13.25H12.75C13.0266 13.25 13.25 13.0266 13.25 12.75V2.375C13.25 2.09844 13.0266 1.875 12.75 1.875ZM12.125 12.125H1.875V6.1875H12.125V12.125ZM1.875 5.125V3H3.875V3.75C3.875 3.81875 3.93125 3.875 4 3.875H4.875C4.94375 3.875 5 3.81875 5 3.75V3H9V3.75C9 3.81875 9.05625 3.875 9.125 3.875H10C10.0688 3.875 10.125 3.81875 10.125 3.75V3H12.125V5.125H1.875Z', fill='#8C8C8C')
+
+                                .ticketInfo
+                                    p.ticketInfo__title Chiều đi: Từ Hà Nội (HAN)
+                                    .ticketInfo__box
+                                        p.p1 7:20 - Thứ 4, 25/12/2019
+                                        p.p2 Bamboo Airways (QL245) - 2h20m
+                                        ul
+                                            li
+                                                span.span1 Giá vé:
+                                                span.span2 6 x 1.200.000 ₫
+                                            li
+                                                span.span1 Hành lý:
+                                                span.span2 250.000 ₫
+                                            li.liPrice
+                                                span.span1.medium Tổng đi
+                                                span.span2.blue-1.medium 6.000.000 ₫
+                                    p.ticketInfo__title Chiều về: Từ TP Hồ Chí Minh (SGN)
+                                    .ticketInfo__box
+                                        p.p1 7:20 - Thứ 4, 25/12/2019
+                                        p.p2 Bamboo Airways (QL245) - 2h20m
+                                        ul
+                                            li
+                                                span.span1 Giá vé:
+                                                span.span2 6 x 1.200.000 ₫
+                                            li
+                                                span.span1 Hành lý:
+                                                span.span2 250.000 ₫
+                                            li.liPrice
+                                                span.span1.medium Tổng về
+                                                span.span2.blue-1.medium 6.000.000 ₫
+                                    .ticketInfo__tax
+                                        p.ticketInfo__title
+                                            span Thuế và phí khác
+                                            span.medium
+                                                | 4.000.000 ₫
+                                                button.btnArrow(type='button')
+                                                    svg(width='9', height='12', viewBox='0 0 9 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M7.96405 5.60637L0.920313 0.104809C0.901908 0.0903191 0.879788 0.081314 0.856495 0.0788282C0.833203 0.0763424 0.809681 0.0804768 0.788632 0.0907565C0.767583 0.101036 0.749861 0.117045 0.7375 0.136943C0.725139 0.156841 0.71864 0.179822 0.718751 0.203247V1.41106C0.718751 1.48762 0.754689 1.56106 0.814064 1.60793L6.43905 6.00012L0.814064 10.3923C0.753126 10.4392 0.718751 10.5126 0.718751 10.5892V11.797C0.718751 11.9017 0.839063 11.9595 0.920313 11.8954L7.96405 6.39387C8.02391 6.34717 8.07234 6.28744 8.10565 6.21921C8.13896 6.15098 8.15628 6.07605 8.15628 6.00012C8.15628 5.92419 8.13896 5.84927 8.10565 5.78104C8.07234 5.71281 8.02391 5.65307 7.96405 5.60637Z', fill='black')
+
+                                        .ticketInfo__box
+                                            ul
+                                                li
+                                                    span.span1 Thuế giá trị gia tăng:
+                                                    span.span2 250.000 ₫
+                                                li
+                                                    span.span1 Phí soi chiếu an ninh:
+                                                    span.span2 250.000 ₫
+                                                li
+                                                    span.span1 Phí dịch vụ chặng nội địa:
+                                                    span.span2 250.000 ₫
+                                                li
+                                                    span.span1 Phụ thu quản trị hệ thống:
+                                                    span.span2 250.000 ₫
+                                .flightInfo__price
+                                    p.p1 Tổng cộng
+                                    p.p2 401.822.404 ₫
+
         script(src="js/libs/jquery.min.js")
         script(src="js/main.js")
         script.
             $('.nav-sub').click(function () {
                 $(this).toggleClass('open');
+            });
+        script.
+            $('.ticketInfo__tax .btnArrow').click(function () {
+                $(this).parents('.ticketInfo__tax').toggleClass('open');
             });
 
 

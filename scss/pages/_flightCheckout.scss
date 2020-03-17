@@ -1,5 +1,6 @@
 .vntCheckout{
   display: flex;
+  flex-wrap: wrap;
   padding: 0 15px 30px;
   &__left{
     width: calc(100% - 386px);
@@ -57,6 +58,9 @@
   }
   .hotelInfo{
     position: initial;
+    width: 100%;
+  }
+  .flightList__active{
     width: 100%;
   }
 
@@ -439,5 +443,81 @@
     strong{
       padding-right: 5px;
     }
+  }
+}
+.holdResult{
+  width: 100%;
+  &__title{
+    font-size: 20px;
+    color: #262626;
+    font-weight: $medium;
+    margin-bottom: 15px;
+  }
+}
+.flightLoading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color:rgba(32, 48, 72, 0.8);
+  &__body{
+    background-color: #fff;
+    border-radius: 6px;
+    width: 500px;
+    margin: 100px auto;
+    padding: 100px 30px 50px;
+    overflow: hidden;
+    text-align: center;
+  }
+  &__icon{
+    margin-bottom: 30px;
+    img{
+      width: 125px;
+    }
+  }
+  &__text{
+    p{
+      color: #262626;
+      margin-bottom: 0;
+      &.p1{
+        font-size: 20px;
+        font-weight: $medium;
+      }
+      &.p2{
+        color: #878787;
+        font-size: 16px;
+        span{
+          animation-name: blink;
+          animation-duration: 1.4s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: both;
+          font-weight: $medium;
+          font-size: 20px;
+          padding-right: 3px;
+          &:nth-child(1){
+            margin-left: 5px;
+          }
+          &:nth-child(2){
+            animation-delay: .2s;
+          }
+          &:nth-child(3){
+            animation-delay: .4s;
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .2;
   }
 }

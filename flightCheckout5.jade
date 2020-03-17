@@ -1,0 +1,106 @@
+- var page = "flightCheckout4";
+doctype html
+html(lang="vi")
+    head
+        include jades/includes/_head
+    body(ontouchstart='')
+        section.pageBody
+            include jades/includes/_sidebar
+            main.main
+                section.vntContent.flightCheckout
+                    .vntStep
+                        .vntStep__item.visited
+                            span.vntStep__numb 1
+                            span.vntStep__text Thông tin đặt vé
+                        .vntStep__item.visited
+                            span.vntStep__numb 2
+                            span.vntStep__text Thanh toán
+                        .vntStep__item.active
+                            span.vntStep__numb 3
+                            span.vntStep__text Hoàn tất
+
+
+                    .vntBox
+                        .vntBox__checkout
+                            img(src='https://statics.vntrip.vn/images/imgCheckoutFlight2x.png')
+                            p.p1 Đặt vé thành công
+                            p.p2 Cảm ơn bạn đã đặt phòng tại Vntrip.vn. Thông tin đặt phòng sẽ gửi vào E-mail của bạn. Chúc chuyến công tác của bạn thành công tốt đẹp.
+                            p.p3 Gửi thông tin đặt phòng thành công cho E-mail khác
+                            .btnGroup
+                                a.btn.btn_lg(href='#') Thêm email
+                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                    .vntBox
+                        .vntBox__checkout
+                            img(src='https://statics.vntrip.vn/images/imgCheckoutFlight2x.png')
+                            p.p1 Gửi yêu cầu đặt vé thành công
+                            p.p2 Cảm ơn bạn đã đặt phòng tại Vntrip.vn. Yêu cầu đặt vé sẽ được gửi đến người kiểm duyệt. Vui lòng liên hệ với người kiểm duyệt hệ thống của bạn và không đặt lại đơn hàng.
+                            p.p3 Gửi thông tin đặt phòng thành công cho E-mail khác
+                            .btnGroup
+                                a.btn.btn_lg(href='#') Thêm email
+                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                    .vntBox
+                        .vntBox__checkout
+                            svg(width='88', height='88', viewBox='0 0 88 88', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M64.6875 87.1875C77.1139 87.1875 87.1875 77.1139 87.1875 64.6875C87.1875 52.2611 77.1139 42.1875 64.6875 42.1875C52.2611 42.1875 42.1875 52.2611 42.1875 64.6875C42.1875 77.1139 52.2611 87.1875 64.6875 87.1875Z', fill='#FF4D4F')
+                                path(d='M73.125 56.25L56.25 73.125', stroke='white', stroke-width='3', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M56.25 56.25L73.125 73.125', stroke='white', stroke-width='3', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M13.5 25.5H49.5', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M13.5 42H33', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M13.5 58.5H24', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M28.125 75.9375H8.4375C6.94566 75.9375 5.51492 75.3449 4.46002 74.29C3.40513 73.2351 2.8125 71.8043 2.8125 70.3125V8.4375C2.8125 6.94566 3.40513 5.51492 4.46002 4.46002C5.51492 3.40513 6.94566 2.8125 8.4375 2.8125H48.2962C49.7871 2.81282 51.2168 3.40493 52.2713 4.45875L63.0413 15.2287C64.0951 16.2832 64.6872 17.7129 64.6875 19.2037V28.125', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
+
+                            p.p1 Đặt vé thất bại
+                            p.p2 Rất tiếc, yêu cầu đặt vé của bạn không thành công. Bạn vui lòng tiến hành đặt lại đơn hàng.
+                            .btnGroup
+                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                    .vntBox
+                        .vntBox__checkout
+                            svg(width='150', height='105', viewBox='0 0 150 105', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M35.5 82L40.5 101H35.5H26.5L25 95.5L26.5 46L35.5 82Z', fill='#E4E9F2')
+                                path(d='M48 58.5V3.5C46.8 3.5 43.1667 5.16667 41.5 6V54.5L48 58.5Z', fill='#E4E9F2')
+                                path(d='M41.6875 36.0938L29.2675 43.2973C26.8 44.7285 25.2812 47.3651 25.2812 50.2176V95.7187C25.2812 99.0325 27.9675 101.719 31.2812 101.719H117.719C121.032 101.719 123.719 99.0325 123.719 95.7187V50.2176C123.719 47.3651 122.2 44.7285 119.732 43.2973L107.312 36.0938', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M41.6875 54.7969V7.28125C41.6875 5.07211 43.4784 3.28125 45.6875 3.28125H103.313C105.522 3.28125 107.312 5.07211 107.312 7.28125V54.4688', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M27 47.5L121.5 100', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M122 46.5L73.1875 72.8398', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M74 47C82.2843 47 89 40.2843 89 32C89 23.7157 82.2843 17 74 17C65.7157 17 59 23.7157 59 32C59 40.2843 65.7157 47 74 47Z', fill='#52C41A')
+                                path(d='M67 33L71 37L81 27', fill='#52C41A')
+                                path(d='M67 33L71 37L81 27', stroke='white', stroke-width='3', stroke-miterlimit='10', stroke-linecap='square')
+                                line(x1='134', y1='30.8787', x2='142.879', y2='22', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='136.035', y1='54.4014', x2='144.401', y2='58.9649', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='134.5', y1='42.5', x2='148.5', y2='42.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='12.5059', y1='32.9635', x2='3.96298', y2='24.121', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='13.8084', y1='56.957', x2='1.95655', y2='61.8185', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='14.5', y1='45.5', x2='1.5', y2='45.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+
+                            p.p1 Thông tin đặt vé cần xét duyệt
+                            p.p2 Cảm ơn bạn đã đặt vé tại VNtrip.vn. Người quản lý cần xét duyệt thông tin của bạn trước khi gửi email
+                            .btnGroup
+                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                    .vntBox
+                        .vntBox__checkout
+                            svg(width='101', height='101', viewBox='0 0 101 101', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M55.9991 59C50.3991 81.8 69.3324 93.1667 79.4991 96C74.6658 97.6667 63.1992 99.3 55.9991 92.5C46.999 84 48.4991 66.5 55.9991 59Z', fill='#FAB516', fill-opacity='0.2')
+                                path(d='M73.5 98C87.031 98 98 87.031 98 73.5C98 59.969 87.031 49 73.5 49C59.969 49 49 59.969 49 73.5C49 87.031 59.969 98 73.5 98Z', stroke='#FAB516', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M83.492 76.492H72V65', stroke='#FAB516', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M32.25 87.5H9.5C7.77609 87.5 6.12279 86.8152 4.90381 85.5962C3.68482 84.3772 3 82.7239 3 81V9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3H55.559C57.2817 3.00037 58.9338 3.68459 60.1523 4.90233L72.5977 17.3477C73.8154 18.5662 74.4996 20.2183 74.5 21.941V32.25', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M21 26H57', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M21 42.5H40.5', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M21 59H31.5', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
+
+                            p.p1 Đang xử lý thông tin đặt vé
+                            p.p2 Thông tin đặt vé của bạn đang được xử lý...
+                            .btnGroup
+                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
+        script.
+            $('.nav-sub').click(function () {
+                $(this).toggleClass('open');
+            });
+
+
+
+
+
+
+

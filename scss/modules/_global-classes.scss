@@ -241,7 +241,13 @@
   padding: 2px 8px;
   border: 1px solid transparent;
   border-radius: 4px;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  &.status_lg{
+    height: 40px;
+    font-size: 14px;
+    padding: 2px 16px;
+  }
   &.status_active{
     color: #52C41A;
     background-color: #F6FFED;

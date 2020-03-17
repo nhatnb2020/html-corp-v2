@@ -78,157 +78,343 @@
         </div>
       </aside>
       <main class="main">
-        <section class="vntContent flightCheckout2">
+        <section class="vntContent flightCheckout">
           <div class="vntStep">
-            <div class="vntStep__item visited"><span class="vntStep__numb">1</span><span class="vntStep__text">Thông tin đặt vé</span></div>
-            <div class="vntStep__item active"><span class="vntStep__numb">2</span><span class="vntStep__text">Thanh toán</span></div>
+            <div class="vntStep__item active"><span class="vntStep__numb">1</span><span class="vntStep__text">Thông tin đặt vé</span></div>
+            <div class="vntStep__item"><span class="vntStep__numb">2</span><span class="vntStep__text">Thanh toán</span></div>
             <div class="vntStep__item"><span class="vntStep__numb">3</span><span class="vntStep__text">Hoàn tất</span></div>
           </div>
           <div class="vntCheckout">
-            <div class="vntCheckout__left">
-              <h2 class="heading2">Chọn hình thức thanh toán</h2>
-              <div class="vntCheckout__box">
-                <div class="payments">
-                  <div class="payments__item">
-                    <div class="radio radio_lg">
-                      <input type="radio" id="pm1" name="payments">
-                      <label for="pm1">
-                        <p class="p1">Thanh toán công nợ</p>
-                        <p class="p2">Mô tả thanh toán công nợ sẽ đc ghi ở đây</p>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="payments__item">
-                    <div class="radio radio_lg">
-                      <input type="radio" id="pm2" name="payments">
-                      <label for="pm2">
-                        <p class="p1">Thanh toán trực tiếp</p>
-                        <p class="p2">Bằng các phương thức chuyển khoản, ví điện tử Momo, ví điện tử AirPay</p>
-                      </label>
-                    </div>
-                    <ul class="payments__child">
-                      <li>
-                        <div class="radio radio_lg">
-                          <input type="radio" id="pmc1" name="paymentsChild">
-                          <label for="pmc1">
-                            <div class="payments__logo"><img src="https://statics.vntrip.vn/images/checkout/i-airpay.png"></div>
-                            <div class="payments__text">
-                              <p class="p1">Thanh toán bằng ví Airpay</p>
-                              <p class="p2">Quý khách vui lòng cài app AirPay trước khi chọn hình thức này để thuận tiện cho việc thanh toán.</p>
-                            </div>
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio radio_lg">
-                          <input type="radio" id="pmc2" name="paymentsChild">
-                          <label for="pmc2">
-                            <div class="payments__logo"><img src="https://statics.vntrip.vn/images/checkout/i-zalopay.png"></div>
-                            <div class="payments__text">
-                              <p class="p1">Thanh toán bằng ví ZaloPay</p>
-                              <p class="p2">Quý khách vui lòng cài app Zalopay trước khi chọn hình thức thanh toán này để thuận lợi việc thanh toán</p>
-                            </div>
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio radio_lg">
-                          <input type="radio" id="pmc3" name="paymentsChild">
-                          <label for="pmc3">
-                            <div class="payments__logo"><img src="https://statics.vntrip.vn/images/checkout/i-momo.png"></div>
-                            <div class="payments__text">
-                              <p class="p1">Thanh toán bằng ví MoMo</p>
-                              <p class="p2">Mô tả phương thức thanh toán</p>
-                            </div>
-                          </label>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="radio radio_lg">
-                          <input type="radio" id="pmc4" name="paymentsChild">
-                          <label for="pmc4">
-                            <div class="payments__logo"><img src="https://statics.vntrip.vn/images/checkout/i-domestic.png"></div>
-                            <div class="payments__text">
-                              <p class="p1">Thanh toán bằng thẻ ATM nội địa</p>
-                              <p class="p2">Quý khách vui lòng cài app MoMo trước khi chọn hình thức này để thuận tiện cho việc thanh toán.</p>
-                            </div>
-                          </label>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+            <div class="holdResult">
+              <p class="holdResult__title">Kết quả giữ chỗ</p>
+              <div class="alert alert_success">
+                <div class="alert__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="#52C41A"></path>
+                    <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z" fill="#52C41A"></path>
+                  </svg>
+                </div>
+                <div class="alert__text">
+                  <p class="p1">Giữ chỗ thành công</p>
+                  <p class="p2">Quý khách vui lòng thanh toán ngay để không bị mất vé đã giữ.</p>
+                </div>
+              </div>
+              <div class="alert alert_success">
+                <div class="alert__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.3831 8.27344H15.2839C15.0449 8.27344 14.8175 8.38828 14.6769 8.58516L10.9925 13.6945L9.32374 11.3789C9.18311 11.1844 8.95811 11.0672 8.71671 11.0672H7.61748C7.46514 11.0672 7.37608 11.2406 7.46514 11.3648L10.3855 15.4148C10.4545 15.5111 10.5454 15.5896 10.6508 15.6437C10.7561 15.6978 10.8729 15.7261 10.9913 15.7261C11.1098 15.7261 11.2265 15.6978 11.3319 15.6437C11.4373 15.5896 11.5282 15.5111 11.5972 15.4148L16.5331 8.57109C16.6245 8.44688 16.5355 8.27344 16.3831 8.27344Z" fill="#52C41A"></path>
+                    <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z" fill="#52C41A"></path>
+                  </svg>
+                </div>
+                <div class="alert__text">
+                  <p class="p1">Giữ chỗ thành công 1/2 vé</p>
+                  <p class="p2">Quý khách đã đặt vé chiều đi thành công. Để chắc chắn quý khách vui lòng hoàn tất việc thanh toán chiều đi truớc, sau đó tiến hành tìm kiếm và đặt lại vé chiều về.</p>
+                </div>
+              </div>
+              <div class="alert alert_fail">
+                <div class="alert__icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.0646 8.31445C16.0646 8.21133 15.9802 8.12695 15.8771 8.12695L14.3303 8.13398L12.0006 10.9113L9.67324 8.13633L8.12402 8.1293C8.0209 8.1293 7.93652 8.21133 7.93652 8.3168C7.93652 8.36133 7.95293 8.40352 7.98105 8.43867L11.0303 12.0715L7.98105 15.702C7.95273 15.7363 7.93702 15.7793 7.93652 15.8238C7.93652 15.927 8.0209 16.0113 8.12402 16.0113L9.67324 16.0043L12.0006 13.227L14.3279 16.002L15.8748 16.009C15.9779 16.009 16.0623 15.927 16.0623 15.8215C16.0623 15.777 16.0459 15.7348 16.0177 15.6996L12.9732 12.0691L16.0224 8.43633C16.0506 8.40352 16.0646 8.35898 16.0646 8.31445Z" fill="#F5222D"></path>
+                    <path d="M12 1.52344C6.20156 1.52344 1.5 6.225 1.5 12.0234C1.5 17.8219 6.20156 22.5234 12 22.5234C17.7984 22.5234 22.5 17.8219 22.5 12.0234C22.5 6.225 17.7984 1.52344 12 1.52344ZM12 20.7422C7.18594 20.7422 3.28125 16.8375 3.28125 12.0234C3.28125 7.20938 7.18594 3.30469 12 3.30469C16.8141 3.30469 20.7188 7.20938 20.7188 12.0234C20.7188 16.8375 16.8141 20.7422 12 20.7422Z" fill="#F5222D"></path>
+                  </svg>
+                </div>
+                <div class="alert__text">
+                  <p class="p1">Giữ chỗ không thành công</p>
+                  <p class="p2">Quý khách vui lòng quay lại trang tìm kiếm để tiến hành đặt vé lại. Thành thật xin lỗi về sự bất tiện này.</p>
                 </div>
               </div>
             </div>
-            <div class="vntCheckout__right">
-              <div class="flightInfo">
-                <p class="flightPlace"><span>Hà Nội</span>
-                  <svg width="14" height="6" viewBox="0 0 14 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13.5 2.97656C13.5 2.90625 13.4688 2.84375 13.4219 2.79687L10.4219 0.0624994C10.3438 -3.57628e-07 10.2422 -0.0156257 10.1484 0.0234373C10.0547 0.0624994 10 0.148437 10 0.25V2H0.25C0.109375 2 0 2.10937 0 2.25V3.75C0 3.89062 0.109375 4 0.25 4H10V5.75C10 5.85156 10.0625 5.9375 10.1484 5.97656C10.2422 6.01562 10.3438 6 10.4219 5.92969L13.4219 3.16406C13.4688 3.11719 13.5 3.04687 13.5 2.97656Z" fill="#203048"></path>
-                  </svg><span>TP Hồ Chí Minh</span>
-                </p>
-                <div class="dateInput">
-                  <label for="date">Ngày đi / ngày về</label>
-                  <div class="input-inline">
-                    <input type="text" value="25/12/2019 – 31/12/2019 (5 đêm)" name="date" id="date" class="form-control">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12.75 1.875H10.125V0.875C10.125 0.80625 10.0688 0.75 10 0.75H9.125C9.05625 0.75 9 0.80625 9 0.875V1.875H5V0.875C5 0.80625 4.94375 0.75 4.875 0.75H4C3.93125 0.75 3.875 0.80625 3.875 0.875V1.875H1.25C0.973437 1.875 0.75 2.09844 0.75 2.375V12.75C0.75 13.0266 0.973437 13.25 1.25 13.25H12.75C13.0266 13.25 13.25 13.0266 13.25 12.75V2.375C13.25 2.09844 13.0266 1.875 12.75 1.875ZM12.125 12.125H1.875V6.1875H12.125V12.125ZM1.875 5.125V3H3.875V3.75C3.875 3.81875 3.93125 3.875 4 3.875H4.875C4.94375 3.875 5 3.81875 5 3.75V3H9V3.75C9 3.81875 9.05625 3.875 9.125 3.875H10C10.0688 3.875 10.125 3.81875 10.125 3.75V3H12.125V5.125H1.875Z" fill="#8C8C8C"></path>
-                    </svg>
-                  </div>
+            <div class="flightList__active">
+              <div class="flightActive">
+                <div class="flightDest">
+                  <p class="p1">Chuyến đi:</p>
+                  <p class="p2">Hà Nội - Hồ Chí Minh</p>
                 </div>
-                <div class="ticketInfo">
-                  <p class="ticketInfo__title">Chiều đi: Từ Hà Nội (HAN)</p>
-                  <div class="ticketInfo__box">
-                    <p class="p1">7:20 - Thứ 4, 25/12/2019</p>
-                    <p class="p2">Bamboo Airways (QL245) - 2h20m</p>
-                    <ul>
-                      <li><span class="span1">Giá vé:</span><span class="span2">6 x 1.200.000 ₫</span></li>
-                      <li><span class="span1">Hành lý:</span><span class="span2">250.000 ₫</span></li>
-                      <li class="liPrice"><span class="span1 medium">Tổng đi</span><span class="span2 blue-1 medium">6.000.000 ₫</span></li>
-                    </ul>
+                <div class="flightTicket">
+                  <div class="flightTicket__info">
+                    <div class="flightTicket__logo"><img src="https://statics.vntrip.vn/images/icons/vietnamairline.png" alt="logoFlight"></div>
+                    <div class="flightTicket__airline">
+                      <p>VietJet Air Phổ thông</p>
+                      <p>Airbus A320 - VJ505</p>
+                    </div>
+                    <div class="flightTrip flightTrip_lg">
+                      <div class="d-block">
+                        <p class="p1">Hà Nội (HAN)</p>
+                        <p class="p2">21:20 - 14/01/2020</p>
+                      </div>
+                      <div class="d-svg">
+                        <p>2h10m</p>
+                        <svg width="88" height="16" viewBox="0 0 88 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M41.3332 14.0002L42.6665 14.0002L45.9998 8.66683L49.6665 8.66683C50.2198 8.66683 50.6665 8.22016 50.6665 7.66683C50.6665 7.1135 50.2198 6.66683 49.6665 6.66683L45.9998 6.66683L42.6665 1.3335L41.3332 1.3335L42.9998 6.66683L39.3332 6.66683L38.3332 5.3335L37.3332 5.3335L37.9998 7.66683L37.3332 10.0002L38.3332 10.0002L39.3332 8.66683L42.9998 8.66683L41.3332 14.0002Z" fill="#D9D9D9"></path>
+                          <circle cx="25" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="29" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="33" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="13" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="17" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="21" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="1" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="5" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="9" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="55" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="59" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="63" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="79" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="83" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="87" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="67" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="71" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="75" cy="8" r="1" fill="#C4C4C4"></circle>
+                        </svg>
+                        <p>Bay thẳng</p>
+                      </div>
+                      <div class="d-block">
+                        <p class="p1">TP Hồ Chí Minh (SNG)</p>
+                        <p class="p2">21:20 - 14/01/2020</p>
+                      </div>
+                    </div>
+                    <div class="flightTicket__price">
+                      <p>3.502.000đ</p>
+                      <button type="button" class="flightTicket__click"><span>Chi tiết</span>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.35952 0H8.48062C8.42085 0 8.3646 0.0292969 8.32945 0.0773438L5.00015 4.66641L1.67085 0.0773438C1.6357 0.0292969 1.57945 0 1.51968 0H0.640773C0.564602 0 0.52007 0.0867189 0.564602 0.148828L4.69663 5.84531C4.84663 6.05156 5.15366 6.05156 5.30249 5.84531L9.43452 0.148828C9.48023 0.0867189 9.4357 0 9.35952 0Z" fill="#595959"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="flightTicket__btn">
+                      <div class="status status_lg status_active">Thành công</div>
+                    </div>
                   </div>
-                  <p class="ticketInfo__title">Chiều về: Từ TP Hồ Chí Minh (SGN)</p>
-                  <div class="ticketInfo__box">
-                    <p class="p1">7:20 - Thứ 4, 25/12/2019</p>
-                    <p class="p2">Bamboo Airways (QL245) - 2h20m</p>
-                    <ul>
-                      <li><span class="span1">Giá vé:</span><span class="span2">6 x 1.200.000 ₫</span></li>
-                      <li><span class="span1">Hành lý:</span><span class="span2">250.000 ₫</span></li>
-                      <li class="liPrice"><span class="span1 medium">Tổng về</span><span class="span2 blue-1 medium">6.000.000 ₫</span></li>
-                    </ul>
-                  </div>
-                  <div class="ticketInfo__tax">
-                    <p class="ticketInfo__title"><span>Thuế và phí khác</span><span class="medium">4.000.000 ₫
-                        <button type="button" class="btnArrow">
-                          <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.96405 5.60637L0.920313 0.104809C0.901908 0.0903191 0.879788 0.081314 0.856495 0.0788282C0.833203 0.0763424 0.809681 0.0804768 0.788632 0.0907565C0.767583 0.101036 0.749861 0.117045 0.7375 0.136943C0.725139 0.156841 0.71864 0.179822 0.718751 0.203247V1.41106C0.718751 1.48762 0.754689 1.56106 0.814064 1.60793L6.43905 6.00012L0.814064 10.3923C0.753126 10.4392 0.718751 10.5126 0.718751 10.5892V11.797C0.718751 11.9017 0.839063 11.9595 0.920313 11.8954L7.96405 6.39387C8.02391 6.34717 8.07234 6.28744 8.10565 6.21921C8.13896 6.15098 8.15628 6.07605 8.15628 6.00012C8.15628 5.92419 8.13896 5.84927 8.10565 5.78104C8.07234 5.71281 8.02391 5.65307 7.96405 5.60637Z" fill="black"></path>
+                  <div class="flightTicket__detail">
+                    <div class="flightTicket__trip">
+                      <div class="flightTrip flightTrip_lg">
+                        <div class="d-block">
+                          <p class="p1">Hà Nội (HAN)</p>
+                          <p class="p2">21:20 - 14/01/2020</p>
+                        </div>
+                        <div class="d-svg">
+                          <p>2h10m</p>
+                          <svg width="40" height="16" viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.3332 14.0002L18.6665 14.0002L21.9998 8.66683L25.6665 8.66683C26.2198 8.66683 26.6665 8.22016 26.6665 7.66683C26.6665 7.1135 26.2198 6.66683 25.6665 6.66683L21.9998 6.66683L18.6665 1.3335L17.3332 1.3335L18.9998 6.66683L15.3332 6.66683L14.3332 5.3335L13.3332 5.3335L13.9998 7.66683L13.3332 10.0002L14.3332 10.0002L15.3332 8.66683L18.9998 8.66683L17.3332 14.0002Z" fill="#D9D9D9"></path>
+                            <circle cx="1" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="5" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="9" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="31" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="35" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="39" cy="8" r="1" fill="#C4C4C4"></circle>
                           </svg>
-                        </button></span></p>
-                    <div class="ticketInfo__box">
-                      <ul>
-                        <li><span class="span1">Thuế giá trị gia tăng:</span><span class="span2">250.000 ₫</span></li>
-                        <li><span class="span1">Phí soi chiếu an ninh:</span><span class="span2">250.000 ₫</span></li>
-                        <li><span class="span1">Phí dịch vụ chặng nội địa:</span><span class="span2">250.000 ₫</span></li>
-                        <li><span class="span1">Phụ thu quản trị hệ thống:</span><span class="span2">250.000 ₫</span></li>
-                      </ul>
+                          <p>Bay thẳng</p>
+                        </div>
+                        <div class="d-block">
+                          <p class="p1">TP Hồ Chí Minh (SNG)</p>
+                          <p class="p2">21:20 - 14/01/2020</p>
+                        </div>
+                      </div>
+                      <div class="flightAirline">
+                        <div class="flightAirline__logo"><img src="https://statics.vntrip.vn/images/icons/vietnamairline.png" alt="logoFlight"></div>
+                        <div class="flightAirline__cont">
+                          <p>Vietnamairline</p>
+                          <p>Chuyến bay: BL745</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flightTicket__policy">
+                      <p class="pTitle">Điều kiện về vé:<span class="blue-1">Phổ thông</span></p>
+                      <p class="pLine"><span>Thanh toán:</span><span class="red-1">Thanh toán ngay</span></p>
+                      <p class="pLine"><span>Hoàn vé:</span><span>Không được phép</span></p>
+                      <p class="pLine"><span>Đổi tên hành khách:</span><span>Được phép - Thu phí: 495.000₫ /Người/chặng</span></p>
+                      <p class="pLine"><span>Đổi hành trình:</span><span>Được phép - Thu phí: 374.000₫ + Giá vé chênh lệch (nếu có).</span></p>
+                      <p class="pLine"><span>Đổi ngày giờ chuyến bay:</span><span>Được phép - Thu phí: 374.000₫ + Giá vé chênh lệch (nếu có).</span></p>
+                      <p class="pLine"><span>Thời hạn thay đổi (bao gồm thay đổi ngày, chuyến bay)</span><span>Trước giờ khởi hành 12 tiếng.</span></p>
+                      <p class="pTitle">Điều kiện hành lý</p>
+                      <p class="pLine"><span>Hành lý xách tay:</span><span>07 Kg</span></p>
+                      <p class="pLine"><span>Hành lý ký gửi:</span><span>Vui lòng chọn ở bước sau</span></p>
+                    </div>
+                    <div class="flightTicket__table">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Số lượng</th>
+                            <th>Giá mỗi vé</th>
+                            <th class="text-right">Thuế và phí</th>
+                            <th class="text-right">Tổng giá</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>06</td>
+                            <td>380.000₫</td>
+                            <td class="text-right">0đ</td>
+                            <td class="blue-1 text-right medium">2.280.000₫</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="textNote">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.9327 12.375L7.43272 1.125C7.33584 0.957813 7.16866 0.875 6.99991 0.875C6.83116 0.875 6.66241 0.957813 6.56709 1.125L0.0670952 12.375C-0.125092 12.7094 0.115533 13.125 0.499908 13.125H13.4999C13.8843 13.125 14.1249 12.7094 13.9327 12.375ZM6.49991 5.5C6.49991 5.43125 6.55616 5.375 6.62491 5.375H7.37491C7.44366 5.375 7.49991 5.43125 7.49991 5.5V8.375C7.49991 8.44375 7.44366 8.5 7.37491 8.5H6.62491C6.55616 8.5 6.49991 8.44375 6.49991 8.375V5.5ZM6.99991 11C6.80365 10.996 6.61677 10.9152 6.47939 10.775C6.34201 10.6348 6.26506 10.4463 6.26506 10.25C6.26506 10.0537 6.34201 9.86522 6.47939 9.725C6.61677 9.58478 6.80365 9.50401 6.99991 9.5C7.19617 9.50401 7.38304 9.58478 7.52042 9.725C7.65781 9.86522 7.73475 10.0537 7.73475 10.25C7.73475 10.4463 7.65781 10.6348 7.52042 10.775C7.38304 10.9152 7.19617 10.996 6.99991 11Z" fill="#FA8C16"></path>
+                        </svg><span>Lưu ý: Đây là loại vé khuyến mại, bạn cần thực hiện thanh toán ngay đối với loại vé này</span>
+                      </p>
+                    </div>
+                    <div class="flightTicket__btn">
+                      <button type="button" class="btn">Chọn</button>
                     </div>
                   </div>
                 </div>
-                <div class="flightInfo__price">
-                  <p class="p1">Tổng cộng</p>
-                  <p class="p2">401.822.404 ₫</p>
+              </div>
+              <div class="flightActive">
+                <div class="flightDest">
+                  <p class="p1">Chuyến về:</p>
+                  <p class="p2">Hồ Chí Minh - Hà Nội</p>
                 </div>
-                <div class="levelTotal">
-                  <p>Tổng hạn mức còn lại:<span>8.041.401đ</span></p>
-                  <div class="tooltip">
-                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M6 0.75C3.10078 0.75 0.75 3.10078 0.75 6C0.75 8.89922 3.10078 11.25 6 11.25C8.89922 11.25 11.25 8.89922 11.25 6C11.25 3.10078 8.89922 0.75 6 0.75ZM6.375 8.53125C6.375 8.58281 6.33281 8.625 6.28125 8.625H5.71875C5.66719 8.625 5.625 8.58281 5.625 8.53125V5.34375C5.625 5.29219 5.66719 5.25 5.71875 5.25H6.28125C6.33281 5.25 6.375 5.29219 6.375 5.34375V8.53125ZM6 4.5C5.8528 4.497 5.71265 4.43641 5.60961 4.33125C5.50658 4.22609 5.44887 4.08473 5.44887 3.9375C5.44887 3.79027 5.50658 3.64891 5.60961 3.54375C5.71265 3.43859 5.8528 3.378 6 3.375C6.1472 3.378 6.28735 3.43859 6.39039 3.54375C6.49342 3.64891 6.55113 3.79027 6.55113 3.9375C6.55113 4.08473 6.49342 4.22609 6.39039 4.33125C6.28735 4.43641 6.1472 4.497 6 4.5Z" fill="#595959"></path>
-                    </svg>
-                    <div class="tooltip__cont">abcd 1234</div>
+                <div class="flightTicket">
+                  <div class="flightTicket__info">
+                    <div class="flightTicket__logo"><img src="https://statics.vntrip.vn/images/icons/vietnamairline.png" alt="logoFlight"></div>
+                    <div class="flightTicket__airline">
+                      <p>VietJet Air Phổ thông</p>
+                      <p>Airbus A320 - VJ505</p>
+                    </div>
+                    <div class="flightTrip flightTrip_lg">
+                      <div class="d-block">
+                        <p class="p1">TP Hồ Chí Minh (SNG)</p>
+                        <p class="p2">21:20 - 14/01/2020</p>
+                      </div>
+                      <div class="d-svg">
+                        <p>2h10m</p>
+                        <svg width="40" height="16" viewBox="0 0 40 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.3332 14.0002L18.6665 14.0002L21.9998 8.66683L25.6665 8.66683C26.2198 8.66683 26.6665 8.22016 26.6665 7.66683C26.6665 7.1135 26.2198 6.66683 25.6665 6.66683L21.9998 6.66683L18.6665 1.3335L17.3332 1.3335L18.9998 6.66683L15.3332 6.66683L14.3332 5.3335L13.3332 5.3335L13.9998 7.66683L13.3332 10.0002L14.3332 10.0002L15.3332 8.66683L18.9998 8.66683L17.3332 14.0002Z" fill="#D9D9D9"></path>
+                          <circle cx="1" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="5" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="9" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="31" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="35" cy="8" r="1" fill="#C4C4C4"></circle>
+                          <circle cx="39" cy="8" r="1" fill="#C4C4C4"></circle>
+                        </svg>
+                        <p>Bay thẳng</p>
+                      </div>
+                      <div class="d-block">
+                        <p class="p1">Hà Nội (HAN)</p>
+                        <p class="p2">21:20 - 14/01/2020</p>
+                      </div>
+                    </div>
+                    <div class="flightTicket__price">
+                      <p>3.502.000đ</p>
+                      <button type="button" class="flightTicket__click"><span>Chi tiết</span>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M9.35952 0H8.48062C8.42085 0 8.3646 0.0292969 8.32945 0.0773438L5.00015 4.66641L1.67085 0.0773438C1.6357 0.0292969 1.57945 0 1.51968 0H0.640773C0.564602 0 0.52007 0.0867189 0.564602 0.148828L4.69663 5.84531C4.84663 6.05156 5.15366 6.05156 5.30249 5.84531L9.43452 0.148828C9.48023 0.0867189 9.4357 0 9.35952 0Z" fill="#595959"></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="flightTicket__btn">
+                      <div class="status status_lg status_cancel">Thay đổi giá</div>
+                    </div>
+                    <div class="alert alert_xs alert_fail">
+                      <div class="alert__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M16.0646 8.31445C16.0646 8.21133 15.9802 8.12695 15.8771 8.12695L14.3303 8.13398L12.0006 10.9113L9.67324 8.13633L8.12402 8.1293C8.0209 8.1293 7.93652 8.21133 7.93652 8.3168C7.93652 8.36133 7.95293 8.40352 7.98105 8.43867L11.0303 12.0715L7.98105 15.702C7.95273 15.7363 7.93702 15.7793 7.93652 15.8238C7.93652 15.927 8.0209 16.0113 8.12402 16.0113L9.67324 16.0043L12.0006 13.227L14.3279 16.002L15.8748 16.009C15.9779 16.009 16.0623 15.927 16.0623 15.8215C16.0623 15.777 16.0459 15.7348 16.0177 15.6996L12.9732 12.0691L16.0224 8.43633C16.0506 8.40352 16.0646 8.35898 16.0646 8.31445Z" fill="#F5222D"></path>
+                          <path d="M12 1.52344C6.20156 1.52344 1.5 6.225 1.5 12.0234C1.5 17.8219 6.20156 22.5234 12 22.5234C17.7984 22.5234 22.5 17.8219 22.5 12.0234C22.5 6.225 17.7984 1.52344 12 1.52344ZM12 20.7422C7.18594 20.7422 3.28125 16.8375 3.28125 12.0234C3.28125 7.20938 7.18594 3.30469 12 3.30469C16.8141 3.30469 20.7188 7.20938 20.7188 12.0234C20.7188 16.8375 16.8141 20.7422 12 20.7422Z" fill="#F5222D"></path>
+                        </svg>
+                      </div>
+                      <div class="alert__text">
+                        <p class="p2">Giữ chỗ vé chiều về không thành công do giá vé đã thay đổi</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flightTicket__detail">
+                    <div class="flightTicket__trip">
+                      <div class="flightTrip flightTrip_lg">
+                        <div class="d-block">
+                          <p class="p1">Hà Nội (HAN)</p>
+                          <p class="p2">21:20 - 14/01/2020</p>
+                        </div>
+                        <div class="d-svg">
+                          <p>2h10m</p>
+                          <svg width="88" height="16" viewBox="0 0 88 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41.3332 14.0002L42.6665 14.0002L45.9998 8.66683L49.6665 8.66683C50.2198 8.66683 50.6665 8.22016 50.6665 7.66683C50.6665 7.1135 50.2198 6.66683 49.6665 6.66683L45.9998 6.66683L42.6665 1.3335L41.3332 1.3335L42.9998 6.66683L39.3332 6.66683L38.3332 5.3335L37.3332 5.3335L37.9998 7.66683L37.3332 10.0002L38.3332 10.0002L39.3332 8.66683L42.9998 8.66683L41.3332 14.0002Z" fill="#D9D9D9"></path>
+                            <circle cx="25" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="29" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="33" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="13" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="17" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="21" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="1" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="5" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="9" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="55" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="59" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="63" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="79" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="83" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="87" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="67" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="71" cy="8" r="1" fill="#C4C4C4"></circle>
+                            <circle cx="75" cy="8" r="1" fill="#C4C4C4"></circle>
+                          </svg>
+                          <p>Bay thẳng</p>
+                        </div>
+                        <div class="d-block">
+                          <p class="p1">TP Hồ Chí Minh (SNG)</p>
+                          <p class="p2">21:20 - 14/01/2020</p>
+                        </div>
+                      </div>
+                      <div class="flightAirline">
+                        <div class="flightAirline__logo"><img src="https://statics.vntrip.vn/images/icons/vietnamairline.png" alt="logoFlight"></div>
+                        <div class="flightAirline__cont">
+                          <p>Vietnamairline</p>
+                          <p>Chuyến bay: BL745</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flightTicket__policy">
+                      <p class="pTitle">Điều kiện về vé:<span class="blue-1">Phổ thông</span></p>
+                      <p class="pLine"><span>Thanh toán:</span><span class="red-1">Thanh toán ngay</span></p>
+                      <p class="pLine"><span>Hoàn vé:</span><span>Không được phép</span></p>
+                      <p class="pLine"><span>Đổi tên hành khách:</span><span>Được phép - Thu phí: 495.000₫ /Người/chặng</span></p>
+                      <p class="pLine"><span>Đổi hành trình:</span><span>Được phép - Thu phí: 374.000₫ + Giá vé chênh lệch (nếu có).</span></p>
+                      <p class="pLine"><span>Đổi ngày giờ chuyến bay:</span><span>Được phép - Thu phí: 374.000₫ + Giá vé chênh lệch (nếu có).</span></p>
+                      <p class="pLine"><span>Thời hạn thay đổi (bao gồm thay đổi ngày, chuyến bay)</span><span>Trước giờ khởi hành 12 tiếng.</span></p>
+                      <p class="pTitle">Điều kiện hành lý</p>
+                      <p class="pLine"><span>Hành lý xách tay:</span><span>07 Kg</span></p>
+                      <p class="pLine"><span>Hành lý ký gửi:</span><span>Vui lòng chọn ở bước sau</span></p>
+                    </div>
+                    <div class="flightTicket__table">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Số lượng</th>
+                            <th>Giá mỗi vé</th>
+                            <th class="text-right">Thuế và phí</th>
+                            <th class="text-right">Tổng giá</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>06</td>
+                            <td>380.000₫</td>
+                            <td class="text-right">0đ</td>
+                            <td class="blue-1 text-right medium">2.280.000₫</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p class="textNote">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.9327 12.375L7.43272 1.125C7.33584 0.957813 7.16866 0.875 6.99991 0.875C6.83116 0.875 6.66241 0.957813 6.56709 1.125L0.0670952 12.375C-0.125092 12.7094 0.115533 13.125 0.499908 13.125H13.4999C13.8843 13.125 14.1249 12.7094 13.9327 12.375ZM6.49991 5.5C6.49991 5.43125 6.55616 5.375 6.62491 5.375H7.37491C7.44366 5.375 7.49991 5.43125 7.49991 5.5V8.375C7.49991 8.44375 7.44366 8.5 7.37491 8.5H6.62491C6.55616 8.5 6.49991 8.44375 6.49991 8.375V5.5ZM6.99991 11C6.80365 10.996 6.61677 10.9152 6.47939 10.775C6.34201 10.6348 6.26506 10.4463 6.26506 10.25C6.26506 10.0537 6.34201 9.86522 6.47939 9.725C6.61677 9.58478 6.80365 9.50401 6.99991 9.5C7.19617 9.50401 7.38304 9.58478 7.52042 9.725C7.65781 9.86522 7.73475 10.0537 7.73475 10.25C7.73475 10.4463 7.65781 10.6348 7.52042 10.775C7.38304 10.9152 7.19617 10.996 6.99991 11Z" fill="#FA8C16"></path>
+                        </svg><span>Lưu ý: Đây là loại vé khuyến mại, bạn cần thực hiện thanh toán ngay đối với loại vé này</span>
+                      </p>
+                    </div>
+                    <div class="flightTicket__btn">
+                      <button type="button" class="btn">Chọn</button>
+                    </div>
                   </div>
                 </div>
-                <p class="red-1 size-12">Bạn đã vượt quá hạn mức cho phép, vui lòng liên hệ quản lý</p>
-                <button type="button" onclick="location.href='flightCheckout3.html';" class="btn">Tiếp tục</button>
+              </div>
+              <div class="flightTotal">
+                <button type="button" onclick="location.href='flightList.html';" class="btn btn_outline btnBack">Quay lại trang đặt vé</button>
+                <div class="flightTotal__price">
+                  <p class="p1">Tổng tiền tạm tính:<span>401.822.404 ₫</span></p>
+                  <p class="p2">Đã bao gồm thuế phí</p>
+                </div>
+                <div class="flightTotal__btn">
+                  <button type="button" onclick="location.href='flightCheckout3.html';" class="btn">Đặt chỗ</button>
+                </div>
               </div>
             </div>
           </div>
@@ -245,6 +431,25 @@
     <script>
       $('.ticketInfo__tax .btnArrow').click(function () {
           $(this).parents('.ticketInfo__tax').toggleClass('open');
+      });
+    </script>
+    <script>
+      function close_accordion() {
+          $('.flightTicket.open').removeClass('open');
+          $('.flightTicket__click span').text('Chi tiết');
+      };
+      
+      $(".flightTicket__click").click(function () {
+          var formCollapse = $(this).parents('.flightTicket');
+          var $this = $(this).find('span');
+          if (formCollapse.is('.open')) {
+              close_accordion();
+              $this.text('Chi tiết');
+          } else {
+              close_accordion();
+              formCollapse.addClass('open');
+              $this.text('Ẩn');
+          }
       });
     </script>
   </body>
