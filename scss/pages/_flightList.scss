@@ -11,7 +11,8 @@
 }
 .flightDest{
   display: flex;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
+  position: relative;
   p{
     margin-bottom: 0;
     font-size: 24px;
@@ -21,6 +22,19 @@
     &.p2{
       font-weight: 500;
       color: #262626;
+    }
+    &.p3{
+      font-size: 14px;
+      color: #262626;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      svg,span{
+        vertical-align: middle;
+      }
+      span{
+        padding-left: 5px;
+      }
     }
   }
 }
@@ -370,10 +384,17 @@
   }
   &__price{
     p{
-      font-size: 20px;
-      font-weight: $medium;
-      color: #262626;
       margin-bottom: 0;
+      &.p1{
+        font-size: 16px;
+        color: #8c8c8c;
+        text-decoration: line-through;
+      }
+      &.p2{
+        font-size: 20px;
+        font-weight: $medium;
+        color: #262626;
+      }
     }
   }
   &.open{
@@ -390,6 +411,7 @@
   }
 }
 .flightActive{
+  margin-bottom: 30px;
   .flightTicket{
     box-shadow: $shadow;
     &__airline{}
