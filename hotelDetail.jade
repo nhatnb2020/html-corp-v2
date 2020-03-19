@@ -351,7 +351,7 @@ html(lang="vi")
                                     .hotelServ__title
                                         p Mô tả khách sạn
                                     .hotelServ__cont
-                                        p.pText Khách Sạn Pullman được thiết kế với phong cách trẻ trung năng động mà không kém phần lãng mạn với những đóa hoa làm điểm nhấn phù hợp với mọi du khách. Khách sạn gồm 13 phòng phòng khách thiết kế đơn giản, gần gũi, trang nhã và được đầu tư trang thiết bị và nội thất hiện đại giúp cho du khách có cảm giác thoải mái như đang ở chính trong căn nhà của mình. Cửa sổ được thiết kế rộng rãi đón ánh sáng tự nhiên chan hòa vào phòng cùng không khí trong lành, mát mẻ của thành phố tình yêu và tầm nhìn ra thành phố lãng mạn.
+                                        p.pText Khách Sạn Pullman được thiết kế với phong cách trẻ trung năng động mà không kém phần lãng mạn với những đóa hoa làm điểm nhấn phù hợp với mọi du khách. Khách sạn gồm 13 phòng phòng khách thiết kế đơn giản, gần gũi, trang nhã và được đầu tư trang thiết bị và nội thất hiện đại giúp cho du khách có cảm giác thoải mái như đang ở chính trong căn nhà của mình. Cửa sổ được thiết kế rộng rãi đón ánh sáng tự nhiên chan hòa vào phòng cùng không khí trong lành, mát mẻ của thành phố tình yêu và tầm nhìn ra thành phố lãng mạn. Cửa sổ được thiết kế rộng rãi đón ánh sáng tự nhiên chan hòa vào phòng cùng không khí trong lành, mát mẻ của thành phố tình yêu và tầm nhìn ra thành phố lãng mạn.
                                         button.btnMore(type='button')
                                             span Xem thêm
                                             svg(width='10', height='6', viewBox='0 0 10 6', fill='none', xmlns='http://www.w3.org/2000/svg')
@@ -862,6 +862,29 @@ html(lang="vi")
         script.
             $('.roomItem__click').click(function () {
                 $(this).parents('.roomItem').toggleClass('open');
+            });
+        script.
+            $(".desc-box__btn").click(function () {
+                if ($('.desc-box').hasClass('desc-box_hidden')) {
+                    $('.desc-box').removeClass('desc-box_hidden');
+                    $(this).html('Thu gọn' + '<i class="fas fa-angle-up"></i>');
+                } else {
+                    $('.desc-box').addClass('desc-box_hidden');
+                    $(this).html('Xem thêm' + '<i class="fas fa-angle-down"></i>');
+                }
+                ;
+            });
+            $('.hotelServ .btnMore').click(function () {
+                var pText = $(this).parents('.hotelServ__cont').find('.pText');
+                if(pText.hasClass('pText_full')){
+                    pText.removeClass('pText_full');
+                    $(this).find('span').text('Xem thêm');
+                    $(this).removeClass('rotate');
+                } else {
+                    pText.addClass('pText_full');
+                    $(this).find('span').text('Thu gọn');
+                    $(this).addClass('rotate');
+                }
             });
 
 

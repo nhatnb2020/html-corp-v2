@@ -416,7 +416,7 @@
                     <p>Mô tả khách sạn</p>
                   </div>
                   <div class="hotelServ__cont">
-                    <p class="pText">Khách Sạn Pullman được thiết kế với phong cách trẻ trung năng động mà không kém phần lãng mạn với những đóa hoa làm điểm nhấn phù hợp với mọi du khách. Khách sạn gồm 13 phòng phòng khách thiết kế đơn giản, gần gũi, trang nhã và được đầu tư trang thiết bị và nội thất hiện đại giúp cho du khách có cảm giác thoải mái như đang ở chính trong căn nhà của mình. Cửa sổ được thiết kế rộng rãi đón ánh sáng tự nhiên chan hòa vào phòng cùng không khí trong lành, mát mẻ của thành phố tình yêu và tầm nhìn ra thành phố lãng mạn.</p>
+                    <p class="pText">Khách Sạn Pullman được thiết kế với phong cách trẻ trung năng động mà không kém phần lãng mạn với những đóa hoa làm điểm nhấn phù hợp với mọi du khách. Khách sạn gồm 13 phòng phòng khách thiết kế đơn giản, gần gũi, trang nhã và được đầu tư trang thiết bị và nội thất hiện đại giúp cho du khách có cảm giác thoải mái như đang ở chính trong căn nhà của mình. Cửa sổ được thiết kế rộng rãi đón ánh sáng tự nhiên chan hòa vào phòng cùng không khí trong lành, mát mẻ của thành phố tình yêu và tầm nhìn ra thành phố lãng mạn. Cửa sổ được thiết kế rộng rãi đón ánh sáng tự nhiên chan hòa vào phòng cùng không khí trong lành, mát mẻ của thành phố tình yêu và tầm nhìn ra thành phố lãng mạn.</p>
                     <button type="button" class="btnMore"><span>Xem thêm</span>
                       <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.35952 0H8.48062C8.42085 0 8.3646 0.0292969 8.32945 0.0773438L5.00015 4.66641L1.67085 0.0773438C1.6357 0.0292969 1.57945 0 1.51968 0H0.640773C0.564602 0 0.52007 0.0867189 0.564602 0.148828L4.69663 5.84531C4.84663 6.05156 5.15366 6.05156 5.30249 5.84531L9.43452 0.148828C9.48023 0.0867189 9.4357 0 9.35952 0Z" fill="black"></path>
@@ -964,6 +964,30 @@
     <script>
       $('.roomItem__click').click(function () {
           $(this).parents('.roomItem').toggleClass('open');
+      });
+    </script>
+    <script>
+      $(".desc-box__btn").click(function () {
+          if ($('.desc-box').hasClass('desc-box_hidden')) {
+              $('.desc-box').removeClass('desc-box_hidden');
+              $(this).html('Thu gọn' + '<i class="fas fa-angle-up"></i>');
+          } else {
+              $('.desc-box').addClass('desc-box_hidden');
+              $(this).html('Xem thêm' + '<i class="fas fa-angle-down"></i>');
+          }
+          ;
+      });
+      $('.hotelServ .btnMore').click(function () {
+          var pText = $(this).parents('.hotelServ__cont').find('.pText');
+          if(pText.hasClass('pText_full')){
+              pText.removeClass('pText_full');
+              $(this).find('span').text('Xem thêm');
+              $(this).removeClass('rotate');
+          } else {
+              pText.addClass('pText_full');
+              $(this).find('span').text('Thu gọn');
+              $(this).addClass('rotate');
+          }
       });
     </script>
   </body>
