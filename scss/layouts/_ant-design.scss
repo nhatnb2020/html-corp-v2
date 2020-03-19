@@ -79,3 +79,19 @@
 .ant-row{
   display: block;
 }
+
+// ant-btn
+.ant-btn:hover, .ant-btn:focus{
+  color: $yellow-2;
+  border-color: $yellow-2;
+}
+.ant-btn-primary{
+  background-color: $yellow-2;
+  border-color: $yellow-2;
+  color: #fff;
+}
+.ant-btn-primary:hover, .ant-btn-primary:focus{
+  background-color: $yellow-2;
+  border-color: $yellow-2;
+  color: #fff;
+}
