@@ -19,6 +19,9 @@
   color: #fff;
   background-color: $yellow-2;
   border-color: $yellow-2;
+  &:hover{
+    color: #fff;
+  }
   &.btn_sm{
     font-size: 14px;
     height: 24px;
