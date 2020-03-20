@@ -23,14 +23,18 @@
       }
     }
     .btnGroup{
-      width: 210px;
       margin: 30px auto;
-      .btn{
+      > .btn{
         display: block;
-
+        width: 210px;
+        margin: auto;
         + .btn{
           margin-top: 15px;
         }
+      }
+      .input-group{
+        width: 450px;
+        margin: 0 auto 15px;
       }
     }
   }

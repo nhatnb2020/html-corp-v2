@@ -27,7 +27,10 @@ html(lang="vi")
                             p.p2 Cảm ơn bạn đã đặt phòng tại Vntrip.vn. Yêu cầu đặt phòng sẽ được gửi đến người kiểm duyệt. Vui lòng liên hệ với người kiểm duyệt hệ thống của bạn và không đặt lại đơn hàng.
                             p.p3 Gửi thông tin đặt phòng thành công cho E-mail khác.
                             .btnGroup
-                                a.btn.btn_lg(href='#') Thêm email
+                                #inputEmail.input-group.hidden
+                                    input.form-control(type='text' placeholder='Nhập email')
+                                    button.btn.btn_lg(type='button') Xác nhận
+                                a.btn.btn_lg#addEmail(href='#') Thêm email
                                 a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
                     .vntBox
                         .vntBox__checkout
@@ -82,7 +85,12 @@ html(lang="vi")
             $('.nav-sub').click(function () {
                 $(this).toggleClass('open');
             });
-
+        script.
+            $('#addEmail').click(function () {
+                $('#inputEmail').removeClass('hidden');
+                $(this).addClass('hidden');
+                return false;
+            });
 
 
 

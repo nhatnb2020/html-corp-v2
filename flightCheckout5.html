@@ -89,7 +89,12 @@
               <p class="p1">Đặt vé thành công</p>
               <p class="p2">Cảm ơn bạn đã đặt phòng tại Vntrip.vn. Thông tin đặt phòng sẽ gửi vào E-mail của bạn. Chúc chuyến công tác của bạn thành công tốt đẹp.</p>
               <p class="p3">Gửi thông tin đặt phòng thành công cho E-mail khác</p>
-              <div class="btnGroup"><a href="#" class="btn btn_lg">Thêm email</a><a href="home.html" class="btn btn_outline btn_lg">Quay về trang chủ</a></div>
+              <div class="btnGroup">
+                <div id="inputEmail" class="input-group hidden">
+                  <input type="text" placeholder="Nhập email" class="form-control">
+                  <button type="button" class="btn btn_lg">Xác nhận</button>
+                </div><a id="addEmail" href="#" class="btn btn_lg">Thêm email</a><a href="home.html" class="btn btn_outline btn_lg">Quay về trang chủ</a>
+              </div>
             </div>
           </div>
           <div class="vntBox">
@@ -164,6 +169,13 @@
     <script>
       $('.nav-sub').click(function () {
           $(this).toggleClass('open');
+      });
+    </script>
+    <script>
+      $('#addEmail').click(function () {
+          $('#inputEmail').removeClass('hidden');
+          $(this).addClass('hidden');
+          return false;
       });
     </script>
   </body>
