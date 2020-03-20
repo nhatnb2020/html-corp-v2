@@ -100,7 +100,9 @@
       }
       .hotelFaci{
         display: block;
-        &__item{}
+        &__item{
+          width: 100%;
+        }
       }
     }
   }
