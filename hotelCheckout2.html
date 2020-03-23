@@ -286,5 +286,16 @@
           $('.btnCheckin').addClass('hidden');
       });
     </script>
+    <script>
+      var positionHotelInfo = $(".hotelInfo").offset().top;
+      $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll >= positionHotelInfo) {
+              $(".hotelInfo").addClass('fixedTop');
+          } else {
+              $(".hotelInfo").removeClass('fixedTop');
+          }
+      });
+    </script>
   </body>
 </html>

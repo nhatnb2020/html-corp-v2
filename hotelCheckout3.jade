@@ -235,6 +235,16 @@ html(lang="vi")
                 $('.checkinInfo').addClass('open');
                 $('.btnCheckin').addClass('hidden');
             });
+        script.
+            var positionHotelInfo = $(".hotelInfo").offset().top;
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= positionHotelInfo) {
+                    $(".hotelInfo").addClass('fixedTop');
+                } else {
+                    $(".hotelInfo").removeClass('fixedTop');
+                }
+            });
 
 
 

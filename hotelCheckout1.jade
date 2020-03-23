@@ -315,6 +315,16 @@ html(lang="vi")
                 $('#addNote').removeClass('hidden');
                 $('.formText').removeClass('open');
             });
+        script.
+            var positionHotelInfo = $(".hotelInfo").offset().top;
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= positionHotelInfo) {
+                    $(".hotelInfo").addClass('fixedTop');
+                } else{
+                    $(".hotelInfo").removeClass('fixedTop');
+                }
+            });
 
 
 

@@ -60,6 +60,11 @@
   .hotelInfo{
     position: initial;
     width: 100%;
+    &.fixedTop{
+      position: fixed;
+      top: 0;
+      width: 370px;
+    }
   }
   .flightList__active{
     width: 100%;
