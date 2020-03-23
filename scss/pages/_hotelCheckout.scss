@@ -2,10 +2,6 @@
   width: 255px;
 }
 .checkinInfo{
-  display: none;
-  &.open{
-    display: block;
-  }
   &__name{
     font-size: 16px;
     font-weight: 500;
@@ -44,42 +40,45 @@
   }
 }
 .roomInfo{
-  margin-bottom: 30px;
+  margin-top: -16px;
   &__title{
-    font-size: 14px;
+    font-size: 16px;
     color: #262626;
     font-weight: 500;
-
+    margin-bottom: 8px;
   }
-  &__item{
-    border: 1px solid $border-color;
-    border-radius: 4px;
+  &__group{
     padding: 16px;
-    margin-bottom: 15px;
-    p{
-      &.p1{
-        font-size: 16px;
-        font-weight: 500;
-        color: #262626;
-      }
+    margin: 0 -16px;
+    border-bottom: 1px solid $border-color;
+    &:last-child{
+      border-bottom: none;
     }
     .form-group{
-      margin-bottom: 0;
-      margin-top: 15px;
       > label{
         color: #000;
         font-weight: 500;
       }
     }
-    .formText{
-      display: none;
-      animation: opacityShow .3s ease-in-out;
-      &.open{
-        display: block;
+  }
+  &__item{
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid $border-color;
+    margin-bottom: 16px;
+    &:last-child{
+      margin: 0;
+    }
+    > p{
+      &.p1{
+        font-size: 16px;
+        font-weight: 500;
+        color: #262626;
+        margin-bottom: 8px;
       }
     }
     > .vntMember__table{
-        margin-top: 15px;
+      margin-top: 15px;
     }
   }
   &__radio{
@@ -106,8 +105,9 @@
   }
 }
 .formText{
-  margin: 15px 0;
-  textarea{
-    height: 64px;
+  animation: opacityShow .3s ease-in-out;
+  display: none;
+  &.open{
+    display: block;
   }
 }

@@ -46,10 +46,6 @@ html(lang="vi")
 
                             h2.heading2 Thông tin người nhận
                             .vntCheckout__box
-                                button.dropdown-toggle.btnCheckin(type='button' data-toggle="modal" data-target="#memberPopup")
-                                    span Chọn người nhận
-                                    svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                        path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
                                 .checkinInfo
                                     p.checkinInfo__name Đinh Phúc Khánh
                                     ul
@@ -68,82 +64,22 @@ html(lang="vi")
                                         svg(width='12', height='14', viewBox='0 0 12 14', fill='none', xmlns='http://www.w3.org/2000/svg')
                                             path(d='M11.4141 10.9312C11.1194 10.2331 10.6916 9.59891 10.1547 9.06406C9.61947 8.52767 8.9854 8.10001 8.28754 7.80469C8.28129 7.80156 8.27504 7.8 8.26879 7.79688C9.24223 7.09375 9.87504 5.94844 9.87504 4.65625C9.87504 2.51562 8.14066 0.78125 6.00004 0.78125C3.85941 0.78125 2.12504 2.51562 2.12504 4.65625C2.12504 5.94844 2.75785 7.09375 3.73129 7.79844C3.72504 7.80156 3.71879 7.80312 3.71254 7.80625C3.01254 8.10156 2.38441 8.525 1.84535 9.06563C1.30896 9.60089 0.881296 10.235 0.585977 10.9328C0.295855 11.616 0.139386 12.3485 0.125039 13.0906C0.124622 13.1073 0.127547 13.1239 0.133642 13.1394C0.139737 13.1549 0.148878 13.1691 0.160527 13.181C0.172176 13.193 0.186098 13.2025 0.201471 13.2089C0.216844 13.2154 0.233358 13.2188 0.250039 13.2188H1.18754C1.25629 13.2188 1.31098 13.1641 1.31254 13.0969C1.34379 11.8906 1.82816 10.7609 2.68441 9.90469C3.57035 9.01875 4.74691 8.53125 6.00004 8.53125C7.25316 8.53125 8.42973 9.01875 9.31566 9.90469C10.1719 10.7609 10.6563 11.8906 10.6875 13.0969C10.6891 13.1656 10.7438 13.2188 10.8125 13.2188H11.75C11.7667 13.2188 11.7832 13.2154 11.7986 13.2089C11.814 13.2025 11.8279 13.193 11.8396 13.181C11.8512 13.1691 11.8603 13.1549 11.8664 13.1394C11.8725 13.1239 11.8755 13.1073 11.875 13.0906C11.8594 12.3438 11.7047 11.6172 11.4141 10.9312ZM6.00004 7.34375C5.28285 7.34375 4.60785 7.06406 4.10004 6.55625C3.59223 6.04844 3.31254 5.37344 3.31254 4.65625C3.31254 3.93906 3.59223 3.26406 4.10004 2.75625C4.60785 2.24844 5.28285 1.96875 6.00004 1.96875C6.71723 1.96875 7.39223 2.24844 7.90004 2.75625C8.40785 3.26406 8.68754 3.93906 8.68754 4.65625C8.68754 5.37344 8.40785 6.04844 7.90004 6.55625C7.39223 7.06406 6.71723 7.34375 6.00004 7.34375Z', fill='#096DD9')
                                         span Thay đổi người nhận phòng
+                            .vntCheckout__box
+                                button#addNote.btnLink(type='button')
+                                    svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H7.5V9.875C7.5 9.94375 7.44375 10 7.375 10H6.625C6.55625 10 6.5 9.94375 6.5 9.875V7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H6.5V4.125C6.5 4.05625 6.55625 4 6.625 4H7.375C7.44375 4 7.5 4.05625 7.5 4.125V6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z', fill='#096DD9')
+                                    span Thêm ghi chú
+                                .formText
+                                    label Thêm Ghi chú
+                                    textarea.form-control(placeholder='Ghi chú...')
+                                    .btnInline.mt-15
+                                        button.btn(type='button') Thêm ghi chú
+                                        button.btn.btn_outline(type='button') Hủy bỏ
                             h2.heading2 Thông tin người ở
                             .vntCheckout__box
                                 .roomInfo
-                                    p.roomInfo__title Deluxe Twin With Balcony
-                                    .roomInfo__item
-                                        p.p1 Phòng 1
-                                        button.roomInfo__btn(type='button' data-toggle="modal" data-target="#memberPopup3")
-                                            svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                path(d='M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H7.5V9.875C7.5 9.94375 7.44375 10 7.375 10H6.625C6.55625 10 6.5 9.94375 6.5 9.875V7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H6.5V4.125C6.5 4.05625 6.55625 4 6.625 4H7.375C7.44375 4 7.5 4.05625 7.5 4.125V6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z', fill='#096DD9')
-                                            span Thêm người ở
-                                        .vntMember__table
-                                            table.table
-                                                thead
-                                                    tr
-                                                        th Họ và tên
-                                                        th Chi nhánh & bộ phận
-                                                        th Chức vụ
-                                                        th Hành động
-                                                tbody
-                                                    tr
-                                                        td
-                                                            p.p1 Nguyễn Thanh Tuấn
-                                                            p.p2 nguyenvana@gmail.com | 0982433361
-
-
-                                                        td
-                                                            p.p1 be Sài Gòn
-                                                            p.p2 Product
-
-                                                        td
-                                                            p.p1 Product Designer
-                                                        td.text-center
-                                                            button.btnSvg(type='button')
-                                                                svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                                    rect(width='24', height='24', rx='12', fill='#F5F5F5')
-                                                                    path(d='M17.5 8H15.5V6.75C15.5 6.19844 15.0516 5.75 14.5 5.75H9.5C8.94844 5.75 8.5 6.19844 8.5 6.75V8H6.5C6.22344 8 6 8.22344 6 8.5V9C6 9.06875 6.05625 9.125 6.125 9.125H7.06875L7.45469 17.2969C7.47969 17.8297 7.92031 18.25 8.45312 18.25H15.5469C16.0813 18.25 16.5203 17.8313 16.5453 17.2969L16.9312 9.125H17.875C17.9438 9.125 18 9.06875 18 9V8.5C18 8.22344 17.7766 8 17.5 8ZM14.375 8H9.625V6.875H14.375V8Z', fill='#595959')
-
-
-                                                    tr
-                                                        td
-                                                            p.p1 Nguyễn Thanh Tuấn
-                                                            p.p2 nguyenvana@gmail.com | 0982433361
-
-
-                                                        td
-                                                            p.p1 be Sài Gòn
-                                                            p.p2 Product
-
-                                                        td
-                                                            p.p1 Product Designer
-                                                        td.text-center
-                                                            button.btnSvg(type='button')
-                                                                svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                                    rect(width='24', height='24', rx='12', fill='#F5F5F5')
-                                                                    path(d='M17.5 8H15.5V6.75C15.5 6.19844 15.0516 5.75 14.5 5.75H9.5C8.94844 5.75 8.5 6.19844 8.5 6.75V8H6.5C6.22344 8 6 8.22344 6 8.5V9C6 9.06875 6.05625 9.125 6.125 9.125H7.06875L7.45469 17.2969C7.47969 17.8297 7.92031 18.25 8.45312 18.25H15.5469C16.0813 18.25 16.5203 17.8313 16.5453 17.2969L16.9312 9.125H17.875C17.9438 9.125 18 9.06875 18 9V8.5C18 8.22344 17.7766 8 17.5 8ZM14.375 8H9.625V6.875H14.375V8Z', fill='#595959')
-
-
-                                                    tr
-                                                        td
-                                                            p.p1 Nguyễn Thanh Tuấn
-                                                            p.p2 nguyenvana@gmail.com | 0982433361
-
-
-                                                        td
-                                                            p.p1 be Sài Gòn
-                                                            p.p2 Product
-
-                                                        td
-                                                            p.p1 Product Designer
-                                                        td.text-center
-                                                            button.btnSvg(type='button')
-                                                                svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                                    rect(width='24', height='24', rx='12', fill='#F5F5F5')
-                                                                    path(d='M17.5 8H15.5V6.75C15.5 6.19844 15.0516 5.75 14.5 5.75H9.5C8.94844 5.75 8.5 6.19844 8.5 6.75V8H6.5C6.22344 8 6 8.22344 6 8.5V9C6 9.06875 6.05625 9.125 6.125 9.125H7.06875L7.45469 17.2969C7.47969 17.8297 7.92031 18.25 8.45312 18.25H15.5469C16.0813 18.25 16.5203 17.8313 16.5453 17.2969L16.9312 9.125H17.875C17.9438 9.125 18 9.06875 18 9V8.5C18 8.22344 17.7766 8 17.5 8ZM14.375 8H9.625V6.875H14.375V8Z', fill='#595959')
-
-
+                                    .roomInfo__group
+                                        p.roomInfo__title Deluxe Twin With Balcony
                                         .form-group
                                             label Yêu cầu giường
                                             .roomInfo__radio
@@ -153,20 +89,20 @@ html(lang="vi")
                                                 .radio
                                                     input(type='radio' id='bed2' name='bed')
                                                     label(for='bed2') Giường đôi – Kích thước 400x400
-                                            button.roomInfo__btn(type='button')
+                                        .roomInfo__item
+                                            p.p1 Phòng 1
+                                            button.roomInfo__btn(type='button' data-toggle="modal" data-target="#memberPopup3")
                                                 svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
                                                     path(d='M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H7.5V9.875C7.5 9.94375 7.44375 10 7.375 10H6.625C6.55625 10 6.5 9.94375 6.5 9.875V7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H6.5V4.125C6.5 4.05625 6.55625 4 6.625 4H7.375C7.44375 4 7.5 4.05625 7.5 4.125V6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z', fill='#096DD9')
-                                                span Thêm ghi chú
-                                            .formText.open
-                                                label Ghi chú
-                                                textarea.form-control(placeholder='Ghi chú...')
-
-                                    .roomInfo__item
-                                        p.p1 Phòng 2
-                                        button.roomInfo__btn(type='button' data-toggle="modal" data-target="#memberPopup3")
-                                            svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                path(d='M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H7.5V9.875C7.5 9.94375 7.44375 10 7.375 10H6.625C6.55625 10 6.5 9.94375 6.5 9.875V7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H6.5V4.125C6.5 4.05625 6.55625 4 6.625 4H7.375C7.44375 4 7.5 4.05625 7.5 4.125V6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z', fill='#096DD9')
-                                            span Thêm người ở
+                                                span Thêm người ở
+                                        .roomInfo__item
+                                            p.p1 Phòng 2
+                                            button.roomInfo__btn(type='button' data-toggle="modal" data-target="#memberPopup3")
+                                                svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H7.5V9.875C7.5 9.94375 7.44375 10 7.375 10H6.625C6.55625 10 6.5 9.94375 6.5 9.875V7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H6.5V4.125C6.5 4.05625 6.55625 4 6.625 4H7.375C7.44375 4 7.5 4.05625 7.5 4.125V6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z', fill='#096DD9')
+                                                span Thêm người ở
+                                    .roomInfo__group
+                                        p.roomInfo__title Deluxe Twin With Balcony
                                         .form-group
                                             label Yêu cầu giường
                                             .roomInfo__radio
@@ -176,11 +112,83 @@ html(lang="vi")
                                                 .radio
                                                     input(type='radio' id='bed4' name='bed')
                                                     label(for='bed4') Giường đôi – Kích thước 400x400
-                                            button.roomInfo__btn(type='button')
+                                        .roomInfo__item
+                                            p.p1 Phòng 3
+                                            button.roomInfo__btn(type='button' data-toggle="modal" data-target="#memberPopup3")
                                                 svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
                                                     path(d='M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H7.5V9.875C7.5 9.94375 7.44375 10 7.375 10H6.625C6.55625 10 6.5 9.94375 6.5 9.875V7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H6.5V4.125C6.5 4.05625 6.55625 4 6.625 4H7.375C7.44375 4 7.5 4.05625 7.5 4.125V6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z', fill='#096DD9')
-                                                span Thêm ghi chú
+                                                span Thêm người ở
+                                            .vntMember__table
+                                                table.table
+                                                    thead
+                                                        tr
+                                                            th Họ và tên
+                                                            th Chi nhánh & bộ phận
+                                                            th Chức vụ
+                                                            th Hành động
+                                                    tbody
+                                                        tr
+                                                            td
+                                                                p.p1 Nguyễn Thanh Tuấn
+                                                                p.p2 nguyenvana@gmail.com | 0982433361
 
+
+                                                            td
+                                                                p.p1 be Sài Gòn
+                                                                p.p2 Product
+
+                                                            td
+                                                                p.p1 Product Designer
+                                                            td.text-center
+                                                                button.btnSvg(type='button')
+                                                                    svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                        rect(width='24', height='24', rx='12', fill='#F5F5F5')
+                                                                        path(d='M17.5 8H15.5V6.75C15.5 6.19844 15.0516 5.75 14.5 5.75H9.5C8.94844 5.75 8.5 6.19844 8.5 6.75V8H6.5C6.22344 8 6 8.22344 6 8.5V9C6 9.06875 6.05625 9.125 6.125 9.125H7.06875L7.45469 17.2969C7.47969 17.8297 7.92031 18.25 8.45312 18.25H15.5469C16.0813 18.25 16.5203 17.8313 16.5453 17.2969L16.9312 9.125H17.875C17.9438 9.125 18 9.06875 18 9V8.5C18 8.22344 17.7766 8 17.5 8ZM14.375 8H9.625V6.875H14.375V8Z', fill='#595959')
+
+
+                                                        tr
+                                                            td
+                                                                p.p1 Nguyễn Thanh Tuấn
+                                                                p.p2 nguyenvana@gmail.com | 0982433361
+
+
+                                                            td
+                                                                p.p1 be Sài Gòn
+                                                                p.p2 Product
+
+                                                            td
+                                                                p.p1 Product Designer
+                                                            td.text-center
+                                                                button.btnSvg(type='button')
+                                                                    svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                        rect(width='24', height='24', rx='12', fill='#F5F5F5')
+                                                                        path(d='M17.5 8H15.5V6.75C15.5 6.19844 15.0516 5.75 14.5 5.75H9.5C8.94844 5.75 8.5 6.19844 8.5 6.75V8H6.5C6.22344 8 6 8.22344 6 8.5V9C6 9.06875 6.05625 9.125 6.125 9.125H7.06875L7.45469 17.2969C7.47969 17.8297 7.92031 18.25 8.45312 18.25H15.5469C16.0813 18.25 16.5203 17.8313 16.5453 17.2969L16.9312 9.125H17.875C17.9438 9.125 18 9.06875 18 9V8.5C18 8.22344 17.7766 8 17.5 8ZM14.375 8H9.625V6.875H14.375V8Z', fill='#595959')
+
+
+                                                        tr
+                                                            td
+                                                                p.p1 Nguyễn Thanh Tuấn
+                                                                p.p2 nguyenvana@gmail.com | 0982433361
+
+
+                                                            td
+                                                                p.p1 be Sài Gòn
+                                                                p.p2 Product
+
+                                                            td
+                                                                p.p1 Product Designer
+                                                            td.text-center
+                                                                button.btnSvg(type='button')
+                                                                    svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                        rect(width='24', height='24', rx='12', fill='#F5F5F5')
+                                                                        path(d='M17.5 8H15.5V6.75C15.5 6.19844 15.0516 5.75 14.5 5.75H9.5C8.94844 5.75 8.5 6.19844 8.5 6.75V8H6.5C6.22344 8 6 8.22344 6 8.5V9C6 9.06875 6.05625 9.125 6.125 9.125H7.06875L7.45469 17.2969C7.47969 17.8297 7.92031 18.25 8.45312 18.25H15.5469C16.0813 18.25 16.5203 17.8313 16.5453 17.2969L16.9312 9.125H17.875C17.9438 9.125 18 9.06875 18 9V8.5C18 8.22344 17.7766 8 17.5 8ZM14.375 8H9.625V6.875H14.375V8Z', fill='#595959')
+
+                                        .roomInfo__item
+                                            p.p1 Phòng 4
+                                            button.roomInfo__btn(type='button' data-toggle="modal" data-target="#memberPopup3")
+                                                svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM10 7.375C10 7.44375 9.94375 7.5 9.875 7.5H7.5V9.875C7.5 9.94375 7.44375 10 7.375 10H6.625C6.55625 10 6.5 9.94375 6.5 9.875V7.5H4.125C4.05625 7.5 4 7.44375 4 7.375V6.625C4 6.55625 4.05625 6.5 4.125 6.5H6.5V4.125C6.5 4.05625 6.55625 4 6.625 4H7.375C7.44375 4 7.5 4.05625 7.5 4.125V6.5H9.875C9.94375 6.5 10 6.55625 10 6.625V7.375Z', fill='#096DD9')
+                                                span Thêm người ở
                         .vntCheckout__right
                             .hotelInfo
                                 .rateStar
@@ -297,6 +305,15 @@ html(lang="vi")
             $('#btnAdd').click(function () {
                 $('.checkinInfo').addClass('open');
                 $('.btnCheckin').addClass('hidden');
+            });
+        script.
+            $('#addNote').click(function () {
+                $(this).addClass('hidden');
+                $('.formText').addClass('open');
+            });
+            $('.formText .btnInline .btn').click(function () {
+                $('#addNote').removeClass('hidden');
+                $('.formText').removeClass('open');
             });
 
 
