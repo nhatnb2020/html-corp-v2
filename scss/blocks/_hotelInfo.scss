@@ -103,6 +103,16 @@
           width: 100%;
         }
       }
+      .roomItem__policy{
+        width: 100%;
+        margin-top: 10px;
+      }
+      .iconText{
+        font-size: 12px;
+        > svg{
+          width: 14px;
+        }
+      }
     }
   }
 }

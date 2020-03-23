@@ -461,17 +461,23 @@
   font-size: 14px;
   position: relative;
   padding-left: 25px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
+  &:last-child{
+    margin-bottom: 0;
+  }
   > svg{
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     left: 0;
   }
   > span{
     .tooltip{
       display: inline-block;
       vertical-align: middle;
-      z-index: 3;
+      &__cont{
+        z-index: 3;
+      }
     }
   }
   &_green{
