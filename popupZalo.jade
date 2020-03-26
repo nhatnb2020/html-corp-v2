@@ -1,0 +1,247 @@
+- var page = "hotelCheckout2";
+doctype html
+html(lang="vi")
+    head
+        include jades/includes/_head
+    body(ontouchstart='')
+        section.pageBody
+            include jades/includes/_sidebar
+            main.main
+                section.vntContent.hotelCheckout2
+                    .vntStep
+                        .vntStep__item.visited
+                            span.vntStep__numb 1
+                            span.vntStep__text Thông tin đặt phòng
+                        .vntStep__item.active
+                            span.vntStep__numb 2
+                            span.vntStep__text Thanh toán
+                        .vntStep__item
+                            span.vntStep__numb 3
+                            span.vntStep__text Hoàn tất
+                    .vntCheckout
+                        .vntCheckout__left
+                            h2.heading2 Chọn hình thức thanh toán
+                            .vntCheckout__box
+                                .payments
+                                    .payments__item
+                                        .radio.radio_lg
+                                            input(type='radio' id='pm1' name='payments')
+                                            label(for='pm1')
+                                                p.p1 Thanh toán công nợ
+                                                p.p2 Mô tả thanh toán công nợ sẽ đc ghi ở đây
+                                    .payments__item
+                                        .radio.radio_lg
+                                            input(type='radio' id='pm2' name='payments')
+                                            label(for='pm2')
+                                                p.p1 Thanh toán trực tiếp
+                                                p.p2 Bằng các phương thức chuyển khoản, ví điện tử Momo, ví điện tử AirPay
+                                        ul.payments__child
+                                            li
+                                                .radio.radio_lg
+                                                    input(type='radio' id='pmc1' name='paymentsChild')
+                                                    label(for='pmc1')
+                                                        .payments__logo
+                                                            img(src='https://statics.vntrip.vn/images/checkout/i-airpay.png')
+                                                        .payments__text
+                                                            p.p1 Thanh toán bằng ví Airpay
+                                                            p.p2 Quý khách vui lòng cài app AirPay trước khi chọn hình thức này để thuận tiện cho việc thanh toán.
+
+                                            li
+                                                .radio.radio_lg
+                                                    input(type='radio' id='pmc2' name='paymentsChild')
+                                                    label(for='pmc2')
+                                                        .payments__logo
+                                                            img(src='https://statics.vntrip.vn/images/checkout/i-zalopay.png')
+                                                        .payments__text
+                                                            p.p1 Thanh toán bằng ví ZaloPay
+                                                            p.p2 Quý khách vui lòng cài app Zalopay trước khi chọn hình thức thanh toán này để thuận lợi việc thanh toán
+
+                                            li
+                                                .radio.radio_lg
+                                                    input(type='radio' id='pmc3' name='paymentsChild')
+                                                    label(for='pmc3')
+                                                        .payments__logo
+                                                            img(src='https://statics.vntrip.vn/images/checkout/i-momo.png')
+                                                        .payments__text
+                                                            p.p1 Thanh toán bằng ví MoMo
+                                                            p.p2 Mô tả phương thức thanh toán
+
+                                            li
+                                                .radio.radio_lg
+                                                    input(type='radio' id='pmc4' name='paymentsChild')
+                                                    label(for='pmc4')
+                                                        .payments__logo
+                                                            img(src='https://statics.vntrip.vn/images/checkout/i-domestic.png')
+                                                        .payments__text
+                                                            p.p1 Thanh toán bằng thẻ ATM nội địa
+                                                            p.p2 Quý khách vui lòng cài app MoMo trước khi chọn hình thức này để thuận tiện cho việc thanh toán.
+
+                        .vntCheckout__right
+                            .hotelInfo
+                                .rateStar
+                                    span
+                                        | Khách sạn
+                                        strong 3
+                                    svg(width='10', height='11', viewBox='0 0 10 11', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M9.64179 4.1378L6.6664 3.70538L5.33632 1.00889C5.29999 0.935063 5.24023 0.875297 5.1664 0.838969C4.98124 0.747563 4.75624 0.823735 4.66366 1.00889L3.33358 3.70538L0.358195 4.1378C0.276163 4.14952 0.201163 4.18819 0.143741 4.24678C0.0743216 4.31813 0.0360681 4.41413 0.0373865 4.51367C0.0387049 4.61321 0.0794874 4.70815 0.150773 4.77764L2.30351 6.87647L1.79491 9.84014C1.78299 9.90908 1.79062 9.97999 1.81694 10.0448C1.84325 10.1096 1.88721 10.1658 1.94382 10.2069C2.00043 10.248 2.06743 10.2725 2.13722 10.2774C2.20701 10.2824 2.27679 10.2677 2.33866 10.2351L4.99999 8.83584L7.66132 10.2351C7.73398 10.2737 7.81835 10.2866 7.89921 10.2726C8.10312 10.2374 8.24023 10.044 8.20507 9.84014L7.69648 6.87647L9.84921 4.77764C9.9078 4.72022 9.94648 4.64522 9.95819 4.56319C9.98983 4.35811 9.84687 4.16827 9.64179 4.1378Z', fill='#FADB14')
+
+                                h4.heading4 Pullman Sài Gòn Centre
+                                .hotelAddr
+                                    svg(width='12', height='12', viewBox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M6 0.75C3.10078 0.75 0.75 3.10078 0.75 6C0.75 8.89922 3.10078 11.25 6 11.25C8.89922 11.25 11.25 8.89922 11.25 6C11.25 3.10078 8.89922 0.75 6 0.75ZM6 10.3594C3.59297 10.3594 1.64062 8.40703 1.64062 6C1.64062 3.59297 3.59297 1.64062 6 1.64062C8.40703 1.64062 10.3594 3.59297 10.3594 6C10.3594 8.40703 8.40703 10.3594 6 10.3594ZM8.325 3.46758C8.27911 3.44964 8.23013 3.44093 8.18086 3.44194C8.1316 3.44294 8.08302 3.45365 8.03789 3.47344L4.86211 4.86328L3.47344 8.03906C3.43125 8.13516 3.43125 8.24414 3.47344 8.34023C3.51328 8.43164 3.58711 8.50313 3.68086 8.53945C3.72539 8.55703 3.77109 8.56523 3.81797 8.56523C3.86953 8.56523 3.91992 8.55469 3.96797 8.53359L7.14375 7.14375L8.53242 3.96797C8.55268 3.92162 8.56338 3.87166 8.56386 3.82108C8.56435 3.7705 8.55461 3.72034 8.53524 3.67361C8.51587 3.62689 8.48727 3.58455 8.45114 3.54915C8.41501 3.51374 8.37211 3.486 8.325 3.46758ZM6.75937 6.2625L7.06641 6.56953L6.56953 7.06641L6.2625 6.75937L4.45312 7.55156L5.24414 5.74219L4.94531 5.44219L5.44219 4.94531L5.74102 5.24414L7.55156 4.45312L6.75937 6.2625ZM5.44219 4.94531L4.94531 5.44219L5.24414 5.74219L6.2625 6.75937L6.56953 7.06641L7.06641 6.56953L6.75937 6.2625L5.74219 5.24414L5.44219 4.94531Z', fill='#096DD9')
+                                    .hotelAddr__text
+                                        button(type='button') 03 Cao Thắng, ph12, Q.10, Hồ Chí Minh
+
+                                .dateInput
+                                    label(for='date') Ngày nhận phòng / trả phòng
+                                    .input-inline
+                                        input.form-control(type='text' value='25/12/2019 – 31/12/2019 (5 đêm)' name='date' id='date')
+                                        svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M12.75 1.875H10.125V0.875C10.125 0.80625 10.0688 0.75 10 0.75H9.125C9.05625 0.75 9 0.80625 9 0.875V1.875H5V0.875C5 0.80625 4.94375 0.75 4.875 0.75H4C3.93125 0.75 3.875 0.80625 3.875 0.875V1.875H1.25C0.973437 1.875 0.75 2.09844 0.75 2.375V12.75C0.75 13.0266 0.973437 13.25 1.25 13.25H12.75C13.0266 13.25 13.25 13.0266 13.25 12.75V2.375C13.25 2.09844 13.0266 1.875 12.75 1.875ZM12.125 12.125H1.875V6.1875H12.125V12.125ZM1.875 5.125V3H3.875V3.75C3.875 3.81875 3.93125 3.875 4 3.875H4.875C4.94375 3.875 5 3.81875 5 3.75V3H9V3.75C9 3.81875 9.05625 3.875 9.125 3.875H10C10.0688 3.875 10.125 3.81875 10.125 3.75V3H12.125V5.125H1.875Z', fill='#8C8C8C')
+
+                                .roomType
+                                    p.roomType__title Loại phòng
+                                    ul
+                                        li
+                                            .d-flex
+                                                p.p1
+                                                    | x1 – Deluxe Twin With Balcony
+                                                    span (Giường đơn, giường trẻ em)
+                                                p.p2 100.455.606 ₫
+                                            .roomItem__policy
+                                                .iconText.iconText_green
+                                                    svg(width='16', height='19', viewBox='0 0 16 19', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(fill-rule='evenodd', clip-rule='evenodd', d='M15.3675 3.84441L12.5214 6.69044H10.0508L12.0238 4.71742H5.88651C3.87857 4.71742 2.24603 6.34996 2.24603 8.3579V11.6762H0.5V8.3579C0.5 5.38091 2.91825 2.97139 5.88651 2.97139H12.0238L9.88492 0.833374H12.3556L15.3675 3.84441Z', fill='#389E0D', stroke='white', stroke-width='0.25')
+                                                        path(fill-rule='evenodd', clip-rule='evenodd', d='M15.3675 7.95618V11.2736C15.3675 14.2419 12.9579 16.6601 9.98095 16.6601H3.83492L5.98254 18.799H3.50317L0.5 15.7871L3.34603 12.9411H5.80794L3.83492 14.9141H9.98095C11.9889 14.9141 13.6214 13.2824 13.6214 11.2736V7.95618H15.3675Z', fill='#389E0D', stroke='white', stroke-width='0.25')
+
+                                                    span
+                                                        | Miễn phí hủy phòng
+                                                        .tooltip
+                                                            svg(width='12', height='12', viewBox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M6 0.75C3.10078 0.75 0.75 3.10078 0.75 6C0.75 8.89922 3.10078 11.25 6 11.25C8.89922 11.25 11.25 8.89922 11.25 6C11.25 3.10078 8.89922 0.75 6 0.75ZM6 9.04688C5.74102 9.04688 5.53125 8.83711 5.53125 8.57812C5.53125 8.31914 5.74102 8.10938 6 8.10938C6.25898 8.10938 6.46875 8.31914 6.46875 8.57812C6.46875 8.83711 6.25898 9.04688 6 9.04688ZM6.73711 6.47461C6.63098 6.51559 6.53967 6.5876 6.47507 6.68125C6.41048 6.7749 6.37561 6.88585 6.375 6.99961V7.26562C6.375 7.31719 6.33281 7.35938 6.28125 7.35938H5.71875C5.66719 7.35938 5.625 7.31719 5.625 7.26562V7.01367C5.625 6.74297 5.70352 6.47578 5.8582 6.25312C6.00938 6.03516 6.22031 5.86875 6.46875 5.77383C6.86719 5.62031 7.125 5.28633 7.125 4.92188C7.125 4.40508 6.61992 3.98438 6 3.98438C5.38008 3.98438 4.875 4.40508 4.875 4.92188V5.01094C4.875 5.0625 4.83281 5.10469 4.78125 5.10469H4.21875C4.16719 5.10469 4.125 5.0625 4.125 5.01094V4.92188C4.125 4.46133 4.32656 4.03125 4.69219 3.71133C5.04375 3.40313 5.50781 3.23438 6 3.23438C6.49219 3.23438 6.95625 3.4043 7.30781 3.71133C7.67344 4.03125 7.875 4.46133 7.875 4.92188C7.875 5.59922 7.42852 6.20859 6.73711 6.47461Z', fill='#8C8C8C')
+
+                                                            .tooltip__cont
+                                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non.
+                                                .iconText.iconText_green
+                                                    svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M12.75 1.875H10.125V0.875C10.125 0.80625 10.0688 0.75 10 0.75H9.125C9.05625 0.75 9 0.80625 9 0.875V1.875H5V0.875C5 0.80625 4.94375 0.75 4.875 0.75H4C3.93125 0.75 3.875 0.80625 3.875 0.875V1.875H1.25C0.973437 1.875 0.75 2.09844 0.75 2.375V12.75C0.75 13.0266 0.973437 13.25 1.25 13.25H12.75C13.0266 13.25 13.25 13.0266 13.25 12.75V2.375C13.25 2.09844 13.0266 1.875 12.75 1.875ZM12.125 12.125H1.875V6.1875H12.125V12.125ZM1.875 5.125V3H3.875V3.75C3.875 3.81875 3.93125 3.875 4 3.875H4.875C4.94375 3.875 5 3.81875 5 3.75V3H9V3.75C9 3.81875 9.05625 3.875 9.125 3.875H10C10.0688 3.875 10.125 3.81875 10.125 3.75V3H12.125V5.125H1.875Z', fill='#389E0D')
+
+                                                    span
+                                                        | Áp dụng đổi lịch
+                                                        .tooltip
+                                                            svg(width='12', height='12', viewBox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M6 0.75C3.10078 0.75 0.75 3.10078 0.75 6C0.75 8.89922 3.10078 11.25 6 11.25C8.89922 11.25 11.25 8.89922 11.25 6C11.25 3.10078 8.89922 0.75 6 0.75ZM6 9.04688C5.74102 9.04688 5.53125 8.83711 5.53125 8.57812C5.53125 8.31914 5.74102 8.10938 6 8.10938C6.25898 8.10938 6.46875 8.31914 6.46875 8.57812C6.46875 8.83711 6.25898 9.04688 6 9.04688ZM6.73711 6.47461C6.63098 6.51559 6.53967 6.5876 6.47507 6.68125C6.41048 6.7749 6.37561 6.88585 6.375 6.99961V7.26562C6.375 7.31719 6.33281 7.35938 6.28125 7.35938H5.71875C5.66719 7.35938 5.625 7.31719 5.625 7.26562V7.01367C5.625 6.74297 5.70352 6.47578 5.8582 6.25312C6.00938 6.03516 6.22031 5.86875 6.46875 5.77383C6.86719 5.62031 7.125 5.28633 7.125 4.92188C7.125 4.40508 6.61992 3.98438 6 3.98438C5.38008 3.98438 4.875 4.40508 4.875 4.92188V5.01094C4.875 5.0625 4.83281 5.10469 4.78125 5.10469H4.21875C4.16719 5.10469 4.125 5.0625 4.125 5.01094V4.92188C4.125 4.46133 4.32656 4.03125 4.69219 3.71133C5.04375 3.40313 5.50781 3.23438 6 3.23438C6.49219 3.23438 6.95625 3.4043 7.30781 3.71133C7.67344 4.03125 7.875 4.46133 7.875 4.92188C7.875 5.59922 7.42852 6.20859 6.73711 6.47461Z', fill='#8C8C8C')
+
+                                                            .tooltip__cont
+                                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non.
+                                        li
+                                            .d-flex
+                                                p.p1
+                                                    | x1 – Deluxe Twin With Balcony
+                                                    span (Giường đơn, giường trẻ em)
+                                                p.p2 100.455.606 ₫
+                                            .roomItem__policy
+                                                .iconText.iconText_green
+                                                    svg(width='16', height='19', viewBox='0 0 16 19', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(fill-rule='evenodd', clip-rule='evenodd', d='M15.3675 3.84441L12.5214 6.69044H10.0508L12.0238 4.71742H5.88651C3.87857 4.71742 2.24603 6.34996 2.24603 8.3579V11.6762H0.5V8.3579C0.5 5.38091 2.91825 2.97139 5.88651 2.97139H12.0238L9.88492 0.833374H12.3556L15.3675 3.84441Z', fill='#389E0D', stroke='white', stroke-width='0.25')
+                                                        path(fill-rule='evenodd', clip-rule='evenodd', d='M15.3675 7.95618V11.2736C15.3675 14.2419 12.9579 16.6601 9.98095 16.6601H3.83492L5.98254 18.799H3.50317L0.5 15.7871L3.34603 12.9411H5.80794L3.83492 14.9141H9.98095C11.9889 14.9141 13.6214 13.2824 13.6214 11.2736V7.95618H15.3675Z', fill='#389E0D', stroke='white', stroke-width='0.25')
+
+                                                    span
+                                                        | Miễn phí hủy phòng
+                                                        .tooltip
+                                                            svg(width='12', height='12', viewBox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M6 0.75C3.10078 0.75 0.75 3.10078 0.75 6C0.75 8.89922 3.10078 11.25 6 11.25C8.89922 11.25 11.25 8.89922 11.25 6C11.25 3.10078 8.89922 0.75 6 0.75ZM6 9.04688C5.74102 9.04688 5.53125 8.83711 5.53125 8.57812C5.53125 8.31914 5.74102 8.10938 6 8.10938C6.25898 8.10938 6.46875 8.31914 6.46875 8.57812C6.46875 8.83711 6.25898 9.04688 6 9.04688ZM6.73711 6.47461C6.63098 6.51559 6.53967 6.5876 6.47507 6.68125C6.41048 6.7749 6.37561 6.88585 6.375 6.99961V7.26562C6.375 7.31719 6.33281 7.35938 6.28125 7.35938H5.71875C5.66719 7.35938 5.625 7.31719 5.625 7.26562V7.01367C5.625 6.74297 5.70352 6.47578 5.8582 6.25312C6.00938 6.03516 6.22031 5.86875 6.46875 5.77383C6.86719 5.62031 7.125 5.28633 7.125 4.92188C7.125 4.40508 6.61992 3.98438 6 3.98438C5.38008 3.98438 4.875 4.40508 4.875 4.92188V5.01094C4.875 5.0625 4.83281 5.10469 4.78125 5.10469H4.21875C4.16719 5.10469 4.125 5.0625 4.125 5.01094V4.92188C4.125 4.46133 4.32656 4.03125 4.69219 3.71133C5.04375 3.40313 5.50781 3.23438 6 3.23438C6.49219 3.23438 6.95625 3.4043 7.30781 3.71133C7.67344 4.03125 7.875 4.46133 7.875 4.92188C7.875 5.59922 7.42852 6.20859 6.73711 6.47461Z', fill='#8C8C8C')
+
+                                                            .tooltip__cont
+                                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non.
+                                                .iconText.iconText_green
+                                                    svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M12.75 1.875H10.125V0.875C10.125 0.80625 10.0688 0.75 10 0.75H9.125C9.05625 0.75 9 0.80625 9 0.875V1.875H5V0.875C5 0.80625 4.94375 0.75 4.875 0.75H4C3.93125 0.75 3.875 0.80625 3.875 0.875V1.875H1.25C0.973437 1.875 0.75 2.09844 0.75 2.375V12.75C0.75 13.0266 0.973437 13.25 1.25 13.25H12.75C13.0266 13.25 13.25 13.0266 13.25 12.75V2.375C13.25 2.09844 13.0266 1.875 12.75 1.875ZM12.125 12.125H1.875V6.1875H12.125V12.125ZM1.875 5.125V3H3.875V3.75C3.875 3.81875 3.93125 3.875 4 3.875H4.875C4.94375 3.875 5 3.81875 5 3.75V3H9V3.75C9 3.81875 9.05625 3.875 9.125 3.875H10C10.0688 3.875 10.125 3.81875 10.125 3.75V3H12.125V5.125H1.875Z', fill='#389E0D')
+
+                                                    span
+                                                        | Áp dụng đổi lịch
+                                                        .tooltip
+                                                            svg(width='12', height='12', viewBox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M6 0.75C3.10078 0.75 0.75 3.10078 0.75 6C0.75 8.89922 3.10078 11.25 6 11.25C8.89922 11.25 11.25 8.89922 11.25 6C11.25 3.10078 8.89922 0.75 6 0.75ZM6 9.04688C5.74102 9.04688 5.53125 8.83711 5.53125 8.57812C5.53125 8.31914 5.74102 8.10938 6 8.10938C6.25898 8.10938 6.46875 8.31914 6.46875 8.57812C6.46875 8.83711 6.25898 9.04688 6 9.04688ZM6.73711 6.47461C6.63098 6.51559 6.53967 6.5876 6.47507 6.68125C6.41048 6.7749 6.37561 6.88585 6.375 6.99961V7.26562C6.375 7.31719 6.33281 7.35938 6.28125 7.35938H5.71875C5.66719 7.35938 5.625 7.31719 5.625 7.26562V7.01367C5.625 6.74297 5.70352 6.47578 5.8582 6.25312C6.00938 6.03516 6.22031 5.86875 6.46875 5.77383C6.86719 5.62031 7.125 5.28633 7.125 4.92188C7.125 4.40508 6.61992 3.98438 6 3.98438C5.38008 3.98438 4.875 4.40508 4.875 4.92188V5.01094C4.875 5.0625 4.83281 5.10469 4.78125 5.10469H4.21875C4.16719 5.10469 4.125 5.0625 4.125 5.01094V4.92188C4.125 4.46133 4.32656 4.03125 4.69219 3.71133C5.04375 3.40313 5.50781 3.23438 6 3.23438C6.49219 3.23438 6.95625 3.4043 7.30781 3.71133C7.67344 4.03125 7.875 4.46133 7.875 4.92188C7.875 5.59922 7.42852 6.20859 6.73711 6.47461Z', fill='#8C8C8C')
+
+                                                            .tooltip__cont
+                                                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non.
+                                .hotelInfo__price
+                                    p.p1 Tổng cộng
+                                    p.p2 401.822.404 ₫
+                                .levelTotal
+                                    p
+                                        | Tổng hạn mức còn lại:
+                                        span 8.041.401đ
+                                    .tooltip
+                                        svg(width='12', height='12', viewBox='0 0 12 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M6 0.75C3.10078 0.75 0.75 3.10078 0.75 6C0.75 8.89922 3.10078 11.25 6 11.25C8.89922 11.25 11.25 8.89922 11.25 6C11.25 3.10078 8.89922 0.75 6 0.75ZM6.375 8.53125C6.375 8.58281 6.33281 8.625 6.28125 8.625H5.71875C5.66719 8.625 5.625 8.58281 5.625 8.53125V5.34375C5.625 5.29219 5.66719 5.25 5.71875 5.25H6.28125C6.33281 5.25 6.375 5.29219 6.375 5.34375V8.53125ZM6 4.5C5.8528 4.497 5.71265 4.43641 5.60961 4.33125C5.50658 4.22609 5.44887 4.08473 5.44887 3.9375C5.44887 3.79027 5.50658 3.64891 5.60961 3.54375C5.71265 3.43859 5.8528 3.378 6 3.375C6.1472 3.378 6.28735 3.43859 6.39039 3.54375C6.49342 3.64891 6.55113 3.79027 6.55113 3.9375C6.55113 4.08473 6.49342 4.22609 6.39039 4.33125C6.28735 4.43641 6.1472 4.497 6 4.5Z', fill='#595959')
+                                        .tooltip__cont
+                                            | abcd 1234
+                                p.red-1.size-12 Bạn đã vượt quá hạn mức cho phép, vui lòng liên hệ quản lý
+                                button.btn(type='button' data-toggle="modal" data-target="#zalopay") Tiếp tục
+                #zalopay.modal.fade(role='dialog')
+                    .modal-dialog.modal-zalo
+                        .modal-content
+                            .modal-header
+                                h5.modal-title ZaloPay - Mã QR Code
+                                button.modal-close(data-dismiss='modal')
+                                    svg(width='10', height='12', viewBox='0 0 10 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M5.8095 6L9.91106 1.11094C9.97981 1.02969 9.922 0.90625 9.81575 0.90625H8.56888C8.49544 0.90625 8.42512 0.939062 8.37669 0.995312L4.99388 5.02813L1.61106 0.995312C1.56419 0.939062 1.49388 0.90625 1.41888 0.90625H0.172C0.0657503 0.90625 0.00793765 1.02969 0.0766877 1.11094L4.17825 6L0.0766877 10.8891C0.061287 10.9072 0.0514069 10.9293 0.04822 10.9529C0.0450331 10.9764 0.0486732 11.0004 0.0587085 11.022C0.0687439 11.0435 0.0847529 11.0617 0.104835 11.0745C0.124916 11.0872 0.148227 11.0939 0.172 11.0938H1.41888C1.49231 11.0938 1.56263 11.0609 1.61106 11.0047L4.99388 6.97188L8.37669 11.0047C8.42356 11.0609 8.49388 11.0938 8.56888 11.0938H9.81575C9.922 11.0938 9.97981 10.9703 9.91106 10.8891L5.8095 6Z', fill='#262626')
+
+                            .modal-body
+                                .modal-zalo__row
+                                    .modal-zalo__left
+                                        img(src='https://statics.vntrip.vn/images/qrcode-zalo.png')
+                                        p
+                                            | Thời gian quyét mã QR để thanh toán còn&nbsp;
+                                            span.blue-1.medium 295
+                                            | &nbsp;giây
+                                    .modal-zalo__right
+                                        p.pTitle Thực hiện theo hướng dẫn sau để thanh toán:
+                                        ul
+                                            li
+                                                p.p1 Bước 1
+                                                p.p2 Mở ứng dụng ZaloPay để thanh toán
+                                            li
+                                                p.p1 Bước 2
+                                                p.p2
+                                                    | Trong ZaloPay chọn “Thanh toán”&nbsp;
+                                                    img(src='https://statics.vntrip.vn/images/expand-zalopay.png')
+                                                    br
+                                                    | & quét mã QR code tại hướng dẫn này
+                                            li
+                                                p.p1 Bước 3
+                                                p.p2 Hoàn thành các bước thanh toán theo hướng dẫn
+                            .modal-footer
+                                .modal-btn
+                                    button.btn.btn_outline(type='button') Chọn hình thức thanh toán khác
+
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
+        script.
+            $('.nav-sub').click(function () {
+                $(this).toggleClass('open');
+            });
+        script.
+            $('#btnAdd').click(function () {
+                $('.checkinInfo').addClass('open');
+                $('.btnCheckin').addClass('hidden');
+            });
+        script.
+            var positionHotelInfo = $(".hotelInfo").offset().top;
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= positionHotelInfo) {
+                    $(".hotelInfo").addClass('fixedTop');
+                } else {
+                    $(".hotelInfo").removeClass('fixedTop');
+                }
+            });
+
+
+
+
+
+
+
