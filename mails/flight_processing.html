@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Flight Order Approval</title>
+    <title>Flight Processing</title>
     <style>
         *{
             margin: 0;
@@ -34,8 +34,8 @@
         </td>
     </tr>
     <tr>
-        <td colspan="6" style="background: #B5F5EC; color: #006D75; font-size: 18px; font-weight: bold;text-align: center;padding: 12px 0;text-transform: uppercase;">
-            yêu cầu duyệt đơn hàng
+        <td colspan="6" style="background:#fef0d0; color: #FF8917; font-size: 18px; font-weight: bold;text-align: center;padding: 12px 0;text-transform: uppercase;">
+            ĐƠN ĐANG XỬ LÝ ...
         </td>
     </tr>
     <tr>
@@ -69,7 +69,7 @@
                         </p>
                     </td>
                     <td style="vertical-align: middle;padding: 15px;text-align: right; border-bottom: 1px solid #e8e8e8;">
-                        <img src="https://statics.vntrip.vn/images/mails/progress-1.png" width="300">
+                        <img src="https://statics.vntrip.vn/images/mails/progress-2.png" width="300">
                     </td>
                 </tr>
                 <tr>
@@ -92,59 +92,59 @@
                     <td colspan="6" style="padding: 15px 0;">
                         <table style="width: 100%;">
                             <thead>
-                                <tr>
-                                    <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">CHUYẾN Bay</th>
-                                    <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">Đơn giá (vé)</th>
-                                    <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">SỐ lượng</th>
-                                    <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">Thuế phí</th>
-                                    <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">chi phí</th>
-                                </tr>
+                            <tr>
+                                <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">CHUYẾN Bay</th>
+                                <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">Đơn giá (vé)</th>
+                                <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">SỐ lượng</th>
+                                <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">Thuế phí</th>
+                                <th style="text-align:left;text-transform: uppercase; font-size: 12px; color: #8c8c8c; padding: 0 15px;">chi phí</th>
+                            </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p>Chiều đi</p>
-                                        <p style="font-weight: bold;color: #262626;">
-                                            <span style="vertical-align: middle;">HAN</span>
-                                            <img src="https://statics.vntrip.vn/images/mails/arrow-right.png" width="12" style="vertical-align: middle; margin: 0 5px;">
-                                            <span style="vertical-align: middle;">SGN</span>
-                                        </p>
-                                    </td>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p style="font-weight: bold;color: #262626;">3.455.606 ₫</p>
-                                    </td>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p style="font-weight: bold;color: #262626;">06</p>
-                                    </td>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p style="font-weight: bold;color: #262626;">555.606 ₫</p>
-                                    </td>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p style="font-weight: bold;color: #262626;">19.224.321 ₫</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p>Chiều về</p>
-                                        <p style="font-weight: bold;color: #262626;">
-                                            <span style="vertical-align: middle;">SGN</span>
-                                            <img src="https://statics.vntrip.vn/images/mails/arrow-right.png" width="12" style="vertical-align: middle; margin: 0 5px;">
-                                            <span style="vertical-align: middle;">HAN</span>
-                                        </p>
-                                    </td>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p style="font-weight: bold;color: #262626;">3.455.606 ₫</p>
-                                    </td>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p style="font-weight: bold;color: #262626;">06</p>
-                                    </td>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p style="font-weight: bold;color: #262626;">555.606 ₫</p>
-                                    </td>
-                                    <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
-                                        <p style="font-weight: bold;color: #262626;">19.224.321 ₫</p>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p>Chiều đi</p>
+                                    <p style="font-weight: bold;color: #262626;">
+                                        <span style="vertical-align: middle;">HAN</span>
+                                        <img src="https://statics.vntrip.vn/images/mails/arrow-right.png" width="12" style="vertical-align: middle; margin: 0 5px;">
+                                        <span style="vertical-align: middle;">SGN</span>
+                                    </p>
+                                </td>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p style="font-weight: bold;color: #262626;">3.455.606 ₫</p>
+                                </td>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p style="font-weight: bold;color: #262626;">06</p>
+                                </td>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p style="font-weight: bold;color: #262626;">555.606 ₫</p>
+                                </td>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p style="font-weight: bold;color: #262626;">19.224.321 ₫</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p>Chiều về</p>
+                                    <p style="font-weight: bold;color: #262626;">
+                                        <span style="vertical-align: middle;">SGN</span>
+                                        <img src="https://statics.vntrip.vn/images/mails/arrow-right.png" width="12" style="vertical-align: middle; margin: 0 5px;">
+                                        <span style="vertical-align: middle;">HAN</span>
+                                    </p>
+                                </td>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p style="font-weight: bold;color: #262626;">3.455.606 ₫</p>
+                                </td>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p style="font-weight: bold;color: #262626;">06</p>
+                                </td>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p style="font-weight: bold;color: #262626;">555.606 ₫</p>
+                                </td>
+                                <td style="padding:10px 15px;vertical-align: bottom; font-size: 14px; color: #595959; border-bottom: 1px solid #e8e8e8;">
+                                    <p style="font-weight: bold;color: #262626;">19.224.321 ₫</p>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
                     </td>
@@ -161,30 +161,30 @@
                             </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; border-left: 1px solid #e8e8e8;">
-                                        <p>Vũ Văn Lai</p>
-                                        <p style="font-size: 12px; color: #8c8c8c;">nguyenvana@gmail.com | 0982433361</p>
-                                    </td>
-                                    <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; text-align: right;">
-                                        <p>200.000đ</p>
-                                    </td>
-                                    <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; text-align: right;">
-                                        <p>0</p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; border-left: 1px solid #e8e8e8;">
-                                        <p>Vũ Văn Lai</p>
-                                        <p style="font-size: 12px; color: #8c8c8c;">nguyenvana@gmail.com | 0982433361</p>
-                                    </td>
-                                    <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; text-align: right;">
-                                        <p>200.000đ</p>
-                                    </td>
-                                    <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; text-align: right;">
-                                        <p>0</p>
-                                    </td>
-                                </tr>
+                            <tr>
+                                <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; border-left: 1px solid #e8e8e8;">
+                                    <p>Vũ Văn Lai</p>
+                                    <p style="font-size: 12px; color: #8c8c8c;">nguyenvana@gmail.com | 0982433361</p>
+                                </td>
+                                <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; text-align: right;">
+                                    <p>200.000đ</p>
+                                </td>
+                                <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; text-align: right;">
+                                    <p>0</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; border-left: 1px solid #e8e8e8;">
+                                    <p>Vũ Văn Lai</p>
+                                    <p style="font-size: 12px; color: #8c8c8c;">nguyenvana@gmail.com | 0982433361</p>
+                                </td>
+                                <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; text-align: right;">
+                                    <p>200.000đ</p>
+                                </td>
+                                <td style="vertical-align: middle; padding: 10px 12px; border-bottom: 1px solid #e8e8e8; border-right: 1px solid #e8e8e8; text-align: right;">
+                                    <p>0</p>
+                                </td>
+                            </tr>
                             </tbody>
                         </table>
                     </td>
@@ -287,9 +287,7 @@
                 </tr>
                 <tr>
                     <td colspan="6" style="padding: 30px 15px; text-align: center;">
-                        <a href="" style="margin-right:6px; display: inline-block; background: #1890FF; color: #fff; padding: 10px 15px; font-size: 18px;font-weight: bold; text-decoration: none; border-radius: 4px;min-width: 172px; border: 1px solid #1890FF;">Duyệt yêu cầu</a>
-                        <a href="" style="display: inline-block; background: #fff; color: #FF4D4F; padding: 10px 15px; font-size: 18px;font-weight: bold; text-decoration: none; border-radius: 4px;min-width: 172px; border: 1px solid #FF4D4F;">Từ chối</a>
-
+                        <a href="" style="display: inline-block; background: #FF8917; color: #fff; padding: 10px 15px; font-size: 18px;font-weight: bold; text-decoration: none; border-radius: 4px;min-width: 172px;">Xem chi tiết đơn hàng</a>
                     </td>
                 </tr>
             </table>
