@@ -389,27 +389,28 @@
     padding: 16px 0;
     border-bottom: 1px solid #f5f5f5;
   }
-  &__capa{
-    width: 160px;
-    .iconText{
-      padding-bottom: 0;
-    }
-  }
   &__policy{
-    width: calc(100% - 550px);
+    width: 180px;
     .iconText{
       &:last-child{
         padding-bottom: 0;
       }
     }
   }
+  &__type{
+    width: calc(100% - 540px);
+    .iconText{
+      padding-bottom: 0;
+      padding-left: 35px;
+    }
+  }
   &__price{
-    width: 190px;
-    padding-right: 30px;
+    width: 160px;
   }
   &__action{
     width: 200px;
     text-align: right;
+    padding-left: 30px;
   }
   &__btn{
     .btn{
@@ -474,7 +475,6 @@
   > span{
     .tooltip{
       display: inline-block;
-      vertical-align: middle;
       &__cont{
         z-index: 3;
       }
@@ -485,6 +485,9 @@
   }
   &_red{
     color: #F5222D;
+  }
+  &_orange{
+    color: #FF8917;
   }
 }
 .hotelServ{
