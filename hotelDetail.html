@@ -311,9 +311,27 @@
                           </div>
                         </div>
                         <div class="roomItem__action">
-                          <div class="roomItem__btn">
-                            <p>Chỉ còn<strong>1</strong>phòng!</p>
-                            <button type="button" class="btn">Chọn</button>
+                          <p>Chỉ còn<strong>1</strong>phòng!</p>
+                          <div class="roomItem__dropdown dropdown">
+                            <button type="button" data-toggle="dropdown" class="dropdown-toggle"><span>Chọn phòng</span>
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z" fill="#8C8C8C"></path>
+                              </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li class="dropdown-item">
+                                <p>Không chọn</p>
+                              </li>
+                              <li class="dropdown-item">
+                                <p>1 Phòng - 555.000₫</p>
+                              </li>
+                              <li class="dropdown-item">
+                                <p>2 Phòng - 555.000₫</p>
+                              </li>
+                              <li class="dropdown-item">
+                                <p>3 Phòng - 555.000₫</p>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                       </div>
@@ -378,20 +396,27 @@
                           </div>
                         </div>
                         <div class="roomItem__action">
-                          <ul class="roomItem__amount">
-                            <li class="tooltip active">
-                              <button type="button" class="btnRoom">1</button>
-                              <div class="tooltip__cont">1 phòng: 910.000 ₫</div>
-                            </li>
-                            <li class="tooltip">
-                              <button type="button" class="btnRoom">2</button>
-                              <div class="tooltip__cont">2 phòng: 910.000 ₫</div>
-                            </li>
-                            <li class="tooltip">
-                              <button type="button" class="btnRoom">3</button>
-                              <div class="tooltip__cont">3 phòng: 910.000 ₫</div>
-                            </li>
-                          </ul>
+                          <div class="roomItem__dropdown dropdown">
+                            <button type="button" data-toggle="dropdown" class="dropdown-toggle"><span>Chọn phòng</span>
+                              <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z" fill="#8C8C8C"></path>
+                              </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li class="dropdown-item">
+                                <p>Không chọn</p>
+                              </li>
+                              <li class="dropdown-item">
+                                <p>1 Phòng - 555.000₫</p>
+                              </li>
+                              <li class="dropdown-item">
+                                <p>2 Phòng - 555.000₫</p>
+                              </li>
+                              <li class="dropdown-item">
+                                <p>3 Phòng - 555.000₫</p>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                       <div class="roomItem__row">
@@ -461,35 +486,23 @@
                         </div>
                         <div class="roomItem__action">
                           <div class="roomItem__dropdown dropdown">
-                            <button type="button" data-toggle="dropdown" class="dropdown-toggle"><span>1 Phòng - 555.000₫</span>
+                            <button type="button" data-toggle="dropdown" class="dropdown-toggle"><span>Chọn phòng</span>
                               <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z" fill="#8C8C8C"></path>
                               </svg>
                             </button>
                             <ul class="dropdown-menu">
                               <li class="dropdown-item">
-                                <div class="radio">
-                                  <input type="radio" id="fl1a" name="room">
-                                  <label for="fl1a">1 Phòng - 555.000₫</label>
-                                </div>
+                                <p>Không chọn</p>
                               </li>
                               <li class="dropdown-item">
-                                <div class="radio">
-                                  <input type="radio" id="fl2a" name="room">
-                                  <label for="fl2a">2 Phòng - 555.000₫</label>
-                                </div>
+                                <p>1 Phòng - 555.000₫</p>
                               </li>
                               <li class="dropdown-item">
-                                <div class="radio">
-                                  <input type="radio" id="fl3a" name="room">
-                                  <label for="fl3a">3 Phòng - 555.000₫</label>
-                                </div>
+                                <p>2 Phòng - 555.000₫</p>
                               </li>
                               <li class="dropdown-item">
-                                <div class="radio">
-                                  <input type="radio" id="fl4a" name="room">
-                                  <label for="fl4a">4 Phòng - 555.000₫</label>
-                                </div>
+                                <p>3 Phòng - 555.000₫</p>
                               </li>
                             </ul>
                           </div>

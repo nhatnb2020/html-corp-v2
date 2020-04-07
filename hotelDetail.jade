@@ -264,12 +264,25 @@ html(lang="vi")
                                                         p.p3 (Giá đã bao gồm VAT)
 
                                                 .roomItem__action
-                                                    .roomItem__btn
-                                                        p
-                                                            | Chỉ còn
-                                                            strong 1
-                                                            | phòng!
-                                                        button.btn(type='button') Chọn
+                                                    p
+                                                        | Chỉ còn
+                                                        strong 1
+                                                        | phòng!
+                                                    .roomItem__dropdown.dropdown
+                                                        button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                                            span Chọn phòng
+                                                            svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
+
+                                                        ul.dropdown-menu
+                                                            li.dropdown-item
+                                                                p Không chọn
+                                                            li.dropdown-item
+                                                                p 1 Phòng - 555.000₫
+                                                            li.dropdown-item
+                                                                p 2 Phòng - 555.000₫
+                                                            li.dropdown-item
+                                                                p 3 Phòng - 555.000₫
                                             .roomItem__row
                                                 .roomItem__policy
                                                     .iconText
@@ -329,22 +342,21 @@ html(lang="vi")
                                                         p.p3 (Giá đã bao gồm VAT)
 
                                                 .roomItem__action
-                                                    ul.roomItem__amount
-                                                        li.tooltip.active
-                                                            button.btnRoom(type='button') 1
-                                                            .tooltip__cont
-                                                                | 1 phòng: 910.000 ₫
+                                                    .roomItem__dropdown.dropdown
+                                                        button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                                            span Chọn phòng
+                                                            svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                                path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
 
-                                                        li.tooltip
-                                                            button.btnRoom(type='button') 2
-                                                            .tooltip__cont
-                                                                | 2 phòng: 910.000 ₫
-
-                                                        li.tooltip
-                                                            button.btnRoom(type='button') 3
-                                                            .tooltip__cont
-                                                                | 3 phòng: 910.000 ₫
-
+                                                        ul.dropdown-menu
+                                                            li.dropdown-item
+                                                                p Không chọn
+                                                            li.dropdown-item
+                                                                p 1 Phòng - 555.000₫
+                                                            li.dropdown-item
+                                                                p 2 Phòng - 555.000₫
+                                                            li.dropdown-item
+                                                                p 3 Phòng - 555.000₫
                                             .roomItem__row
                                                 .roomItem__policy
                                                     .iconText
@@ -411,27 +423,19 @@ html(lang="vi")
                                                 .roomItem__action
                                                     .roomItem__dropdown.dropdown
                                                         button.dropdown-toggle(type='button', data-toggle='dropdown')
-                                                            span 1 Phòng - 555.000₫
+                                                            span Chọn phòng
                                                             svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
                                                                 path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
 
                                                         ul.dropdown-menu
                                                             li.dropdown-item
-                                                                .radio
-                                                                    input(type='radio' id='fl1a' name='room')
-                                                                    label(for='fl1a') 1 Phòng - 555.000₫
+                                                                p Không chọn
                                                             li.dropdown-item
-                                                                .radio
-                                                                    input(type='radio' id='fl2a' name='room')
-                                                                    label(for='fl2a') 2 Phòng - 555.000₫
+                                                                p 1 Phòng - 555.000₫
                                                             li.dropdown-item
-                                                                .radio
-                                                                    input(type='radio' id='fl3a' name='room')
-                                                                    label(for='fl3a') 3 Phòng - 555.000₫
+                                                                p 2 Phòng - 555.000₫
                                                             li.dropdown-item
-                                                                .radio
-                                                                    input(type='radio' id='fl4a' name='room')
-                                                                    label(for='fl4a') 4 Phòng - 555.000₫
+                                                                p 3 Phòng - 555.000₫
                             h2.heading2 Thông tin khách sạn
                             .hotelServ
                                 .hotelServ__item
