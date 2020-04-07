@@ -419,6 +419,16 @@
         padding: 0 3px;
       }
     }
+    .ant-btn{
+      width: 100%;
+    }
+    .ant-dropdown-menu-item{
+      p{
+        &.active{
+          color: $yellow-2;
+        }
+      }
+    }
   }
   &__btn{
     .btn{
