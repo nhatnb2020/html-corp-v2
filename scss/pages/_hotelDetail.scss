@@ -176,6 +176,56 @@
     }
   }
 }
+.ant-modal-wrap{
+  .image-gallery-slide{
+    background: transparent;
+  }
+  .image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg{
+    height: 50px;
+    width: 20px;
+    stroke: $yellow-1;
+  }
+  .image-gallery-image{
+    text-align: center;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .image-gallery-slides{
+    -webkit-overflow-scrolling: touch;
+  }
+  .image-gallery-thumbnails-wrapper{
+    height: 95px;
+  }
+  .image-gallery-thumbnail{
+    height: 85px;
+    border-radius: 3px;
+    border: 3px solid transparent;
+    &.active{
+      border-color:$yellow-1;
+      .image-gallery-thumbnail-inner{
+        img{
+          border-radius: 0;
+        }
+      }
+    }
+    .image-gallery-thumbnail-inner{
+      width: 100%;
+      height: 100%;
+      img{
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3px;
+      }
+    }
+  }
+  .image-gallery-slide-wrapper{
+    height: calc(100% - 95px);
+  }
+  .image-gallery-fullscreen-button:hover::before, .image-gallery-play-button:hover::before, .image-gallery-left-nav:hover::before, .image-gallery-right-nav:hover::before{color: $yellow-1;}
+  .image-gallery-icon{
+    filter: none;
+  }
+}
 .modal-dialog.modal-gallery{
   background-color: transparent;
   box-shadow: none;
@@ -398,18 +448,18 @@
     }
   }
   &__type{
-    width: calc(100% - 540px);
+    width: calc(100% - 530px);
     .iconText{
       padding-bottom: 0;
       padding-left: 35px;
     }
   }
   &__price{
-    width: 160px;
+    width: 200px;
     padding-right: 30px;
   }
   &__action{
-    width: 200px;
+    width: 150px;
     text-align: right;
     > p{
       font-size: 12px;
@@ -469,6 +519,31 @@
   }
   &__dropdown{
     text-align: left;
+    &.selected{
+      .dropdown-toggle{
+        background: #fff;
+        border-color: $border-color;
+        color: $text-color;
+        svg{
+          path{
+            fill: #8c8c8c;
+          }
+        }
+      }
+    }
+    .dropdown-toggle{
+      background: $yellow-1;
+      border-color: $yellow-1;
+      color: #fff;
+      svg{
+        path{
+          fill: #fff;
+        }
+      }
+    }
+    .dropdown-menu{
+      min-width: 175px;
+    }
   }
 
 }
