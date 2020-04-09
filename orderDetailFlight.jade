@@ -19,141 +19,48 @@ html(lang="vi")
                             p
                                 | Mã đơn hàng:
                                 strong.red-1 VNTRIP2019C0A68
+                            .status.status_active Thành công
                         .orderDetail__main
                             .orderDetail__flight
-                                .orderDetail__item
-                                    .orderDetail__title
-                                        p Thông tin chiều đi
-                                        .codeBox Mã đặt chỗ
-                                    .flightTicket__info
-                                        .flightTicket__logo
-                                            img(src='https://statics.vntrip.vn/images/icons/vietnamairline.png' alt ='logoFlight')
-                                        .flightTrip
-                                            .d-block
-                                                p.p1 Hà Nội (HAN)
-                                                p.p2 21:20 - 14/01/2020
-                                            .d-svg
-                                                p 2h10m
-                                                svg(width='88', height='16', viewBox='0 0 88 16', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                    path(d='M41.3332 14.0002L42.6665 14.0002L45.9998 8.66683L49.6665 8.66683C50.2198 8.66683 50.6665 8.22016 50.6665 7.66683C50.6665 7.1135 50.2198 6.66683 49.6665 6.66683L45.9998 6.66683L42.6665 1.3335L41.3332 1.3335L42.9998 6.66683L39.3332 6.66683L38.3332 5.3335L37.3332 5.3335L37.9998 7.66683L37.3332 10.0002L38.3332 10.0002L39.3332 8.66683L42.9998 8.66683L41.3332 14.0002Z', fill='#D9D9D9')
-                                                    circle(cx='25', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='29', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='33', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='13', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='17', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='21', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='1', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='5', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='9', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='55', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='59', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='63', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='79', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='83', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='87', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='67', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='71', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='75', cy='8', r='1', fill='#C4C4C4')
+                                p.flightPlace.flightPlace_sm
+                                    span Hà Nội
+                                    svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M3.4 0.862793L1 3.22615L3.4 5.58951', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+                                        path(d='M10.6 3.22607H1', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+                                        path(d='M10.5996 7.95166L12.9996 10.315L10.5996 12.6784', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+                                        path(d='M3.40039 10.3154H13.0004', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
 
-                                                p VNA221
-                                            .d-block
-                                                p.p1 TP Hồ Chí Minh (SNG)
-                                                p.p2 21:20 - 14/01/2020
+                                    span TP Hồ Chí Minh
+                                p.textDate
+                                    svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M12.75 1.875H10.125V0.875C10.125 0.80625 10.0688 0.75 10 0.75H9.125C9.05625 0.75 9 0.80625 9 0.875V1.875H5V0.875C5 0.80625 4.94375 0.75 4.875 0.75H4C3.93125 0.75 3.875 0.80625 3.875 0.875V1.875H1.25C0.973437 1.875 0.75 2.09844 0.75 2.375V12.75C0.75 13.0266 0.973437 13.25 1.25 13.25H12.75C13.0266 13.25 13.25 13.0266 13.25 12.75V2.375C13.25 2.09844 13.0266 1.875 12.75 1.875ZM12.125 12.125H1.875V6.1875H12.125V12.125ZM1.875 5.125V3H3.875V3.75C3.875 3.81875 3.93125 3.875 4 3.875H4.875C4.94375 3.875 5 3.81875 5 3.75V3H9V3.75C9 3.81875 9.05625 3.875 9.125 3.875H10C10.0688 3.875 10.125 3.81875 10.125 3.75V3H12.125V5.125H1.875Z', fill='#8C8C8C')
+                                    span 25/12/2019 – 31/12/2019
+                                a.btnLink(href='#') Xem chi tiết
+                                table.table
+                                    thead
+                                        tr
+                                            th Thông tin CHUYẾN Bay
+                                            th Đơn giá (vé)
+                                            th thuế phí
+                                            th thuế phí
+                                            th số lượng
+                                            th THÀNH TIỀN
+                                    tbody
+                                        tr
+                                            td
+                                                p.p1
+                                                    span.span1 Chiều đi
+                                                    span.status.status_orange Giá đã thay đổi
+                                                p.flightPlace.flightPlace_xs
+                                                    span Hà Nội
+                                                    svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M3.4 0.862793L1 3.22615L3.4 5.58951', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+                                                        path(d='M10.6 3.22607H1', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+                                                        path(d='M10.5996 7.95166L12.9996 10.315L10.5996 12.6784', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
+                                                        path(d='M3.40039 10.3154H13.0004', stroke='#203048', stroke-width='1.25', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
 
-                                        .flightCost
-                                            p.p1 Chi phí
-                                            p.p2 3.000.000 ₫
-                                    .orderDetail__table
-                                        .orderDetail__title
-                                            p Danh sách người đi
-                                        table.table
-                                            thead
-                                                tr
-                                                    th Họ và tên
-                                                    th.text-right Hành lý
-                                            tbody
-                                                tr
-                                                    td
-                                                        p.p1 Vũ Văn Lai
-                                                        p.p2 nguyenvana@gmail.com | 0982433361
-                                                    td.text-right
-                                                        p.p1 10.200.000đ
-                                                tr
-                                                    td
-                                                        p.p1 Vũ Văn Lai
-                                                        p.p2 nguyenvana@gmail.com | 0982433361
-                                                    td.text-right
-                                                        p.p1 10.200.000đ
-                                        .orderDetail__total
-                                            p Chi phí chiều đi (5 người) - Dự kiến
-                                            p 67.000.000 đ
-                                .orderDetail__item
-                                    .orderDetail__title
-                                        p Thông tin chiều đi
-                                        .codeBox Mã đặt chỗ
-                                    .orderDetail__flight
-                                    .flightTicket__info
-                                        .flightTicket__logo
-                                            img(src='https://statics.vntrip.vn/images/icons/vietnamairline.png' alt ='logoFlight')
-                                        .flightTrip
-                                            .d-block
-                                                p.p1 Hà Nội (HAN)
-                                                p.p2 21:20 - 14/01/2020
-                                            .d-svg
-                                                p 2h10m
-                                                svg(width='88', height='16', viewBox='0 0 88 16', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                                    path(d='M41.3332 14.0002L42.6665 14.0002L45.9998 8.66683L49.6665 8.66683C50.2198 8.66683 50.6665 8.22016 50.6665 7.66683C50.6665 7.1135 50.2198 6.66683 49.6665 6.66683L45.9998 6.66683L42.6665 1.3335L41.3332 1.3335L42.9998 6.66683L39.3332 6.66683L38.3332 5.3335L37.3332 5.3335L37.9998 7.66683L37.3332 10.0002L38.3332 10.0002L39.3332 8.66683L42.9998 8.66683L41.3332 14.0002Z', fill='#D9D9D9')
-                                                    circle(cx='25', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='29', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='33', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='13', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='17', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='21', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='1', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='5', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='9', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='55', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='59', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='63', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='79', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='83', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='87', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='67', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='71', cy='8', r='1', fill='#C4C4C4')
-                                                    circle(cx='75', cy='8', r='1', fill='#C4C4C4')
+                                                    span TP Hồ Chí Minh
 
-                                                p VNA221
-                                            .d-block
-                                                p.p1 TP Hồ Chí Minh (SNG)
-                                                p.p2 21:20 - 14/01/2020
-
-                                        .flightCost
-                                            p.p1 Chi phí
-                                            p.p2 3.000.000 ₫
-                                    .orderDetail__table
-                                        .orderDetail__title
-                                            p Danh sách người đi
-                                        table.table
-                                            thead
-                                                tr
-                                                    th Họ và tên
-                                                    th.text-right Hành lý
-                                            tbody
-                                                tr
-                                                    td
-                                                        p.p1 Vũ Văn Lai
-                                                        p.p2 nguyenvana@gmail.com | 0982433361
-                                                    td.text-right
-                                                        p.p1 10.200.000đ
-                                                tr
-                                                    td
-                                                        p.p1 Vũ Văn Lai
-                                                        p.p2 nguyenvana@gmail.com | 0982433361
-                                                    td.text-right
-                                                        p.p1 10.200.000đ
-                                        .orderDetail__total
-                                            p Chi phí chiều đi (5 người) - Dự kiến
-                                            p 67.000.000 đ
                             .orderDetail__price
                                 .orderDetail__line
                                     .p1 Hình thức thanh toán

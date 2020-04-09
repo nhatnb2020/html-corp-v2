@@ -273,6 +273,11 @@
     background-color: #FFFBE6;
     border-color: #FAAD14;
   }
+  &.status_orange{
+    color: #FAAD14;
+    background-color: #FFFBE6;
+    border-color: #FAAD14;
+  }
 }
 .levelTotal{
   display: flex;
@@ -318,4 +323,15 @@ img{
   border-radius: 2px;
   border: 1px dashed #fab516;
   background-color: rgba(250, 181, 22, 0.1);
+}
+.textDate{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #595959;
+  line-height: 1;
+  span{
+    padding-left: 10px;
+  }
 }

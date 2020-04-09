@@ -322,6 +322,7 @@
     font-weight: 500;
     color: #262626;
     margin-bottom: 10px;
+    padding-right: 100px;
   }
   &__click{
     position: absolute;
@@ -455,7 +456,8 @@
     }
   }
   &__type{
-    width: calc(100% - 530px);
+    width: calc(100% - 510px);
+    padding: 0 15px;
     .iconText{
       padding-bottom: 0;
       padding-left: 35px;
@@ -466,7 +468,7 @@
     padding-right: 30px;
   }
   &__action{
-    width: 150px;
+    width: 130px;
     text-align: right;
     > p{
       font-size: 12px;
