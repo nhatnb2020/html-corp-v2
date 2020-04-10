@@ -26,3 +26,28 @@
     }
   }
 }
+.tableNoBorder{
+  width: 100%;
+  max-width: 100%;
+  tr{
+    th{
+      vertical-align: middle;
+      text-align:left;
+      font-size: 12px;
+      font-weight: $medium;
+      color: #8c8c8c;
+      padding: 6px 12px;
+      text-transform: uppercase;
+      border-top: 1px solid #e8e8e8;
+    }
+  }
+  tr{
+    td{
+      vertical-align: bottom;
+      padding: 6px 12px;
+      font-size: 14px;
+      color: #262626;
+      border-bottom: 1px solid #e8e8e8;
+    }
+  }
+}

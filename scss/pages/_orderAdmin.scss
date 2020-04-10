@@ -31,26 +31,45 @@
   &__form{
     display: flex;
     margin-bottom: 12px;
-    .input-inline{
-      + .input-inline{
-        padding-left: 8px;
+    .form-group{
+      margin-bottom: 0;
+      > label{
+        font-size: 14px;
+        font-weight: 500;
+        color: #262626;
       }
-      &.inputSearch{
-        .form-control{
-          width: 340px;
-        }
-      }
+    }
+    .inputSearch{
+      margin-right: 40px;
       .form-control{
-        background: #fff;
+        width: 335px;
       }
+    }
+    .form-control{
+      background: #fff;
+    }
+    .w195{
+      width: 195px;
+      margin-right: 6px;
+    }
+    .memberDropdown__cont{
+      left: auto;
+      right: 0;
+      width: 800px;
     }
   }
   &__row{
     display: flex;
+    justify-content: space-between;
     margin-bottom: 16px;
   }
   &__col{
-    padding-right: 30px;
+    &:nth-child(1){
+      margin-right: 40px;
+    }
+    &:nth-child(2){
+      flex: 1 1 auto;
+    }
     .btnInline{
       .btn{
         &.active{

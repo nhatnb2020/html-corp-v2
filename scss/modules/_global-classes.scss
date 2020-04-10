@@ -278,6 +278,21 @@
     background-color: #FFFBE6;
     border-color: #FAAD14;
   }
+  &.status_green{
+    color: #52C41A;
+    background-color: #F6FFED;
+    border-color: #B7EB8F;
+  }
+  &.status_blue{
+    color: #1890FF;
+    background-color: #E6F7FF;
+    border-color: #91D5FF;
+  }
+  &.status_red{
+    color: $red-1;
+    background-color: #FFF1F0;
+    border-color: $red-1;
+  }
 }
 .levelTotal{
   display: flex;

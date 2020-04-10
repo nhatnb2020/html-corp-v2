@@ -93,37 +93,259 @@
               <button type="button">Đã xử lý</button>
             </li>
           </ul>
-          <p class="orderAdmin__title">Tìm kiếm</p>
           <div class="orderAdmin__form">
-            <div class="input-inline inputSearch">
-              <input type="text" placeholder="Tìm kiếm theo tên, email, SĐT, Mã đơn hàng..." class="form-control">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13.2125 12.3516L9.15469 8.29375C9.78438 7.47969 10.125 6.48438 10.125 5.4375C10.125 4.18438 9.63594 3.00937 8.75156 2.12344C7.86719 1.2375 6.68906 0.75 5.4375 0.75C4.18594 0.75 3.00781 1.23906 2.12344 2.12344C1.2375 3.00781 0.75 4.18438 0.75 5.4375C0.75 6.68906 1.23906 7.86719 2.12344 8.75156C3.00781 9.6375 4.18438 10.125 5.4375 10.125C6.48438 10.125 7.47813 9.78438 8.29219 9.15625L12.35 13.2125C12.3619 13.2244 12.376 13.2338 12.3916 13.2403C12.4071 13.2467 12.4238 13.2501 12.4406 13.2501C12.4575 13.2501 12.4741 13.2467 12.4897 13.2403C12.5052 13.2338 12.5194 13.2244 12.5312 13.2125L13.2125 12.5328C13.2244 12.5209 13.2338 12.5068 13.2403 12.4912C13.2467 12.4757 13.2501 12.459 13.2501 12.4422C13.2501 12.4254 13.2467 12.4087 13.2403 12.3931C13.2338 12.3776 13.2244 12.3635 13.2125 12.3516ZM7.9125 7.9125C7.25 8.57344 6.37187 8.9375 5.4375 8.9375C4.50312 8.9375 3.625 8.57344 2.9625 7.9125C2.30156 7.25 1.9375 6.37187 1.9375 5.4375C1.9375 4.50312 2.30156 3.62344 2.9625 2.9625C3.625 2.30156 4.50312 1.9375 5.4375 1.9375C6.37187 1.9375 7.25156 2.3 7.9125 2.9625C8.57344 3.625 8.9375 4.50312 8.9375 5.4375C8.9375 6.37187 8.57344 7.25156 7.9125 7.9125Z" fill="#8C8C8C"></path>
-              </svg>
+            <div class="form-group">
+              <label>Tìm kiếm</label>
+              <div class="input-inline inputSearch">
+                <input type="text" placeholder="Tìm kiếm theo tên, email, SĐT, Mã đơn hàng..." class="form-control">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.2125 12.3516L9.15469 8.29375C9.78438 7.47969 10.125 6.48438 10.125 5.4375C10.125 4.18438 9.63594 3.00937 8.75156 2.12344C7.86719 1.2375 6.68906 0.75 5.4375 0.75C4.18594 0.75 3.00781 1.23906 2.12344 2.12344C1.2375 3.00781 0.75 4.18438 0.75 5.4375C0.75 6.68906 1.23906 7.86719 2.12344 8.75156C3.00781 9.6375 4.18438 10.125 5.4375 10.125C6.48438 10.125 7.47813 9.78438 8.29219 9.15625L12.35 13.2125C12.3619 13.2244 12.376 13.2338 12.3916 13.2403C12.4071 13.2467 12.4238 13.2501 12.4406 13.2501C12.4575 13.2501 12.4741 13.2467 12.4897 13.2403C12.5052 13.2338 12.5194 13.2244 12.5312 13.2125L13.2125 12.5328C13.2244 12.5209 13.2338 12.5068 13.2403 12.4912C13.2467 12.4757 13.2501 12.459 13.2501 12.4422C13.2501 12.4254 13.2467 12.4087 13.2403 12.3931C13.2338 12.3776 13.2244 12.3635 13.2125 12.3516ZM7.9125 7.9125C7.25 8.57344 6.37187 8.9375 5.4375 8.9375C4.50312 8.9375 3.625 8.57344 2.9625 7.9125C2.30156 7.25 1.9375 6.37187 1.9375 5.4375C1.9375 4.50312 2.30156 3.62344 2.9625 2.9625C3.625 2.30156 4.50312 1.9375 5.4375 1.9375C6.37187 1.9375 7.25156 2.3 7.9125 2.9625C8.57344 3.625 8.9375 4.50312 8.9375 5.4375C8.9375 6.37187 8.57344 7.25156 7.9125 7.9125Z" fill="#8C8C8C"></path>
+                </svg>
+              </div>
             </div>
-            <div class="input-inline">
-              <input type="text" placeholder="Khoảng thời gian" name="date" class="form-control">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.75 1.875H10.125V0.875C10.125 0.80625 10.0688 0.75 10 0.75H9.125C9.05625 0.75 9 0.80625 9 0.875V1.875H5V0.875C5 0.80625 4.94375 0.75 4.875 0.75H4C3.93125 0.75 3.875 0.80625 3.875 0.875V1.875H1.25C0.973437 1.875 0.75 2.09844 0.75 2.375V12.75C0.75 13.0266 0.973437 13.25 1.25 13.25H12.75C13.0266 13.25 13.25 13.0266 13.25 12.75V2.375C13.25 2.09844 13.0266 1.875 12.75 1.875ZM12.125 12.125H1.875V6.1875H12.125V12.125ZM1.875 5.125V3H3.875V3.75C3.875 3.81875 3.93125 3.875 4 3.875H4.875C4.94375 3.875 5 3.81875 5 3.75V3H9V3.75C9 3.81875 9.05625 3.875 9.125 3.875H10C10.0688 3.875 10.125 3.81875 10.125 3.75V3H12.125V5.125H1.875Z" fill="#8C8C8C"></path>
-              </svg>
-            </div>
-            <div class="input-inline">
-              <input type="text" placeholder="Chi nhánh &amp; Bộ phận" class="form-control">
-              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.45308 11.0938C4.45308 11.3703 4.67496 11.5938 4.94996 11.5938H9.04996C9.32495 11.5938 9.54683 11.3703 9.54683 11.0938V8.03125H4.45308V11.0938ZM12.7515 0.40625H1.24839C0.86558 0.40625 0.626518 0.823438 0.818705 1.15625L4.27652 7.03125H9.72652L13.1843 1.15625C13.3734 0.823438 13.1343 0.40625 12.7515 0.40625Z" fill="#8C8C8C"></path>
-              </svg>
-            </div>
-            <div class="input-inline">
-              <input type="text" placeholder="Chức vụ" class="form-control">
-              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.45308 11.0938C4.45308 11.3703 4.67496 11.5938 4.94996 11.5938H9.04996C9.32495 11.5938 9.54683 11.3703 9.54683 11.0938V8.03125H4.45308V11.0938ZM12.7515 0.40625H1.24839C0.86558 0.40625 0.626518 0.823438 0.818705 1.15625L4.27652 7.03125H9.72652L13.1843 1.15625C13.3734 0.823438 13.1343 0.40625 12.7515 0.40625Z" fill="#8C8C8C"></path>
-              </svg>
-            </div>
-            <div class="input-inline">
-              <input type="text" placeholder="Lựa chọn thành viên" class="form-control">
-              <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.45308 11.0938C4.45308 11.3703 4.67496 11.5938 4.94996 11.5938H9.04996C9.32495 11.5938 9.54683 11.3703 9.54683 11.0938V8.03125H4.45308V11.0938ZM12.7515 0.40625H1.24839C0.86558 0.40625 0.626518 0.823438 0.818705 1.15625L4.27652 7.03125H9.72652L13.1843 1.15625C13.3734 0.823438 13.1343 0.40625 12.7515 0.40625Z" fill="#8C8C8C"></path>
-              </svg>
+            <div class="form-group">
+              <label>Bộ lọc nâng cao</label>
+              <div class="d-flex">
+                <div class="input-inline w195">
+                  <input type="text" placeholder="Khoảng thời gian" class="form-control">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.75 1.875H10.125V0.875C10.125 0.80625 10.0688 0.75 10 0.75H9.125C9.05625 0.75 9 0.80625 9 0.875V1.875H5V0.875C5 0.80625 4.94375 0.75 4.875 0.75H4C3.93125 0.75 3.875 0.80625 3.875 0.875V1.875H1.25C0.973437 1.875 0.75 2.09844 0.75 2.375V12.75C0.75 13.0266 0.973437 13.25 1.25 13.25H12.75C13.0266 13.25 13.25 13.0266 13.25 12.75V2.375C13.25 2.09844 13.0266 1.875 12.75 1.875ZM12.125 12.125H1.875V6.1875H12.125V12.125ZM1.875 5.125V3H3.875V3.75C3.875 3.81875 3.93125 3.875 4 3.875H4.875C4.94375 3.875 5 3.81875 5 3.75V3H9V3.75C9 3.81875 9.05625 3.875 9.125 3.875H10C10.0688 3.875 10.125 3.81875 10.125 3.75V3H12.125V5.125H1.875Z" fill="#8C8C8C"></path>
+                  </svg>
+                </div>
+                <div class="dropdown w195">
+                  <button type="button" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle"><span>Chi nhánh & bộ phận</span>
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.45307 11.0938C4.45307 11.3703 4.67494 11.5938 4.94994 11.5938H9.04994C9.32494 11.5938 9.54681 11.3703 9.54681 11.0938V8.03125H4.45307V11.0938ZM12.7515 0.40625H1.24838C0.865565 0.40625 0.626503 0.823438 0.81869 1.15625L4.2765 7.03125H9.7265L13.1843 1.15625C13.3734 0.823438 13.1343 0.40625 12.7515 0.40625Z" fill="#8C8C8C"></path>
+                    </svg>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                      <div class="checkbox">
+                        <input id="cn1" type="checkbox">
+                        <label for="cn1">Hà Nội</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="checkbox">
+                        <input id="cn2" type="checkbox">
+                        <label for="cn2">Đà Nẵng</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="checkbox">
+                        <input id="cn3" type="checkbox">
+                        <label for="cn3">Tp Hồ Chí Minh</label>
+                      </div>
+                    </li>
+                    <li class="dropdown-item">
+                      <div class="checkbox">
+                        <input id="cn4" type="checkbox">
+                        <label for="cn4">Nha Trang</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="memberDropdown w195">
+                  <button type="button" class="dropdown-toggle"><span>Lựa chọn người đi/ở</span>
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4.45308 11.0938C4.45308 11.3703 4.67496 11.5938 4.94996 11.5938H9.04996C9.32495 11.5938 9.54683 11.3703 9.54683 11.0938V8.03125H4.45308V11.0938ZM12.7515 0.40625H1.24839C0.86558 0.40625 0.626518 0.823438 0.818705 1.15625L4.27652 7.03125H9.72652L13.1843 1.15625C13.3734 0.823438 13.1343 0.40625 12.7515 0.40625Z" fill="#8C8C8C"></path>
+                    </svg>
+                  </button>
+                  <div class="memberDropdown__cont">
+                    <div class="memberDropdown__search">
+                      <div class="input-inline">
+                        <input type="text" placeholder="Lựa chọn thành viên" class="form-control">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.2125 12.3516L9.15469 8.29375C9.78438 7.47969 10.125 6.48438 10.125 5.4375C10.125 4.18438 9.63594 3.00937 8.75156 2.12344C7.86719 1.2375 6.68906 0.75 5.4375 0.75C4.18594 0.75 3.00781 1.23906 2.12344 2.12344C1.2375 3.00781 0.75 4.18438 0.75 5.4375C0.75 6.68906 1.23906 7.86719 2.12344 8.75156C3.00781 9.6375 4.18438 10.125 5.4375 10.125C6.48438 10.125 7.47813 9.78438 8.29219 9.15625L12.35 13.2125C12.3619 13.2244 12.376 13.2338 12.3916 13.2403C12.4071 13.2467 12.4238 13.2501 12.4406 13.2501C12.4575 13.2501 12.4741 13.2467 12.4897 13.2403C12.5052 13.2338 12.5194 13.2244 12.5312 13.2125L13.2125 12.5328C13.2244 12.5209 13.2338 12.5068 13.2403 12.4912C13.2467 12.4757 13.2501 12.459 13.2501 12.4422C13.2501 12.4254 13.2467 12.4087 13.2403 12.3931C13.2338 12.3776 13.2244 12.3635 13.2125 12.3516ZM7.9125 7.9125C7.25 8.57344 6.37187 8.9375 5.4375 8.9375C4.50312 8.9375 3.625 8.57344 2.9625 7.9125C2.30156 7.25 1.9375 6.37187 1.9375 5.4375C1.9375 4.50312 2.30156 3.62344 2.9625 2.9625C3.625 2.30156 4.50312 1.9375 5.4375 1.9375C6.37187 1.9375 7.25156 2.3 7.9125 2.9625C8.57344 3.625 8.9375 4.50312 8.9375 5.4375C8.9375 6.37187 8.57344 7.25156 7.9125 7.9125Z" fill="#8C8C8C"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="vntMember__table">
+                      <div class="pSelected">
+                        <p class="mb-0">Đã chọn&nbsp;<strong>36</strong>&nbsp;thành viên</p>
+                      </div>
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>&nbsp;</th>
+                            <th>
+                              <div class="dropdown dropdown_form">
+                                <button type="button" data-toggle="dropdown" class="dropdown-toggle"><span>Họ và tên</span>
+                                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.2125 12.3516L9.15469 8.29375C9.78438 7.47969 10.125 6.48438 10.125 5.4375C10.125 4.18438 9.63594 3.00937 8.75156 2.12344C7.86719 1.2375 6.68906 0.75 5.4375 0.75C4.18594 0.75 3.00781 1.23906 2.12344 2.12344C1.2375 3.00781 0.75 4.18438 0.75 5.4375C0.75 6.68906 1.23906 7.86719 2.12344 8.75156C3.00781 9.6375 4.18438 10.125 5.4375 10.125C6.48438 10.125 7.47813 9.78438 8.29219 9.15625L12.35 13.2125C12.3619 13.2244 12.376 13.2338 12.3916 13.2403C12.4071 13.2467 12.4238 13.2501 12.4406 13.2501C12.4575 13.2501 12.4741 13.2467 12.4897 13.2403C12.5052 13.2338 12.5194 13.2244 12.5312 13.2125L13.2125 12.5328C13.2244 12.5209 13.2338 12.5068 13.2403 12.4912C13.2467 12.4757 13.2501 12.459 13.2501 12.4422C13.2501 12.4254 13.2467 12.4087 13.2403 12.3931C13.2338 12.3776 13.2244 12.3635 13.2125 12.3516ZM7.9125 7.9125C7.25 8.57344 6.37187 8.9375 5.4375 8.9375C4.50312 8.9375 3.625 8.57344 2.9625 7.9125C2.30156 7.25 1.9375 6.37187 1.9375 5.4375C1.9375 4.50312 2.30156 3.62344 2.9625 2.9625C3.625 2.30156 4.50312 1.9375 5.4375 1.9375C6.37187 1.9375 7.25156 2.3 7.9125 2.9625C8.57344 3.625 8.9375 4.50312 8.9375 5.4375C8.9375 6.37187 8.57344 7.25156 7.9125 7.9125Z" fill="#8C8C8C"></path>
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li class="dropdown-item">
+                                    <div class="input-inline">
+                                      <input type="text" class="form-control">
+                                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.2125 12.3516L9.15469 8.29375C9.78438 7.47969 10.125 6.48438 10.125 5.4375C10.125 4.18438 9.63594 3.00937 8.75156 2.12344C7.86719 1.2375 6.68906 0.75 5.4375 0.75C4.18594 0.75 3.00781 1.23906 2.12344 2.12344C1.2375 3.00781 0.75 4.18438 0.75 5.4375C0.75 6.68906 1.23906 7.86719 2.12344 8.75156C3.00781 9.6375 4.18438 10.125 5.4375 10.125C6.48438 10.125 7.47813 9.78438 8.29219 9.15625L12.35 13.2125C12.3619 13.2244 12.376 13.2338 12.3916 13.2403C12.4071 13.2467 12.4238 13.2501 12.4406 13.2501C12.4575 13.2501 12.4741 13.2467 12.4897 13.2403C12.5052 13.2338 12.5194 13.2244 12.5312 13.2125L13.2125 12.5328C13.2244 12.5209 13.2338 12.5068 13.2403 12.4912C13.2467 12.4757 13.2501 12.459 13.2501 12.4422C13.2501 12.4254 13.2467 12.4087 13.2403 12.3931C13.2338 12.3776 13.2244 12.3635 13.2125 12.3516ZM7.9125 7.9125C7.25 8.57344 6.37187 8.9375 5.4375 8.9375C4.50312 8.9375 3.625 8.57344 2.9625 7.9125C2.30156 7.25 1.9375 6.37187 1.9375 5.4375C1.9375 4.50312 2.30156 3.62344 2.9625 2.9625C3.625 2.30156 4.50312 1.9375 5.4375 1.9375C6.37187 1.9375 7.25156 2.3 7.9125 2.9625C8.57344 3.625 8.9375 4.50312 8.9375 5.4375C8.9375 6.37187 8.57344 7.25156 7.9125 7.9125Z" fill="#8C8C8C"></path>
+                                      </svg>
+                                    </div>
+                                    <div class="btnInline">
+                                      <button type="button" class="btn btn_sm">Tìm kiếm</button>
+                                      <button type="button" class="btn btn_sm btn_outline">Hủy bỏ</button>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="dropdown">
+                                <button type="button" data-toggle="dropdown" class="dropdown-toggle"><span>Chi nhánh & bộ phận</span>
+                                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45307 11.0938C4.45307 11.3703 4.67494 11.5938 4.94994 11.5938H9.04994C9.32494 11.5938 9.54681 11.3703 9.54681 11.0938V8.03125H4.45307V11.0938ZM12.7515 0.40625H1.24838C0.865565 0.40625 0.626503 0.823438 0.81869 1.15625L4.2765 7.03125H9.7265L13.1843 1.15625C13.3734 0.823438 13.1343 0.40625 12.7515 0.40625Z" fill="#8C8C8C"></path>
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li class="dropdown-item">
+                                    <div class="checkbox">
+                                      <input id="cn1" type="checkbox">
+                                      <label for="cn1">Hà Nội</label>
+                                    </div>
+                                  </li>
+                                  <li class="dropdown-item">
+                                    <div class="checkbox">
+                                      <input id="cn2" type="checkbox">
+                                      <label for="cn2">Đà Nẵng</label>
+                                    </div>
+                                  </li>
+                                  <li class="dropdown-item">
+                                    <div class="checkbox">
+                                      <input id="cn3" type="checkbox">
+                                      <label for="cn3">Tp Hồ Chí Minh</label>
+                                    </div>
+                                  </li>
+                                  <li class="dropdown-item">
+                                    <div class="checkbox">
+                                      <input id="cn4" type="checkbox">
+                                      <label for="cn4">Nha Trang</label>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </th>
+                            <th>
+                              <div class="dropdown">
+                                <button type="button" data-toggle="dropdown" class="dropdown-toggle"><span>Chức danh</span>
+                                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.45307 11.0938C4.45307 11.3703 4.67494 11.5938 4.94994 11.5938H9.04994C9.32494 11.5938 9.54681 11.3703 9.54681 11.0938V8.03125H4.45307V11.0938ZM12.7515 0.40625H1.24838C0.865565 0.40625 0.626503 0.823438 0.81869 1.15625L4.2765 7.03125H9.7265L13.1843 1.15625C13.3734 0.823438 13.1343 0.40625 12.7515 0.40625Z" fill="#8C8C8C"></path>
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li class="dropdown-item">
+                                    <div class="checkbox">
+                                      <input id="cv1" type="checkbox">
+                                      <label for="cv1">Tất cả</label>
+                                    </div>
+                                  </li>
+                                  <li class="dropdown-item">
+                                    <div class="checkbox">
+                                      <input id="cv2" type="checkbox">
+                                      <label for="cv2">Tổng giám đốc</label>
+                                    </div>
+                                  </li>
+                                  <li class="dropdown-item">
+                                    <div class="checkbox">
+                                      <input id="cv3" type="checkbox">
+                                      <label for="cv3">Phó giám đốc</label>
+                                    </div>
+                                  </li>
+                                  <li class="dropdown-item">
+                                    <div class="checkbox">
+                                      <input id="cv4" type="checkbox">
+                                      <label for="cv4">Trưởng phòng</label>
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <div class="checkbox">
+                                <input id="member1" type="checkbox">
+                                <label for="member1"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <p class="p1">Nguyễn Thanh Tuấn</p>
+                              <p class="p2">nguyenvana@gmail.com | 0982433361</p>
+                            </td>
+                            <td>
+                              <p class="p1">be Sài Gòn</p>
+                              <p class="p2">Product</p>
+                            </td>
+                            <td>
+                              <p class="p1">Product Designer</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="checkbox">
+                                <input id="member2" type="checkbox">
+                                <label for="member2"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <p class="p1">Nguyễn Thanh Tuấn</p>
+                              <p class="p2">nguyenvana@gmail.com | 0982433361</p>
+                            </td>
+                            <td>
+                              <p class="p1">be Sài Gòn</p>
+                              <p class="p2">Product</p>
+                            </td>
+                            <td>
+                              <p class="p1">Product Designer</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="checkbox">
+                                <input id="member3" type="checkbox">
+                                <label for="member3"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <p class="p1">Nguyễn Thanh Tuấn</p>
+                              <p class="p2">nguyenvana@gmail.com | 0982433361</p>
+                            </td>
+                            <td>
+                              <p class="p1">be Sài Gòn</p>
+                              <p class="p2">Product</p>
+                            </td>
+                            <td>
+                              <p class="p1">Product Designer</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="checkbox">
+                                <input id="member4" type="checkbox">
+                                <label for="member4"></label>
+                              </div>
+                            </td>
+                            <td>
+                              <p class="p1">Nguyễn Thanh Tuấn</p>
+                              <p class="p2">nguyenvana@gmail.com | 0982433361</p>
+                            </td>
+                            <td>
+                              <p class="p1">be Sài Gòn</p>
+                              <p class="p2">Product</p>
+                            </td>
+                            <td>
+                              <p class="p1">Product Designer</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="orderAdmin__row">
@@ -136,13 +358,12 @@
               </div>
             </div>
             <div class="orderAdmin__col">
-              <p class="orderAdmin__title">Lọc theo đơn
-                <div class="btnInline">
-                  <button type="button" class="btn btn_outline active">Tất cả</button>
-                  <button type="button" class="btn btn_outline">Khách sạn</button>
-                  <button type="button" class="btn btn_outline">Chuyến bay</button>
-                </div>
-              </p>
+              <p class="orderAdmin__title">Lọc theo đơn</p>
+              <div class="btnInline">
+                <button type="button" class="btn btn_outline active">Tất cả</button>
+                <button type="button" class="btn btn_outline">Khách sạn</button>
+                <button type="button" class="btn btn_outline">Chuyến bay</button>
+              </div>
             </div>
             <div class="orderAdmin__col">
               <div class="orderAdmin__progress">
@@ -346,7 +567,7 @@
                     <td>
                       <div class="btnInline">
                         <button type="button" data-toggle="modal" data-target="#orderApprovalPopup" class="blue-1">Duyệt đơn</button>
-                        <button type="button" data-toggle="modal" data-target="#orderCancelPopup" class="red-1">Từ chối</button>
+                        <button type="button" data-toggle="modal" data-target="#orderRejectPopup" class="red-1">Từ chối</button>
                       </div>
                     </td>
                   </tr>
@@ -557,7 +778,7 @@
                     </td>
                     <td>
                       <div class="btnInline">
-                        <button type="button" class="red-1">Hủy</button>
+                        <button type="button" data-toggle="modal" data-target="#orderCancelPopup" class="red-1">Hủy</button>
                       </div>
                     </td>
                   </tr>
@@ -736,7 +957,7 @@
             </div>
           </div>
         </div>
-        <div id="orderCancelPopup" role="dialog" class="modal fade">
+        <div id="orderRejectPopup" role="dialog" class="modal fade">
           <div class="modal-dialog modal-noti">
             <div class="modal-content">
               <div class="modal-body">
@@ -765,6 +986,61 @@
             </div>
           </div>
         </div>
+        <div id="orderCancelPopup" role="dialog" class="modal fade">
+          <div class="modal-dialog modal-noti">
+            <div class="modal-content">
+              <div class="modal-body">
+                <div class="notiBox">
+                  <div class="notiBox__main">
+                    <div class="notiBox__icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z" fill="#FA8C16"></path>
+                        <path d="M10.875 7.875C10.875 8.17337 10.9935 8.45952 11.2045 8.6705C11.4155 8.88147 11.7016 9 12 9C12.2984 9 12.5845 8.88147 12.7955 8.6705C13.0065 8.45952 13.125 8.17337 13.125 7.875C13.125 7.57663 13.0065 7.29048 12.7955 7.0795C12.5845 6.86853 12.2984 6.75 12 6.75C11.7016 6.75 11.4155 6.86853 11.2045 7.0795C10.9935 7.29048 10.875 7.57663 10.875 7.875ZM12.5625 10.5H11.4375C11.3344 10.5 11.25 10.5844 11.25 10.6875V17.0625C11.25 17.1656 11.3344 17.25 11.4375 17.25H12.5625C12.6656 17.25 12.75 17.1656 12.75 17.0625V10.6875C12.75 10.5844 12.6656 10.5 12.5625 10.5Z" fill="#FA8C16"></path>
+                      </svg>
+                    </div>
+                    <div class="notiBox__cont">
+                      <p class="notiBox__title">Hủy đơn hàng</p>
+                      <p class="notiBox__text">Bạn có chắc chắn huỷ đơn hàng này? Vui lòng chọn lý do hủy đợn hàng và xác nhận.</p>
+                      <div class="notiBox__radio">
+                        <div class="radio">
+                          <input type="radio" id="ntn1" name="ntn">
+                          <label for="ntn1">Tôi đã tự đặt trực tiếp tại Khách sạn</label>
+                        </div>
+                        <div class="radio">
+                          <input type="radio" id="ntn2" name="ntn">
+                          <label for="ntn2">Tôi đặt trên các website online khác</label>
+                        </div>
+                        <div class="radio">
+                          <input type="radio" id="ntn3" name="ntn">
+                          <label for="ntn3">Do giá cao</label>
+                        </div>
+                        <div class="radio">
+                          <input type="radio" id="ntn4" name="ntn">
+                          <label for="ntn4">Tôi thay đổi kế hoạch</label>
+                        </div>
+                        <div class="radio">
+                          <input type="radio" id="ntn5" name="ntn">
+                          <label for="ntn5">Đặt nhầm ngày/ Khách sạn</label>
+                        </div>
+                        <div class="radio">
+                          <input type="radio" id="ntn6" name="ntn">
+                          <label for="ntn6">Lý do khác</label>
+                        </div>
+                        <textarea placeholder="Lý do bạn hủy đơn" class="form-control"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="notiBox__btn">
+                    <div class="btnInline">
+                      <button type="button" data-dismiss="modal" class="btn btn_outline">Hủy</button>
+                      <button type="button" class="btn">Đồng ý</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </section>
     <script src="js/libs/jquery.min.js"></script>
@@ -772,6 +1048,11 @@
     <script>
       $('.nav-sub').click(function () {
           $(this).toggleClass('open');
+      });
+    </script>
+    <script>
+      $('.memberDropdown .dropdown-toggle').click(function () {
+          $(this).next('.memberDropdown__cont').toggleClass('open');
       });
     </script>
   </body>
