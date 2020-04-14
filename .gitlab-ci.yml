@@ -1,11 +1,11 @@
-image: cr-hn-1.vccloud.vn/5e0d3b732dba433682cd405d7fb210a0/docker:git
+image: $REGISTRY_URL/$REGISTRY_ID/docker:git
 variables:
   REPO_NAME: $CI_PROJECT_NAME
   SERVICE_NAME: $CI_PROJECT_NAME
   GIT_STRATEGY: none
 
 deploy:live:
-  image: cr-hn-1.vccloud.vn/5e0d3b732dba433682cd405d7fb210a0/docker:git
+  image: $REGISTRY_URL/$REGISTRY_ID/docker:git
   stage: deploy
   before_script:
     - eval $(ssh-agent -s)
