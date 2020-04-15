@@ -440,7 +440,7 @@
                   </div>
                 </div>
                 <div class="btnExport">
-                  <button type="button" class="btn">
+                  <button type="button" data-toggle="modal" data-target="#exportReport" class="btn">
                     <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M9.68398 3.94707C9.76602 4.0291 9.8125 4.13984 9.8125 4.25605V12.6875C9.8125 12.9295 9.61699 13.125 9.375 13.125H0.625C0.383008 13.125 0.1875 12.9295 0.1875 12.6875V1.3125C0.1875 1.07051 0.383008 0.875 0.625 0.875H6.43145C6.54766 0.875 6.65977 0.921484 6.7418 1.00352L9.68398 3.94707ZM8.80352 4.45703L6.23047 1.88398V4.45703H8.80352ZM5.86598 6.53297L5.02898 7.9316L4.18379 6.53242C4.16918 6.50826 4.14857 6.48828 4.12398 6.47441C4.09938 6.46054 4.07162 6.45326 4.04338 6.45326H3.51783C3.48686 6.45327 3.45653 6.46203 3.43033 6.47855C3.41209 6.49005 3.39629 6.50502 3.38384 6.52262C3.37139 6.54022 3.36253 6.56011 3.35777 6.58113C3.35301 6.60216 3.35244 6.62392 3.35609 6.64516C3.35975 6.66641 3.36755 6.68673 3.37906 6.70496L4.5048 8.48805L3.36389 10.3034C3.34744 10.3296 3.33872 10.3599 3.33873 10.3908C3.33873 10.4343 3.35602 10.476 3.38678 10.5068C3.41755 10.5375 3.45928 10.5548 3.50279 10.5548H3.97393C4.00191 10.5548 4.02942 10.5477 4.05386 10.534C4.07829 10.5204 4.09883 10.5007 4.11352 10.4769L4.97074 9.08961L5.8225 10.4766C5.83718 10.5005 5.85775 10.5203 5.88223 10.534C5.90672 10.5477 5.93431 10.5548 5.96236 10.5548H6.47478C6.50619 10.5548 6.53694 10.5458 6.56338 10.5288C6.58151 10.5172 6.59718 10.5021 6.60948 10.4844C6.62178 10.4667 6.63048 10.4468 6.63507 10.4258C6.63967 10.4047 6.64007 10.383 6.63626 10.3618C6.63245 10.3405 6.62451 10.3203 6.61287 10.3022L5.46676 8.5173L6.63297 6.70619C6.64998 6.67968 6.659 6.64883 6.65895 6.61732C6.65895 6.57381 6.64166 6.53208 6.61089 6.50131C6.58012 6.47055 6.5384 6.45326 6.49488 6.45326H6.0068C5.97845 6.45328 5.95059 6.46065 5.92593 6.47464C5.90128 6.48863 5.88067 6.50878 5.86611 6.53311L5.86598 6.53297Z" fill="white"></path>
                     </svg><span>Xuất báo cáo</span>
@@ -1036,6 +1036,86 @@
                       <button type="button" class="btn">Đồng ý</button>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="exportReport" role="dialog" class="modal fade">
+          <div class="modal-dialog modal-exportReport">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Xuất báo cáo</h5>
+                <button data-dismiss="modal" class="modal-close">
+                  <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.8095 6L9.91106 1.11094C9.97981 1.02969 9.922 0.90625 9.81575 0.90625H8.56888C8.49544 0.90625 8.42512 0.939062 8.37669 0.995312L4.99388 5.02813L1.61106 0.995312C1.56419 0.939062 1.49388 0.90625 1.41888 0.90625H0.172C0.0657503 0.90625 0.00793765 1.02969 0.0766877 1.11094L4.17825 6L0.0766877 10.8891C0.061287 10.9072 0.0514069 10.9293 0.04822 10.9529C0.0450331 10.9764 0.0486732 11.0004 0.0587085 11.022C0.0687439 11.0435 0.0847529 11.0617 0.104835 11.0745C0.124916 11.0872 0.148227 11.0939 0.172 11.0938H1.41888C1.49231 11.0938 1.56263 11.0609 1.61106 11.0047L4.99388 6.97188L8.37669 11.0047C8.42356 11.0609 8.49388 11.0938 8.56888 11.0938H9.81575C9.922 11.0938 9.97981 10.9703 9.91106 10.8891L5.8095 6Z" fill="#262626"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="exportReport">
+                  <div class="exportReport__item">
+                    <p class="exportReport__title">Chọn loại báo cáo:</p>
+                    <ul>
+                      <li>
+                        <div class="radio">
+                          <input type="radio" id="ex1" name="ex">
+                          <label for="ex1">Báo cáo tất cả đơn hàng</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <input type="radio" id="ex2" name="ex">
+                          <label for="ex2">Báo cáo đơn hàng đang xử lý</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <input type="radio" id="ex3" name="ex">
+                          <label for="ex3">Báo cáo đơn hàng thành công</label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="radio">
+                          <input type="radio" id="ex4" name="ex">
+                          <label for="ex4">Báo cáo đơn hàng thất bại/ huỷ</label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="exportReport__item">
+                    <p class="exportReport__title">Điểu kiện thời gian:</p>
+                    <div class="exportReport__form">
+                      <div class="dItem">
+                        <div class="dropdown">
+                          <button type="button" data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle"><span>Ngày tạo</span>
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z" fill="#8C8C8C"></path>
+                            </svg>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li class="dropdown-item">Ngày tạo</li>
+                            <li class="dropdown-item">Ngày nhận phòng</li>
+                            <li class="dropdown-item">Ngày trả phòng</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="dItem">
+                        <div class="input-inline">
+                          <input type="text" placeholder="Khoảng thời gian" class="form-control">
+                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.75 1.875H10.125V0.875C10.125 0.80625 10.0688 0.75 10 0.75H9.125C9.05625 0.75 9 0.80625 9 0.875V1.875H5V0.875C5 0.80625 4.94375 0.75 4.875 0.75H4C3.93125 0.75 3.875 0.80625 3.875 0.875V1.875H1.25C0.973437 1.875 0.75 2.09844 0.75 2.375V12.75C0.75 13.0266 0.973437 13.25 1.25 13.25H12.75C13.0266 13.25 13.25 13.0266 13.25 12.75V2.375C13.25 2.09844 13.0266 1.875 12.75 1.875ZM12.125 12.125H1.875V6.1875H12.125V12.125ZM1.875 5.125V3H3.875V3.75C3.875 3.81875 3.93125 3.875 4 3.875H4.875C4.94375 3.875 5 3.81875 5 3.75V3H9V3.75C9 3.81875 9.05625 3.875 9.125 3.875H10C10.0688 3.875 10.125 3.81875 10.125 3.75V3H12.125V5.125H1.875Z" fill="#8C8C8C"></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <div class="modal-btn">
+                  <button type="button" class="btn btn_outline">Huỷ</button>
+                  <button type="button" class="btn">Xuất báo cáo</button>
                 </div>
               </div>
             </div>
