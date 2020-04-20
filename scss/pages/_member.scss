@@ -90,6 +90,39 @@
         }
       }
     }
+    .ant-table thead > tr > th, .ant-table tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td{
+      padding: 10px 12px;
+    }
+    .ant-table{
+      th{
+        border-top: 1px solid #f0f0f0;
+      }
+    }
+    .ant-table.ant-table-bordered .ant-table-container{
+      border-top: none;
+    }
+    .ant-table-body{
+      &::-webkit-scrollbar {
+        width:5px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background-color: #f2f2f2;
+        border-radius: 16px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background:#bcbcbc;
+        border-radius: 16px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #bcbcbc;
+      }
+    }
   }
 }
 .memberForm{

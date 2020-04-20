@@ -387,8 +387,7 @@
   }
 
 }
-
-.modal-dialog.modal-member{
+.modal-member{
   width: 734px;
   .modal-title{
     span{
@@ -403,6 +402,22 @@
         td{
           vertical-align: middle;
         }
+      }
+    }
+  }
+  .ant-table{
+    th,td{
+      &:nth-child(1){
+        width: 10%;
+      }
+      &:nth-child(2){
+        width: 40%;
+      }
+      &:nth-child(3){
+        width: 30%;
+      }
+      &:nth-child(4){
+        width: 20%;
       }
     }
   }
