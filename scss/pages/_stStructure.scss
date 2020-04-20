@@ -113,34 +113,37 @@
       > p{
         font-weight: $semibold;
       }
-      ul{
-        padding-left: 50px;
+    }
+    ul{
+      padding-left: 50px;
+      li{
         position: relative;
+        padding: 10px 0;
+        &:after{
+          content: '';
+          width:40px;
+          position: absolute;
+          top:20px;
+          left:-50px;
+          border-top: 1px dashed $border-color;
+        }
         &:before{
           content: '';
-          height: calc(100% - 19px);
+          height: 100%;
           position: absolute;
           top: 0;
-          left: 0;
+          left: -50px;
           border-left: 1px dashed $border-color;
         }
-        li{
-          padding: 10px 0;
-          position: relative;
+        &:last-child{
           &:before{
-            content: '';
-            width:40px;
-            position: absolute;
-            top:20px;
-            left:-50px;
-            border-top: 1px dashed $border-color;
+            height: 20px;
           }
         }
       }
     }
   }
   &__child{
-    padding-top: 10px;
     display: none;
     animation: opacityShow .3s ease-in-out;
   }
