@@ -97,6 +97,20 @@
       }
     }
   }
+  button{
+    font-size: 14px;
+    color: #096DD9;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    &:hover{
+      text-decoration: underline;
+    }
+    span{
+      padding-left: 6px;
+    }
+  }
 }
 .flightInfo{
   background-color: #fff;
