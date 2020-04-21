@@ -13,6 +13,8 @@ html(lang="vi")
                     .stApproval__row
                         .stApproval__left
                             ul.stTab
+                                li
+                                    a.btn.btn_lg(href='stAddApproval.html') + Thêm cài đặt duyệt
                                 li.active
                                     button.btn.btn_outline.btn_lg(type='button') C - Level
                                 li
@@ -21,8 +23,7 @@ html(lang="vi")
                                     button.btn.btn_outline.btn_lg(type='button') Cấp Phó Phòng
                                 li
                                     button.btn.btn_outline.btn_lg(type='button') Cấp Trưởng Nhóm
-                                li
-                                    a.btn.btn_lg(href='stAddApproval.html') + Thêm cài đặt duyệt
+
                         .stApproval__right
                             h4.stTitle C - Level
                             .vntBox
@@ -42,8 +43,20 @@ html(lang="vi")
 
                             .vntBox
                                 .vntBox__edit
+                                    button.btn.btn_outline(type='button' data-toggle="modal" data-target="#memberPopup2") Chỉnh sửa
+                                p.vntBox__title Đội tượng áp dụng (36)
+                                .objApply
+                                    ul
+                                        li
+                                            p(data-toggle="modal" data-target="#memberPopup2") Phòng kinh doanh (24)
+                                        li
+                                            p(data-toggle="modal" data-target="#memberPopup2") 12 thành viên khác đang áp dụng hạn mức
+                                include jades/blocks/_popupMember
+
+                            .vntBox
+                                .vntBox__edit
                                     button.btn.btn_outline(type='button' onclick="location.href='stApproval-edit2.html';") Chỉnh sửa
-                                p.vntBox__title Người duyệt
+                                p.vntBox__title Thông tin người duyệt
                                 .vntBox__table
                                     .d-row
                                         .d-left
@@ -71,17 +84,6 @@ html(lang="vi")
                                                 p.p1 Nguyễn Trọng Duy
                                                 p.p2 duy@gmail.com | 0982433361
 
-
-                            .vntBox
-                                .vntBox__edit
-                                    button.btn.btn_outline(type='button') Chỉnh sửa
-                                p.vntBox__title Đội tượng áp dụng (36)
-                                .objApply
-                                    ul
-                                        li
-                                            p Phòng kinh doanh (24)
-                                        li
-                                            p 12 thành viên khác đang áp dụng hạn mức
 
 
         script(src="js/libs/jquery.min.js")

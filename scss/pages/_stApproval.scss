@@ -89,6 +89,10 @@
         font-size: 14px;
         color: #1890FF;
         margin-bottom: 0;
+        cursor: pointer;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -134,11 +138,8 @@
   .vntMember{
     &__table{
       width: calc(100% - 444px);
-      padding-top: 16px;
       border-left: 1px solid $border-color;
-      .pSelected{
-        padding-left: 16px;
-      }
+      padding: 16px;
     }
   }
 }

@@ -85,6 +85,7 @@
           <div class="stApproval__row">
             <div class="stApproval__left">
               <ul class="stTab">
+                <li><a href="stAddApproval.html" class="btn btn_lg">+ Thêm cài đặt duyệt</a></li>
                 <li class="active">
                   <button type="button" class="btn btn_outline btn_lg">C - Level</button>
                 </li>
@@ -97,7 +98,6 @@
                 <li>
                   <button type="button" class="btn btn_outline btn_lg">Cấp Trưởng Nhóm</button>
                 </li>
-                <li><a href="stAddApproval.html" class="btn btn_lg">+ Thêm cài đặt duyệt</a></li>
               </ul>
             </div>
             <div class="stApproval__right">
@@ -119,9 +119,25 @@
               </div>
               <div class="vntBox">
                 <div class="vntBox__edit">
+                  <button type="button" data-toggle="modal" data-target="#memberPopup2" class="btn btn_outline">Chỉnh sửa</button>
+                </div>
+                <p class="vntBox__title">Đội tượng áp dụng (36)</p>
+                <div class="objApply">
+                  <ul>
+                    <li>
+                      <p data-toggle="modal" data-target="#memberPopup2">Phòng kinh doanh (24)</p>
+                    </li>
+                    <li>
+                      <p data-toggle="modal" data-target="#memberPopup2">12 thành viên khác đang áp dụng hạn mức</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="vntBox">
+                <div class="vntBox__edit">
                   <button type="button" onclick="location.href='stApproval-edit2.html';" class="btn btn_outline">Chỉnh sửa</button>
                 </div>
-                <p class="vntBox__title">Người duyệt</p>
+                <p class="vntBox__title">Thông tin người duyệt</p>
                 <div class="vntBox__table">
                   <div class="d-row">
                     <div class="d-left">
@@ -157,22 +173,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="vntBox">
-                <div class="vntBox__edit">
-                  <button type="button" data-toggle="modal" data-target="#memberPopup2" class="btn btn_outline">Chỉnh sửa</button>
-                </div>
-                <p class="vntBox__title">Đội tượng áp dụng (36)</p>
-                <div class="objApply">
-                  <ul>
-                    <li>
-                      <p>Phòng kinh doanh (24)</p>
-                    </li>
-                    <li>
-                      <p>12 thành viên khác đang áp dụng hạn mức</p>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
