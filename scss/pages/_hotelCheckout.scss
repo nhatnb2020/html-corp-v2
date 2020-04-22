@@ -79,6 +79,11 @@
     }
     > .vntMember__table{
       margin-top: 15px;
+      th,td{
+        &:last-child{
+          text-align: center;
+        }
+      }
     }
   }
   &__radio{

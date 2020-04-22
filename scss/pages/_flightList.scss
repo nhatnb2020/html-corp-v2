@@ -313,7 +313,7 @@
   }
   &__detail{
     background-color: #fff;
-    padding: 24px 220px 64px 175px;
+    padding: 24px 182px 64px 110px;
     position: relative;
     animation: opacityShow .3s ease-in-out;
     display: none;
@@ -448,7 +448,8 @@
     }
   }
   &__btn{
-    .btn{
+    .btn,
+    .ant-btn{
       width: 150px;
     }
   }

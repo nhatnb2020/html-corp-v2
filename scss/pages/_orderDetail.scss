@@ -231,7 +231,7 @@
   }
 }
 .modal-orderFlight{
-  width: 800px;
+  width: 800px!important;
   &__header{
     border-bottom: 1px solid $border-color;
   }
@@ -256,8 +256,34 @@
     &__trip{
       background-color: #fff;
     }
+    &__btn{
+      display: none;
+    }
+    &__airline{
+      display: none;
+    }
+    &__table{
+      .table{
+        th,td{
+          background-color: #fff;
+        }
+      }
+    }
   }
   .flightTrip{
     width: auto;
+    &_lg{
+      .d-block{
+        p.p1{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .flightDest{
+    p{
+      font-size: 14px;
+      text-transform: uppercase;
+    }
   }
 }

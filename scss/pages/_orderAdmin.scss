@@ -48,14 +48,25 @@
     .form-control{
       background: #fff;
     }
-    .w195{
-      width: 195px;
-      margin-right: 6px;
-    }
     .memberDropdown__cont{
       left: auto;
       right: 0;
       width: 800px;
+    }
+    .d-flex{
+      flex-wrap: wrap;
+      .input-inline{
+        margin-right: 8px;
+        margin-bottom: 8px;
+      }
+      .dropdown,
+      .memberDropdown{
+        width: 195px;
+        margin-right: 8px!important;
+      }
+      .ant-select{
+        width: 100% !important;
+      }
     }
   }
   &__row{
@@ -65,7 +76,7 @@
   }
   &__col{
     &:nth-child(1){
-      margin-right: 40px;
+      margin-right: 47px;
     }
     &:nth-child(2){
       flex: 1 1 auto;
@@ -208,6 +219,7 @@
         .p2{
           color: #8c8c8c;
           font-size: 12px;
+          margin-bottom: 6px;
         }
         .btnInline{
           display: flex;

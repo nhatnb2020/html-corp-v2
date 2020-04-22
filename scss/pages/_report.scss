@@ -95,7 +95,7 @@
     }
   }
 }
-.modal-dialog.modal-exportReport{
+.modal-exportReport{
   width: 416px;
   .pTitle{
     color: #262626;
@@ -121,12 +121,11 @@
     margin-bottom: 5px;
   }
   &__form{
-    display: flex;
-    margin-left: -5px;
-    margin-right: -5px;
     .dItem{
-      width: 50%;
-      padding: 0 5px;
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
   }
 }
