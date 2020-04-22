@@ -160,3 +160,11 @@
     color: #262626;
   }
 }
+.checkoutStatus{
+  .vntBox{
+    height: calc(100vh - 125px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

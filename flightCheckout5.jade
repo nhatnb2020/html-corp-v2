@@ -7,7 +7,7 @@ html(lang="vi")
         section.pageBody
             include jades/includes/_sidebar
             main.main
-                section.vntContent.flightCheckout
+                section.vntContent.flightCheckout.checkoutStatus
                     .vntStep
                         .vntStep__item.visited
                             span.vntStep__numb 1
@@ -22,10 +22,30 @@ html(lang="vi")
 
                     .vntBox
                         .vntBox__checkout
-                            img(src='https://statics.vntrip.vn/images/imgCheckoutFlight2x.png')
+                            svg(width='114', height='103', viewBox='0 0 114 103', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M53.25 82.0001H17.625C17.1277 82.0001 16.6508 82.1977 16.2992 82.5493C15.9475 82.9009 15.75 83.3778 15.75 83.8751C15.75 84.3724 15.9475 84.8493 16.2992 85.2009C16.6508 85.5526 17.1277 85.7501 17.625 85.7501H53.25C53.7473 85.7501 54.2242 85.5526 54.5758 85.2009C54.9275 84.8493 55.125 84.3724 55.125 83.8751C55.125 83.3778 54.9275 82.9009 54.5758 82.5493C54.2242 82.1977 53.7473 82.0001 53.25 82.0001Z', fill='#222B45')
+                                path(d='M28.875 89.5001H23.25C22.7527 89.5001 22.2758 89.6977 21.9242 90.0493C21.5725 90.4009 21.375 90.8778 21.375 91.3751C21.375 91.8724 21.5725 92.3493 21.9242 92.7009C22.2758 93.0526 22.7527 93.2501 23.25 93.2501H28.875C29.3723 93.2501 29.8492 93.0526 30.2008 92.7009C30.5525 92.3493 30.75 91.8724 30.75 91.3751C30.75 90.8778 30.5525 90.4009 30.2008 90.0493C29.8492 89.6977 29.3723 89.5001 28.875 89.5001Z', fill='#222B45')
+                                path(d='M47.625 89.5001H36.375C35.8777 89.5001 35.4008 89.6977 35.0492 90.0493C34.6975 90.4009 34.5 90.8778 34.5 91.3751C34.5 91.8724 34.6975 92.3493 35.0492 92.7009C35.4008 93.0526 35.8777 93.2501 36.375 93.2501H47.625C48.1223 93.2501 48.5992 93.0526 48.9508 92.7009C49.3025 92.3493 49.5 91.8724 49.5 91.3751C49.5 90.8778 49.3025 90.4009 48.9508 90.0493C48.5992 89.6977 48.1223 89.5001 47.625 89.5001Z', fill='#222B45')
+                                path(d='M109.969 44.5001H107.376L106.287 36.8683C106.179 36.1158 105.92 35.3928 105.526 34.743C105.131 34.0933 104.609 33.5303 103.99 33.0881C103.372 32.6459 102.67 32.3336 101.928 32.17C101.186 32.0065 100.418 31.9952 99.6708 32.1368L68.25 38.0815V19.6563C68.2479 17.7922 67.5064 16.005 66.1882 14.6868C64.8701 13.3686 63.0829 12.6272 61.2187 12.6251H60.75V7.93053C60.7513 6.86405 60.5113 5.81109 60.0479 4.85052C59.5845 3.88995 58.9099 3.04667 58.0744 2.38383C57.2389 1.721 56.2643 1.25579 55.2235 1.02305C54.1827 0.790309 53.1027 0.796072 52.0645 1.03991L5.82114 11.8282C4.37655 12.161 3.0879 12.9747 2.16649 14.136C1.24508 15.2973 0.745609 16.7372 0.749967 18.2196V96.0626C0.751952 97.8024 1.44399 99.4705 2.67427 100.701C3.90455 101.931 5.57259 102.623 7.31247 102.625H61.2187C63.0829 102.623 64.8701 101.881 66.1882 100.563C67.5064 99.2452 68.2479 97.458 68.25 95.5938V95.1251H109.969C110.839 95.1241 111.673 94.7781 112.288 94.163C112.903 93.5478 113.249 92.7138 113.25 91.8438V47.7813C113.249 46.9114 112.903 46.0773 112.288 45.4621C111.673 44.847 110.839 44.501 109.969 44.5001ZM100.367 35.8216C100.483 35.7996 100.602 35.7885 100.72 35.7883C101.171 35.7906 101.606 35.9543 101.946 36.2498C102.286 36.5453 102.509 36.9529 102.574 37.3987L103.588 44.5003H68.25V41.8985L100.367 35.8216ZM52.9169 4.69147C53.1685 4.63254 53.4261 4.60266 53.6845 4.60241C54.5652 4.60507 55.4089 4.95697 56.0304 5.5809C56.652 6.20483 57.0007 7.04984 57 7.93053V12.6251H18.9112L52.9169 4.69147ZM64.5 95.5938C64.499 96.4638 64.153 97.2978 63.5379 97.913C62.9227 98.5281 62.0887 98.8741 61.2187 98.8751H7.31247C6.56679 98.8743 5.85189 98.5777 5.32462 98.0504C4.79735 97.5231 4.50077 96.8082 4.49997 96.0626V19.1876C4.50077 18.4419 4.79735 17.727 5.32462 17.1997C5.85189 16.6724 6.56679 16.3759 7.31247 16.3751H61.2187C62.0887 16.376 62.9227 16.722 63.5379 17.3371C64.153 17.9523 64.499 18.7864 64.5 19.6563V95.5938ZM109.5 91.3751H75.75V85.7501H72V91.3751H68.25V48.2501H72V52.0001H75.75V48.2501H109.5V91.3751Z', fill='#2E3A59')
+                                path(d='M75.75 55.7501H72V59.5001H75.75V55.7501Z', fill='#222B45')
+                                path(d='M75.75 63.2501H72V67.0001H75.75V63.2501Z', fill='#222B45')
+                                path(d='M75.75 70.7501H72V74.5001H75.75V70.7501Z', fill='#222B45')
+                                path(d='M75.75 78.2501H72V82.0001H75.75V78.2501Z', fill='#222B45')
+                                g
+                                    path(d='M34.5 70.125C26.5731 70.125 20.125 63.6763 20.125 55.75C20.125 47.8238 26.5731 41.375 34.5 41.375C42.4269 41.375 48.875 47.8238 48.875 55.75C48.875 63.6763 42.4269 70.125 34.5 70.125Z', fill='#72C472')
+                                    path(d='M32 62.5182L25.2325 55.7501L27 53.9819L32 58.9819L42 48.9819L43.7675 50.7501L32 62.5182Z', fill='white')
+                                path(d='M99.8906 73.4844V71.7656L93.0156 67.4688V62.7422C93.0156 62.0289 92.4398 61.4531 91.7266 61.4531C91.0133 61.4531 90.4375 62.0289 90.4375 62.7422V67.4688L83.5625 71.7656V73.4844L90.4375 71.3359V76.0625L88.7187 77.3516V78.6406L91.7266 77.7813L94.7344 78.6406V77.3516L93.0156 76.0625V71.3359L99.8906 73.4844Z', fill='#222B45')
+                                defs
+                                    clippath
+                                        rect(x='19.5', y='40.75', width='30', height='30', fill='white')
+
                             p.p1 Đặt vé thành công
-                            p.p2 Cảm ơn bạn đã đặt phòng tại Vntrip.vn. Thông tin đặt phòng sẽ gửi vào E-mail của bạn. Chúc chuyến công tác của bạn thành công tốt đẹp.
-                            p.p3 Gửi thông tin đặt phòng thành công cho E-mail khác
+                            p.p2
+                                | Thông tin vé đã được gửi đến địa chỉ email&nbsp;
+                                strong trang.h.hoang@gmail.com
+                                br
+                                | Cảm ơn và chúc chuyến công tác của bạn thành công tốt đẹp
+                            p.p3 Gửi thông tin đặt vé thành công cho E-mail khác
                             .btnGroup
                                 #inputEmail.input-group.hidden
                                     input.form-control(type='text' placeholder='Nhập email')
@@ -34,12 +54,93 @@ html(lang="vi")
                                 a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
                     .vntBox
                         .vntBox__checkout
-                            img(src='https://statics.vntrip.vn/images/imgCheckoutFlight2x.png')
-                            p.p1 Gửi yêu cầu đặt vé thành công
-                            p.p2 Cảm ơn bạn đã đặt phòng tại Vntrip.vn. Yêu cầu đặt vé sẽ được gửi đến người kiểm duyệt. Vui lòng liên hệ với người kiểm duyệt hệ thống của bạn và không đặt lại đơn hàng.
-                            p.p3 Gửi thông tin đặt phòng thành công cho E-mail khác
+                            svg(width='130', height='113', viewBox='0 0 130 113', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                g
+                                    path(d='M99.8643 36.4246V83.6293C99.8643 89.6811 94.9409 94.6045 88.8894 94.6045H11.0333C4.98151 94.6047 0.0581055 89.6811 0.0581055 83.6293V28.9648C0.0581055 22.913 4.98151 17.9896 11.0333 17.9896H55.3679C56.3977 17.9896 57.2323 18.8243 57.2323 19.854C57.2323 20.8838 56.3977 21.7184 55.3679 21.7184H11.0333C7.0375 21.7182 3.78686 24.969 3.78686 28.9648V34.4927L46.4042 55.1891C48.6613 56.2854 51.2476 56.2789 53.4992 55.1711L77.7462 43.2451C78.6705 42.7908 79.7875 43.1713 80.2422 44.0952C80.6965 45.0194 80.3159 46.1365 79.392 46.5912L55.145 58.5172C51.8567 60.1347 48.0772 60.1467 44.7754 58.5433L3.78686 38.6378V83.6293C3.78686 87.6251 7.0375 90.8757 11.0333 90.8757H88.8892C92.8847 90.8757 96.1354 87.6251 96.1354 83.6293V36.4246C96.1354 35.3948 96.97 34.5602 97.9998 34.5602C99.0295 34.5602 99.8643 35.395 99.8643 36.4246ZM29.179 62.8471L11.0092 81.0169C9.83075 82.1952 10.6817 84.1996 12.3276 84.1996C12.8046 84.1996 13.2817 84.0175 13.6459 83.6536L31.8157 65.4838C32.5438 64.7556 32.5438 63.5751 31.8157 62.8469C31.0875 62.1192 29.907 62.1192 29.179 62.8471ZM70.7436 62.8471C70.0153 62.1192 68.8351 62.1192 68.1068 62.8471C67.3786 63.5753 67.3786 64.7558 68.1068 65.484L86.2766 83.6538C87.0051 84.3819 88.1851 84.3817 88.9134 83.6538C89.6415 82.9256 89.6415 81.7451 88.9134 81.0169L70.7436 62.8471ZM65.9176 15.9519L97.4471 5.34628C98.9044 4.85595 100.299 6.24905 99.8084 7.70761L89.2028 39.2373C88.6814 40.7881 86.5494 40.9596 85.7864 39.5122L78.8342 26.3203L65.6427 19.3682C64.198 18.6072 64.3646 16.4741 65.9176 15.9519ZM71.231 18.0988L79.8677 22.6504L86.1162 16.4018C86.8446 15.6739 88.0247 15.6739 88.7531 16.4018C89.4812 17.13 89.4812 18.3105 88.7531 19.0387L82.5045 25.2872L87.0561 33.924L95.0774 10.0776L71.231 18.0988Z', fill='#2E3A59')
+                                path(d='M115.034 92.2692C115.034 102.548 106.702 110.881 96.4227 110.881C86.1438 110.881 77.8112 102.548 77.8112 92.2692C77.8112 81.9904 86.1438 73.6577 96.4227 73.6577C106.702 73.6577 115.034 81.9904 115.034 92.2692Z', fill='#52C41A', stroke='white', stroke-width='3', stroke-miterlimit='10', stroke-linecap='square')
+                                path(d='M87.0373 93.61L92.4004 98.9731L105.808 85.5654', fill='#52C41A')
+                                path(d='M87.0373 93.61L92.4004 98.9731L105.808 85.5654', stroke='white', stroke-width='3', stroke-miterlimit='10', stroke-linecap='square')
+                                defs
+                                    clippath
+                                        rect(x='0.0581055', width='99.8506', height='99.8506', fill='white')
+
+                            p.p1 Đã gửi yêu cầu xét duyệt
+                            p.p2
+                                | Yêu cầu duyệt đã được gửi đến người kiểm duyệt của bạn.
+                                br
+                                | Thông báo sẽ được gửi đến email&nbsp;
+                                strong trangh.h.hoang @gmail.com
+                                | &nbsp;khi xét duyệt hoàn tất
                             .btnGroup
-                                a.btn.btn_lg(href='#') Thêm email
+                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                    .vntBox
+                        .vntBox__checkout
+                            svg(width='151', height='105', viewBox='0 0 151 105', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M36 82L41 101H36H27L25.5 95.5L27 46L36 82Z', fill='#E4E9F2')
+                                path(d='M48.5 58.5V3.5C47.3 3.5 43.6667 5.16667 42 6V54.5L48.5 58.5Z', fill='#E4E9F2')
+                                path(d='M42.1875 36.0938L29.7675 43.2973C27.3 44.7285 25.7812 47.3651 25.7812 50.2176V95.7187C25.7812 99.0325 28.4675 101.719 31.7812 101.719H118.219C121.532 101.719 124.219 99.0325 124.219 95.7187V50.2176C124.219 47.3651 122.7 44.7285 120.232 43.2973L107.812 36.0938', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M42.1875 54.7969V7.28125C42.1875 5.07211 43.9784 3.28125 46.1875 3.28125H103.813C106.022 3.28125 107.812 5.07211 107.812 7.28125V54.4688', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M27.5 47.5L122 100', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M122.5 46.5L73.6877 72.8398', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M74.5 47C82.7843 47 89.5 40.2843 89.5 32C89.5 23.7157 82.7843 17 74.5 17C66.2157 17 59.5 23.7157 59.5 32C59.5 40.2843 66.2157 47 74.5 47Z', fill='#52C41A')
+                                path(d='M67.5 33L71.5 37L81.5 27', fill='#52C41A')
+                                path(d='M67.5 33L71.5 37L81.5 27', stroke='white', stroke-width='3', stroke-miterlimit='10', stroke-linecap='square')
+                                line(x1='134.5', y1='30.8787', x2='143.379', y2='22', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='136.535', y1='54.4014', x2='144.901', y2='58.9649', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='135', y1='42.5', x2='149', y2='42.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='13.0064', y1='32.9635', x2='4.46346', y2='24.121', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='14.3089', y1='56.957', x2='2.45704', y2='61.8185', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='15', y1='45.5', x2='2', y2='45.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+
+                            p.p1 Hoàn thành thanh toán. Chờ xác nhận từ VNTRIP...
+                            p.p2 VNTRIP đang tiến hành xác nhận thanh toán và sẽ gửi thông báo đến bạn trong thời gian sớm nhất.
+                            .btnGroup
+                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                    .vntBox
+                        .vntBox__checkout
+                            svg(width='151', height='105', viewBox='0 0 151 105', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M36 82L41 101H36H27L25.5 95.5L27 46L36 82Z', fill='#E4E9F2')
+                                path(d='M48.5 58.5V3.5C47.3 3.5 43.6667 5.16667 42 6V54.5L48.5 58.5Z', fill='#E4E9F2')
+                                path(d='M42.1875 36.0938L29.7675 43.2973C27.3 44.7285 25.7812 47.3651 25.7812 50.2176V95.7187C25.7812 99.0325 28.4675 101.719 31.7812 101.719H118.219C121.532 101.719 124.219 99.0325 124.219 95.7187V50.2176C124.219 47.3651 122.7 44.7285 120.232 43.2973L107.812 36.0938', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M42.1875 54.7969V7.28125C42.1875 5.07211 43.9784 3.28125 46.1875 3.28125H103.813C106.022 3.28125 107.812 5.07211 107.812 7.28125V54.4688', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M27.5 47.5L122 100', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M122.5 46.5L73.6877 72.8398', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M74.5 47C82.7843 47 89.5 40.2843 89.5 32C89.5 23.7157 82.7843 17 74.5 17C66.2157 17 59.5 23.7157 59.5 32C59.5 40.2843 66.2157 47 74.5 47Z', fill='#52C41A')
+                                path(d='M67.5 33L71.5 37L81.5 27', fill='#52C41A')
+                                path(d='M67.5 33L71.5 37L81.5 27', stroke='white', stroke-width='3', stroke-miterlimit='10', stroke-linecap='square')
+                                line(x1='134.5', y1='30.8787', x2='143.379', y2='22', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='136.535', y1='54.4014', x2='144.901', y2='58.9649', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='135', y1='42.5', x2='149', y2='42.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='13.0064', y1='32.9635', x2='4.46346', y2='24.121', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='14.3089', y1='56.957', x2='2.45704', y2='61.8185', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='15', y1='45.5', x2='2', y2='45.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+
+                            p.p1 Đã gửi yêu cầu đặt vé. Chờ xác nhận từ VNTRIP
+                            p.p2 Bạn đã thanh toán thành công. VNTRIP đang tiến hành xác nhận và sẽ gửi thông báo đến bạn trong thời gian sớm nhất.
+                            .btnGroup
+                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                    .vntBox
+                        .vntBox__checkout
+                            svg(width='151', height='105', viewBox='0 0 151 105', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M36 82L41 101H36H27L25.5 95.5L27 46L36 82Z', fill='#E4E9F2')
+                                path(d='M48.5 58.5V3.5C47.3 3.5 43.6667 5.16667 42 6V54.5L48.5 58.5Z', fill='#E4E9F2')
+                                path(d='M42.1875 36.0938L29.7675 43.2973C27.3 44.7285 25.7812 47.3651 25.7812 50.2176V95.7187C25.7812 99.0325 28.4675 101.719 31.7812 101.719H118.219C121.532 101.719 124.219 99.0325 124.219 95.7187V50.2176C124.219 47.3651 122.7 44.7285 120.232 43.2973L107.812 36.0938', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M42.1875 54.7969V7.28125C42.1875 5.07211 43.9784 3.28125 46.1875 3.28125H103.813C106.022 3.28125 107.812 5.07211 107.812 7.28125V54.4688', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M27.5 47.5L122 100', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M122.5 46.5L73.6877 72.8398', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
+                                path(d='M74.5 47C82.7843 47 89.5 40.2843 89.5 32C89.5 23.7157 82.7843 17 74.5 17C66.2157 17 59.5 23.7157 59.5 32C59.5 40.2843 66.2157 47 74.5 47Z', fill='#52C41A')
+                                path(d='M67.5 33L71.5 37L81.5 27', fill='#52C41A')
+                                path(d='M67.5 33L71.5 37L81.5 27', stroke='white', stroke-width='3', stroke-miterlimit='10', stroke-linecap='square')
+                                line(x1='134.5', y1='30.8787', x2='143.379', y2='22', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='136.535', y1='54.4014', x2='144.901', y2='58.9649', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='135', y1='42.5', x2='149', y2='42.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='13.0064', y1='32.9635', x2='4.46346', y2='24.121', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='14.3089', y1='56.957', x2='2.45704', y2='61.8185', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                                line(x1='15', y1='45.5', x2='2', y2='45.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+
+                            p.p1 Đặt vé thành công. Chờ xác nhận từ VNTRIP...
+                            p.p2 VNTRIP đang tiến hành xác nhận đơn hàng và sẽ gửi thông báo đến bạn trong thời gian sớm nhất.
+                            .btnGroup
                                 a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
                     .vntBox
                         .vntBox__checkout
@@ -52,48 +153,25 @@ html(lang="vi")
                                 path(d='M13.5 58.5H24', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
                                 path(d='M28.125 75.9375H8.4375C6.94566 75.9375 5.51492 75.3449 4.46002 74.29C3.40513 73.2351 2.8125 71.8043 2.8125 70.3125V8.4375C2.8125 6.94566 3.40513 5.51492 4.46002 4.46002C5.51492 3.40513 6.94566 2.8125 8.4375 2.8125H48.2962C49.7871 2.81282 51.2168 3.40493 52.2713 4.45875L63.0413 15.2287C64.0951 16.2832 64.6872 17.7129 64.6875 19.2037V28.125', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
 
-                            p.p1 Đặt vé thất bại
-                            p.p2 Rất tiếc, yêu cầu đặt vé của bạn không thành công. Bạn vui lòng tiến hành đặt lại đơn hàng.
+                            p.p1 Đã hết thời gian thanh toán
+                            p.p2 Thời gian thanh toán của bạn đã hết. Bạn vui lòng tìm kiếm vé tương tự.
                             .btnGroup
-                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                                a.btn.btn_lg(href='flightList.html') Tìm vé tương tự
                     .vntBox
                         .vntBox__checkout
-                            svg(width='150', height='105', viewBox='0 0 150 105', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                path(d='M35.5 82L40.5 101H35.5H26.5L25 95.5L26.5 46L35.5 82Z', fill='#E4E9F2')
-                                path(d='M48 58.5V3.5C46.8 3.5 43.1667 5.16667 41.5 6V54.5L48 58.5Z', fill='#E4E9F2')
-                                path(d='M41.6875 36.0938L29.2675 43.2973C26.8 44.7285 25.2812 47.3651 25.2812 50.2176V95.7187C25.2812 99.0325 27.9675 101.719 31.2812 101.719H117.719C121.032 101.719 123.719 99.0325 123.719 95.7187V50.2176C123.719 47.3651 122.2 44.7285 119.732 43.2973L107.312 36.0938', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
-                                path(d='M41.6875 54.7969V7.28125C41.6875 5.07211 43.4784 3.28125 45.6875 3.28125H103.313C105.522 3.28125 107.312 5.07211 107.312 7.28125V54.4688', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
-                                path(d='M27 47.5L121.5 100', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
-                                path(d='M122 46.5L73.1875 72.8398', stroke='#2E3A59', stroke-width='3.5', stroke-miterlimit='10')
-                                path(d='M74 47C82.2843 47 89 40.2843 89 32C89 23.7157 82.2843 17 74 17C65.7157 17 59 23.7157 59 32C59 40.2843 65.7157 47 74 47Z', fill='#52C41A')
-                                path(d='M67 33L71 37L81 27', fill='#52C41A')
-                                path(d='M67 33L71 37L81 27', stroke='white', stroke-width='3', stroke-miterlimit='10', stroke-linecap='square')
-                                line(x1='134', y1='30.8787', x2='142.879', y2='22', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='136.035', y1='54.4014', x2='144.401', y2='58.9649', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='134.5', y1='42.5', x2='148.5', y2='42.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='12.5059', y1='32.9635', x2='3.96298', y2='24.121', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='13.8084', y1='56.957', x2='1.95655', y2='61.8185', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
-                                line(x1='14.5', y1='45.5', x2='1.5', y2='45.5', stroke='#52C41A', stroke-width='3', stroke-linecap='round')
+                            svg(width='88', height='88', viewBox='0 0 88 88', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M64.6875 87.1875C77.1139 87.1875 87.1875 77.1139 87.1875 64.6875C87.1875 52.2611 77.1139 42.1875 64.6875 42.1875C52.2611 42.1875 42.1875 52.2611 42.1875 64.6875C42.1875 77.1139 52.2611 87.1875 64.6875 87.1875Z', fill='#FF4D4F')
+                                path(d='M73.125 56.25L56.25 73.125', stroke='white', stroke-width='3', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M56.25 56.25L73.125 73.125', stroke='white', stroke-width='3', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M13.5 25.5H49.5', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M13.5 42H33', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M13.5 58.5H24', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
+                                path(d='M28.125 75.9375H8.4375C6.94566 75.9375 5.51492 75.3449 4.46002 74.29C3.40513 73.2351 2.8125 71.8043 2.8125 70.3125V8.4375C2.8125 6.94566 3.40513 5.51492 4.46002 4.46002C5.51492 3.40513 6.94566 2.8125 8.4375 2.8125H48.2962C49.7871 2.81282 51.2168 3.40493 52.2713 4.45875L63.0413 15.2287C64.0951 16.2832 64.6872 17.7129 64.6875 19.2037V28.125', stroke='#2E3A59', stroke-width='4', stroke-linecap='round', stroke-linejoin='round')
 
-                            p.p1 Thông tin đặt vé cần xét duyệt
-                            p.p2 Cảm ơn bạn đã đặt vé tại VNtrip.vn. Người quản lý cần xét duyệt thông tin của bạn trước khi gửi email
+                            p.p1 Vé máy bay không còn tồn tại
+                            p.p2 Rất tiếc, vé máy bay bạn chọn không còn tồn tại. Bạn vui lòng tìm kiếm vé máy bay tương tự hoặc đặt lại vé.
                             .btnGroup
-                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
-                    .vntBox
-                        .vntBox__checkout
-                            svg(width='101', height='101', viewBox='0 0 101 101', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                path(d='M55.9991 59C50.3991 81.8 69.3324 93.1667 79.4991 96C74.6658 97.6667 63.1992 99.3 55.9991 92.5C46.999 84 48.4991 66.5 55.9991 59Z', fill='#FAB516', fill-opacity='0.2')
-                                path(d='M73.5 98C87.031 98 98 87.031 98 73.5C98 59.969 87.031 49 73.5 49C59.969 49 49 59.969 49 73.5C49 87.031 59.969 98 73.5 98Z', stroke='#FAB516', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M83.492 76.492H72V65', stroke='#FAB516', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M32.25 87.5H9.5C7.77609 87.5 6.12279 86.8152 4.90381 85.5962C3.68482 84.3772 3 82.7239 3 81V9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3H55.559C57.2817 3.00037 58.9338 3.68459 60.1523 4.90233L72.5977 17.3477C73.8154 18.5662 74.4996 20.2183 74.5 21.941V32.25', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M21 26H57', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M21 42.5H40.5', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M21 59H31.5', stroke='#2E3A59', stroke-width='5', stroke-linecap='round', stroke-linejoin='round')
-
-                            p.p1 Đang xử lý thông tin đặt vé
-                            p.p2 Thông tin đặt vé của bạn đang được xử lý...
-                            .btnGroup
-                                a.btn.btn_outline.btn_lg(href='home.html') Quay về trang chủ
+                                a.btn.btn_lg(href='flightList.html') Tìm vé tương tự
         script(src="js/libs/jquery.min.js")
         script(src="js/main.js")
         script.

@@ -5,19 +5,19 @@
   position: relative;
   &__checkout{
     text-align: center;
-    padding: 50px;
+    width: 50%;
+    margin: 0 auto;
     > img{
       width: 200px;
     }
     p{
       font-size: 14px;
+      color: #262626;
       &.p1{
         font-size: 24px;
-        color: #262626;
         font-weight: 500;
         margin-top: 30px;
       }
-      &.p2{}
       &.p3{
         color: #1890FF;
       }
