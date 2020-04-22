@@ -43,6 +43,21 @@
     top: 15px;
     right: 15px;
   }
+  &__switch{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    display: none;
+    &.open{
+      display: block;
+    }
+    .btnSwitch{
+      .switch{
+        margin-left: 6px;
+        margin-right: 0;
+      }
+    }
+  }
   &__btn{
     .btn{
       + .btn{
@@ -92,12 +107,20 @@
           color: #8c8c8c;
           font-weight: $regular;
         }
+        &.p3{
+          color: #8c8c8c;
+          font-weight: $regular;
+          width: 100%;
+          text-align: right;
+        }
       }
     }
   }
   &__noti{
-    text-align: center;
-    padding: 34px 16px 16px;
+    padding: 32px 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     p{
       font-size: 14px;
       color: #262626;

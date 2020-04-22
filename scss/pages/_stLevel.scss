@@ -64,15 +64,24 @@
   }
 }
 .levelForm{
-  padding: 16px 0;
   &__item{
-    margin-bottom: 24px;
+    margin: 0 -15px;
+    padding: 15px;
+    border-bottom: 1px solid $border-color;
   }
   &__title{
-    font-size: 16px;
-    font-weight: $medium;
-    color: #262626;
-    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      font-size: 16px;
+      font-weight: $medium;
+      color: #262626;
+      margin-bottom: 0;
+    }
+  }
+  &__place{
+    padding-top: 15px;
   }
   &__name{
     display: flex;
@@ -91,6 +100,13 @@
   &__col{
     width: 50%;
     padding: 0 8px;
+  }
+  &__row{
+    display: none;
+    padding-top: 15px;
+    &.open{
+      display: block;
+    }
   }
   &__time{
     .input-inline{
@@ -129,5 +145,16 @@
         }
       }
     }
+
+  }
+  .btnInline{
+    padding-top: 15px;
+  }
+}
+.levelNoti{
+  padding: 32px 0 16px;
+  p{
+    margin-bottom: 0;
+    color: #262626;
   }
 }

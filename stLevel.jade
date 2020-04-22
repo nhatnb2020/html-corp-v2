@@ -13,16 +13,79 @@ html(lang="vi")
                     .stLevel__row
                         .stLevel__left
                             ul.stTab
+                                li
+                                    button.btn.btn_lg( type='button' data-toggle="modal" data-target="#addLevelPopup") + Thêm cài đặt hạn mức
                                 li.active
-                                    button.btn.btn_outline.btn_lg(type='button') Giám đốc
+                                    button.btn.btn_outline.btn_lg(type='button')
+                                        span Giám đốc
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown', aria-expanded='false')
+                                            span
+                                                svg(width='3', height='12', viewBox='0 0 3 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M0.625 1.60938C0.625 1.84144 0.717187 2.064 0.881281 2.22809C1.04538 2.39219 1.26794 2.48438 1.5 2.48438C1.73206 2.48438 1.95462 2.39219 2.11872 2.22809C2.28281 2.064 2.375 1.84144 2.375 1.60938C2.375 1.37731 2.28281 1.15475 2.11872 0.990657C1.95462 0.826562 1.73206 0.734375 1.5 0.734375C1.26794 0.734375 1.04538 0.826562 0.881281 0.990657C0.717187 1.15475 0.625 1.37731 0.625 1.60938ZM0.625 5.98438C0.625 6.21644 0.717187 6.439 0.881281 6.60309C1.04538 6.76719 1.26794 6.85938 1.5 6.85938C1.73206 6.85938 1.95462 6.76719 2.11872 6.60309C2.28281 6.439 2.375 6.21644 2.375 5.98438C2.375 5.75231 2.28281 5.52975 2.11872 5.36566C1.95462 5.20156 1.73206 5.10938 1.5 5.10938C1.26794 5.10938 1.04538 5.20156 0.881281 5.36566C0.717187 5.52975 0.625 5.75231 0.625 5.98438ZM0.625 10.3594C0.625 10.5914 0.717187 10.814 0.881281 10.9781C1.04538 11.1422 1.26794 11.2344 1.5 11.2344C1.73206 11.2344 1.95462 11.1422 2.11872 10.9781C2.28281 10.814 2.375 10.5914 2.375 10.3594C2.375 10.1273 2.28281 9.90475 2.11872 9.74066C1.95462 9.57656 1.73206 9.48438 1.5 9.48438C1.26794 9.48438 1.04538 9.57656 0.881281 9.74066C0.717187 9.90475 0.625 10.1273 0.625 10.3594Z', fill='black')
+                                        ul.dropdown-menu
+                                            li.dropdown-item(data-toggle="modal" data-target="#noDeletePopup") Xóa
                                 li
-                                    button.btn.btn_outline.btn_lg(type='button') Trưởng Phòng
+                                    button.btn.btn_outline.btn_lg(type='button')
+                                        span Trưởng Phòng
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown', aria-expanded='false')
+                                            span
+                                                svg(width='3', height='12', viewBox='0 0 3 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M0.625 1.60938C0.625 1.84144 0.717187 2.064 0.881281 2.22809C1.04538 2.39219 1.26794 2.48438 1.5 2.48438C1.73206 2.48438 1.95462 2.39219 2.11872 2.22809C2.28281 2.064 2.375 1.84144 2.375 1.60938C2.375 1.37731 2.28281 1.15475 2.11872 0.990657C1.95462 0.826562 1.73206 0.734375 1.5 0.734375C1.26794 0.734375 1.04538 0.826562 0.881281 0.990657C0.717187 1.15475 0.625 1.37731 0.625 1.60938ZM0.625 5.98438C0.625 6.21644 0.717187 6.439 0.881281 6.60309C1.04538 6.76719 1.26794 6.85938 1.5 6.85938C1.73206 6.85938 1.95462 6.76719 2.11872 6.60309C2.28281 6.439 2.375 6.21644 2.375 5.98438C2.375 5.75231 2.28281 5.52975 2.11872 5.36566C1.95462 5.20156 1.73206 5.10938 1.5 5.10938C1.26794 5.10938 1.04538 5.20156 0.881281 5.36566C0.717187 5.52975 0.625 5.75231 0.625 5.98438ZM0.625 10.3594C0.625 10.5914 0.717187 10.814 0.881281 10.9781C1.04538 11.1422 1.26794 11.2344 1.5 11.2344C1.73206 11.2344 1.95462 11.1422 2.11872 10.9781C2.28281 10.814 2.375 10.5914 2.375 10.3594C2.375 10.1273 2.28281 9.90475 2.11872 9.74066C1.95462 9.57656 1.73206 9.48438 1.5 9.48438C1.26794 9.48438 1.04538 9.57656 0.881281 9.74066C0.717187 9.90475 0.625 10.1273 0.625 10.3594Z', fill='black')
+                                        ul.dropdown-menu
+                                            li.dropdown-item(data-toggle="modal" data-target="#noDeletePopup") Xóa
                                 li
-                                    button.btn.btn_outline.btn_lg(type='button') Phó Phòng
+                                    button.btn.btn_outline.btn_lg(type='button')
+                                        span Phó Phòng
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown', aria-expanded='false')
+                                            span
+                                                svg(width='3', height='12', viewBox='0 0 3 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M0.625 1.60938C0.625 1.84144 0.717187 2.064 0.881281 2.22809C1.04538 2.39219 1.26794 2.48438 1.5 2.48438C1.73206 2.48438 1.95462 2.39219 2.11872 2.22809C2.28281 2.064 2.375 1.84144 2.375 1.60938C2.375 1.37731 2.28281 1.15475 2.11872 0.990657C1.95462 0.826562 1.73206 0.734375 1.5 0.734375C1.26794 0.734375 1.04538 0.826562 0.881281 0.990657C0.717187 1.15475 0.625 1.37731 0.625 1.60938ZM0.625 5.98438C0.625 6.21644 0.717187 6.439 0.881281 6.60309C1.04538 6.76719 1.26794 6.85938 1.5 6.85938C1.73206 6.85938 1.95462 6.76719 2.11872 6.60309C2.28281 6.439 2.375 6.21644 2.375 5.98438C2.375 5.75231 2.28281 5.52975 2.11872 5.36566C1.95462 5.20156 1.73206 5.10938 1.5 5.10938C1.26794 5.10938 1.04538 5.20156 0.881281 5.36566C0.717187 5.52975 0.625 5.75231 0.625 5.98438ZM0.625 10.3594C0.625 10.5914 0.717187 10.814 0.881281 10.9781C1.04538 11.1422 1.26794 11.2344 1.5 11.2344C1.73206 11.2344 1.95462 11.1422 2.11872 10.9781C2.28281 10.814 2.375 10.5914 2.375 10.3594C2.375 10.1273 2.28281 9.90475 2.11872 9.74066C1.95462 9.57656 1.73206 9.48438 1.5 9.48438C1.26794 9.48438 1.04538 9.57656 0.881281 9.74066C0.717187 9.90475 0.625 10.1273 0.625 10.3594Z', fill='black')
+                                        ul.dropdown-menu
+                                            li.dropdown-item(data-toggle="modal" data-target="#noDeletePopup") Xóa
                                 li
-                                    button.btn.btn_outline.btn_lg(type='button') Trưởng Nhóm
-                                li
-                                    a.btn.btn_lg(href='#') + Thêm cài đặt hạn mức
+                                    button.btn.btn_outline.btn_lg(type='button')
+                                        span Trưởng Nhóm
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown', aria-expanded='false')
+                                            span
+                                                svg(width='3', height='12', viewBox='0 0 3 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M0.625 1.60938C0.625 1.84144 0.717187 2.064 0.881281 2.22809C1.04538 2.39219 1.26794 2.48438 1.5 2.48438C1.73206 2.48438 1.95462 2.39219 2.11872 2.22809C2.28281 2.064 2.375 1.84144 2.375 1.60938C2.375 1.37731 2.28281 1.15475 2.11872 0.990657C1.95462 0.826562 1.73206 0.734375 1.5 0.734375C1.26794 0.734375 1.04538 0.826562 0.881281 0.990657C0.717187 1.15475 0.625 1.37731 0.625 1.60938ZM0.625 5.98438C0.625 6.21644 0.717187 6.439 0.881281 6.60309C1.04538 6.76719 1.26794 6.85938 1.5 6.85938C1.73206 6.85938 1.95462 6.76719 2.11872 6.60309C2.28281 6.439 2.375 6.21644 2.375 5.98438C2.375 5.75231 2.28281 5.52975 2.11872 5.36566C1.95462 5.20156 1.73206 5.10938 1.5 5.10938C1.26794 5.10938 1.04538 5.20156 0.881281 5.36566C0.717187 5.52975 0.625 5.75231 0.625 5.98438ZM0.625 10.3594C0.625 10.5914 0.717187 10.814 0.881281 10.9781C1.04538 11.1422 1.26794 11.2344 1.5 11.2344C1.73206 11.2344 1.95462 11.1422 2.11872 10.9781C2.28281 10.814 2.375 10.5914 2.375 10.3594C2.375 10.1273 2.28281 9.90475 2.11872 9.74066C1.95462 9.57656 1.73206 9.48438 1.5 9.48438C1.26794 9.48438 1.04538 9.57656 0.881281 9.74066C0.717187 9.90475 0.625 10.1273 0.625 10.3594Z', fill='black')
+                                        ul.dropdown-menu
+                                            li.dropdown-item(data-toggle="modal" data-target="#noDeletePopup") Xóa
+                            #addLevelPopup.modal.fade(role='dialog')
+                                .modal-dialog.modal-addLevel
+                                    .modal-content
+                                        .modal-header
+                                            h5.modal-title Tên hạn mức
+                                            button.modal-close(data-dismiss='modal')
+                                                svg(width='10', height='12', viewBox='0 0 10 12', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M5.8095 6L9.91106 1.11094C9.97981 1.02969 9.922 0.90625 9.81575 0.90625H8.56888C8.49544 0.90625 8.42512 0.939062 8.37669 0.995312L4.99388 5.02813L1.61106 0.995312C1.56419 0.939062 1.49388 0.90625 1.41888 0.90625H0.172C0.0657503 0.90625 0.00793765 1.02969 0.0766877 1.11094L4.17825 6L0.0766877 10.8891C0.061287 10.9072 0.0514069 10.9293 0.04822 10.9529C0.0450331 10.9764 0.0486732 11.0004 0.0587085 11.022C0.0687439 11.0435 0.0847529 11.0617 0.104835 11.0745C0.124916 11.0872 0.148227 11.0939 0.172 11.0938H1.41888C1.49231 11.0938 1.56263 11.0609 1.61106 11.0047L4.99388 6.97188L8.37669 11.0047C8.42356 11.0609 8.49388 11.0938 8.56888 11.0938H9.81575C9.922 11.0938 9.97981 10.9703 9.91106 10.8891L5.8095 6Z', fill='#262626')
+                                        .modal-body
+                                            input.form-control(type='text' placeholder='Giám đốc')
+                                        .modal-footer
+                                            .btnInline.text-right
+                                                button.btn.btn_outline.w100(type='button' data-dismiss='modal') Hủy
+                                                button.btn.w100(type='button' data-dismiss='modal') Lưu
+                            #noDeletePopup.modal.fade(role='dialog')
+                                .modal-dialog.modal-noti
+                                    .modal-content
+                                        .modal-body
+                                            .notiBox
+                                                .notiBox__main
+                                                    .notiBox__icon
+                                                        svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                            path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z', fill='#FA8C16')
+                                                            path(d='M10.875 7.875C10.875 8.17337 10.9935 8.45952 11.2045 8.6705C11.4155 8.88147 11.7016 9 12 9C12.2984 9 12.5845 8.88147 12.7955 8.6705C13.0065 8.45952 13.125 8.17337 13.125 7.875C13.125 7.57663 13.0065 7.29048 12.7955 7.0795C12.5845 6.86853 12.2984 6.75 12 6.75C11.7016 6.75 11.4155 6.86853 11.2045 7.0795C10.9935 7.29048 10.875 7.57663 10.875 7.875ZM12.5625 10.5H11.4375C11.3344 10.5 11.25 10.5844 11.25 10.6875V17.0625C11.25 17.1656 11.3344 17.25 11.4375 17.25H12.5625C12.6656 17.25 12.75 17.1656 12.75 17.0625V10.6875C12.75 10.5844 12.6656 10.5 12.5625 10.5Z', fill='#FA8C16')
+
+                                                    .notiBox__cont
+                                                        p.notiBox__title Không hợp lệ
+                                                        p.notiBox__text Bạn không thể xóa hạn mức khi đang có thành viên được áp dụng
+                                                .notiBox__btn
+                                                    .btnInline
+                                                        button.btn(type='button' data-dismiss='modal') Đã hiểu
                         .stLevel__center
                             h4.stTitle Thông tin hạn mức
                             .vntBox
@@ -36,9 +99,35 @@ html(lang="vi")
                                     button.btn.w100#btnSaveName(type='button') Chỉnh sửa
                                     button.btn.btn_outline.w100(type='button') Hủy
 
+                            h4.stTitle THành viên áp dụng
+                            .vntBox
+                                .vntBox__edit(style='display:none;')
+                                    button.btn.btn_outline.btnEdit(type='button' data-toggle="modal" data-target="#memberPopup2") Chỉnh sửa
+                                p.vntBox__title Thành viên áp dụng (0)
+                                .vntBox__noti
+                                    p
+                                        | Bạn chưa cài chọn thành viên cho hạn mức này.
+                                        br
+                                        | Vui lòng cài đặt để sử dụng hệ thống.
+                                    button.btn#btnSelect(type='button' data-toggle="modal" data-target="#memberPopup2") Chọn thành viên
+                                .objApply(style='display:none;')
+                                    ul
+                                        li
+                                            p Phòng kinh doanh (24)
+                                        li
+                                            p 12 thành viên khác đang áp dụng hạn mức
+                                include jades/blocks/_popupMember
+                            h4.stTitle cấu hình hạn mức
                             .vntBox
                                 .vntBox__edit(style='display:none;')
                                     button.btn.btn_outline.btnEdit(type='button') Chỉnh sửa
+                                .vntBox__switch
+                                    .btnSwitch
+                                        span.spanText Giới hạn hạn mức
+                                        label.switch
+                                            input(type='checkbox', checked='')
+                                            span.slider
+
                                 p.vntBox__title Khách sạn nội địa
                                 .vntBox__noti
                                     p
@@ -49,7 +138,8 @@ html(lang="vi")
                                     button.btn.btnEdit(type='button') Cài đặt hạn mức
                                 .levelForm(style='display:none;')
                                     .levelForm__item
-                                        p.levelForm__title Hạn mức theo khu vực
+                                        .levelForm__title
+                                            p Hạn mức theo khu vực
                                         .levelForm__place
                                             .levelForm__name
                                                 p Lựa chọn khu vực
@@ -62,39 +152,54 @@ html(lang="vi")
                                             .levelForm__add
                                                 button.btnAdd(type='button') + Thêm khu vực
                                     .levelForm__item
-                                        p.levelForm__title Hạn mức theo thời gian lưu trú
-                                        .levelForm__time
-                                            .levelForm__name
-                                                p Khoảng thời gian (Tối đa 15 ngày)
-                                                p Hạn mức (đêm)
-                                            .levelForm__line
-                                                .levelForm__col
-                                                    .input-inline
-                                                        input.form-control(type='text' placeholder='Từ ngày')
-                                                        span -
-                                                        input.form-control(type='text' placeholder='Đến ngày')
-                                                .levelForm__col
-                                                    input.form-control(type='text' placeholder='Nhập hạn mức')
-                                            .levelForm__add
-                                                button.btnAdd(type='button') + Thêm khoảng thời gian
+                                        .levelForm__title
+                                            p Hạn mức theo thời gian lưu trú
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__time
+                                                .levelForm__name
+                                                    p Khoảng thời gian (Tối đa 15 ngày)
+                                                    p Hạn mức (đêm)
+                                                .levelForm__line
+                                                    .levelForm__col
+                                                        .input-inline
+                                                            input.form-control(type='text' placeholder='Từ ngày')
+                                                            span -
+                                                            input.form-control(type='text' placeholder='Đến ngày')
+                                                    .levelForm__col
+                                                        input.form-control(type='text' placeholder='Nhập hạn mức')
+                                                .levelForm__add
+                                                    button.btnAdd(type='button') + Thêm khoảng thời gian
                                     .levelForm__item
-                                        p.levelForm__title Hạn mức theo tháng/năm
-                                        .levelForm__date
-                                            .form-group
-                                                label Hạn mức theo tháng
-                                                input.form-control(type='text' placeholder='Nhập hạn mức theo tháng')
-                                            .form-group
-                                                label Hạn mức theo năm
-                                                input.form-control(type='text' placeholder='Nhập hạn mức theo năm')
+                                        .levelForm__title
+                                            p Hạn mức theo tháng/năm
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__date
+                                                .form-group
+                                                    label Hạn mức theo tháng
+                                                    input.form-control(type='text' placeholder='Nhập hạn mức theo tháng')
+                                                .form-group
+                                                    label Hạn mức theo năm
+                                                    input.form-control(type='text' placeholder='Nhập hạn mức theo năm')
                                     .levelForm__item
-                                        p.levelForm__title Tổng hạn mức cố định
-                                        .levelForm__date
-                                            .form-group
-                                                label Tổng hạn mức
-                                                input.form-control(type='text' placeholder='Nhập tổng hạn mức cố định')
+                                        .levelForm__title
+                                            p Tổng hạn mức cố định
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__date
+                                                .form-group
+                                                    label Tổng hạn mức
+                                                    input.form-control(type='text' placeholder='Nhập tổng hạn mức cố định')
                                     .btnInline
                                         button.btn.btnSave(type='button') Lưu hạn mức
                                         button.btn.btn_outline(type='button') Hủy
+                                .levelNoti(style='display:none;')
+                                    p
+                                        | Thành viên thuộc cài đặt này
+                                        strong &nbsp;không bị giới hạn hạn mức&nbsp;
+                                        | khi đặt phòng
+                                        strong &nbsp;khách sạn nội địa
                                 .vntBox__table(style='display:none;')
                                     .d-row
                                         .d-left
@@ -127,15 +232,7 @@ html(lang="vi")
                                                 p Theo tháng/năm
                                         .d-right
                                             .flexGroup
-                                                p.p1 Hạn mức tháng
-                                                p.p1 1.500.000đ
-
-
-                                            .flexGroup
-                                                p.p1 Hạn mức năm
-                                                p.p1 2.500.000đ
-
-
+                                                p.p3 Chưa cài đặt
                                     .d-row
                                         .d-left
                                             .flexGroup
@@ -164,6 +261,13 @@ html(lang="vi")
                             .vntBox
                                 .vntBox__edit(style='display:none;')
                                     button.btn.btn_outline.btnEdit(type='button') Chỉnh sửa
+                                .vntBox__switch
+                                    .btnSwitch
+                                        span.spanText Giới hạn hạn mức
+                                        label.switch
+                                            input(type='checkbox', checked='')
+                                            span.slider
+
                                 p.vntBox__title Khách sạn quốc tế
                                 .vntBox__noti
                                     p
@@ -174,7 +278,8 @@ html(lang="vi")
                                     button.btn.btnEdit(type='button') Cài đặt hạn mức
                                 .levelForm(style='display:none;')
                                     .levelForm__item
-                                        p.levelForm__title Hạn mức theo khu vực
+                                        .levelForm__title
+                                            p Hạn mức theo khu vực
                                         .levelForm__place
                                             .levelForm__name
                                                 p Lựa chọn khu vực
@@ -197,39 +302,54 @@ html(lang="vi")
                                             .levelForm__add
                                                 button.btnAdd(type='button') + Thêm khu vực
                                     .levelForm__item
-                                        p.levelForm__title Hạn mức theo thời gian lưu trú
-                                        .levelForm__time
-                                            .levelForm__name
-                                                p Khoảng thời gian (Tối đa 15 ngày)
-                                                p Hạn mức (đêm)
-                                            .levelForm__line
-                                                .levelForm__col
-                                                    .input-inline
-                                                        input.form-control(type='text' placeholder='Từ ngày')
-                                                        span -
-                                                        input.form-control(type='text' placeholder='Đến ngày')
-                                                .levelForm__col
-                                                    input.form-control(type='text' placeholder='Nhập hạn mức')
-                                            .levelForm__add
-                                                button.btnAdd(type='button') + Thêm khoảng thời gian
+                                        .levelForm__title
+                                            p Hạn mức theo thời gian lưu trú
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__time
+                                                .levelForm__name
+                                                    p Khoảng thời gian (Tối đa 15 ngày)
+                                                    p Hạn mức (đêm)
+                                                .levelForm__line
+                                                    .levelForm__col
+                                                        .input-inline
+                                                            input.form-control(type='text' placeholder='Từ ngày')
+                                                            span -
+                                                            input.form-control(type='text' placeholder='Đến ngày')
+                                                    .levelForm__col
+                                                        input.form-control(type='text' placeholder='Nhập hạn mức')
+                                                .levelForm__add
+                                                    button.btnAdd(type='button') + Thêm khoảng thời gian
                                     .levelForm__item
-                                        p.levelForm__title Hạn mức theo tháng/năm
-                                        .levelForm__date
-                                            .form-group
-                                                label Hạn mức theo tháng
-                                                input.form-control(type='text' placeholder='Nhập hạn mức theo tháng')
-                                            .form-group
-                                                label Hạn mức theo năm
-                                                input.form-control(type='text' placeholder='Nhập hạn mức theo năm')
+                                        .levelForm__title
+                                            p Hạn mức theo tháng/năm
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__date
+                                                .form-group
+                                                    label Hạn mức theo tháng
+                                                    input.form-control(type='text' placeholder='Nhập hạn mức theo tháng')
+                                                .form-group
+                                                    label Hạn mức theo năm
+                                                    input.form-control(type='text' placeholder='Nhập hạn mức theo năm')
                                     .levelForm__item
-                                        p.levelForm__title Tổng hạn mức cố định
-                                        .levelForm__date
-                                            .form-group
-                                                label Tổng hạn mức
-                                                input.form-control(type='text' placeholder='Nhập tổng hạn mức cố định')
+                                        .levelForm__title
+                                            p Tổng hạn mức cố định
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__date
+                                                .form-group
+                                                    label Tổng hạn mức
+                                                    input.form-control(type='text' placeholder='Nhập tổng hạn mức cố định')
                                     .btnInline
                                         button.btn.btnSave(type='button') Lưu hạn mức
                                         button.btn.btn_outline(type='button') Hủy
+                                .levelNoti(style='display:none;')
+                                    p
+                                        | Thành viên thuộc cài đặt này
+                                        strong &nbsp;không bị giới hạn hạn mức&nbsp;
+                                        | khi đặt phòng
+                                        strong &nbsp;khách sạn quốc tế
                                 .vntBox__table(style='display:none;')
                                     .d-row
                                         .d-left
@@ -299,6 +419,13 @@ html(lang="vi")
                             .vntBox
                                 .vntBox__edit(style='display:none;')
                                     button.btn.btn_outline.btnEdit(type='button') Chỉnh sửa
+                                .vntBox__switch
+                                    .btnSwitch
+                                        span.spanText Giới hạn hạn mức
+                                        label.switch
+                                            input(type='checkbox', checked='')
+                                            span.slider
+
                                 p.vntBox__title Chuyến bay nội địa
                                 .vntBox__noti
                                     p
@@ -309,7 +436,8 @@ html(lang="vi")
                                     button.btn.btnEdit(type='button') Cài đặt hạn mức
                                 .levelForm(style='display:none;')
                                     .levelForm__item
-                                        p.levelForm__title Hạn mức theo khu vực
+                                        .levelForm__title
+                                            p Hạn mức theo khu vực
                                         .levelForm__place
                                             .levelForm__name
                                                 p Lựa chọn khu vực
@@ -322,44 +450,59 @@ html(lang="vi")
                                             .levelForm__add
                                                 button.btnAdd(type='button') + Thêm khu vực
                                     .levelForm__item
-                                        p.levelForm__title Hãng máy bay trong hạn mức
-                                        .levelForm__airlines
-                                            .checkbox
-                                                input#al1(type='checkbox')
-                                                label(for='al1')
-                                                    img.logoVnairline(src='https://statics.vntrip.vn/images/icons/vietnamairline.png' alt='logoAirline')
-                                            .checkbox
-                                                input#al2(type='checkbox')
-                                                label(for='al2')
-                                                    img.logoBamboo(src='https://statics.vntrip.vn/images/icons/bambooairways.png' alt='logoAirline')
-                                            .checkbox
-                                                input#al3(type='checkbox')
-                                                label(for='al3')
-                                                    img.logoVietjet(src='https://statics.vntrip.vn/images/icons/vietjet-air.png' alt='logoAirline')
-                                            .checkbox
-                                                input#al4(type='checkbox')
-                                                label(for='al4')
-                                                    img.logoJetstar(src='https://statics.vntrip.vn/images/icons/jetstar.png' alt='logoAirline')
+                                        .levelForm__title
+                                            p Hãng máy bay trong hạn mức
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__airlines
+                                                .checkbox
+                                                    input#al1(type='checkbox')
+                                                    label(for='al1')
+                                                        img.logoVnairline(src='https://statics.vntrip.vn/images/icons/vietnamairline.png' alt='logoAirline')
+                                                .checkbox
+                                                    input#al2(type='checkbox')
+                                                    label(for='al2')
+                                                        img.logoBamboo(src='https://statics.vntrip.vn/images/icons/bambooairways.png' alt='logoAirline')
+                                                .checkbox
+                                                    input#al3(type='checkbox')
+                                                    label(for='al3')
+                                                        img.logoVietjet(src='https://statics.vntrip.vn/images/icons/vietjet-air.png' alt='logoAirline')
+                                                .checkbox
+                                                    input#al4(type='checkbox')
+                                                    label(for='al4')
+                                                        img.logoJetstar(src='https://statics.vntrip.vn/images/icons/jetstar.png' alt='logoAirline')
                                     .levelForm__item
-                                        p.levelForm__title Hạng ghế máy bay trong hạn mức
-                                        ul.levelForm__seat
-                                            li.active
-                                                button.btnSeat(type='button') First class
-                                            li
-                                                button.btnSeat(type='button') Business
-                                            li
-                                                button.btnSeat(type='button') Premium - Economy
-                                            li
-                                                button.btnSeat(type='button') Economy
+                                        .levelForm__title
+                                            p Hạng ghế máy bay trong hạn mức
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            ul.levelForm__seat
+                                                li.active
+                                                    button.btnSeat(type='button') First class
+                                                li
+                                                    button.btnSeat(type='button') Business
+                                                li
+                                                    button.btnSeat(type='button') Premium - Economy
+                                                li
+                                                    button.btnSeat(type='button') Economy
                                     .levelForm__item
-                                        p.levelForm__title Tổng hạn mức cố định (theo chuyến)
-                                        .levelForm__date
-                                            .form-group
-                                                label Tổng hạn mức
-                                                input.form-control(type='text' placeholder='Nhập tổng hạn mức cố định cho mỗi chuyến bay')
+                                        .levelForm__title
+                                            p Tổng hạn mức cố định (theo chuyến)
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__date
+                                                .form-group
+                                                    label Tổng hạn mức
+                                                    input.form-control(type='text' placeholder='Nhập tổng hạn mức cố định cho mỗi chuyến bay')
                                     .btnInline
                                         button.btn.btnSave(type='button') Lưu hạn mức
                                         button.btn.btn_outline(type='button') Hủy
+                                .levelNoti(style='display:none;')
+                                    p
+                                        | Thành viên thuộc cài đặt này
+                                        strong &nbsp;không bị giới hạn hạn mức&nbsp;
+                                        | khi đặt vé
+                                        strong &nbsp;chuyến bay nội địa
                                 .vntBox__table(style='display:none;')
                                     .d-row
                                         .d-left
@@ -418,6 +561,13 @@ html(lang="vi")
                             .vntBox
                                 .vntBox__edit(style='display:none;')
                                     button.btn.btn_outline.btnEdit(type='button') Chỉnh sửa
+                                .vntBox__switch
+                                    .btnSwitch
+                                        span.spanText Giới hạn hạn mức
+                                        label.switch
+                                            input(type='checkbox', checked='')
+                                            span.slider
+
                                 p.vntBox__title Chuyến bay quốc tế
                                 .vntBox__noti
                                     p
@@ -428,7 +578,8 @@ html(lang="vi")
                                     button.btn.btnEdit(type='button') Cài đặt hạn mức
                                 .levelForm(style='display:none;')
                                     .levelForm__item
-                                        p.levelForm__title Hạn mức theo khu vực
+                                        .levelForm__title
+                                            p Hạn mức theo khu vực
                                         .levelForm__place
                                             .levelForm__name
                                                 p Lựa chọn khu vực
@@ -441,113 +592,59 @@ html(lang="vi")
                                             .levelForm__add
                                                 button.btnAdd(type='button') + Thêm khu vực
                                     .levelForm__item
-                                        p.levelForm__title Hãng máy bay trong hạn mức
-                                        .levelForm__airlines
-                                            .checkbox
-                                                input#al1(type='checkbox')
-                                                label(for='al1')
-                                                    img.logoVnairline(src='https://statics.vntrip.vn/images/icons/vietnamairline.png' alt='logoAirline')
-                                            .checkbox
-                                                input#al2(type='checkbox')
-                                                label(for='al2')
-                                                    img.logoBamboo(src='https://statics.vntrip.vn/images/icons/bambooairways.png' alt='logoAirline')
-                                            .checkbox
-                                                input#al3(type='checkbox')
-                                                label(for='al3')
-                                                    img.logoVietjet(src='https://statics.vntrip.vn/images/icons/vietjet-air.png' alt='logoAirline')
-                                            .checkbox
-                                                input#al4(type='checkbox')
-                                                label(for='al4')
-                                                    img.logoJetstar(src='https://statics.vntrip.vn/images/icons/jetstar.png' alt='logoAirline')
+                                        .levelForm__title
+                                            p Hãng máy bay trong hạn mức
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__airlines
+                                                .checkbox
+                                                    input#al1(type='checkbox')
+                                                    label(for='al1')
+                                                        img.logoVnairline(src='https://statics.vntrip.vn/images/icons/vietnamairline.png' alt='logoAirline')
+                                                .checkbox
+                                                    input#al2(type='checkbox')
+                                                    label(for='al2')
+                                                        img.logoBamboo(src='https://statics.vntrip.vn/images/icons/bambooairways.png' alt='logoAirline')
+                                                .checkbox
+                                                    input#al3(type='checkbox')
+                                                    label(for='al3')
+                                                        img.logoVietjet(src='https://statics.vntrip.vn/images/icons/vietjet-air.png' alt='logoAirline')
+                                                .checkbox
+                                                    input#al4(type='checkbox')
+                                                    label(for='al4')
+                                                        img.logoJetstar(src='https://statics.vntrip.vn/images/icons/jetstar.png' alt='logoAirline')
                                     .levelForm__item
-                                        p.levelForm__title Hạng ghế máy bay trong hạn mức
-                                        ul.levelForm__seat
-                                            li.active
-                                                button.btnSeat(type='button') First class
-                                            li
-                                                button.btnSeat(type='button') Business
-                                            li
-                                                button.btnSeat(type='button') Premium - Economy
-                                            li
-                                                button.btnSeat(type='button') Economy
+                                        .levelForm__title
+                                            p Hạng ghế máy bay trong hạn mức
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            ul.levelForm__seat
+                                                li.active
+                                                    button.btnSeat(type='button') First class
+                                                li
+                                                    button.btnSeat(type='button') Business
+                                                li
+                                                    button.btnSeat(type='button') Premium - Economy
+                                                li
+                                                    button.btnSeat(type='button') Economy
                                     .levelForm__item
-                                        p.levelForm__title Tổng hạn mức cố định (theo chuyến)
-                                        .levelForm__date
-                                            .form-group
-                                                label Tổng hạn mức
-                                                input.form-control(type='text' placeholder='Nhập tổng hạn mức cố định cho mỗi chuyến bay')
+                                        .levelForm__title
+                                            p Tổng hạn mức cố định (theo chuyến)
+                                            button.btn.btn_outline.btnAddSetting(type='button') Thêm Cài đặt
+                                        .levelForm__row
+                                            .levelForm__date
+                                                .form-group
+                                                    label Tổng hạn mức
+                                                    input.form-control(type='text' placeholder='Nhập tổng hạn mức cố định cho mỗi chuyến bay')
                                     .btnInline
                                         button.btn.btnSave(type='button') Lưu hạn mức
                                         button.btn.btn_outline(type='button') Hủy
-                                .vntBox__table(style='display:none;')
-                                    .d-row
-                                        .d-left
-                                            .flexGroup
-                                                p Khu vực
-                                        .d-right
-                                            .flexGroup
-                                                p.p1 Hà Nội
-                                                p.p1 500.000đ
-
-
-                                            .flexGroup
-                                                p.p1 Nha Trang
-                                                p.p1 500.000đ
-
-
-                                            .flexGroup
-                                                p.p1 Sài gòn
-                                                p.p1 500.000đ
-
-
-                                            .flexGroup
-                                                p.p1 Đà nẵng
-                                                p.p1 500.000đ
-                                    .d-row
-                                        .d-left
-                                            .flexGroup
-                                                p Theo hãng máy bay
-                                        .d-right
-                                            .flexGroup
-                                                p.p1 Vietnam Airline
-
-                                            .flexGroup
-                                                p.p1 Bamboo Airways
-
-                                    .d-row
-                                        .d-left
-                                            .flexGroup
-                                                p Hãng ghế máy bay
-                                        .d-right
-                                            .flexGroup
-                                                p.p1 Economy
-                                            .flexGroup
-                                                p.p1 Business
-
-                                    .d-row
-                                        .d-left
-                                            .flexGroup
-                                                p Chi phí tối đa / lượt
-                                        .d-right
-                                            .flexGroup
-                                                p.p1 Chi phí tối đa / lượt
-                                                p.p1 1.500.000đ
-                            .vntBox
-                                .vntBox__edit
-                                    button.btn.btn_outline(type='button' data-toggle="modal" data-target="#memberPopup2") Chỉnh sửa
-                                p.vntBox__title Thành viên áp dụng (0)
-                                .vntBox__noti
+                                .levelNoti(style='display:none;')
                                     p
-                                        | Bạn chưa cài chọn thành viên cho hạn mức này.
-                                        br
-                                        | Vui lòng cài đặt để sử dụng hệ thống.
-                                    button.btn#btnSelect(type='button' data-toggle="modal" data-target="#memberPopup2") Chọn thành viên
-                                .objApply(style='display:none;')
-                                    ul
-                                        li
-                                            p Phòng kinh doanh (24)
-                                        li
-                                            p 12 thành viên khác đang áp dụng hạn mức
+                                        | Thành viên thuộc cài đặt này
+                                        strong &nbsp;không bị giới hạn hạn mức&nbsp;
+                                        | khi đặt vé
+                                        strong &nbsp;chuyến bay quốc tế
                         .stLevel__right
                             ul.stNavbar
                                 li.active
@@ -565,8 +662,25 @@ html(lang="vi")
                                 li
                                     a(href='stLevel-edit1.html') Đối tượng áp dụng
 
+                #confirmPopup.modal.fade(role='dialog')
+                    .modal-dialog.modal-noti
+                        .modal-content
+                            .modal-body
+                                .notiBox
+                                    .notiBox__main
+                                        .notiBox__icon
+                                            svg(width='24', height='24', viewBox='0 0 24 24', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M12 1.5C6.20156 1.5 1.5 6.20156 1.5 12C1.5 17.7984 6.20156 22.5 12 22.5C17.7984 22.5 22.5 17.7984 22.5 12C22.5 6.20156 17.7984 1.5 12 1.5ZM12 20.7188C7.18594 20.7188 3.28125 16.8141 3.28125 12C3.28125 7.18594 7.18594 3.28125 12 3.28125C16.8141 3.28125 20.7188 7.18594 20.7188 12C20.7188 16.8141 16.8141 20.7188 12 20.7188Z', fill='#FA8C16')
+                                                path(d='M10.875 7.875C10.875 8.17337 10.9935 8.45952 11.2045 8.6705C11.4155 8.88147 11.7016 9 12 9C12.2984 9 12.5845 8.88147 12.7955 8.6705C13.0065 8.45952 13.125 8.17337 13.125 7.875C13.125 7.57663 13.0065 7.29048 12.7955 7.0795C12.5845 6.86853 12.2984 6.75 12 6.75C11.7016 6.75 11.4155 6.86853 11.2045 7.0795C10.9935 7.29048 10.875 7.57663 10.875 7.875ZM12.5625 10.5H11.4375C11.3344 10.5 11.25 10.5844 11.25 10.6875V17.0625C11.25 17.1656 11.3344 17.25 11.4375 17.25H12.5625C12.6656 17.25 12.75 17.1656 12.75 17.0625V10.6875C12.75 10.5844 12.6656 10.5 12.5625 10.5Z', fill='#FA8C16')
 
-                include jades/blocks/_popupMember
+                                        .notiBox__cont
+                                            p.notiBox__title Xác nhận
+                                            p.notiBox__text Thành viên thuộc cài đặt này sẽ không bị giới hạn hạn mức khi đặt phòng khách sạn nội địa. Bạn có chắc chắn muốn tiếp tục?
+                                    .notiBox__btn
+                                        .btnInline
+                                            button.btn.btn_outline(type='button' data-dismiss='modal') Hủy
+                                            button.btn(type='button' data-dismiss='modal') Đồng ý
+
         script(src="js/libs/jquery.min.js")
         script(src="js/main.js")
         script.
@@ -578,11 +692,19 @@ html(lang="vi")
                 $(this).parents('.vntBox__noti').css('display', 'none');
                 $(this).parents('.vntBox').find('.levelForm').css('display', 'block');
                 $(this).parents('.vntBox').find('.vntBox__table').css('display', 'none');
+                $(this).parents('.vntBox').find('.vntBox__edit').css('display', 'none');
+
+                $(this).parents('.vntBox').find('.vntBox__switch').addClass('open');
+
             });
             $('.vntBox .btnSave').click(function () {
                 $(this).parents('.vntBox').find('.vntBox__table').css('display', 'block');
                 $(this).parents('.vntBox').find('.levelForm').css('display', 'none');
                 $(this).parents('.vntBox').find('.vntBox__edit').css('display', 'block');
+
+                $(this).parents('.vntBox').find('.vntBox__switch').removeClass('open');
+                $('.levelForm__row').removeClass('open');
+                $('.btnAddSetting').css('display', 'block');
             });
             $('#btnEditName').click(function () {
                 $(this).parents('.vntBox').find('.stLevel__name').css('display', 'none');
@@ -597,6 +719,33 @@ html(lang="vi")
             $('#btnSelect').click(function () {
                 $(this).parents('.vntBox__noti').css('display', 'none');
                 $(this).parents('.vntBox').find('.objApply').css('display', 'block');
+            });
+
+        script.
+            $('.stTab .dropdown-item').click(function (event) {
+                $('#noDeletePopup').modal();
+            });
+        script.
+            $('.switch input').on('change', function (event, state) {
+                var spanText = $(this).parents('.btnSwitch').find('.spanText');
+                var levelForm = $(this).parents('.vntBox').find('.levelForm');
+                var levelNoti = $(this).parents('.vntBox').find('.levelNoti');
+                if ($(this).is(':checked')) {
+                    spanText.text('Giới hạn hạn mức');
+                    levelForm.css('display', 'block');
+                    levelNoti.css('display', 'none');
+                } else {
+                    spanText.text('Không giới hạn hạn mức');
+                    levelForm.css('display', 'none');
+                    levelNoti.css('display', 'block');
+
+                    $('#confirmPopup').modal();
+                }
+            });
+        script.
+            $('.btnAddSetting').click(function (event) {
+                $(this).parents('.levelForm__item').find('.levelForm__row').addClass('open');
+                $(this).css('display', 'none');
             });
 
 
