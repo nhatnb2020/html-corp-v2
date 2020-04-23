@@ -119,13 +119,8 @@
     }
   }
 }
-.modal-dialog.popupMember{
-  width: 1154px;
-  .modal-body{
-    padding: 0;
-  }
-}
 .popupMember{
+  width: 1154px;
   &__tab{
     width: 154px;
     border-right: 1px solid $border-color;
@@ -153,16 +148,19 @@
   &__group{
     display: flex;
   }
-  .vntTree{
-    width: 290px;
+  &__cont{
+    width: calc(100% - 154px);
     padding: 16px;
   }
-  .vntMember{
-    &__table{
-      width: calc(100% - 444px);
-      border-left: 1px solid $border-color;
-      padding: 16px;
+  &__item{
+    display: none;
+    animation: opacityShow .3s ease-in-out;
+    &.open{
+      display: block;
     }
+  }
+  .modal-body{
+    padding: 0;
   }
 }
 .stAddApproval{

@@ -59,7 +59,7 @@ html(lang="vi")
                                             p(data-toggle="modal" data-target="#memberPopup2") Phòng kinh doanh (24)
                                         li
                                             p(data-toggle="modal" data-target="#memberPopup2") 12 thành viên khác đang áp dụng hạn mức
-
+                                include jades/blocks/_popupMember
 
                             .vntBox
                                 .vntBox__edit
@@ -91,15 +91,24 @@ html(lang="vi")
                                             .d-block
                                                 p.p1 Nguyễn Trọng Duy
                                                 p.p2 duy@gmail.com | 0982433361
-
-
-
-                include jades/blocks/_popupMember
         script(src="js/libs/jquery.min.js")
         script(src="js/main.js")
         script.
             $('.nav-sub').click(function () {
                 $(this).toggleClass('open');
+            });
+        script.
+            $('.popupMember__tab button').click(function () {
+                $(this).toggleClass('open');
+            });
+        script.
+            $(".popupMember__tab button").click(function () {
+                var tab_id = $(this).parents('.popupMember__tab li').attr('data-tab');
+
+                $('.popupMember__tab li').removeClass('active');
+                $(this).parents('.popupMember__tab li').addClass('active');
+                $('.popupMember__item').removeClass('open');
+                $("#" + tab_id).addClass('open');
             });
 
 
