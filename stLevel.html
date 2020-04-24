@@ -1282,5 +1282,16 @@
           $(this).css('display', 'none');
       });
     </script>
+    <script>
+      var stNavbar = $(".stNavbar").offset().top;
+      $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll >= stNavbar) {
+              $(".stNavbar").addClass('fixedTop');
+          } else {
+              $(".stNavbar").removeClass('fixedTop');
+          }
+      });
+    </script>
   </body>
 </html>

@@ -747,6 +747,16 @@ html(lang="vi")
                 $(this).parents('.levelForm__item').find('.levelForm__row').addClass('open');
                 $(this).css('display', 'none');
             });
+        script.
+            var stNavbar = $(".stNavbar").offset().top;
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= stNavbar) {
+                    $(".stNavbar").addClass('fixedTop');
+                } else {
+                    $(".stNavbar").removeClass('fixedTop');
+                }
+            });
 
 
 
