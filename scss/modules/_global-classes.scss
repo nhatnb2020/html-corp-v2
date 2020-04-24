@@ -307,6 +307,11 @@
       padding-left: 5px;
     }
   }
+  .tooltip{
+    &__cont{
+      z-index: 5;
+    }
+  }
 }
 .pSelected{
   font-size: 14px;
