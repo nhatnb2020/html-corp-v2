@@ -39,6 +39,9 @@
     .btn{
       width: 100%;
       font-weight: $regular;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
   }
   .dropdown{
