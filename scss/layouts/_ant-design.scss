@@ -102,4 +102,7 @@
 }
 .ant-modal-footer{
   padding: 12px 24px;
+  .ant-btn{
+    min-width: 100px;
+  }
 }

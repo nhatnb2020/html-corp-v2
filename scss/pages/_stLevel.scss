@@ -33,7 +33,7 @@
 }
 .stNavbar{
   text-align: right;
-  padding-right: 85px;
+  padding-right: 70px;
   &.fixedTop{
     position: fixed;
     top: 15px;
@@ -72,6 +72,19 @@
     margin: 0 -15px;
     padding: 15px;
     border-bottom: 1px solid $border-color;
+    .input-inline{
+      display: flex;
+      >span{
+        padding: 5px 8px;
+      }
+      .ant-input-number{
+        width: 100%;
+      }
+      .ant-row{
+        flex: 1;
+        margin-bottom: 0;
+      }
+    }
   }
   &__title{
     display: flex;
@@ -88,10 +101,8 @@
     padding-top: 15px;
   }
   &__remove{
-    display: flex;
-    align-items: center;justify-content: center;
     button{
-      padding: 10px;
+      padding: 5px 8px;
     }
   }
   &__name{
@@ -106,34 +117,20 @@
   }
   &__line{
     display: flex;
-    margin: 0 -8px 12px;
+    margin: 0 -8px 15px;
   }
   &__col{
     width: 47%;
     padding: 0 8px;
+    .ant-row{
+      margin-bottom: 0;
+    }
   }
   &__row{
     display: none;
     padding-top: 15px;
     &.open{
       display: block;
-    }
-  }
-  &__time{
-    .input-inline{
-      display: flex;
-      align-items: center;
-      span{
-        padding: 0 8px;
-        font-weight: $semibold;
-      }
-      .ant-input-number{
-        width: 100%;
-      }
-      .ant-row{
-        flex: 1;
-        margin-bottom: 0;
-      }
     }
   }
   &__airlines{
