@@ -98,7 +98,7 @@
     display: flex;
     margin: 0 -8px;
     p{
-      width: 50%;
+      width: 47%;
       font-size: 14px;
       color: #262626;
       padding: 0 8px;
@@ -109,7 +109,7 @@
     margin: 0 -8px 12px;
   }
   &__col{
-    width: 50%;
+    width: 47%;
     padding: 0 8px;
   }
   &__row{
@@ -126,6 +126,13 @@
       span{
         padding: 0 8px;
         font-weight: $semibold;
+      }
+      .ant-input-number{
+        width: 100%;
+      }
+      .ant-row{
+        flex: 1;
+        margin-bottom: 0;
       }
     }
   }
