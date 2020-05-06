@@ -58,10 +58,10 @@ p{
   margin-bottom: 5px;
 }
 label{
-  margin-bottom: 5px;
+  margin-bottom: .5vw;
   display: inline-block;
   color: #262626;
-  font-size: 14px;
+  font-size: 1vw;
 }
 h1,h2,h3,h4,h5{
   font-weight: $medium;
@@ -126,9 +126,15 @@ input, select, textarea, button {
   vertical-align:middle;
   font-family: $base-font-family;
 }
+svg{
+  @media (min-width: 768px) and (max-width: 1199px){
+    width: 1.1vw;
+    height: 1.1vw;
+  }
+}
 body {
   font-family: $base-font-family;
-  font-size: $size-14;
+  font-size: 1vw;
   font-weight: $base-font-weight;
   line-height: $base-line-height;
   color: $text-color;

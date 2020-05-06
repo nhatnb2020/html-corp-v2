@@ -1,21 +1,21 @@
 .textNote{
-  font-size: 14px;
+  font-size: 1vw;
   color: $red-1;
   display: flex;
   margin-bottom: 0;
   svg{
-    margin-top: 3px;
+    margin-top: .4vw;
   }
   span{
-    padding-left: 8px;
+    padding-left: .7vw;
   }
 }
 .alert{
-  padding: 15px;
+  padding: 1vw;
   background: #FFFEFA;
   border: 1px solid #FEF1D4;
-  border-radius: 4px;
-  margin-bottom: 15px;
+  border-radius: 2px;
+  margin-bottom: 1vw;
   display: flex;
   align-items: center;
   &.alert_success{
@@ -27,7 +27,7 @@
     border-color: #FFA39E;
   }
   &.alert_xs{
-    padding: 7px 15px;
+    padding: .6vw 1vw;
   }
   &__icon{
     svg{
@@ -35,15 +35,15 @@
     }
   }
   &__text{
-    padding-left: 15px;
+    padding-left: 1vw;
     p{
       margin-bottom: 0;
       color: #262626;
       &.p1{
-        font-size: 16px;
+        font-size: 1.1vw;
       }
       &.p2{
-        font-size: 14px;
+        font-size: 1vw;
       }
     }
   }

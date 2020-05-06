@@ -4,12 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 15px 30px;
+  padding: 0 1vw 1.8vw;
   &__text{
-    margin: 20px 0;
+    margin: 1.3vw 0;
     text-align: center;
     p{
-      font-size: 22px;
+      font-size: 1.4vw;
       color: #262626;
     }
   }
@@ -17,7 +17,6 @@
     width: 100%;
   }
   #g6219 {
-    -webkit-transform-origin: 85px 4px;
     transform-origin: 85px 4px;
     -webkit-animation: an1 12s 0.5s infinite ease-out;
     animation: an1 12s 0.5s infinite ease-out;

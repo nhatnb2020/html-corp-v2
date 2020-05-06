@@ -4,13 +4,12 @@
     +li{
       &:before{
         content:'\003e';
-        padding: 0 10px;
+        padding: 0 .8vw;
         color:#878787;
       }
     }
     >a{
       font-size: $size-14;
-      line-height: 19px;
       color: #878787;
       transition: .3s;
       &:hover{
@@ -20,7 +19,6 @@
   }
   >.active{
     font-size: $size-14;
-    line-height: 19px;
     color:$text-color;
     font-weight: $medium;
   }

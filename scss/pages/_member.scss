@@ -1,12 +1,12 @@
 .vntMember{
   background-color: #fff;
-  padding: 15px;
-  margin: 15px;
+  padding: 1vw;
+  margin: 1vw;
   &__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
   }
   &__total{
     p{
@@ -16,10 +16,10 @@
   &__btn{
     .btn{
       + .btn{
-        margin-left: 8px;
+        margin-left: .7vw;
       }
       svg{
-        margin-right: 5px;
+        margin-right: .5vw;
       }
     }
   }
@@ -27,10 +27,10 @@
     .table{
       th{
         .dropdown-menu{
-          width: 290px;
-          padding: 8px 0;
+          width: 20vw;
+          padding: .7vw 0;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-          top: calc(100% + 10px)!important;
+          top: calc(100% + .8vw)!important;
         }
         .dropdown-toggle{
           border: none;
@@ -52,13 +52,13 @@
       td{
         p{
           margin: 0;
-          font-size: 14px;
+          font-size: 1vw;
           &.p1{
             color: $text-color;
           }
           &.p2{
             color: #8c8c8c;
-            font-size: 12px;
+            font-size: .9vw;
           }
         }
         .btnSvg{
@@ -69,8 +69,8 @@
         > .checkbox{
           justify-content: center;
           label{
-            width: 16px;
-            height: 16px;
+            width: 1.1vw;
+            height: 1.1vw;
             padding: 0;
           }
           input[type="checkbox"] + label:before {
@@ -80,8 +80,8 @@
         > .radio{
           justify-content: center;
           label{
-            width: 16px;
-            height: 16px;
+            width: 1.1vw;
+            height: 1.1vw;
             padding: 0;
           }
           input[type="radio"] + label:before {
@@ -91,7 +91,7 @@
       }
     }
     .ant-table thead > tr > th, .ant-table tbody > tr > td, .ant-table tfoot > tr > th, .ant-table tfoot > tr > td{
-      padding: 10px 12px;
+      padding: .8vw .9vw;
     }
     .ant-table{
       th{
@@ -103,7 +103,7 @@
     }
     .ant-table-body{
       &::-webkit-scrollbar {
-        width:5px;
+        width:.5vw;
       }
 
       /* Track */
@@ -130,11 +130,11 @@
   flex-wrap: wrap;
   background-color: #fff;
   width: 80%;
-  margin: 15px;
-  padding: 12px;
+  margin: 1vw;
+  padding: .9vw;
   .form-group{
     margin-bottom: 0;
-    padding: 12px;
+    padding: .9vw;
     width: 50%;
     &:nth-child(1){
       width: 100%;
@@ -142,10 +142,10 @@
   }
 }
 .memberBtnAction{
-  padding: 15px;
+  padding: 1vw;
   .btn{
     + .btn{
-      margin-left: 8px;
+      margin-left: .7vw;
     }
   }
 }
@@ -153,13 +153,13 @@
   position: relative;
   &__cont{
     position: absolute;
-    top: calc(100% + 5px);
+    top: calc(100% + .5vw);
     left: 0;
     width: 100%;
     z-index: 5;
     background: #fff;
     box-shadow: $shadow;
-    padding: 16px;
+    padding: 1.1vw;
     border-radius: 4px;
     display: none;
     &.open{
@@ -167,6 +167,6 @@
     }
   }
   &__search{
-    margin-bottom: 16px;
+    margin-bottom: 1.1vw;
   }
 }

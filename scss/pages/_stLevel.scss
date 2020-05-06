@@ -2,25 +2,25 @@
   &__row{
     display: flex;
     justify-content: space-between;
-    padding: 28px 24px;
+    padding: 1.7vw 1.5vw;
   }
   &__left{
-    width: 220px;
-    padding-right: 20px;
+    width: 15vw;
+    padding-right: 1.3vw;
   }
   &__center{
-    width: calc(100% - 440px);
-    padding: 0 20px;
+    width: calc(100% - 30vw);
+    padding: 0 1.3vw;
   }
   &__right{
-    width: 220px;
-    padding-left: 20px;
+    width: 15vw;
+    padding-left: 1.3vw;
   }
   &__name{
     color: #262626;
   }
   .vntBox{
-    margin: 0 0 24px;
+    margin: 0 0 1.5vw;
     box-shadow: $shadow;
     &__table{
       .d-left{
@@ -33,10 +33,10 @@
 }
 .stNavbar{
   text-align: right;
-  padding-right: 70px;
+  padding-right: 5vw;
   &.fixedTop{
     position: fixed;
-    top: 15px;
+    top: 1vw;
   }
   li{
     &.active{
@@ -45,20 +45,20 @@
         font-weight: $medium;
         &:after{
           content: '';
-          width: 19px;
-          height: 2px;
+          width: 1.2vw;
+          height: .4vw;
           background-color: $yellow-2;
           position: absolute;
-          right: -30px;
-          bottom: 15px;
+          right: -1.8vw;
+          bottom: 1vw;
         }
       }
     }
     a,button{
-      font-size: 14px;
+      font-size: 1vw;
       display: inline-block;
       color: $text-color;
-      padding: 8px 0;
+      padding:.7vw 0;
       text-align: left;
       position: relative;
       &:hover{
@@ -69,13 +69,13 @@
 }
 .levelForm{
   &__item{
-    margin: 0 -15px;
-    padding: 15px;
+    margin: 0 -1vw;
+    padding: 1vw;
     border-bottom: 1px solid $border-color;
     .input-inline{
       display: flex;
       >span{
-        padding: 5px 8px;
+        padding: .5vw .7vw;
       }
       .ant-input-number{
         width: 100%;
@@ -91,44 +91,44 @@
     justify-content: space-between;
     align-items: center;
     p{
-      font-size: 16px;
+      font-size: 1.1vw;
       font-weight: $medium;
       color: #262626;
       margin-bottom: 0;
     }
   }
   &__place{
-    padding-top: 15px;
+    padding-top: 1vw;
   }
   &__remove{
     button{
-      padding: 5px 8px;
+      padding: .5vw .7vw;
     }
   }
   &__name{
     display: flex;
-    margin: 0 -8px;
+    margin: 0 -.7vw;
     p{
       width: 47%;
-      font-size: 14px;
+      font-size: 1vw;
       color: #262626;
-      padding: 0 8px;
+      padding: 0 .7vw;
     }
   }
   &__line{
     display: flex;
-    margin: 0 -8px 15px;
+    margin: 0 -.7vw 1vw;
   }
   &__col{
     width: 47%;
-    padding: 0 8px;
+    padding: 0 .7vw;
     .ant-row{
       margin-bottom: 0;
     }
   }
   &__row{
     display: none;
-    padding-top: 15px;
+    padding-top: 1vw;
     &.open{
       display: block;
     }
@@ -148,9 +148,9 @@
     display: flex;
     flex-wrap: wrap;
     li{
-      padding-bottom: 8px;
+      padding-bottom: .7vw;
       + li{
-        padding-left: 8px;
+        padding-left: .7vw;
       }
       &.active{
         .btnSeat{
@@ -163,11 +163,11 @@
 
   }
   .btnInline{
-    padding-top: 15px;
+    padding-top: 1vw;
   }
 }
 .levelNoti{
-  padding: 32px 0 16px;
+  padding: 1.9vw 0 1.1vw;
   p{
     margin-bottom: 0;
     color: #262626;

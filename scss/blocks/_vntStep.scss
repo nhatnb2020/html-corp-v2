@@ -2,19 +2,19 @@
   background-color: #fff;
   display: flex;
   align-items: center;
-  padding: 31px 15px;
+  padding: 1.8vw 1vw;
   margin-bottom: 16px;
   &__item{
     display: flex;
     align-items: center;
-    font-size: 16px;
+    font-size: 1.1vw;
     position: relative;
     &:after{
       content: '';
-      width: 120px;
+      width: 8.5vw;
       height: 1px;
       background-color: #e8e8e8;
-      margin: 0 15px;
+      margin: 0 1vw;
     }
     &:last-child{
       &:after{
@@ -55,8 +55,8 @@
     }
   }
   &__numb{
-    width: 32px;
-    height: 32px;
+    width: 2.2vw;
+    height: 2.2vw;
     color: #BFBFBF;
     border-radius: 50%;
     display: flex;
@@ -66,6 +66,6 @@
   }
   &__text{
     color: #8c8c8c;
-    padding-left: 8px;
+    padding-left: .7vw;
   }
 }

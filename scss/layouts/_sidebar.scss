@@ -5,24 +5,23 @@
   bottom: 0;
   z-index: 99;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  width: 255px;
+  width: 18vw;
   background-color: #fff;
   &__header{
-    padding: 25px;
+    padding: 1.5vw;
     transition: all .3s;
   }
   &__logo{
     a{
       display: block;
       img{
-        width: 105px;
+        width: 7vw;
         transition: all .3s;
       }
     }
     p{
-      font-size: 12px;
-      line-height: 20px;
-      margin-top: 10px;
+      font-size: .9vw;
+      margin-top: .8vw;
       margin-bottom: 0;
       color: #8C8C8C;
     }
@@ -30,20 +29,19 @@
   &__info{
     display: flex;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 1vw;
   }
   &__ava{
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
     object-fit: cover;
-    padding-right: 12px;
+    padding-right: .9vw;
   }
   &__name{
-    width: calc(100% - 40px);
+    width: calc(100% - 3vw);
     p{
-      font-size: 12px;
-      line-height: 20px;
+      font-size: .9vw;
       margin: 0;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -58,11 +56,11 @@
     }
   }
   &__main{
-    height: calc(100% - 42px);
+    height: calc(100% - 3vw);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     &::-webkit-scrollbar {
-      width:4px;
+      width:.5vw;
     }
 
     /* Track */
@@ -83,7 +81,6 @@
     }
   }
   &__nav{
-    &__list{}
     &__item{
       &.active{
         .sidebar{
@@ -104,10 +101,11 @@
                 content: '\f078';
                 font-family: "Font Awesome 5 Free";
                 font-weight: 900;
-                font-size: 12px;
+                font-size: .9vw;
                 position: absolute;
-                top: 11px;
-                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 1.3vw;
               }
             }
           }
@@ -129,12 +127,11 @@
       }
     }
     &__link{
-      font-size: 14px;
-      line-height: 22px;
+      font-size: 1vw;
       color: $text-color;
       display: block;
       position: relative;
-      padding: 10px 25px;
+      padding: .8vw 1.5vw;
       transition: all .2s;
       &:hover{
         background: #fafafa;
@@ -142,11 +139,12 @@
       }
       svg{
         position: absolute;
-        top: 13px;
-        left: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1.5vw;
       }
       span{
-        padding-left: 25px;
+        padding-left: 1.5vw;
       }
     }
     &__child{
@@ -154,8 +152,8 @@
     }
   }
   &__footer{
-    width: 255px;
-    height: 42px;
+    width: 18vw;
+    height: 3vw;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -166,12 +164,11 @@
   &__logout{
     width: 100%;
     height: 100%;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 1vw;
     color: $text-color;
     display: block;
     position: relative;
-    padding: 10px 25px;
+    padding: .8vw 1.5vw;
     transition: all .2s;
     text-align: left;
     &:hover{
@@ -181,7 +178,7 @@
       vertical-align: middle;
     }
     span{
-      padding-left: 15px;
+      padding-left: 1vw;
       vertical-align: middle;
     }
   }
@@ -195,10 +192,10 @@
   }
   .trigger{
     position: absolute;
-    top: 25px;
-    right: 25px;
-    width: 30px;
-    height: 30px;
+    top: 1.5vw;
+    right: 1.5vw;
+    width: 1.8vw;
+    height: 1.8vw;
     background: #f5f5f5;
     border-radius: 50%;
     display: flex;
@@ -208,30 +205,30 @@
   }
 }
 .ant-layout-sider{
-  flex: 0 0 255px!important;
-  max-width: 255px!important;
-  min-width: 255px!important;
-  width: 255px!important;
+  flex: 0 0 18vw!important;
+  max-width: 18vw!important;
+  min-width: 18vw!important;
+  width: 18vw!important;
   padding-bottom: 0;
   &.ant-layout-sider-collapsed{
-    flex: 0 0 88px!important;
-    max-width: 88px!important;
-    min-width: 88px!important;
-    width: 88px!important;
+    flex: 0 0 6.5vw!important;
+    max-width: 6.5vw!important;
+    min-width: 6.5vw!important;
+    width: 6.5vw!important;
     .trigger{
-      right: -15px;
+      right: -1vw;
     }
     .ant-menu{
       .anticon{
         svg{
-          width: 20px;
-          height: 20px;
+          width: 1.5vw;
+          height: 1.5vw;
         }
       }
     }
     .sidebar{
       &__header{
-        padding: 25px 15px;
+        padding: 1.5vw 1vw;
       }
       &__info{
         display: none;
@@ -239,7 +236,7 @@
       &__logo{
         a{
           img{
-            width: 50px;
+            width: 3.5vw;
           }
         }
         p{
@@ -247,7 +244,7 @@
         }
       }
       &__footer{
-        width: 88px;
+        width: 6.5vw;
       }
       &__logout{
         text-align: center;

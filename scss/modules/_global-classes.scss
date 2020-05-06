@@ -154,8 +154,8 @@
 .w-50{width: 50%!important;}
 .w-75{width: 75%!important;}
 .w-100{width: 100%!important;}
-.w100{width: 100px!important;}
-.w358{width: 358px!important;}
+.w100{width: 7vw!important;}
+.w358{width: 25vw!important;}
 
 .h-25{height: 25%!important;}
 .h-50{height: 50%!important;}
@@ -178,7 +178,7 @@
     font-family: "Font Awesome\ 5 Free";
     position:absolute;
     top:50%;
-    right: 10px;
+    right: .8vw;
     transform: translateY(-50%);
     font-weight: 900;
     font-size: $size-12;
@@ -202,12 +202,12 @@
 .solid{
   width: 100%;
   border-bottom: 1px solid $gray-6;
-  margin: 10px 0;
+  margin: .8vw 0;
 }
 .dotted{
   width: 100%;
   border-bottom: 1px dotted $gray-6;
-  margin: 10px 0;
+  margin: .8vw 0;
 }
 .relative{
   position: relative!important;
@@ -217,7 +217,7 @@
 }
 .disc ul{
   list-style: disc!important;
-  padding-left: 30px;
+  padding-left: 1.8vw;
 }
 .text-through{
   text-decoration: line-through;
@@ -236,17 +236,17 @@
   transition: .4s;
 }
 .status{
-  height: 24px;
-  font-size: 12px;
-  padding: 2px 8px;
+  height: 1.7vw;
+  font-size: .9vw;
+  padding: .4vw .7vw;
   border: 1px solid transparent;
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
   &.status_lg{
-    height: 40px;
-    font-size: 14px;
-    padding: 2px 16px;
+    height: 2.3vw;
+    font-size: 1vw;
+    padding: .4vw 1.1vw;
   }
   &.status_active{
     color: #52C41A;
@@ -300,11 +300,11 @@
   > p{
     color: #262626;
     margin-bottom: 0;
-    margin-right: 5px;
+    margin-right: .5vw;
     span{
       color: #096DD9;
       font-weight: 500;
-      padding-left: 5px;
+      padding-left: .5vw;
     }
   }
   .tooltip{
@@ -314,31 +314,31 @@
   }
 }
 .pSelected{
-  font-size: 14px;
+  font-size: 1vw;
   color: #262626;
-  margin-bottom: 16px;
+  margin-bottom: 1.1vw;
 }
 img{
   &.logoVietjet{
-    width: 80px;
+    width: 5.5vw;
   }
   &.logoJetstar{
-    width: 80px;
+    width: 5.5vw;
   }
   &.logoVnairline{
-    width: 60px;
+    width: 4.2vw;
   }
   &.logoBamboo{
-    width: 60px;
+    width: 4.2vw;
   }
 }
 .codeBox{
-  font-size: 12px;
+  font-size: .9vw;
   font-weight: $semibold;
   color: $yellow-2;
-  min-width: 110px;
-  height: 40px;
-  padding: 10px 24px;
+  min-width: 7.5vw;
+  height: 2.8vw;
+  padding: .8vw 1.5vw;
   text-align: center;
   border-radius: 2px;
   border: 1px dashed #fab516;
@@ -347,11 +347,11 @@ img{
 .textDate{
   display: flex;
   align-items: center;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 1vw;
+  margin-bottom: .8vw;
   color: #595959;
   line-height: 1;
   span{
-    padding-left: 10px;
+    padding-left: .8vw;
   }
 }

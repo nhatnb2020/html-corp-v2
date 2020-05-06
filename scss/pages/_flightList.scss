@@ -1,30 +1,30 @@
 .flightList{
   &__body{
-    padding: 15px;
+    padding: 1vw;
   }
   &__active{
-    padding-bottom: 32px;
+    padding-bottom: 1.9vw;
   }
 }
 .listFlight{
-  margin-bottom: 30px;
+  margin-bottom: 1.8vw;
 }
 .flightDest{
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: .9vw;
   position: relative;
   p{
     margin-bottom: 0;
-    font-size: 24px;
+    font-size: 1.5vw;
     &.p1{
-      padding-right: 5px;
+      padding-right: .5vw;
     }
     &.p2{
       font-weight: 500;
       color: #262626;
     }
     &.p3{
-      font-size: 14px;
+      font-size: 1vw;
       color: #262626;
       position: absolute;
       right: 0;
@@ -33,7 +33,7 @@
         vertical-align: middle;
       }
       span{
-        padding-left: 5px;
+        padding-left: .5vw;
       }
     }
   }
@@ -41,8 +41,8 @@
 .flightDate{
   background-color: #fff;
   box-shadow: $shadow;
-  padding: 10px 100px;
-  margin-bottom: 15px;
+  padding: .8vw 7vw;
+  margin-bottom: 1vw;
   position: relative;
   &__cont{
     display: flex;
@@ -79,19 +79,19 @@
     p{
       margin-bottom: 0;
       &.p1{
-        font-size: 14px;
+        font-size: 1vw;
         font-weight: 500;
       }
       &.p2{
-        font-size: 12px;
+        font-size: .9vw;
       }
     }
   }
   .slick-prev{
-    left: 35px;
+    left: 2.5vw;
   }
   .slick-next{
-    right: 35px;
+    right: 2.5vw;
   }
   .slick-arrow{
     transition: all .3s;
@@ -103,22 +103,22 @@
 .flightFilter{
   background-color: #fff;
   box-shadow: $shadow;
-  padding: 15px 15px 5px;
-  margin-bottom: 15px;
+  padding: 1vw 1vw .5vw;
+  margin-bottom: 1vw;
   &__row{
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 3.5vw;
     li{
       &:first-child{
-        min-width: 110px;
+        min-width: 7.5vw;
       }
       + li{
-        padding-left: 24px;
+        padding-left: 1.5vw;
       }
       p{
         margin-bottom: 0;
-        font-size: 16px;
+        font-size: 1.1vw;
         font-weight: 500;
          color: #262626;
       }
@@ -132,7 +132,7 @@
   }
 }
 .flightSort{
-  margin-bottom: 15px;
+  margin-bottom: 1vw;
   .ant-radio-group{
     width: 100%;
   }
@@ -143,19 +143,19 @@
     width: 100%;
     li{
       &:first-child{
-        min-width: 110px;
+        min-width: 7.5vw;
       }
       + li{
-        padding-left: 39px;
+        padding-left: 2.8vw;
       }
       &.liTax{
         position: absolute;
         top: 0;
-        right: 15px;
+        right: 1vw;
       }
       p{
         margin-bottom: 0;
-        font-size: 16px;
+        font-size: 1.1vw;
         font-weight: 500;
         color: #262626;
       }
@@ -170,27 +170,27 @@
 
 }
 .flightTrip{
-  width: 280px;
+  width: 20vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 1vw;
   .d-block{
     text-align: center;
     p{
       margin-bottom: 0;
       &.p1{
-        font-size: 16px;
+        font-size: 1.1vw;
         color: #262626;
         font-weight: 500;
       }
       &.p2{
-        font-size: 12px;
+        font-size: .9vw;
       }
     }
   }
   .d-svg{
-    padding: 0 30px;
+    padding: 0 1.8vw;
     text-align: center;
     svg{
       display: block;
@@ -200,7 +200,7 @@
       margin-bottom: 0;
       color: #8c8c8c;
       font-weight: 500;
-      font-size: 12px;
+      font-size: .9vw;
     }
   }
   &_lg{
@@ -210,10 +210,10 @@
       text-align: left;
       p{
         &.p1{
-          font-size: 20px;
+          font-size: 1.3vw;
         }
         &.p2{
-          font-size: 14px;
+          font-size: 1vw;
         }
       }
     }
@@ -224,57 +224,57 @@
   display: flex;
   align-items: center;
   &__logo{
-    width: 70px;
+    width: 5vw;
     img{
       width: 100%;
     }
   }
   &__cont{
-    width: calc(100% - 70px);
-    padding-left: 5px;
+    width: calc(100% - 5vw);
+    padding-left: .5vw;
     p{
       margin-bottom: 0;
-      font-size: 14px;
+      font-size: 1vw;
     }
   }
 }
 .flightTicket{
-  margin-bottom: 8px;
+  margin-bottom: .7vw;
   &__info{
     background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 16px;
+    padding: 1.1vw;
     .alert{
       width: 100%;
       margin-bottom: 0;
-      margin-top: 10px;
+      margin-top: .8vw;
     }
   }
   &__logo{
-    width: 70px;
+    width: 5vw;
     img{
       width: 100%;
     }
   }
   &__code{
-    width: 75px;
+    width: 6vw;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1vw;
     color: #262626;
     text-align: center;
-    padding-left: 15px;
+    padding-left: 1vw;
   }
   &__seat{
-    width: calc(100% - 595px);
+    width: calc(100% - 44vw);
     display: flex;
     flex-wrap: wrap;
-    padding-right: 15px;
+    padding-right: 1vw;
     li{
-      padding-bottom: 4px;
-      padding-right: 4px;
+      padding-bottom: .5vw;
+      padding-right: .5vw;
       &.active{
         .btnSeat{
           background-color: #40A9FF;
@@ -291,8 +291,8 @@
     }
   }
   &__click{
-    width: 60px;
-    font-size: 12px;
+    width: 5vw;
+    font-size: .9vw;
     color: #1890FF;
     &:hover{
       color: $yellow-2;
@@ -301,68 +301,68 @@
       vertical-align: middle;
     }
     span{
-      padding-right: 5px;
+      padding-right: .5vw;
     }
   }
   &__btn{
-    width: 110px;
-    padding-left: 15px;
+    width: 8vw;
+    padding-left: 1vw;
     .btn{
       width: 100%;
     }
   }
   &__detail{
     background-color: #fff;
-    padding: 24px 182px 64px 110px;
+    padding: 1.5vw 13vw 4vw 7vw;
     position: relative;
     animation: opacityShow .3s ease-in-out;
     display: none;
-    margin-bottom: 8px;
+    margin-bottom: .7vw;
     .flightTicket{
       &__btn{
         position: absolute;
-        bottom: 110px;
-        right: 16px;
+        bottom: 7.5vw;
+        right: 1.1vw;
       }
     }
   }
   &__list{
-    margin-bottom: 24px;
+    margin-bottom: 1.5vw;
   }
   &__trip{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 16px;
+    padding: 1.5vw 1.1vw;
     border: 1px solid $border-color;
     border-radius: 4px;
-    margin-bottom: 12px;
+    margin-bottom: .9vw;
     &:last-child{
       margin-bottom: 0;
     }
   }
   &__policy{
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
     p{
       &.pTitle{
-        font-size: 16px;
+        font-size: 1.1vw;
         font-weight: 500;
         color: #262626;
         span{
-          padding-left: 5px;
+          padding-left: .5vw;
         }
       }
       &.pLine{
         display: flex;
-        font-size: 14px;
+        font-size: 1vw;
         color: #262626;
         span{
           &:first-child{
-            width: 200px;
+            width: 14vw;
           }
           &:last-child{
-            width: calc(100% - 200px);
-            padding-left: 10px;
+            width: calc(100% - 14vw);
+            padding-left: .8vw;
           }
         }
       }
@@ -370,7 +370,7 @@
   }
   &__table{
     .table{
-      margin: 16px 0 10px;
+      margin: 1vw 0 .8vw;
     }
     .textNote{
       justify-content: flex-end;
@@ -379,19 +379,19 @@
   &__airline{
     p{
       margin-bottom: 0;
-      font-size: 14px;
+      font-size: 1vw;
     }
   }
   &__price{
     p{
       margin-bottom: 0;
       &.p1{
-        font-size: 16px;
+        font-size: 1.1vw;
         color: #8c8c8c;
         text-decoration: line-through;
       }
       &.p2{
-        font-size: 20px;
+        font-size: 1.3vw;
         font-weight: $medium;
         color: #262626;
       }
@@ -411,12 +411,11 @@
   }
 }
 .flightActive{
-  margin-bottom: 30px;
+  margin-bottom: 1.8vw;
   .flightTicket{
     box-shadow: $shadow;
-    &__airline{}
     &__info{
-      padding: 9px 16px;
+      padding: .7vw 1.1vw;
       .flightTicket__btn{
         width: auto;
         padding-left: 0;
@@ -428,29 +427,29 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 16px 0;
+  padding: 1.1vw 0;
   position: relative;
   &__price{
     text-align: right;
-    padding-right: 24px;
+    padding-right: 1.5vw;
     p{
       margin-bottom: 0;
       &.p1{
-        font-size: 14px;
+        font-size: 1vw;
         span{
           color: #1890FF;
-          padding-left: 5px;
+          padding-left: .5vw;
         }
       }
       &.p2{
-        font-size: 12px;
+        font-size: .9vw;
       }
     }
   }
   &__btn{
     .btn,
     .ant-btn{
-      width: 150px;
+      width: 10.5vw;
     }
   }
   .btnBack{

@@ -1,35 +1,35 @@
 .vntCheckout{
   display: flex;
   flex-wrap: wrap;
-  padding: 0 15px 30px;
+  padding: 0 1vw 1.8vw;
   &__left{
-    width: calc(100% - 386px);
+    width: calc(100% - 27vw);
   }
   &__right{
-    width: 386px;
-    padding-left: 15px;
-    padding-top: 40px;
+    width: 27vw;
+    padding-left: 1vw;
+    padding-top: 2.8vw;
   }
   &__box{
     background-color: #fff;
     box-shadow: $shadow;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 1vw;
+    margin-bottom: 1vw;
     > .checkbox,
     > .ant-checkbox-wrapper{
-      margin-bottom: 15px;
+      margin-bottom: 1vw;
     }
     > .pTitle{
-      font-size: 16px;
+      font-size: 1.1vw;
       color: #262626;
       font-weight: 500;
-      margin-bottom: 8px;
+      margin-bottom: .7vw;
     }
   }
   &__table{
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
     .pTitle{
-      font-size: 14px;
+      font-size: 1vw;
       font-weight: 500;
       color: #262626;
     }
@@ -37,9 +37,9 @@
       td{
         p{
           margin-bottom: 0;
-          font-size: 14px;
+          font-size: 1vw;
           &.p2{
-            font-size: 12px;
+            font-size: .9vw;
             color: #8c8c8c;
           }
         }
@@ -48,14 +48,14 @@
   }
   &__bank{
     .pTitle{
-      font-size: 16px;
+      font-size: 1.1vw;
       font-weight: 500;
       color: #262626;
-      margin-bottom: 8px;
+      margin-bottom: .7vw;
     }
   }
   .heading2{
-    padding-bottom: 10px;
+    padding-bottom: .8vw;
   }
   .hotelInfo{
     position: initial;
@@ -63,7 +63,7 @@
     &.fixedTop{
       position: fixed;
       top: 0;
-      width: 370px;
+      width: 26vw;
     }
   }
   .flightList__active{
@@ -73,7 +73,7 @@
 }
 .orderInfo{
   &__name{
-    font-size: 16px;
+    font-size: 1.1vw;
     font-weight: 500;
     color: #262626;
   }
@@ -84,45 +84,45 @@
       width: 50%;
       display: flex;
       align-items: center;
-      font-size: 14px;
-      padding-bottom: 5px;
+      font-size: 1vw;
+      padding-bottom: .5vw;
       span{
         &:first-child{
-          width: 100px;
+          width: 7vw;
         }
         &:last-child{
-          width: calc(100% - 100px);
-          padding-left: 10px;
+          width: calc(100% - 7vw);
+          padding-left: .8vw;
         }
       }
     }
   }
   button{
-    font-size: 14px;
+    font-size: 1vw;
     color: #096DD9;
     font-weight: 500;
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 1vw;
     &:hover{
       text-decoration: underline;
     }
     span{
-      padding-left: 6px;
+      padding-left: .6vw;
     }
   }
 }
 .flightInfo{
   background-color: #fff;
   box-shadow: $shadow;
-  padding: 16px 8px;
+  padding: 1.1vw .7vw;
   &__price{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 0;
+    padding: .7vw 0;
     p{
-      font-size: 20px;
+      font-size: 1.3vw;
       margin-bottom: 0;
       font-weight: 500;
       &.p1{
@@ -136,8 +136,8 @@
   .dateInput{
     width: 100%;
     background-color: #f5f5f5;
-    padding: 8px 12px;
-    margin-bottom: 8px;
+    padding: .7vw .9vw;
+    margin-bottom: .7vw;
     .input-inline{
       .form-control{
         background: #fff;
@@ -145,59 +145,59 @@
     }
   }
   .levelTotal{
-    padding-bottom: 8px;
+    padding-bottom: .7vw;
   }
   > p{
-    margin-bottom: 12px;
+    margin-bottom: .9vw;
   }
   .btn{
     width: 100%;
   }
 }
 .flightPlace{
-  font-size: 20px;
+  font-size: 1.3vw;
   color: #262626;
   font-weight: 500;
   display: flex;
   align-items: center;
   svg{
-    margin: 0 10px;
+    margin: 0 .8vw;
   }
   &.flightPlace_sm{
-    font-size: 16px;
+    font-size: 1.1vw;
   }
   &.flightPlace_xs{
-    font-size: 14px;
+    font-size: 1vw;
   }
 }
 .ticketInfo{
   background-color: #f5f5f5;
-  padding: 8px;
+  padding: .7vw;
   &__title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 1vw;
     color: #262626;
     .btnArrow{
-      padding: 5px;
+      padding: .5vw;
     }
   }
   &__box{
     background-color: #fff;
-    padding: 8px 12px;
+    padding: .7vw .9vw;
     border: 1px solid $border-color;
     border-radius: 4px;
-    margin-bottom: 12px;
+    margin-bottom: .9vw;
     p{
-      font-size: 12px;
+      font-size: .9vw;
       margin-bottom: 0;
       &.p1{
         color: #262626;
         font-weight: 500;
       }
       &.p2{
-        margin-bottom: 8px;
+        margin-bottom: .7vw;
       }
     }
     ul{
@@ -205,15 +205,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 12px;
-        line-height: 21px;
+        font-size: .9vw;
         &.liPrice{
-          padding: 5px 0 0;
-          margin-top: 5px;
+          padding: .5vw 0 0;
+          margin-top: .5vw;
           border-top: 1px solid #f5f5f5;
         }
         span{
-          &.span1{}
           &.span2{
             color: #262626;
           }
@@ -246,8 +244,8 @@
       border-radius: 0;
     }
     .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header{
-      padding: 0 20px 0 0;
-      margin-bottom: 5px;
+      padding: 0 1.3vw 0 0;
+      margin-bottom: .5vw;
       p{
         margin-bottom: 0;
       }
@@ -266,13 +264,13 @@
       right: 0;
     }
     .ant-collapse-content > .ant-collapse-content-box{
-      padding: 8px 12px;
+      padding: .7vw .9vw;
       ul{
         li{
           display: flex;
           justify-content: space-between;
           align-items: center;
-          font-size: 12px;
+          font-size: .9vw;
           span{
             &.span2{
               color: #262626;
@@ -284,7 +282,7 @@
   }
 }
 .modal-dialog.modal-editMember{
-  width: 785px;
+  width: 55vw;
   .vntMember{
     &__table{
       .table{
@@ -298,19 +296,19 @@
 
 .payments{
   &__item{
-    padding-bottom: 16px;
+    padding-bottom: 1.1vw;
     &:last-child{
       padding-bottom: 0;
     }
     p{
       margin-bottom: 0;
       &.p1{
-        font-size: 16px;
+        font-size: 1.1vw;
         font-weight: 500;
         color: #262626;
       }
       &.p2{
-        font-size: 12px;
+        font-size: .9vw;
         color: $text-color;
       }
     }
@@ -322,11 +320,11 @@
     }
   }
   &__child{
-    padding-left: 36px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-left: 2.5vw;
+    padding-top: .7vw;
+    padding-bottom: .7vw;
     li{
-      padding-bottom: 8px;
+      padding-bottom: .7vw;
       &:last-child{
         padding-bottom: 0;
       }
@@ -339,30 +337,30 @@
     }
   }
   &__logo{
-    width: 48px;
-    height: 48px;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
     background-color: #fafafa;
     display: flex;
     align-items: center;
     justify-content: center;
     img{
-      width: 50px;
+      width: 3.5vw;
     }
   }
   &__text{
-    width: calc(100% - 48px);
-    padding-left: 10px;
+    width: calc(100% - 3vw);
+    padding-left: .8vw;
   }
 }
 .listBank{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 1.1vw;
   &__item{
-    padding-right: 16px;
-    padding-bottom: 16px;
+    padding-right: 1.1vw;
+    padding-bottom: 1.1vw;
     &.active{
       .listBank{
         &__btn{
@@ -375,8 +373,8 @@
     }
   }
   &__btn{
-    width: 136px;
-    height: 97px;
+    width: 9.5vw;
+    height: 6.7vw;
     border: 1px solid $border-color;
     border-radius: 4px;
     background: #fff;
@@ -385,22 +383,22 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: .8vw;
     transition: all .2s;
     &:hover{
       border-color: $yellow-2;
     }
     svg{
       position: absolute;
-      top: -10px;
-      right: -10px;
+      top: -.8vw;
+      right: -.8vw;
       visibility: hidden;
     }
     img{
-      width: 90px;
+      width: 6.3vw;
     }
     p{
-      font-size: 14px;
+      font-size: 1vw;
       color: #262626;
       font-weight: 500;
       margin-bottom: 0;
@@ -410,27 +408,27 @@
 .bankInfo{
   border: 1px solid $border-color;
   border-radius: 4px;
-  padding: 16px;
+  padding: 1.1vw;
   &__list{
-    padding-bottom: 16px;
+    padding-bottom: 1.1vw;
     li{
       display: flex;
       align-items: center;
-      padding:0 16px 6px;
+      padding:0 1.1vw .6vw;
       p{
-        font-size: 14px;
+        font-size: 1vw;
         color: #262626;
         margin-bottom: 0;
         &.p1{
-          width: 250px;
+          width: 17vw;
         }
         &.p2{
-          width: calc(100% - 250px);
-          padding-left: 17px;
+          width: calc(100% - 17vw);
+          padding-left: 1.1vw;
           font-weight: 500;
         }
         .btnCopy{
-          margin-left: 5px;
+          margin-left: .5vw;
           svg{
             display: block;
           }
@@ -445,39 +443,38 @@
     background-color: #f5f5f5;
     display: flex;
     align-items: center;
-    padding: 0 16px;
-    margin-right: 16px;
+    padding: 0 1.1vw;
+    margin-right: 1.1vw;
     span{
       &.span1{
-        font-size: 14px;
-        padding-right: 16px;
-        padding-right: 50px;
+        font-size: 1vw;
+        padding-right: 1.1vw;
+        padding-right: 3.5vw;
       }
       &.span2{
-        font-size: 20px;
+        font-size: 1.3vw;
         font-weight: 500;
         color: #096DD9;
       }
     }
   }
-  &__btn{}
   &__note{
-    font-size: 12px;
+    font-size: .9vw;
     color: #F5222D;
     margin-bottom: 0;
-    margin-top: 8px;
+    margin-top: .7vw;
     strong{
-      padding-right: 5px;
+      padding-right: .5vw;
     }
   }
 }
 .holdResult{
   width: 100%;
   &__title{
-    font-size: 20px;
+    font-size: 1.3vw;
     color: #262626;
     font-weight: $medium;
-    margin-bottom: 15px;
+    margin-bottom: 1vw;
   }
 }
 .flightLoading{
@@ -491,16 +488,16 @@
   &__body{
     background-color: #fff;
     border-radius: 6px;
-    width: 500px;
-    margin: 100px auto;
-    padding: 100px 30px 50px;
+    width: 36vw;
+    margin: 7vw auto;
+    padding: 7vw 1.8vw 3.5vw;
     overflow: hidden;
     text-align: center;
   }
   &__icon{
-    margin-bottom: 30px;
+    margin-bottom: 1.8vw;
     img{
-      width: 125px;
+      width: 8.5vw;
     }
   }
   &__text{
@@ -508,22 +505,22 @@
       color: #262626;
       margin-bottom: 0;
       &.p1{
-        font-size: 20px;
+        font-size: 1.3vw;
         font-weight: $medium;
       }
       &.p2{
         color: #878787;
-        font-size: 16px;
+        font-size: 1.1vw;
         span{
           animation-name: blink;
           animation-duration: 1.4s;
           animation-iteration-count: infinite;
           animation-fill-mode: both;
           font-weight: $medium;
-          font-size: 20px;
-          padding-right: 3px;
+          font-size: 1.3vw;
+          padding-right: .4vw;
           &:nth-child(1){
-            margin-left: 5px;
+            margin-left: .5vw;
           }
           &:nth-child(2){
             animation-delay: .2s;
