@@ -6,7 +6,7 @@
       vertical-align: middle;
       background-color: #fafafa;
       text-align: left;
-      font-size: 14px;
+      font-size: 1vw;
       font-weight: $medium;
       color: #262626;
       @include add-border(1px,$border-color,top);
@@ -18,7 +18,7 @@
     }
   }
   th, td{
-    padding: 10px 12px;
+    padding: .8vw .9vw;
     @include add-border(1px,$border-color,bottom);
     @include add-border(1px,$border-color,right);
     &:first-child{
@@ -33,10 +33,10 @@
     th{
       vertical-align: middle;
       text-align:left;
-      font-size: 12px;
+      font-size: .9vw;
       font-weight: $medium;
       color: #8c8c8c;
-      padding: 6px 12px;
+      padding: .6vw .9vw;
       text-transform: uppercase;
       border-top: 1px solid #e8e8e8;
     }
@@ -44,8 +44,8 @@
   tr{
     td{
       vertical-align: bottom;
-      padding: 6px 12px;
-      font-size: 14px;
+      padding: .6vw .9vw;
+      font-size: 1vw;
       color: #262626;
       border-bottom: 1px solid #e8e8e8;
     }

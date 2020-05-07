@@ -14,9 +14,9 @@
     }
   }
   &__cont{
-    width: 193px;
+    width: 13.5vw;
     position: absolute;
-    top: calc(100% + 5px);
+    top: calc(100% + .5vw);
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -25,14 +25,14 @@
     background-color: #000;
     color: #fff;
     border-radius: 4px;
-    padding: 5px 8px;
+    padding: .5vw .7vw;
     &:before{
       content: '';
       border-width: 5px;
       border-style: solid;
       border-color: transparent transparent #000;
       position: absolute;
-      top: -9px;
+      top: -.7vw;
       left: 50%;
       transform: translateX(-50%);
     }
@@ -40,10 +40,10 @@
   &.tooltip_top{
     .tooltip__cont{
       top: auto;
-      bottom: calc(100% + 5px);
+      bottom: calc(100% + .5vw);
       &:before{
         top: auto;
-        bottom: -9px;
+        bottom: -.7vw;
         border-color: #000 transparent transparent;
       }
     }

@@ -1,37 +1,37 @@
 .flightRecent{
-  padding-bottom: 40px;
+  padding-bottom: 3vw;
   &__cont{
     display: flex;
   }
   &__item{
-    width: 257px;
+    width: 25%;
     background-color: #fff;
     box-shadow: $shadow;
     display: flex;
-    padding: 12px;
+    padding: .9vw;
     + .flightRecent__item{
-      margin-left: 15px;
+      margin-left: 1vw;
     }
   }
   &__icon{
-    padding-top: 5px;
+    padding-top: .5vw;
   }
   &__info{
-    padding-left: 12px;
+    padding-left: .9vw;
     p{
       &.p1{
-        font-size: 16px;
+        font-size: 1.1vw;
         font-weight: 500;
         color: #262626;
         span,svg{
           vertical-align: middle;
         }
         svg{
-          margin: 0 5px;
+          margin: 0 .5vw;
         }
       }
       &.p2{
-        font-size: 12px;
+        font-size: .9vw;
         margin-bottom: 0;
         color: $text-color;
       }
@@ -43,48 +43,48 @@
     display: flex;
   }
   &__item{
-    width: 187px;
+    width: 25%;
     display: block;
     background-color: #fff;
     box-shadow: $shadow;
     border-radius: 4px;
     overflow: hidden;
     + .flightHot__item{
-      margin-left: 15px;
+      margin-left: 1vw;
     }
     img{
       width: 100%;
-      height: 126px;
+      height: 9vw;
       object-fit: cover;
     }
     p{
       margin-bottom: 0;
       &.p1{
-        font-size: 16px;
+        font-size: 1.1vw;
         color: #262626;
         font-weight: 500;
-        padding: 8px 8px 5px;
+        padding: .7vw .7vw .5vw;
 
         span,svg{
           vertical-align: middle;
         }
         svg{
-          margin: 0 5px;
+          margin: 0 .5vw;
         }
       }
       &.p2{
-        font-size: 12px;
+        font-size: .9vw;
         color: $text-color;
-        padding: 0 8px 8px;
+        padding: 0 .7vw .7vw;
       }
     }
   }
 }
 .vntHome{
   &__flight{
-    padding: 24px 15px;
+    padding: 1.5vw 1vw;
     .heading2{
-      padding-bottom: 15px;
+      padding-bottom: 1vw;
     }
   }
 }

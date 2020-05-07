@@ -1,8 +1,8 @@
 .searchBox{
-  margin-bottom: 20px;
+  margin-bottom: 1.3vw;
   &__banner{
     width: 100%;
-    height: 180px;
+    height: 12.5vw;
     img{
       width: 100%;
       height: 100%;
@@ -10,19 +10,19 @@
     }
   }
   &__cont{
-    padding: 0 15px;
-    margin-top: -75px;
+    padding: 0 1vw;
+    margin-top: -5vw;
     position: relative;
   }
   .heading2{
     background-color: #fff;
-    padding: 10px 15px;
+    padding: .8vw 1vw;
   }
 }
 .vntSearch{
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  padding: 0 15px;
+  padding: 0 1vw;
   &__tab{
     display: flex;
     border-bottom: 1px solid $border-color;
@@ -40,24 +40,23 @@
         }
       }
       button{
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 1vw;
         color: $text-color;
         text-align: left;
-        padding: 10px 20px;
+        padding: .8vw 1.3vw;
         transform: translateY(1px);
         span,svg{
           vertical-align: middle;
         }
         span{
-          padding-left: 5px;
+          padding-left: .5vw;
         }
       }
 
     }
   }
   &__body{
-    padding: 15px 0 25px;
+    padding: 1vw 0 1.5vw;
   }
   &__hotel{
     display: flex;
@@ -65,12 +64,12 @@
     .placeInput,
     .dateInput,
     .memberBtn{
-      padding-right: 15px;
+      padding-right: 1vw;
     }
   }
   &__btn{
     .btn{
-      width: 100px;
+      width: 7vw;
     }
   }
   &__flex{
@@ -79,20 +78,20 @@
   }
   &__radio{
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 1.3vw;
     .radio{
       + .radio{
-        padding-left: 24px;
+        padding-left: 1.5vw;
       }
     }
   }
   &__flight{
     .placeInput{
-      width: 184px;
+      width: 13vw;
     }
     .flightToggle{
-      padding: 0 10px;
-      transform: translateY(-6px);
+      padding: 0 .8vw;
+      transform: translateY(-.6vw);
       &.rotate{
         svg{
           transform: rotate(180deg);
@@ -104,10 +103,10 @@
       }
     }
     .dateInput{
-      padding: 0 16px;
+      padding: 0 1.1vw;
     }
     .memberBtn{
-      padding-right: 16px;
+      padding-right: 1.1vw;
     }
     .listPlace{
       &__text{
@@ -126,19 +125,18 @@
 }
 
 .placeInput{
-  width: 330px;
+  width: 23vw;
   position: relative;
 }
 .dateInput{
-  width: 330px;
+  width: 23vw;
 }
 .suggestFlight{
   &__header{
     background-color: #f2f2f2;
-    padding: 10px 15px;
+    padding: .8vw 1vw;
     h5{
-      font-size: 12px;
-      line-height: 16px;
+      font-size: .9vw;
       color: #878787;
       font-weight: 400;
     }
@@ -147,7 +145,7 @@
     display: flex;
   }
   &__tab{
-    width: 180px;
+    width: 13vw;
     li{
       width: 100%;
       &:last-child{
@@ -165,11 +163,10 @@
       button{
         background: #FDB913;
         text-transform: uppercase;
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 1vw;
         color: $text-color;
         display: block;
-        padding: 15px;
+        padding: 1vw;
         width: 100%;
         text-align: left;
         border-bottom: 1px solid #fff;
@@ -177,12 +174,12 @@
     }
   }
   &__content{
-    width: calc(100% - 180px);
-    max-height: 249px;
+    width: calc(100% - 13vw);
+    max-height: 17vw;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     &::-webkit-scrollbar {
-      width:5px;
+      width:.5vw;
     }
 
     /* Track */
@@ -205,13 +202,12 @@
   &__list{
     display: flex;
     flex-wrap: wrap;
-    padding: 5px 0;
+    padding: .5vw 0;
     li{
       width: 33.333%;
       button{
-        font-size: 14px;
-        line-height: 19px;
-        padding: 10px 15px;
+        font-size: 1vw;
+        padding: .8vw 1vw;
         width: 100%;
         text-align: left;
         transition: all .2s;
@@ -223,25 +219,26 @@
   }
 }
 .memberBtn{
-  width: 200px;
+  width: 14vw;
 }
 
 .suggestDefault{
   background-color: #fff;
   box-shadow: $shadow;
-  width: 360px;
+  width: 25vw;
   position: absolute;
   top: 100%;
   left: 0;
   z-index: 10;
-  max-height: 418px;
+  max-height: 29vw;
   overflow-y: auto;
+  overflow-x: hidden;
   display: none;
   &.open{
     display: block;
   }
   &::-webkit-scrollbar {
-    width:4px;
+    width:.5vw;
   }
 
   /* Track */
@@ -264,14 +261,14 @@
     background-color: #fafafa;
     margin-bottom: 0;
     border-bottom: 1px solid #e8e8e8;
-    font-size: 14px;
+    font-size: 1vw;
     color: #262626;
     font-weight: 500;
-    padding: 12px;
+    padding: .9vw;
   }
   &.suggestDefault{
     &_flight{
-      width: 760px;
+      width: 53vw;
     }
   }
 }
@@ -280,7 +277,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: .9vw;
     cursor: pointer;
     transition: all .2s;
     &:hover{
@@ -288,23 +285,23 @@
     }
   }
   &__text{
-    width: calc(100% - 88px);
-    padding-right: 16px;
+    width: calc(100% - 6vw);
+    padding-right: 1.1vw;
     p{
       margin-bottom: 0;
       &.p1{
-        font-size: 14px;
+        font-size: 1vw;
         color: #262626;
       }
       &.p2{
-        font-size: 12px;
+        font-size: .9vw;
       }
     }
   }
   &__label{
-    width: 88px;
-    height: 22px;
-    font-size: 12px;
+    width: 6vw;
+    height: 1.4vw;
+    font-size: .9vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,7 +313,7 @@
 .suggestPlace{
   background-color: #fff;
   box-shadow: $shadow;
-  width: 360px;
+  width: 25vw;
   position: absolute;
   top: 100%;
   left: 0;
@@ -339,8 +336,8 @@
       button{
         display: block;
         width: 100%;
-        font-size: 14px;
-        padding: 12px;
+        font-size: 1vw;
+        padding: .9vw;
         color: #262626;
         font-weight: 500;
         border-bottom: 2px solid $border-color;
@@ -352,10 +349,10 @@
     }
   }
   &__body{
-    max-height: 374px;
+    max-height: 24vw;
     overflow-y: auto;
     &::-webkit-scrollbar {
-      width:4px;
+      width:.5vw;
     }
 
     /* Track */
@@ -377,27 +374,27 @@
     .pGoogle{
       text-align: right;
       margin-bottom: 0;
-      font-size: 14px;
-      padding: 5px 15px;
+      font-size: 1vw;
+      padding: .5vw 1vw;
       border-top: 1px solid $border-color;
       strong {
-        padding-left: 5px;
+        padding-left: .5vw;
       }
     }
   }
 
 }
 .modal-member{
-  width: 734px;
+  width: 75vw!important;
   .modal-title{
     span{
       font-weight: 400;
-      padding-left: 10px;
+      padding-left: .9vw;
     }
   }
   .vntMember{
     &__table{
-      margin-bottom: 16px;
+      margin-bottom: 1.1vw;
       .table{
         td{
           vertical-align: middle;
@@ -405,32 +402,16 @@
       }
     }
   }
-  .ant-table{
-    th,td{
-      &:nth-child(1){
-        width: 10%;
-      }
-      &:nth-child(2){
-        width: 40%;
-      }
-      &:nth-child(3){
-        width: 30%;
-      }
-      &:nth-child(4){
-        width: 20%;
-      }
-    }
-  }
 }
 .addForm{
   &__item{
-    padding-bottom: 16px;
+    padding-bottom: 1.1vw;
     &:last-child{
       padding-bottom: 0;
     }
   }
   &__btn{
-    font-size: 14px;
+    font-size: 1vw;
     color: #096DD9;
     font-weight: 500;
     display: flex;
@@ -439,12 +420,12 @@
       text-decoration: underline;
     }
     span{
-      padding-left: 6px;
+      padding-left: .6vw;
     }
   }
   &__cont{
-    margin: 0 -12px;
-    padding-top: 16px;
+    margin: 0 -.9vw;
+    padding-top: 1.1vw;
     display: none;
     animation: opacityShow .3s ease-in-out;
     &.open{
@@ -456,9 +437,9 @@
       margin: 0;
       .form-group{
         &.addForm__title{
-          padding: 0 12px;
+          padding: 0 .9vw;
           p{
-            font-size: 16px;
+            font-size: 1.1vw;
             color: #262626;
             font-weight: 500;
             margin-bottom: 0;
@@ -467,7 +448,7 @@
       }
     }
     .memberBtnAction{
-      padding: 12px;
+      padding: .9vw;
     }
   }
 }
