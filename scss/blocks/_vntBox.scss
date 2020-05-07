@@ -28,6 +28,7 @@
         display: block;
         width: 14.5vw;
         margin: auto;
+        padding: .5vw 1vw;
         + .btn{
           margin-top: 1vw;
         }
@@ -136,5 +137,8 @@
         }
       }
     }
+  }
+  .ant-form-item{
+    margin-bottom: 0;
   }
 }

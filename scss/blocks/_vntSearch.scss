@@ -385,7 +385,7 @@
 
 }
 .modal-member{
-  width: 65vw!important;
+  width: 75vw!important;
   .modal-title{
     span{
       font-weight: 400;
@@ -399,22 +399,6 @@
         td{
           vertical-align: middle;
         }
-      }
-    }
-  }
-  .ant-table{
-    th,td{
-      &:nth-child(1){
-        width: 10%;
-      }
-      &:nth-child(2){
-        width: 40%;
-      }
-      &:nth-child(3){
-        width: 30%;
-      }
-      &:nth-child(4){
-        width: 20%;
       }
     }
   }

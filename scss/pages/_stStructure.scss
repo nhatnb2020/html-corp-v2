@@ -19,13 +19,13 @@
     margin-bottom: .8vw;
     &:after{
       content: '';
-      width: .6vw;
-      height: .6vw;
+      width: .5vw;
+      height: .5vw;
       background-color: $yellow-2;
       border-radius: 50%;
       position: absolute;
       bottom: -.8vw;
-      left: 2.6vw;
+      left: 3.25vw;
     }
     img{
       width: 7vw;
@@ -51,7 +51,7 @@
     }
   }
   &__part{
-    padding-left: 2.3vw;
+    padding-left: 2.7vw;
     padding-top: 2.8vw;
     position: relative;
     &:before{
@@ -59,7 +59,7 @@
       height: 2.8vw;
       position: absolute;
       top: 0;
-      left: 2.8vw;
+      left: 3.5vw;
       border-left: 1px dashed $border-color;
     }
     > li {
@@ -92,8 +92,8 @@
     }
     &:before{
       content: '';
-      width: .6vw;
-      height: .6vw;
+      width: .5vw;
+      height: .5vw;
       background-color: $yellow-2;
       border-radius: 50%;
       position: absolute;
@@ -102,6 +102,7 @@
     }
     > li {
       position: relative;
+      padding-left: .5vw;
       &:before{
         content: '';
         width: 2.3vw;

@@ -33,16 +33,18 @@
     margin-bottom: .9vw;
     .form-group{
       margin-bottom: 0;
+      &:first-child{
+        width: 34%;
+        padding-right: 1.3vw;
+      }
+      &:last-child{
+        width: 66%;
+        padding-left: 2vw;
+      }
       > label{
         font-size: 1vw;
         font-weight: 500;
         color: #262626;
-      }
-    }
-    .inputSearch{
-      margin-right: 2.3vw;
-      .form-control{
-        width: 23vw;
       }
     }
     .form-control{
@@ -56,16 +58,17 @@
     .d-flex{
       flex-wrap: wrap;
       .input-inline{
-        margin-right: .7vw;
         margin-bottom: .7vw;
       }
       .dropdown,
       .memberDropdown{
-        width: 20vw;
-        margin-right: .7vw!important;
+        width: 50%;
       }
       .ant-select{
-        width: 100% !important;
+        width: 100%;
+        .ant-select-multiple .ant-select-selector{
+          height: 2.3vw;
+        }
       }
     }
   }
@@ -76,10 +79,16 @@
   }
   &__col{
     &:nth-child(1){
-      margin-right: 2.6vw;
+      width: 34%;
     }
     &:nth-child(2){
-      flex: 1 1 auto;
+      width: 32%;
+      padding-left: 1.3vw;
+    }
+    &:nth-child(3){
+      width: 32%;
+      display: flex;
+      justify-content: flex-end;
     }
     .btnInline{
       .btn{
@@ -92,7 +101,6 @@
     }
   }
   &__progress{
-    padding-left: 5vw;
     p{
       margin-bottom: 0;
       &.p1{

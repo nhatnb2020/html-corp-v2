@@ -29,7 +29,7 @@
     background-color:$white-1;
   }
   input[type="radio"]:checked + label:before {
-    border: 3px solid #fff;
+    border: .3vw solid #fff;
     box-shadow: 0 0 0 1px #1890FF;
     background: #1890FF;
   }
@@ -44,7 +44,7 @@
       top:0;
     }
     input[type="radio"]:checked + label:before {
-      border-width: .6vw;
+      border-width: .4vw;
     }
   }
   &.disabled{

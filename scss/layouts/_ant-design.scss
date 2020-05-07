@@ -42,11 +42,17 @@
   padding: .8vw 1.5vw!important;
   margin: 0!important;
 }
-.ant-menu-item-only-child{
+.ant-menu-sub .ant-menu-item-only-child{
   padding-left: 3vw!important;
 }
 .ant-menu-vertical.ant-menu-sub, .ant-menu-vertical-left.ant-menu-sub, .ant-menu-vertical-right.ant-menu-sub{
   min-width: 13vw;
+}
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover{
+  color: $yellow-2;
+}
+.ant-menu-item > a:hover{
+  color: $yellow-2;
 }
 //end ant-menu
 
@@ -152,6 +158,7 @@
 }
 .ant-tree-select-dropdown .ant-select-tree-list-holder-inner .ant-select-tree-treenode{
   padding-bottom: .7vw;
+  align-items: center;
 }
 // ant v3
 .ant-form-item-explain, .ant-form-item-extra{
@@ -205,6 +212,8 @@
 // ant-modal
 .ant-modal{
   top: 4vw;
+  font-size: 1vw;
+  padding-bottom: 1.5vw;
 }
 .ant-modal-body{
   padding: 1.5vw;
@@ -329,4 +338,35 @@ span.ant-radio + *{
   height: .7vw;
   border-radius: 50%;
   position: initial;
+}
+.ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
+  font-size: 1vw;
+  padding: .5vw 1vw;
+  line-height: initial;
+}
+.ant-select-tree-checkbox{
+  font-size: 1vw;
+}
+.ant-select-tree .ant-select-tree-checkbox{
+  margin: 0 .7vw 0 0;
+}
+.ant-select-tree-checkbox-inner{
+  width: 1.1vw;
+  height: 1.1vw;
+}
+.ant-input-number{
+  font-size: 1vw;
+}
+.ant-input-number-input{
+  height: 2.3vw;
+  padding: 0 1vw;
+}
+.ant-input-group-addon{
+  font-size: 1vw;
+}
+.ant-input-group{
+  font-size: 1vw;
+}
+.ant-input-number-handler-wrap{
+  width: 1.6vw;
 }

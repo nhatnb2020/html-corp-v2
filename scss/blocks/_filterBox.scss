@@ -26,6 +26,14 @@
     .radio,
     .checkbox{
       margin-bottom: .5vw;
+
+    }
+    .checkbox{
+      label{
+        > svg{
+          margin-left: .5vw;
+        }
+      }
     }
   }
   &__reset{

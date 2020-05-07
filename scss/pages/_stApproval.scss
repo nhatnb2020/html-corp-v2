@@ -37,6 +37,7 @@
       }
     }
     .btn{
+      display: block;
       width: 100%;
       font-weight: $regular;
       white-space: nowrap;
@@ -102,14 +103,14 @@
     }
   }
   &__add{
-    padding-bottom: 1.1vw;
+    padding-bottom: 1vw;
   }
 }
 .objApply{
   margin-bottom: -1vw;
   ul{
     li{
-      padding: 1.1vw 0;
+      padding: 1vw 0;
       border-bottom: 1px solid $border-color;
       p{
         font-size: 1vw;
@@ -124,7 +125,7 @@
   }
 }
 .popupMember{
-  width: 80vw;
+  width: 80vw!important;
   &__tab{
     width: 10.5vw;
     border-right: 1px solid $border-color;

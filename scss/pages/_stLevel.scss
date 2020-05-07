@@ -45,11 +45,11 @@
         font-weight: $medium;
         &:after{
           content: '';
-          width: 1.2vw;
-          height: .4vw;
+          width: 1.5vw;
+          height: .2vw;
           background-color: $yellow-2;
           position: absolute;
-          right: -1.8vw;
+          right: -3vw;
           bottom: 1vw;
         }
       }
