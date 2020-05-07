@@ -606,6 +606,10 @@
         pointer-events: none;
         opacity: .3;
       }
+      .ant-btn{
+        pointer-events: none;
+        opacity: .3;
+      }
     }
     &.selected{
       .dropdown-toggle{
@@ -617,6 +621,11 @@
             fill: #8c8c8c;
           }
         }
+      }
+      .ant-btn{
+        background: #fff;
+        border-color: $border-color;
+        color: $text-color;
       }
     }
     .dropdown-toggle{

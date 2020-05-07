@@ -376,3 +376,9 @@ span.ant-radio + *{
 .ant-input-number-handler-wrap{
   width: 1.6vw;
 }
+.ant-dropdown-trigger > .anticon.anticon-down, .ant-dropdown-link > .anticon.anticon-down{
+  font-size: .8vw;
+}
+.ant-btn > .anticon + span, .ant-btn > span + .anticon{
+  margin-left: .7vw;
+}
