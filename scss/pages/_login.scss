@@ -12,8 +12,9 @@
   width: 30vw;
   min-height:40vw;
   position: absolute;
-  top: 7vw;
-  left: 7vw;
+  top: 50%;
+  left: 5vw;
+  transform: translateY(-50%);
   padding: 3.5vw;
   &__logo{
     margin-bottom: 1vw;
@@ -34,6 +35,18 @@
       display: block;
     }
   }
+  &__update{
+    padding: 1vw 0;
+    h1{
+      text-align: center;
+    }
+    svg{
+      width: 4vw;
+      height: 4vw;
+      margin: 0 auto 1vw;
+      display: flex;
+    }
+  }
   p{
     color: #8c8c8c;
     &.p1{
@@ -49,6 +62,9 @@
       position: absolute;
       bottom: 3.5vw;
       left: 3.5vw;
+    }
+    &.p3{
+      color: #262626;
     }
   }
   .checkbox{
