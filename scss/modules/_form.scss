@@ -1,23 +1,22 @@
 .form-group{
-  margin-bottom: 1vw;
+  margin-bottom: 12px;
   > label{
     font-weight: 400;
-    font-size: 1vw;
-    margin-bottom: .5vw;
+    font-size: 14px;
+    margin-bottom: 5px;
     display: block;
   }
 }
 .form-control{
-  display: inline-flex;
-  align-items: center;
-  padding: 0 1vw;
+  display: block;
+  padding: 5px 15px;
   font-size: $size-14;
   color: $text-color;
   @include add-border(1px,$border-color,all);
   background: #fff;
-  @include border-radius(2px);
+  @include border-radius(4px);
   width: 100%;
-  height: 2.3vw;
+  height: 32px;
   -webkit-appearance: none;
   -moz-appearance: none;
   text-align: left;
@@ -28,8 +27,8 @@
     border-radius: 30px;
   }
   &_sm{
-    height: 1.7vw;
-    padding: 0 1vw;
+    height: 24px;
+    padding: 3px 15px;
   }
 }
 .form-control[disabled]{
@@ -44,11 +43,11 @@
     background: transparent;
     position: relative;
     z-index: 1;
-    padding-right: 2vw;
+    padding-right: 35px;
   }
   > svg{
     position: absolute;
-    right: 1vw;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
@@ -58,8 +57,8 @@
   display: flex;
   align-items: center;
   .form-control{
-    height: 2.8vw;
-    border-radius: 2px 0 0 2px;
+    height: 40px;
+    border-radius: 4px 0 0 4px;
     border-right: none;
   }
   .btn{
@@ -70,20 +69,20 @@
 .upload{
   margin-bottom: 0;
   cursor: pointer;
-  width: 6.5vw;
-  height: 2.3vw;
-  padding: .5vw 1vw;
+  width: 93px;
+  height: 32px;
+  padding: 5px 15px;
   border: 1px solid $border-color;
   background: #fff;
-  border-radius: 2px;
-  font-size: 1vw;
+  border-radius: 4px;
+  font-size: 14px;
   display: flex;
   align-items: center;
   span{
-    padding-left: .5vw;
+    padding-left: 5px;
   }
   input[type='file']{display: none;}
 }
 textarea.form-control{
-  height: 5.5vw;
+  height: 80px;
 }

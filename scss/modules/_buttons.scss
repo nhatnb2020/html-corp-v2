@@ -1,9 +1,7 @@
 .btn{
   line-height: 1.5715;
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   font-weight: 400;
   white-space: nowrap;
   text-align: center;
@@ -14,10 +12,9 @@
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   user-select: none;
   touch-action: manipulation;
-  min-width: 7vw;
-  height: 2.3vw;
-  padding: 0 1vw;
-  font-size: 1vw;
+  height: 32px;
+  padding: 4px 15px;
+  font-size: 14px;
   border-radius: 2px;
   color: #fff;
   background-color: $yellow-2;
@@ -26,14 +23,14 @@
     color: #fff;
   }
   &.btn_sm{
-    font-size: 1vw;
-    height: 1.7vw;
-    padding: 0 .8vw;
+    font-size: 14px;
+    height: 24px;
+    padding: 0 10px;
   }
   &.btn_lg{
-    height: 2.8vw;
-    padding: 0 1vw;
-    font-size: 1.1vw;
+    height: 40px;
+    padding: 6.4px 15px;
+    font-size: 16px;
     border-radius: 2px;
   }
   &.btn_outline{
@@ -87,7 +84,7 @@
 .btnInline{
   .btn{
     + .btn{
-      margin-left: .7vw;
+      margin-left: 8px;
     }
   }
 }
@@ -97,7 +94,7 @@
   }
 }
 .btnAdd{
-  font-size: 1vw;
+  font-size: 14px;
   color: $yellow-2;
   font-weight: $medium;
   &:hover{
@@ -108,19 +105,19 @@
   background: #fff;
   border: 1px solid #D9D9D9;
   box-sizing: border-box;
-  border-radius: 2px;
-  height: 2.3vw;
-  padding: 0 1.1vw;
-  font-size: 1vw;
+  border-radius: 4px;
+  height: 32px;
+  padding: 0 16px;
+  font-size: 14px;
 }
 .btnSwitch{
   .switch {
     position: relative;
     display: inline-block;
-    width: 2.3vw;
-    height: 1.1vw;
+    width: 32px;
+    height: 16px;
     margin-bottom: 0;
-    margin-right: .6vw;
+    margin-right: 6px;
     vertical-align: middle;
     input{
       opacity: 0;
@@ -140,10 +137,10 @@
       &:before{
         position: absolute;
         content: "";
-        height: .9vw;
-        width: .9vw;
-        left: .3vw;
-        bottom: .3vw;
+        height: 12px;
+        width: 12px;
+        left: 2px;
+        bottom: 2px;
         background-color: white;
         transition: .3s;
         border-radius: 50%;
@@ -153,7 +150,7 @@
       background-color: #2196F3;
     }
     input:checked + .slider:before {
-      transform: translateX(1.1vw);
+      transform: translateX(16px);
     }
   }
   span{
@@ -164,7 +161,7 @@
 }
 .btnLink{
   color: #096DD9;
-  font-size: 1vw;
+  font-size: 14px;
   &:hover{
     text-decoration: underline;
   }
@@ -173,13 +170,13 @@
   }
   span{
     font-weight: 500;
-    padding-left: .5vw;
+    padding-left: 5px;
   }
 }
 .btnShowCol{
-  font-size: 1vw;
+  font-size: 14px;
   span{
-    padding: 0 .5vw;
+    padding: 0 5px;
   }
   svg,span{
     vertical-align: middle;

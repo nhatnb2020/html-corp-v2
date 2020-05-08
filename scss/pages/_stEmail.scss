@@ -9,8 +9,8 @@
         .checkbox{
           justify-content: center;
           label{
-            width: 1.1vw;
-            height: 1.1vw;
+            width: 16px;
+            height: 16px;
             padding: 0;
             &:before{
               top: 0;
@@ -28,18 +28,18 @@
         text-align: center;
         &:nth-child(1){
           position: relative;
-          height: 4vw;
+          height: 64px;
           background-image: linear-gradient(to top right,#fafafa 49%,#e8e8e8,#fafafa 51%);
           p{
             margin: 0;
             position: absolute;
             &.p1{
-              top: .8vw;
-              right: .9vw;
+              top: 10px;
+              right: 12px;
             }
             &.p2{
-              bottom: .8vw;
-              left: .9vw;
+              bottom: 10px;
+              left: 12px;
             }
           }
         }
@@ -47,10 +47,10 @@
     }
   }
   &__btn{
-    padding: 0 1vw;
+    padding: 0 15px;
     .btn{
       + .btn{
-        margin-left: .7vw;
+        margin-left: 8px;
       }
     }
   }

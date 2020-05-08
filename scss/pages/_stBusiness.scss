@@ -4,23 +4,23 @@
   }
   &__left{
     width: 50%;
-    padding-right: 6vw;
+    padding-right: 80px;
   }
   &__right{
     width: 50%;
   }
   &__btn{
-    padding: 1vw;
+    padding: 15px;
     .btn{
-      margin-right: .7vw;
+      margin-right: 8px;
     }
     .w100{
-      width: 7vw;
+      width: 100px;
     }
   }
   &__upload{
     p{
-      font-size: 1vw;
+      font-size: 14px;
       &.p1{
         color: #262626;
       }
@@ -29,13 +29,13 @@
       }
     }
     img{
-      width: 6.5vw;
+      width: 90px;
     }
   }
   .form-group{
-    margin-bottom: 1.5vw;
+    margin-bottom: 24px;
     .dropdown{
-      margin-bottom: .7vw;
+      margin-bottom: 8px;
     }
     > p{
       margin-bottom: 0;

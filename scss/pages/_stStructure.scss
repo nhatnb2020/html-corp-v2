@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1vw;
+    margin-bottom: 15px;
     p{
       margin-bottom: 0;
     }
@@ -16,26 +16,26 @@
   &__logo{
     position: relative;
     z-index: 1;
-    margin-bottom: .8vw;
+    margin-bottom: 10px;
     &:after{
       content: '';
-      width: .5vw;
-      height: .5vw;
+      width: 7px;
+      height: 7px;
       background-color: $yellow-2;
       border-radius: 50%;
       position: absolute;
-      bottom: -.8vw;
-      left: 3.25vw;
+      bottom: -10px;
+      left: 47px;
     }
     img{
-      width: 7vw;
+      width: 100px;
     }
   }
   &__btn{
     background: #262626;
     border-radius: 50%;
-    width: 1.3vw;
-    height: 1.3vw;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,28 +51,28 @@
     }
   }
   &__part{
-    padding-left: 2.7vw;
-    padding-top: 2.8vw;
+    padding-left: 40px;
+    padding-top: 50px;
     position: relative;
     &:before{
       content: '';
-      height: 2.8vw;
+      height: 50px;
       position: absolute;
       top: 0;
-      left: 3.5vw;
+      left: 50px;
       border-left: 1px dashed $border-color;
     }
     > li {
       display: flex;
       align-items: baseline;
       position: relative;
-      padding-bottom: 1.8vw;
+      padding-bottom: 30px;
       &:before{
         content: '';
         height: 100%;
         position: absolute;
         top: 0;
-        left:.8vw;
+        left:10px;
         border-left: 1px dashed $border-color;
       }
       &:last-child{
@@ -83,7 +83,7 @@
     }
   }
   &__team{
-    padding-left: 2.9vw;
+    padding-left: 55px;
     position: relative;
     &.open{
       .companyBox__child{
@@ -92,23 +92,22 @@
     }
     &:before{
       content: '';
-      width: .5vw;
-      height: .5vw;
+      width: 7px;
+      height: 7px;
       background-color: $yellow-2;
       border-radius: 50%;
       position: absolute;
-      top: .5vw;
-      left: 2.3vw;
+      top: 5px;
+      left: 40px;
     }
     > li {
       position: relative;
-      padding-left: .5vw;
       &:before{
         content: '';
-        width: 2.3vw;
+        width: 40px;
         position: absolute;
-        top: .7vw;
-        left: -2.9vw;
+        top: 8px;
+        left: -55px;
         border-top: 1px dashed $border-color;
       }
       > p{
@@ -116,16 +115,16 @@
       }
     }
     ul{
-      padding-left: 2.7vw;
+      padding-left: 50px;
       li{
         position: relative;
-        padding: .8vw 0;
+        padding: 10px 0;
         &:after{
           content: '';
-          width:2.3vw;
+          width:40px;
           position: absolute;
-          top:1.3vw;
-          left:-2.7vw;
+          top:20px;
+          left:-50px;
           border-top: 1px dashed $border-color;
         }
         &:before{
@@ -133,12 +132,12 @@
           height: 100%;
           position: absolute;
           top: 0;
-          left: -2.7vw;
+          left: -50px;
           border-left: 1px dashed $border-color;
         }
         &:last-child{
           &:before{
-            height: 1.3vw;
+            height: 20px;
           }
         }
       }
@@ -159,7 +158,7 @@
     }
   }
   p{
-    font-size: 1vw;
+    font-size: 14px;
     color: #262626;
     margin-bottom: 0;
   }
@@ -168,16 +167,16 @@
       z-index: 10;
       display: flex;
       justify-content: space-between;
-      padding: .6vw .9vw;
+      padding: 7px 12px;
       top: auto;
-      bottom: calc(100% + .5vw);
+      bottom: calc(100% + 5px);
       &:before{
         top: auto;
-        bottom: -.7vw;
+        bottom: -9px;
         border-color: #000 transparent transparent;
       }
       button{
-        font-size: 1vw;
+        font-size: 14px;
         color: #fff;
         font-weight: 500;
         &:hover{

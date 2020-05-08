@@ -1,7 +1,6 @@
 //ant-menu
 .ant-menu{
   color: $text-color;
-  font-size: 1vw;
 }
 .ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
   color: $yellow-2;
@@ -28,45 +27,18 @@
 .ant-menu-inline .ant-menu-selected::after, .ant-menu-inline .ant-menu-item-selected::after{
   display: none;
 }
-.ant-menu-item{
-  height: initial!important;
-  line-height: initial!important;
-  font-size: 1vw!important;
-  padding: .8vw 1.5vw!important;
-  margin: 0!important;
-}
-.ant-menu-submenu-title{
-  height: initial!important;
-  line-height: initial!important;
-  font-size: 1vw!important;
-  padding: .8vw 1.5vw!important;
-  margin: 0!important;
-}
-.ant-menu-sub .ant-menu-item-only-child{
-  padding-left: 3vw!important;
-}
-.ant-menu-vertical.ant-menu-sub, .ant-menu-vertical-left.ant-menu-sub, .ant-menu-vertical-right.ant-menu-sub{
-  min-width: 13vw;
-}
-.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover{
-  color: $yellow-2;
-}
 .ant-menu-item > a:hover{
   color: $yellow-2;
 }
 .ant-menu-item-selected > a, .ant-menu-item-selected > a:hover{
   color: $yellow-2;
 }
-.ant-menu-item > a:hover{
-  color: $yellow-2;
+.ant-menu-inline-collapsed{
+  width: 100%;
 }
 //end ant-menu
 
 // ant-table
-.ant-table{
-  font-size: 1vw;
-  color: #262626;
-}
 .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-thead > tr > th, .ant-table-small > .ant-table-content > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-body > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-scroll > .ant-table-body > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-header > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-left > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td, .ant-table-small > .ant-table-content > .ant-table-fixed-right > .ant-table-body-outer > .ant-table-body-inner > table > .ant-table-tbody > tr > td{
   padding: 10px 12px;
 }
@@ -79,104 +51,33 @@
 .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td, .ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td{
   background: transparent;
 }
-.ant-table-filter-column{
-  margin: -1.1vw -1.1vw;
-}
-.ant-table-filter-column-title{
-  padding: 1.1vw 2.3em 1.1vw 1.1vw;
-}
 // end ant-table
 
-.ant-form-item{
-  font-size: 1vw;
-}
-.ant-form-item-control-input{
-  min-height: 2.3vw;
-}
-.ant-input{
-  font-size: 1vw;
-  padding: 0 1vw;
-  height: 2.3vw;
-  display: inline-flex;
-  align-items: center;
-  color: #595959;
-}
-.ant-input-affix-wrapper{
-  padding: 0 1vw;
-  font-size: 1vw;
-  height: 2.3vw;
-  align-items: center;
-  .ant-input{
-    padding: 0;
-    height: 100%;
-  }
-}
+
 .ant-form-item-label{
   line-height: initial;
 }
 .ant-form-item-control{
   line-height: initial;
 }
-.ant-table-filter-dropdown{
-  width: 21vw;
-  padding: 1vw;
-}
 #treeBranchContainer{
   padding: 0!important;
 }
 .ant-select{
   margin-bottom: 0!important;
-  font-size: 1vw;
-  color: #595959;
 }
 .ant-layout{
   background: transparent;
 }
-.ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
-  height: 2.3vw;
-  padding: 0 1vw;
-}
-.ant-select-item{
-  min-height: 2.3vw;
-  line-height: initial;
-  font-size: 1vw;
-  padding: .5vw 1vw;
-  color: #595959;
-}
-.ant-select-tree .ant-select-tree-node-content-wrapper{
-  min-height: 1.5vw;
-  padding: 0 .5vw;
-  line-height: 1.5vw;
-}
-.ant-select-tree .ant-select-tree-switcher{
-  width: 1.5vw;
-  height: 1.5vw;
-  line-height: 1.5vw;
-}
-.ant-select-tree .ant-select-tree-switcher .ant-tree-switcher-icon, .ant-select-tree .ant-select-tree-switcher .ant-select-tree-switcher-icon{
-  font-size: .9vw;
-}
-.ant-select-tree{
-  font-size: 1vw;
-}
-.ant-select-tree .ant-select-tree-treenode{
-  padding: 0 0 .5vw 0;
-}
-.ant-tree-select-dropdown .ant-select-tree-list-holder-inner .ant-select-tree-treenode{
-  padding-bottom: .7vw;
-  align-items: center;
-}
+
+
 // ant v3
 .ant-form-item-explain, .ant-form-item-extra{
   min-height: auto;
-  font-size: 1vw;
 }
 .ant-picker{
   justify-content: space-between;
   width: 100%;
-  font-size: 1vw;
-  padding: 0 1vw;
-  height: 2.3vw;
 }
 .ant-picker-input{
   width: auto;
@@ -186,9 +87,6 @@
 }
 .ant-row{
   display: block;
-}
-.ant-picker-input > input{
-  font-size: 1vw;
 }
 
 // ant-btn
@@ -206,179 +104,26 @@
   border-color: $yellow-2;
   color: #fff;
 }
-.ant-btn{
-  height: 2.3vw;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1vw;
-  font-size: 1vw;
-}
 
 // ant-modal
 .ant-modal{
-  top: 4vw;
-  font-size: 1vw;
-  padding-bottom: 1.5vw;
-}
-.ant-modal-body{
-  padding: 1.5vw;
-  font-size: 1vw;
+  top: 50px;
 }
 .ant-modal-footer{
-  padding: .9vw 1.5vw;
+  padding: 12px 24px;
   .ant-btn{
-    min-width: 7vw;
+    min-width: 100px;
   }
 }
-.ant-modal-header{
-  padding: 1.1vw 1.5vw;
-}
-.ant-modal-title{
-  font-size: 1.1vw;
-  line-height: initial;
-}
-.ant-modal-close-x{
-  width: 3.6vw;
-  height: 3.6vw;
-  line-height: 3.6vw;
-  font-size: 1.1vw;
-}
-// end ent-modal
-
-.ant-checkbox-wrapper{
-  font-size: 1vw;
-}
-.ant-checkbox-inner{
-  width: 1.1vw;
-  height: 1.1vw;
-}
-.ant-checkbox{
-  font-size: 1vw;
-}
-
-.ant-table-pagination.ant-pagination{
-  margin: 1.1vw 0;
-}
-.ant-pagination{
-  font-size: 1vw;
-}
-.ant-pagination-prev, .ant-pagination-next, .ant-pagination-jump-prev, .ant-pagination-jump-next{
-  min-width: 2.3vw;
-  height: 2.3vw;
-  line-height: 2.3vw;
-}
-.ant-pagination-prev, .ant-pagination-jump-prev, .ant-pagination-jump-next{
-  margin-right: .7vw;
-}
-.ant-pagination-prev .ant-pagination-item-link, .ant-pagination-next .ant-pagination-item-link{
-  font-size: .9vw;
-}
-.ant-pagination-item{
-  min-width: 2.3vw;
-  height: 2.3vw;
-  line-height: 2.3vw;
-  margin-right: .7vw;
-  font-family: $base-font-family;
-}
-.ant-pagination-item a{
-  padding: 0 .6vw;
-}
-.ant-pagination-options{
-  margin-left: 1.1vw;
-}
-.ant-pagination-options-size-changer.ant-select{
-  margin-right: .7vw;
-}
-.ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input{
-  height: 100%;
-}
-.ant-select-single .ant-select-selector .ant-select-selection-item, .ant-select-single .ant-select-selector .ant-select-selection-placeholder{
-  line-height: 2.3vw;
-}
-.ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder{
-  padding-right: 2vw;
-}
-.ant-select-arrow{
-  top: 50%;
-  transform: translateY(-50%);
-  right: .8vw;
-  width: 1vw;
-  height: 1vw;
-  font-size: 1vw;
-  margin-top: 0;
-}
-.ant-form-item-label > label{
-  height: auto;
-  font-size: 1vw;
-}
-.ant-radio-group{
-  font-size: 1vw;
-}
-.ant-radio-wrapper{
-  font-size: 1vw;
-  margin-right: .7vw;
-}
-.ant-radio{
-  font-size: 1vw;
-  vertical-align: initial;
-}
-span.ant-radio + *{
-  padding-right: .7vw;
-  padding-left: .7vw;
-}
-.ant-form-item input[type='radio'], .ant-form-item input[type='checkbox']{
-  width: 1vw;
-  height: 1vw;
-}
-.ant-radio-inner{
-  width: 1.2vw;
-  height: 1.2vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.ant-radio-inner::after{
-  display: block;
-  width: .7vw;
-  height: .7vw;
-  border-radius: 50%;
-  position: initial;
-}
-.ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
-  font-size: 1vw;
-  padding: .5vw 1vw;
-  line-height: initial;
-}
-.ant-select-tree-checkbox{
-  font-size: 1vw;
-}
-.ant-select-tree .ant-select-tree-checkbox{
-  margin: 0 .7vw 0 0;
-}
-.ant-select-tree-checkbox-inner{
-  width: 1.1vw;
-  height: 1.1vw;
-}
-.ant-input-number{
-  font-size: 1vw;
-}
-.ant-input-number-input{
-  height: 2.3vw;
-  padding: 0 1vw;
-}
-.ant-input-group-addon{
-  font-size: 1vw;
-}
-.ant-input-group{
-  font-size: 1vw;
-}
-.ant-input-number-handler-wrap{
-  width: 1.6vw;
-}
-.ant-dropdown-trigger > .anticon.anticon-down, .ant-dropdown-link > .anticon.anticon-down{
-  font-size: .8vw;
-}
-.ant-btn > .anticon + span, .ant-btn > span + .anticon{
-  margin-left: .7vw;
+.ant-table-filter-dropdown{
+  padding: 15px;
+  .ant-input{
+    margin-bottom: 15px;
+  }
+  .ant-btn{
+    min-width: 100px;
+    +.ant-btn{
+      margin-left: 8px;
+    }
+  }
 }

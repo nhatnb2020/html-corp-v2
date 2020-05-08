@@ -9,66 +9,56 @@
 .form-login{
   background-color: #fff;
   border-radius: 4px;
-  width: 30vw;
-  min-height:40vw;
-  position: absolute;
-  top: 50%;
-  left: 5vw;
-  transform: translateY(-50%);
-  padding: 3.5vw;
+  padding: 15px;
+  @include breakpoint(md){
+    width: 415px;
+    height: 565px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    padding: 50px;
+  }
   &__logo{
-    margin-bottom: 1vw;
+    margin-bottom: 15px;
     img{
-      width: 7vw;
+      width: 105px;
     }
   }
   &__title{
-    font-size: 1.5vw;
+    font-size: 24px;
+    line-height: 22px;
     font-weight: $medium;
     color: #000;
-    margin-bottom: .5vw;
+    margin-bottom: 5px;
   }
   &__back{
     display: inline-block;
-    margin-bottom: 1.5vw;
+    margin-bottom: 24px;
     svg{
       display: block;
-    }
-  }
-  &__update{
-    padding: 1vw 0;
-    h1{
-      text-align: center;
-    }
-    svg{
-      width: 4vw;
-      height: 4vw;
-      margin: 0 auto 1vw;
-      display: flex;
     }
   }
   p{
     color: #8c8c8c;
     &.p1{
-      font-size: 1vw;
-      margin-bottom: 1.5vw;
+      font-size: 14px;
+      line-height: 22px;
+      margin-bottom: 25px;
       strong{
-        padding: 0 .4vw;
+        padding: 0 3px;
       }
     }
     &.p2{
-      font-size: .9vw;
+      font-size: 12px;
+      line-height: 20px;
       margin: 0;
       position: absolute;
-      bottom: 3.5vw;
-      left: 3.5vw;
-    }
-    &.p3{
-      color: #262626;
+      bottom: 50px;
+      left: 50px;
     }
   }
   .checkbox{
-    margin-bottom: 1.5vw;
+    margin-bottom: 25px;
   }
   .btn{
     display: block;
@@ -76,10 +66,11 @@
   }
   .btn-forgot-pass{
     display: inline-block;
-    font-size: 1.1vw;
+    font-size: 16px;
+    line-height: 24px;
     color: #1890FF;
     font-weight: $medium;
-    margin: 1.5vw 0 0;
+    margin: 25px 0 0;
     &:hover{
       color: $yellow-1;
     }

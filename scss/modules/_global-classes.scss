@@ -154,8 +154,8 @@
 .w-50{width: 50%!important;}
 .w-75{width: 75%!important;}
 .w-100{width: 100%!important;}
-.w100{width: 7vw!important;}
-.w358{width: 25vw!important;}
+.w100{width: 100px!important;}
+.w358{width: 358px!important;}
 
 .h-25{height: 25%!important;}
 .h-50{height: 50%!important;}
@@ -178,7 +178,7 @@
     font-family: "Font Awesome\ 5 Free";
     position:absolute;
     top:50%;
-    right: .8vw;
+    right: 10px;
     transform: translateY(-50%);
     font-weight: 900;
     font-size: $size-12;
@@ -202,12 +202,12 @@
 .solid{
   width: 100%;
   border-bottom: 1px solid $gray-6;
-  margin: .8vw 0;
+  margin: 10px 0;
 }
 .dotted{
   width: 100%;
   border-bottom: 1px dotted $gray-6;
-  margin: .8vw 0;
+  margin: 10px 0;
 }
 .relative{
   position: relative!important;
@@ -217,7 +217,7 @@
 }
 .disc ul{
   list-style: disc!important;
-  padding-left: 1.8vw;
+  padding-left: 30px;
 }
 .text-through{
   text-decoration: line-through;
@@ -236,17 +236,17 @@
   transition: .4s;
 }
 .status{
-  height: 1.7vw;
-  font-size: .9vw;
-  padding: .4vw .7vw;
+  height: 24px;
+  font-size: 12px;
+  padding: 2px 8px;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
   &.status_lg{
-    height: 2.3vw;
-    font-size: 1vw;
-    padding: .4vw 1.1vw;
+    height: 40px;
+    font-size: 14px;
+    padding: 2px 16px;
   }
   &.status_active{
     color: #52C41A;
@@ -300,11 +300,11 @@
   > p{
     color: #262626;
     margin-bottom: 0;
-    margin-right: .5vw;
+    margin-right: 5px;
     span{
       color: #096DD9;
       font-weight: 500;
-      padding-left: .5vw;
+      padding-left: 5px;
     }
   }
   .tooltip{
@@ -314,31 +314,31 @@
   }
 }
 .pSelected{
-  font-size: 1vw;
+  font-size: 14px;
   color: #262626;
-  margin-bottom: 1.1vw;
+  margin-bottom: 16px;
 }
 img{
   &.logoVietjet{
-    width: 5.5vw;
+    width: 80px;
   }
   &.logoJetstar{
-    width: 5.5vw;
+    width: 80px;
   }
   &.logoVnairline{
-    width: 4.2vw;
+    width: 60px;
   }
   &.logoBamboo{
-    width: 4.2vw;
+    width: 60px;
   }
 }
 .codeBox{
-  font-size: .9vw;
+  font-size: 12px;
   font-weight: $semibold;
   color: $yellow-2;
-  min-width: 7.5vw;
-  height: 2.8vw;
-  padding: .8vw 1.5vw;
+  min-width: 110px;
+  height: 40px;
+  padding: 10px 24px;
   text-align: center;
   border-radius: 2px;
   border: 1px dashed #fab516;
@@ -347,11 +347,11 @@ img{
 .textDate{
   display: flex;
   align-items: center;
-  font-size: 1vw;
-  margin-bottom: .8vw;
+  font-size: 14px;
+  margin-bottom: 10px;
   color: #595959;
   line-height: 1;
   span{
-    padding-left: .8vw;
+    padding-left: 10px;
   }
 }
