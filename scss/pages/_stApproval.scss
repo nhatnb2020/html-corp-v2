@@ -106,10 +106,14 @@
   }
 }
 .objApply{
+  margin-bottom: -15px;
   ul{
     li{
       padding: 16px 0;
       border-bottom: 1px solid $border-color;
+      &:last-child{
+        border-bottom: none;
+      }
       p{
         font-size: 14px;
         color: #1890FF;

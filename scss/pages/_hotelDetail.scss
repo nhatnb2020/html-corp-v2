@@ -201,6 +201,7 @@
 .ant-modal-wrap.modal-gallery{
   .ant-modal{
     top: 1vw;
+    width: 1140px!important;
   }
   .ant-modal-body{
     padding: 0;
@@ -565,6 +566,11 @@
             fill: #8c8c8c;
           }
         }
+      }
+      .ant-btn{
+        background: #fff;
+        border-color: $border-color;
+        color: $text-color;
       }
     }
     .dropdown-toggle{

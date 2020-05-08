@@ -24,6 +24,9 @@
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
+    @include breakpoint(max-md){
+      width: calc(100% - 150px);
+    }
   }
   &__info{
     width: calc(100% - 160px);
@@ -47,7 +50,7 @@
     text-align: right;
   }
   .hotelFaci{
-    width: 70%;
+    width: 200px;
   }
 }
 .rateStar{

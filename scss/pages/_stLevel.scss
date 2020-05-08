@@ -33,11 +33,9 @@
 }
 .stNavbar{
   text-align: right;
-  padding-right: 85px;
-  &.fixedTop{
-    position: fixed;
-    top: 15px;
-  }
+  padding-right: 70px;
+  position: sticky;
+  top: 0;
   li{
     &.active{
       a,button{
@@ -115,11 +113,13 @@
   &__time{
     .input-inline{
       display: flex;
-      align-items: center;
       span{
-        padding: 0 8px;
+        padding: 6px 8px;
         font-weight: $semibold;
       }
+    }
+    .ant-row{
+      margin-bottom: 0;
     }
   }
   &__airlines{
@@ -150,6 +150,9 @@
       }
     }
 
+  }
+  &__remove{
+    padding-top: 5px;
   }
   .btnInline{
     padding-top: 15px;

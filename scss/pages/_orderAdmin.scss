@@ -33,16 +33,17 @@
     margin-bottom: 12px;
     .form-group{
       margin-bottom: 0;
+      &:first-child{
+        width: 345px;
+      }
+      &:last-child{
+        width: calc(100% - 345px);
+        padding-left: 40px;
+      }
       > label{
         font-size: 14px;
         font-weight: 500;
         color: #262626;
-      }
-    }
-    .inputSearch{
-      margin-right: 40px;
-      .form-control{
-        width: 335px;
       }
     }
     .form-control{
@@ -55,14 +56,22 @@
     }
     .d-flex{
       flex-wrap: wrap;
-      .input-inline{
+      .d-item{
+
         margin-right: 8px;
         margin-bottom: 8px;
-      }
-      .dropdown,
-      .memberDropdown{
-        width: 195px;
-        margin-right: 8px!important;
+        &:nth-child(1){
+          width: 300px;
+        }
+        &:nth-child(2){
+          width: 200px;
+        }
+        &:nth-child(3){
+          width: 245px;
+        }
+        &:nth-child(4){
+          width: 240px;
+        }
       }
       .ant-select{
         width: 100% !important;
@@ -76,10 +85,11 @@
   }
   &__col{
     &:nth-child(1){
-      margin-right: 47px;
+      width: 345px;
     }
     &:nth-child(2){
       flex: 1 1 auto;
+      padding-left: 40px;
     }
     .btnInline{
       .btn{

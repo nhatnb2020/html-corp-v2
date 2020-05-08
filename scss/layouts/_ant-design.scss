@@ -27,6 +27,15 @@
 .ant-menu-inline .ant-menu-selected::after, .ant-menu-inline .ant-menu-item-selected::after{
   display: none;
 }
+.ant-menu-item > a:hover{
+  color: $yellow-2;
+}
+.ant-menu-item-selected > a, .ant-menu-item-selected > a:hover{
+  color: $yellow-2;
+}
+.ant-menu-inline-collapsed{
+  width: 100%;
+}
 //end ant-menu
 
 // ant-table
@@ -102,4 +111,19 @@
 }
 .ant-modal-footer{
   padding: 12px 24px;
+  .ant-btn{
+    min-width: 100px;
+  }
+}
+.ant-table-filter-dropdown{
+  padding: 15px;
+  .ant-input{
+    margin-bottom: 15px;
+  }
+  .ant-btn{
+    min-width: 100px;
+    +.ant-btn{
+      margin-left: 8px;
+    }
+  }
 }
