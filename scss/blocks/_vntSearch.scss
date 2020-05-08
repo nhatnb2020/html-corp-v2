@@ -127,6 +127,9 @@
 .placeInput{
   width: 23vw;
   position: relative;
+  .ant-form-item-control-input-content{
+    height: 2.3vw;
+  }
 }
 .dateInput{
   width: 23vw;
