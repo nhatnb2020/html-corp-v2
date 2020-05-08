@@ -7,8 +7,9 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 0;
-    padding-left: 1.5vw;
-    font-size: 1vw;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 22px;
     color: $text-color;
     &:hover{
       @include breakpoint(md){color: $yellow-2;}
@@ -17,11 +18,11 @@
   }
   input[type="radio"] + label:before {
     content: "";
-    width: 1.1vw;
-    height: 1.1vw;
+    width: 16px;
+    height: 16px;
     position: absolute;
     left: 0;
-    top:.4vw;
+    top:3px;
     display: inline-block;
     text-align: center;
     @include add-border(1px, #d9d9d9,all);
@@ -29,22 +30,22 @@
     background-color:$white-1;
   }
   input[type="radio"]:checked + label:before {
-    border: .3vw solid #fff;
+    border: 3px solid #fff;
     box-shadow: 0 0 0 1px #1890FF;
     background: #1890FF;
   }
   &.radio_lg{
     label{
-      padding-left:2.8vw;
+      padding-left: 40px;
       line-height: 1.5;
     }
     input[type="radio"] + label:before {
-      width: 1.7vw;
-      height: 1.7vw;
+      width: 24px;
+      height: 24px;
       top:0;
     }
     input[type="radio"]:checked + label:before {
-      border-width: .4vw;
+      border-width: 7px;
     }
   }
   &.disabled{
@@ -59,7 +60,7 @@
   .radio{
     display: inline-block;
     + .radio{
-      margin-left: 2.8vw;
+      margin-left: 40px;
     }
   }
 }

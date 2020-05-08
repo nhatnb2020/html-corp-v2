@@ -1,17 +1,17 @@
 .listHotel{
   &__item{
-    margin-bottom: 1vw;
+    margin-bottom: 15px;
   }
 }
 .hotelItem{
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   background-color: #fff;
   display: flex;
-  padding: .7vw 1vw .7vw .7vw;
-  min-height: 10.5vw;
+  padding: 8px 15px 8px 8px;
+  min-height: 150px;
   &__img{
-    width: 16.5vw;
-    height: 10.5vw;
+    width: 240px;
+    height: 152px;
     img{
       width: 100%;
       height: 100%;
@@ -20,13 +20,13 @@
 
   }
   &__cont{
-    width: calc(100% - 16.5vw);
+    width: calc(100% - 240px);
     display: flex;
     justify-content: space-between;
-    padding-left: 1vw;
+    padding-left: 15px;
   }
   &__info{
-    width: calc(100% - 12vw);
+    width: calc(100% - 160px);
     .heading4{
       a{
         color: #262626;
@@ -37,7 +37,7 @@
     }
   }
   &__detail{
-    width: 12vw;
+    width: 160px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -51,10 +51,10 @@
   }
 }
 .rateStar{
-  font-size: .8vw;
+  font-size: 10px;
   span{
     strong{
-      padding:0 .4vw;
+      padding:0 3px;
     }
   }
   span,svg{
@@ -62,28 +62,29 @@
   }
 }
 .hotelAddr{
-  display: flex;
   position: relative;
   svg{
     position: absolute;
-    top: .4vw;
+    top: 6px;
     left: 0;
   }
   &__text{
-    padding-left: 1.5vw;
+    padding-left: 18px;
     button{
-      font-size: .9vw;
+      font-size: 12px;
+      line-height: 20px;
       color: #096DD9;
       text-align: left;
       display: inline-block;
-      padding-right: .5vw;
+      padding-right: 5px;
       &:hover{
         text-decoration: underline;
       }
     }
     p{
       margin: 0;
-      font-size: .9vw;
+      font-size: 12px;
+      line-height: 20px;
       display: inline-block;
       color: #999;
     }
@@ -96,9 +97,9 @@
     display: inline-block;
     width: 50%;
     span{
-      font-size: .9vw;
+      font-size: 12px;
       color: #595959;
-      padding-left: .5vw;
+      padding-left: 5px;
     }
     svg{
       path{
@@ -118,48 +119,48 @@
   span{
     &.span1{
       position: relative;
-      font-size: 1.1vw;
+      font-size: 16px;
       font-weight: $medium;
       color: $yellow-2;
       svg{
         position: absolute;
-        top: -.2vw;
+        top: -2px;
         left: 50%;
         transform: translateX(-50%);
       }
     }
     &.span2{
-      font-size: .9vw;
+      font-size: 12px;
       color: #999;
       width: 100%;
       text-align: right;
     }
     &.spanText{
       color: $yellow-2;
-      font-size: 1vw;
+      font-size: 14px;
       font-weight: 500;
-      padding-left: .5vw;
+      padding-left: 4px;
     }
   }
 }
 .hotelPrice{
   text-align: right;
-  margin-bottom: .5vw;
+  margin-bottom: 5px;
   p{
     margin: 0;
     &.p1{
-      font-size: .9vw;
+      font-size: 12px;
       color: #595959;
       text-decoration: line-through;
     }
     &.p2{
       color: #096DD9;
-      font-size: 1.1vw;
+      font-size: 16px;
       font-weight: $medium;
     }
     &.p3{
       font-style: italic;
-      font-size: .9vw;
+      font-size: 12px;
     }
   }
 }
@@ -169,7 +170,7 @@
   display: flex;
   color: inherit;
   &__img{
-    width: 8vw;
+    width: 110px;
     img{
       width: 100%;
       height: 100%;
@@ -177,11 +178,11 @@
     }
   }
   &__cont{
-    width: calc(100% - 8vw);
-    padding: .9vw;
+    width: calc(100% - 110px);
+    padding: 12px;
   }
   &__add{
-    font-size: .9vw;
+    font-size: 12px;
     color: #595959;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -189,17 +190,17 @@
     width: 100%;
   }
   &__price{
-    font-size: .9vw;
+    font-size: 12px;
     margin-bottom: 0;
     span{
       color: #096DD9;
-      font-size: 1vw;
+      font-size: 14px;
       font-weight: $medium;
-      padding-left: .5vw;
+      padding-left: 5px;
     }
   }
   .rateStar{
-    margin-bottom: .5vw;
+    margin-bottom: 5px;
   }
   .heading4{
     white-space: nowrap;

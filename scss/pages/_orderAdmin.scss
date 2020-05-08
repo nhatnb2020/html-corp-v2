@@ -1,13 +1,13 @@
 .orderAdmin{
-  padding: 1.5vw 1vw;
+  padding: 24px 15px;
   &__title{
-    font-size: 1vw;
+    font-size: 14px;
     font-weight: $medium;
     color: #262626;
   }
   &__tab{
     display: flex;
-    margin-bottom: .9vw;
+    margin-bottom: 12px;
     li{
       &.active{
         button{
@@ -17,11 +17,11 @@
         }
       }
       button{
-        font-size: 1vw;
+        font-size: 14px;
         color: $text-color;
-        padding: 0 .8vw;
+        padding: 0 10px;
         border-bottom: 2px solid transparent;
-        padding-bottom: .7vw;
+        padding-bottom: 8px;
         &:hover{
           color: $yellow-2;
         }
@@ -30,21 +30,19 @@
   }
   &__form{
     display: flex;
-    margin-bottom: .9vw;
+    margin-bottom: 12px;
     .form-group{
       margin-bottom: 0;
-      &:first-child{
-        width: 34%;
-        padding-right: 1.3vw;
-      }
-      &:last-child{
-        width: 66%;
-        padding-left: 2vw;
-      }
       > label{
-        font-size: 1vw;
+        font-size: 14px;
         font-weight: 500;
         color: #262626;
+      }
+    }
+    .inputSearch{
+      margin-right: 40px;
+      .form-control{
+        width: 335px;
       }
     }
     .form-control{
@@ -53,42 +51,35 @@
     .memberDropdown__cont{
       left: auto;
       right: 0;
-      width: 56vw;
+      width: 800px;
     }
     .d-flex{
       flex-wrap: wrap;
       .input-inline{
-        margin-bottom: .7vw;
+        margin-right: 8px;
+        margin-bottom: 8px;
       }
       .dropdown,
       .memberDropdown{
-        width: 50%;
+        width: 195px;
+        margin-right: 8px!important;
       }
       .ant-select{
-        width: 100%;
-        .ant-select-multiple .ant-select-selector{
-          height: 2.3vw;
-        }
+        width: 100% !important;
       }
     }
   }
   &__row{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.1vw;
+    margin-bottom: 16px;
   }
   &__col{
     &:nth-child(1){
-      width: 34%;
+      margin-right: 47px;
     }
     &:nth-child(2){
-      width: 32%;
-      padding-left: 1.3vw;
-    }
-    &:nth-child(3){
-      width: 32%;
-      display: flex;
-      justify-content: flex-end;
+      flex: 1 1 auto;
     }
     .btnInline{
       .btn{
@@ -101,21 +92,22 @@
     }
   }
   &__progress{
+    padding-left: 70px;
     p{
       margin-bottom: 0;
       &.p1{
-        font-size:.9vw;
+        font-size: 12px;
         color: #8c8c8c;
       }
       &.p2{
-        font-size: 1vw;
+        font-size: 14px;
         font-weight: 500;
         color: #262626;
-        margin-bottom: .7vw;
+        margin-bottom: 8px;
       }
     }
     progress{
-      width: 19vw;
+      width: 265px;
       background: #E4E9F2;
     }
     progress::-webkit-progress-value {
@@ -133,32 +125,32 @@
   &__main{
     background-color: #fff;
     box-shadow: $shadow;
-    padding: 1.1vw;
-    margin-bottom: 1.5vw;
+    padding: 16px;
+    margin-bottom: 24px;
   }
   &__header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.1vw;
+    margin-bottom: 16px;
     .d-flex{
       align-items: center;
     }
     p{
       &.p1{
-        font-size: 1vw;
+        font-size: 14px;
         margin-bottom: 0;
         color: #262626;
       }
     }
     .btnExport{
-      margin-left: 1.2vw;
+      margin-left: 18px;
       .btn{
         span,svg{
           vertical-align: middle;
         }
         span{
-          padding:0 .5vw;
+          padding:0 5px;
         }
       }
     }
@@ -168,7 +160,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     &::-webkit-scrollbar {
-      height:.6vw;
+      height:6px;
     }
 
     /* Track */
@@ -192,10 +184,10 @@
         white-space: nowrap;
         vertical-align: middle;
         .dropdown-menu{
-          width: 20vw;
-          padding: .7vw 0;
+          width: 290px;
+          padding: 8px 0;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-          top: calc(100% + .8vw)!important;
+          top: calc(100% + 10px)!important;
         }
         .dropdown-toggle{
           border: none;
@@ -222,20 +214,20 @@
         }
         .p1{
           color: $text-color;
-          font-size: 1vw;
+          font-size: 14px;
         }
         .p2{
           color: #8c8c8c;
-          font-size: .9vw;
-          margin-bottom: .6vw;
+          font-size: 12px;
+          margin-bottom: 6px;
         }
         .btnInline{
           display: flex;
           justify-content: center;
           button{
-            font-size: 1vw;
+            font-size: 14px;
             font-weight: $medium;
-            padding: 0 .7vw;
+            padding: 0 8px;
             + button{
               border-left: 1px solid $border-color;
             }
@@ -248,8 +240,8 @@
       .checkbox{
         justify-content: center;
         label{
-          width: 1.1vw;
-          height: 1.1vw;
+          width: 16px;
+          height: 16px;
           padding: 0;
         }
         input[type="checkbox"] + label:before {
@@ -259,8 +251,8 @@
       .radio{
         justify-content: center;
         label{
-          width: 1.1vw;
-          height: 1.1vw;
+          width: 16px;
+          height: 16px;
           padding: 0;
         }
         input[type="radio"] + label:before {
@@ -278,15 +270,15 @@
   display: flex;
   align-items: center;
   &__text{
-    padding-left: .8vw;
+    padding-left: 10px;
     p{
       margin-bottom: 0;
-      font-size: 1vw;
+      font-size: 14px;
       &.p1{
         color: #595959;
       }
       &.p2{
-        font-size: .9vw;
+        font-size: 12px;
         color: #8c8c8c;
       }
     }
@@ -297,34 +289,34 @@
     display: flex;
     justify-content: flex-end;
     .tooltip{
-      margin-right: .5vw;
+      margin-right: 5px;
     }
   }
 }
 .orderCol{
   &__title{
-    font-size: 1vw;
+    font-size: 14px;
     color: #bfbfbf;
     border-bottom: 1px solid $border-color;
     margin-bottom: 0;
-    padding: .9vw 1.1vw;
+    padding: 12px 16px;
   }
   &__list{
     display: flex;
     flex-wrap: wrap;
-    padding: 1.1vw;
-    margin: 0 -.7vw;
+    padding: 16px;
+    margin: 0 -8px;
   }
   &__check{
     width: 50%;
-    margin-bottom: .7vw;
-    padding: 0 .7vw;
+    margin-bottom: 8px;
+    padding: 0 8px;
   }
   &__btn{
-    padding: .9vw 1.1vw;
+    padding: 12px 16px;
     border-top: 1px solid $border-color;
   }
 }
 .modal-dialog.modal-memberList{
-  width: 55vw;
+  width: 768px;
 }

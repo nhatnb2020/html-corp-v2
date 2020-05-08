@@ -3,26 +3,26 @@
     display: flex;
   }
   &__cont{
-    padding-left: 1.1vw;
+    padding-left: 16px;
   }
   &__title{
-    font-size: 1.1vw;
+    font-size: 16px;
     font-weight: $medium;
     color: #262626;
-    margin-bottom: .7vw;
+    margin-bottom: 8px;
   }
   &__text{
-    font-size: 1vw;
+    font-size: 14px;
     color: $text-color;
-    margin-bottom: .7vw;
+    margin-bottom: 8px;
   }
   &__btn{
     text-align: right;
-    margin-top: 1.5vw;
+    margin-top: 24px;
   }
   &__radio{
     .radio{
-      margin-bottom: .6vw;
+      margin-bottom: 6px;
     }
   }
 }

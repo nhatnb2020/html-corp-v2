@@ -1,33 +1,33 @@
 .vntHome{
   &__body{
     display: flex;
-    padding: 1vw;
+    padding: 15px;
     .heading2{
-      padding-bottom: 1vw;
+      padding-bottom: 15px;
     }
   }
   &__left{
-    width: calc(100% - 24vw);
-    padding-right: 1.3vw;
+    width: calc(100% - 345px);
+    padding-right: 20px;
   }
   &__right{
-    width: 24vw;
+    width: 345px;
     .hotelAnimatedGroup{
-      margin-top: 1vw;
+      margin-top: 15px;
     }
   }
   &__hot{
     width: 75%;
-    padding: 1vw;
+    padding: 15px;
     .heading2{
-      padding: .8vw 0;
+      padding: 10px 0;
     }
   }
   &__tab{
     background-color: #fff;
     display: flex;
     border-radius: 4px;
-    margin-bottom: 1vw;
+    margin-bottom: 15px;
     li{
       &.active{
         button{
@@ -36,9 +36,9 @@
         }
       }
       button{
-        font-size: 1vw;
+        font-size: 14px;
         font-weight: 500;
-        padding: .9vw 1.5vw;
+        padding: 12px 24px;
         border-bottom: 2px solid transparent;
         &:hover{
           color: $yellow-2;

@@ -1,56 +1,56 @@
 .report{
-  padding: 1.5vw 1vw;
+  padding: 24px 15px;
   &__body{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -.8vw;
+    margin: 0 -10px;
   }
   &__item{
-    padding: 0 .8vw 1.5vw;
+    padding: 0 10px 24px;
     width: 100%;
   }
   &__title{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 1.1vw;
+    padding-bottom: 16px;
     .heading2{
-      padding-right: 1.1vw;
-      font-size: 1.1vw;
+      padding-right: 16px;
+      font-size: 16px;
     }
     .dropdownGroup{
       .dropdown{
-        width:9vw;
+        width: 120px;
       }
       .ant-select{
-        width: 9vw!important;
+        width: 120px!important;
         + .ant-select{
-          margin-left: .7vw;
+          margin-left: 8px;
         }
       }
     }
   }
   &__cont{
     background-color: #fff;
-    padding: 1.1vw 1.5vw;
-    height: calc(100% - 2.7vw);
+    padding: 16px 24px;
+    height: calc(100% - 48px);
     position: relative;
   }
   &__info{
     display: flex;
-    padding-bottom: 1.3vw;
+    padding-bottom: 20px;
     .d-block{
       + .d-block{
-        padding-left: 2.7vw;
+        padding-left: 48px;
       }
       p{
         margin-bottom: 0;
         color: #262626;
         &.p1{
-          font-size: 1vw;
+          font-size: 14px;
         }
         &.p2{
-          font-size: 1.3vw;
+          font-size: 20px;
           font-weight: 500;
         }
       }
@@ -62,11 +62,11 @@
     }
   }
   &__table{
-    margin-top: 1vw;
+    margin-top: 15px;
     .table{
       th,td{
-        font-size: .9vw;
-        padding: .7vw .9vw;
+        font-size: 13px;
+        padding: 8px 12px;
       }
     }
   }
@@ -84,10 +84,10 @@
   > .d-flex{
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1.5vw;
+    padding-bottom: 24px;
     .btn{
       svg{
-        margin-right: .5vw;
+        margin-right: 5px;
       }
       svg,span{
         vertical-align: middle;
@@ -96,33 +96,33 @@
   }
 }
 .modal-exportReport{
-  width: 29vw;
+  width: 416px;
   .pTitle{
     color: #262626;
-    margin-bottom: 1.3vw;
+    margin-bottom: 20px;
   }
   .radioInline{
-    margin-bottom: .8vw;
+    margin-bottom: 10px;
   }
 }
 .exportReport{
   &__item{
-    padding-bottom: .8vw;
+    padding-bottom: 10px;
     ul{
       li{
-        padding: .5vw 0;
+        padding: 5px 0;
       }
     }
   }
   &__title{
-    font-size: 1vw;
+    font-size: 14px;
     font-weight: 500;
     color: #262626;
-    margin-bottom: .5vw;
+    margin-bottom: 5px;
   }
   &__form{
     .dItem{
-      margin-bottom: 1vw;
+      margin-bottom: 15px;
       &:last-child{
         margin-bottom: 0;
       }

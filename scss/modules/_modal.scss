@@ -20,14 +20,14 @@
   &.show .modal-dialog { transform:translate(0, 0);}
 }
 .modal-dialog {
-  width: calc(100% - .8vw);
-  margin: 1.8vw auto;
+  width: calc(100% - 10px);
+  margin: 30px auto;
   @include add-background($white-1);
   @include breakpoint(sm){
-    width: 27.5vw;
+    width: 396px;
   }
   @include breakpoint(md){
-    margin: 5vw auto;
+    margin: 70px auto;
   }
 }
 .fade{
@@ -40,7 +40,7 @@
 }
 .modal-header {
   position: relative;
-  padding: 1.1vw 1.5vw;
+  padding: 16px 24px;
   border-bottom: 1px solid $border-color;
 }
 .modal-title {
@@ -52,10 +52,10 @@
 .modal-close{
   position: absolute;
   top: 50%;
-  right:1.3vw;
+  right:20px;
   transform: translateY(-50%);
   z-index: 1;
-  padding: .5vw;
+  padding: 5px;
   cursor: pointer;
   background: none;
   border:none;
@@ -67,23 +67,23 @@
   }
 }
 .modal-body {
-  padding: 1.5vw;
+  padding: 24px;
   .form-group{
-    margin-bottom: 1.5vw;
+    margin-bottom: 24px;
     &:last-child{
       margin-bottom: 0;
     }
   }
 }
 .modal-footer {
-  padding: .9vw 1.5vw;
+  padding: 12px 24px;
   border-top: 1px solid $border-color;
 }
 .modal-btn{
   text-align: right;
   .btn{
     + .btn{
-      margin-left: .7vw;
+      margin-left: 8px;
     }
   }
 }
@@ -106,6 +106,6 @@
 
 .modal-dialog.modal_lg{
   @include breakpoint(sm){
-    width: 52vw;
+    width: 750px;
   }
 }

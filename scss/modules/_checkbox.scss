@@ -7,8 +7,9 @@
     position: relative;
     cursor: pointer;
     margin-bottom: 0;
-    padding-left: 2vw;
-    font-size: 1vw;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 22px;
     color: $text-color;
     &:hover{
       @include breakpoint(md){color: $yellow-2;}
@@ -17,12 +18,13 @@
   }
   input[type="checkbox"] + label:before {
     content: "";
-    width: 1.1vw;
-    height: 1.1vw;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
     background-color:$white-1;
     position: absolute;
     left: 0;
-    top:.2vw;
+    top:3px;
     display: inline-block;
     text-align: center;
     @include add-border(1px, #d9d9d9,all);
@@ -34,7 +36,7 @@
     font-weight:$extrabold;
     background-color:#1890FF;
     color:#fff;
-    font-size:.8vw;
+    font-size:$size-10;
     border: none;
   }
   &.disabled{

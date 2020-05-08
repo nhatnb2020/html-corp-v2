@@ -1,14 +1,14 @@
 .filterBox{
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   background-color: #fff;
-  padding: 1vw;
+  padding: 16px;
   position: relative;
   &__body{
 
   }
   &__item{
-    padding-bottom: 1.4vw;
-    margin-bottom: 1.4vw;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     border-bottom: 1px solid #f5f5f5;
     &:last-child{
       border-bottom: none;
@@ -17,30 +17,22 @@
     }
   }
   &__title{
-    font-size: 1.1vw;
+    font-size: 16px;
     color: #262626;
     font-weight: $medium;
-    margin-bottom: .7vw;
+    margin-bottom: 8px;
   }
   &__cont{
     .radio,
     .checkbox{
-      margin-bottom: .5vw;
-
-    }
-    .checkbox{
-      label{
-        > svg{
-          margin-left: .5vw;
-        }
-      }
+      margin-bottom: 4px;
     }
   }
   &__reset{
     position: absolute;
-    top: 1.4vw;
-    right: 1.1vw;
-    font-size: .9vw;
+    top: 20px;
+    right: 16px;
+    font-size: 12px;
     color: #096DD9;
     text-decoration: underline;
   }

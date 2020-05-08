@@ -1,47 +1,88 @@
+.header-popup{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: #fff;
+  height: 50px;
+  margin-bottom: 4px;
+  @include breakpoint(md){
+    display: none;
+  }
+  &__title{
+    font-weight: $medium;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 14px;
+    line-height: 19px;
+    width: calc(100% - 80px);
+    text-align: center;
+  }
+  &__close{
+    padding: 10px 10px 10px 0!important;
+  }
+  &__remove{
+    font-size: 12px;
+    color: $red-2;
+  }
+  button{
+    padding:0;
+    background: none;
+    border: none;
+    display: flex;
+  }
+}
 
 .popConfirm{
   background-color: #fff;
   border-radius: 4px;
-  width: 16.6vw;
+  width: 240px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   position: absolute;
   bottom: calc(100% + 10px);
-  right:-.8vw;
+  right:-10px;
   z-index: 5;
-  padding: 1vw;
+  padding: 15px;
   display: none;
   &:before{
     content: '';
-    width: .8vw;
-    height: .8vw;
+    width: 10px;
+    height: 10px;
     background-color: #fff;
     position: absolute;
-    bottom: -.5vw;
-    right: 3vw;
+    bottom: -4px;
+    right: 45px;
     box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.07);
     transform: rotate(45deg);
   }
   &__btn{
-    margin-top: .8vw;
+    margin-top: 10px;
     display: flex;
     justify-content: flex-end;
+    .btn{
+
+    }
   }
   &.open{
     display: block;
   }
   p{
     margin: 0;
-    font-size: 1vw;
+    font-size: 14px;
     color: #595959;
     position: relative;
     display: flex;
     svg{
       position: absolute;
-      top: .4vw;
+      top: 3px;
       left: 0;
     }
     span{
-      padding-left: 1.3vw;
+      padding-left: 20px;
     }
   }
 

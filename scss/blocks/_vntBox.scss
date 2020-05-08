@@ -1,56 +1,55 @@
 .vntBox{
   background-color: #fff;
-  margin: 1vw;
-  padding: 1vw;
+  margin: 15px;
+  padding: 15px;
   position: relative;
   &__checkout{
     text-align: center;
     width: 50%;
     margin: 0 auto;
     > img{
-      width: 14vw;
+      width: 200px;
     }
     p{
-      font-size: 1vw;
+      font-size: 14px;
       color: #262626;
       &.p1{
-        font-size: 1.5vw;
+        font-size: 24px;
         font-weight: 500;
-        margin-top: 1.8vw;
+        margin-top: 30px;
       }
       &.p3{
         color: #1890FF;
       }
     }
     .btnGroup{
-      margin: 1.8vw auto;
+      margin: 30px auto;
       > .btn{
         display: block;
-        width: 14.5vw;
+        width: 210px;
         margin: auto;
-        padding: .5vw 1vw;
         + .btn{
-          margin-top: 1vw;
+          margin-top: 15px;
         }
       }
       .input-group{
-        width: 30vw;
-        margin: 0 auto 1vw;
+        width: 450px;
+        margin: 0 auto 15px;
       }
     }
   }
   &__edit{
     position: absolute;
-    top: 1vw;
-    right: 1vw;
+    top: 15px;
+    right: 15px;
   }
   &__switch{
     position: absolute;
-    top: 1.3vw;
-    right: 1vw;
+    top: 20px;
+    right: 15px;
     .btnSwitch{
       .switch{
-        margin-left: .6vw;
+        margin-left: 6px;
         margin-right: 0;
       }
     }
@@ -58,31 +57,31 @@
   &__btn{
     .btn{
       + .btn{
-        margin-left: .7vw;
+        margin-left: 8px;
       }
     }
   }
   &__title{
-    font-size: 1.1vw;
+    font-size: 16px;
     color: #262626;
     font-weight: $medium;
-    margin: 0 -1vw;
-    padding: .5vw 1vw 1vw;
+    margin: 0 -15px;
+    padding: 4px 15px 14px;
     border-bottom: 1px solid $border-color;
-    min-height: 3.3vw;
+    min-height: 47px;
   }
   &__table{
-    margin: 0 -1vw -1vw;
+    margin: 0 -15px;
     .d-row{
       display: flex;
       border-bottom: 1px solid $border-color;
     }
     .d-left{
       border-right: 1px solid $border-color;
-      width: 14vw;
+      width: 200px;
     }
     .d-right{
-      width: calc(100% - 14vw);
+      width: calc(100% - 200px);
       .d-block,
       .flexGroup{
         border-bottom: 1px solid $border-color;
@@ -93,36 +92,37 @@
     }
     .d-block,
     .flexGroup{
-      padding: 1vw;
+      padding: 15px;
       p{
-        font-size: 1vw;
+        font-size: 14px;
         font-weight: $medium;
         margin-bottom: 0;
         color: #262626;
         &.p2{
-          font-size: .9vw;
+          font-size: 12px;
           color: #8c8c8c;
           font-weight: $regular;
         }
         &.p3{
           color: #8c8c8c;
           font-weight: $regular;
+          width: 100%;
           text-align: right;
         }
       }
     }
   }
   &__noti{
-    padding: 1.9vw 0 1.1vw;
+    padding: 32px 0 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     p{
-      font-size: 1vw;
+      font-size: 14px;
       color: #262626;
-      margin-bottom: 1.1vw;
+      margin-bottom: 16px;
       strong{
-        padding: 0 .5vw;
+        padding: 0 5px;
       }
     }
   }
@@ -137,8 +137,5 @@
         }
       }
     }
-  }
-  .ant-form-item{
-    margin-bottom: 0;
   }
 }

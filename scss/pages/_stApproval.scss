@@ -2,33 +2,33 @@
   &__row{
     display: flex;
     justify-content: space-between;
-    padding: 1.7vw 1.5vw;
+    padding: 28px 24px;
   }
   &__left{
-    width: 15vw;
-    padding-right: 1.3vw;
+    width: 220px;
+    padding-right: 20px;
   }
   &__right{
-    width: calc(100% - 15vw);
-    padding-left: 1.3vw;
+    width: calc(100% - 220px);
+    padding-left: 20px;
   }
   &__name{
     color: #262626;
   }
   .vntBox{
-    margin: 0 0 1.1vw;
+    margin: 0 0 16px;
     box-shadow: $shadow;
   }
 }
 .stTitle{
-  font-size: 1.1vw;
+  font-size: 16px;
   font-weight: $medium;
-  margin-bottom: 1.1vw;
+  margin-bottom: 16px;
   text-transform: uppercase;
 }
 .stTab{
   > li{
-    margin-bottom: 1.1vw;
+    margin-bottom: 16px;
     position: relative;
     &.active{
       .btn{
@@ -37,7 +37,6 @@
       }
     }
     .btn{
-      display: block;
       width: 100%;
       font-weight: $regular;
       white-space: nowrap;
@@ -47,7 +46,7 @@
   }
   .dropdown{
     position: absolute;
-    top: .5vw;
+    top: 4px;
     right: 1px;
     .dropdown-toggle{
       background: transparent;
@@ -58,7 +57,7 @@
       }
     }
     .dropdown-menu{
-      width: 7vw;
+      width: 100px;
       left: auto;
       right: 0;
     }
@@ -69,13 +68,13 @@
 }
 .approvalInfo{
   &__item{
-    padding: 1.1vw 0;
+    padding: 16px 0;
   }
   &__row{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .8vw 0;
+    padding: 10px 0;
     border-bottom: 1px solid $border-color;
     .d-block{
       &:nth-child(1){
@@ -92,28 +91,27 @@
         text-align: right;
       }
       p{
-        font-size: 1vw;
+        font-size: 14px;
         color: #262626;
         margin-bottom: 0;
         &.p2{
           color: #8c8c8c;
-          font-size: .9vw;
+          font-size: 12px;
         }
       }
     }
   }
   &__add{
-    padding-bottom: 1vw;
+    padding-bottom: 16px;
   }
 }
 .objApply{
-  margin-bottom: -1vw;
   ul{
     li{
-      padding: 1vw 0;
+      padding: 16px 0;
       border-bottom: 1px solid $border-color;
       p{
-        font-size: 1vw;
+        font-size: 14px;
         color: #1890FF;
         margin-bottom: 0;
         cursor: pointer;
@@ -125,9 +123,9 @@
   }
 }
 .popupMember{
-  width: 80vw!important;
+  width: 1154px;
   &__tab{
-    width: 10.5vw;
+    width: 154px;
     border-right: 1px solid $border-color;
     li{
       &.active{
@@ -138,9 +136,9 @@
         }
       }
       button{
-        font-size: 1vw;
+        font-size: 14px;
         color: #8c8c8c;
-        padding: .7vw 1.1vw;
+        padding: 8px 16px;
         width: 100%;
         border-bottom: 1px solid $border-color;
         text-align: left;
@@ -154,17 +152,14 @@
     display: flex;
   }
   &__cont{
-    width: calc(100% - 10.5vw);
-    padding: 1.1vw;
+    width: calc(100% - 154px);
+    padding: 16px;
   }
   &__item{
     display: none;
     animation: opacityShow .3s ease-in-out;
     &.open{
       display: block;
-    }
-    .vntTree{
-      width: 24.5vw;
     }
   }
   .modal-body{
@@ -178,6 +173,6 @@
     }
   }
   .vntBox{
-    margin: 0 0 1vw;
+    margin: 0 0 15px;
   }
 }
