@@ -155,7 +155,12 @@
 .w-75{width: 75%!important;}
 .w-100{width: 100%!important;}
 .w100{width: 100px!important;}
-.w358{width: 358px!important;}
+.w358{
+  width: 358px!important;
+  @include breakpoint(max-md){
+    width: 60%!important;
+  }
+}
 
 .h-25{height: 25%!important;}
 .h-50{height: 50%!important;}

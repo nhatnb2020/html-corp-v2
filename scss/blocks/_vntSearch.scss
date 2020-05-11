@@ -13,6 +13,11 @@
     padding: 0 15px;
     margin-top: -75px;
     position: relative;
+    @include breakpoint(xl){
+      width: 1185px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .heading2{
     background-color: #fff;
@@ -57,18 +62,21 @@
     }
   }
   &__body{
-    padding: 15px 0 25px;
+    padding: 0 0 25px;
   }
   &__hotel{
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     .placeInput,
     .dateInput,
     .memberBtn{
       padding-right: 15px;
+      padding-top: 15px;
     }
   }
   &__btn{
+    padding-top: 15px;
     .btn{
       width: 100px;
     }
@@ -76,10 +84,10 @@
   &__flex{
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
   }
   &__radio{
     display: flex;
-    padding-bottom: 20px;
     .radio{
       + .radio{
         padding-left: 24px;
@@ -87,8 +95,10 @@
     }
   }
   &__flight{
+    padding-top: 15px;
     .placeInput{
       width: 184px;
+      padding-top: 15px;
     }
     .flightToggle{
       padding: 0 10px;
@@ -104,10 +114,11 @@
       }
     }
     .dateInput{
-      padding: 0 16px;
+      padding: 15px 15px 0;
     }
     .memberBtn{
-      padding-right: 16px;
+      padding-right: 15px;
+      padding-top: 15px;
     }
     .listPlace{
       &__text{
@@ -402,22 +413,6 @@
         td{
           vertical-align: middle;
         }
-      }
-    }
-  }
-  .ant-table{
-    th,td{
-      &:nth-child(1){
-        width: 10%;
-      }
-      &:nth-child(2){
-        width: 40%;
-      }
-      &:nth-child(3){
-        width: 30%;
-      }
-      &:nth-child(4){
-        width: 20%;
       }
     }
   }

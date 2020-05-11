@@ -4,6 +4,9 @@
   align-items: center;
   padding: 31px 15px;
   margin-bottom: 16px;
+  @include breakpoint(xl){
+    justify-content: c;
+  }
   &__item{
     display: flex;
     align-items: center;

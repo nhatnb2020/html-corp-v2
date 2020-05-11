@@ -1,4 +1,8 @@
 .stApproval{
+  @include breakpoint(xl){
+    width: 1185px;
+    margin: auto;
+  }
   &__row{
     display: flex;
     justify-content: space-between;
@@ -128,6 +132,9 @@
 }
 .popupMember{
   width: 1154px;
+  @include breakpoint(max-md){
+    width: 80% !important;
+  }
   &__tab{
     width: 154px;
     border-right: 1px solid $border-color;

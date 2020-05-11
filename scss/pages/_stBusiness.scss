@@ -1,4 +1,8 @@
 .stBusiness{
+  @include breakpoint(xl){
+    width: 1185px;
+    margin: auto;
+  }
   &__row{
     display: flex;
   }

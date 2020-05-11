@@ -39,6 +39,9 @@
       &:last-child{
         width: calc(100% - 345px);
         padding-left: 40px;
+        @include breakpoint(max-md){
+          padding-left: 8px;
+        }
       }
       > label{
         font-size: 14px;
@@ -57,9 +60,11 @@
     .d-flex{
       flex-wrap: wrap;
       .d-item{
-
         margin-right: 8px;
         margin-bottom: 8px;
+        @include breakpoint(max-md){
+          width: calc(50% - 8px)!important;
+        }
         &:nth-child(1){
           width: 300px;
         }
@@ -88,11 +93,24 @@
       width: 345px;
     }
     &:nth-child(2){
-      flex: 1 1 auto;
+      width: calc(100% - 610px);
       padding-left: 40px;
+      @include breakpoint(max-md){
+        width: calc(100% - 545px);
+        padding-left: 8px;
+      }
+    }
+    &:nth-child(3){
+      width: 265px;
+      @include breakpoint(max-md){
+        width: 200px;
+      }
     }
     .btnInline{
       .btn{
+        @include breakpoint(max-md){
+          margin-top: 8px;
+        }
         &.active{
           background-color: $yellow-2;
           border-color: $yellow-2;
@@ -102,7 +120,6 @@
     }
   }
   &__progress{
-    padding-left: 70px;
     p{
       margin-bottom: 0;
       &.p1{
@@ -117,7 +134,7 @@
       }
     }
     progress{
-      width: 265px;
+      width: 100%;
       background: #E4E9F2;
     }
     progress::-webkit-progress-value {

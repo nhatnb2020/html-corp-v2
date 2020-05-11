@@ -2,6 +2,10 @@
   &__body{
     display: flex;
     padding: 15px;
+    @include breakpoint(xl){
+      width: 1185px;
+      margin: auto;
+    }
     .heading2{
       padding-bottom: 15px;
     }
@@ -38,7 +42,7 @@
       button{
         font-size: 14px;
         font-weight: 500;
-        padding: 12px 24px;
+        padding: 12px 20px;
         border-bottom: 2px solid transparent;
         &:hover{
           color: $yellow-2;

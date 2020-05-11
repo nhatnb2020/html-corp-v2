@@ -6,6 +6,7 @@
   top: 0;
   max-height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     width:2px;
@@ -101,7 +102,7 @@
           margin-bottom: 0;
           color: #262626;
           &.p1{
-            width: calc(100% - 95px);
+            flex: 1;
             padding-right: 15px;
             font-weight: $medium;
             font-size: 12px;
@@ -111,7 +112,6 @@
             }
           }
           &.p2{
-            width: 95px;
             text-align: right;
             font-size: 14px;
           }

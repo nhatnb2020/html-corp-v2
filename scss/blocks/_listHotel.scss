@@ -12,6 +12,9 @@
   &__img{
     width: 240px;
     height: 152px;
+    @include breakpoint(max-md){
+      width: 100px;
+    }
     img{
       width: 100%;
       height: 100%;
@@ -25,7 +28,7 @@
     justify-content: space-between;
     padding-left: 15px;
     @include breakpoint(max-md){
-      width: calc(100% - 150px);
+      width: calc(100% - 100px);
     }
   }
   &__info{
@@ -50,7 +53,7 @@
     text-align: right;
   }
   .hotelFaci{
-    width: 200px;
+    width: 220px;
   }
 }
 .rateStar{
@@ -174,6 +177,9 @@
   color: inherit;
   &__img{
     width: 110px;
+    @include breakpoint(max-md){
+      width: 70px;
+    }
     img{
       width: 100%;
       height: 100%;
@@ -183,6 +189,9 @@
   &__cont{
     width: calc(100% - 110px);
     padding: 12px;
+    @include breakpoint(max-md){
+      width: calc(100% - 70px);
+    }
   }
   &__add{
     font-size: 12px;

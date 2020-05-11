@@ -27,6 +27,11 @@
 .ant-menu-inline .ant-menu-selected::after, .ant-menu-inline .ant-menu-item-selected::after{
   display: none;
 }
+.ant-menu-item > a{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .ant-menu-item > a:hover{
   color: $yellow-2;
 }

@@ -1,10 +1,14 @@
 .hotelDetail{
   display: flex;
+  @include breakpoint(xl){
+    width: 1185px;
+    margin: auto;
+  }
   &__left{
-    width: calc(100% - 386px);
+    width: 65%;
   }
   &__right{
-    width: 386px;
+    width: 35%;
     padding: 15px;
   }
   &__header{
@@ -21,6 +25,9 @@
   }
   &__main{
     padding: 15px 0 15px 15px;
+    @include breakpoint(xl){
+      padding-left: 0;
+    }
   }
   &__filter{
     background-color: #fff;
@@ -58,34 +65,58 @@
     &.col-1{
       width: 50%;
       height: 300px;
+      @include breakpoint(max-md){
+        height: 200px;
+      }
     }
     &.col-2{
       width: 25%;
       height: 300px;
+      @include breakpoint(max-md){
+        height: 200px;
+      }
     }
     &.col-3{
       width: 25%;
       height: 300px;
+      @include breakpoint(max-md){
+        height: 200px;
+      }
     }
     &.col-4{
       width: 25%;
       height: 130px;
+      @include breakpoint(max-md){
+        height: 80px;
+      }
     }
     &.col-5{
       width: 25%;
       height: 130px;
+      @include breakpoint(max-md){
+        height: 80px;
+      }
     }
     &.col-6{
       width: 12.5%;
       height: 130px;
+      @include breakpoint(max-md){
+        height: 80px;
+      }
     }
     &.col-7{
       width: 12.5%;
       height: 130px;
+      @include breakpoint(max-md){
+        height: 80px;
+      }
     }
     &.col-8{
       width: 25%;
       height: 130px;
+      @include breakpoint(max-md){
+        height: 80px;
+      }
     }
   }
   &__item{
@@ -138,19 +169,23 @@
       position: absolute;
       background:rgba(54, 53, 62, 0.7);
       font-size: 13px;
-      line-height: 18px;
       border: none;
       display: block;
       background: #fff;
       height: auto;
-      bottom: 10px;
+      top: 50%;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, -50%);
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 30px;
       width: 165px;
       padding: 10px;
       color: $yellow-2;
+      @include breakpoint(max-md){
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 10px;
+      }
       svg,span{
         vertical-align: middle;
       }
@@ -168,16 +203,25 @@
     background-color:rgba(54, 53, 62, 0.7);
     text-align: center;
     .d-block{
-      margin: 30px 0 0;
+      margin: 20px 0 0;
+      @include breakpoint(max-md){
+        margin-top: 10px;
+      }
     }
     img{
       width: 42px;
       height: 42px;
+      @include breakpoint(max-md){
+        display: none;
+      }
     }
     p{
       color: #fff;
       font-size: 12px;
       margin: 10px 0 0;
+      @include breakpoint(max-md){
+        font-size: 10px;
+      }
     }
   }
   &__360{
@@ -189,29 +233,42 @@
     background-color:rgba(253, 185, 19, 0.7);
     text-align: center;
     .d-block{
-      margin: 30px 0 0;
+      margin: 20px 0 0;
+      @include breakpoint(max-md){
+        margin-top: 20px;
+      }
+    }
+    img{
+      width: 42px;
+      height: 42px;
+      @include breakpoint(max-md){
+        display: none;
+      }
     }
     p{
       color: #fff;
       font-size: 12px;
       margin: 10px 0 0;
+      @include breakpoint(max-md){
+        font-size: 10px;
+      }
     }
   }
 }
 .ant-modal-wrap.modal-gallery{
   .ant-modal{
     top: 1vw;
-    width: 1140px!important;
+    width: 90%!important;
   }
   .ant-modal-body{
     padding: 0;
-    height: calc(100% - 7vh);
+    height: calc(100% - 55px);
   }
   .ant-modal-content{
     height: 95vh;
   }
   .ant-modal-header{
-    height: 7vh;
+    height: 55px;
   }
 
   .image-gallery,
@@ -392,7 +449,7 @@
     background-color: #f5f5f5;
   }
   &__slide{
-    width: 60%;
+    width: 50%;
     padding: 0 8px;
     > img{
       width: 100%;
@@ -422,6 +479,7 @@
     }
     .image-gallery-content .image-gallery-slide .image-gallery-image{
       max-height: initial;
+      height: 100%;
     }
     .image-gallery-icon:hover{
       color: $yellow-2;
@@ -430,9 +488,28 @@
       width: 25px;
       height: 25px;
     }
+    .image-gallery-thumbnails-wrapper{
+      height: 80px;
+    }
+    .image-gallery-slide-wrapper{
+      height: calc(100% - 80px);
+    }
+    .image-gallery-swipe,
+    .image-gallery-slides{
+      height: 100%;
+    }
+    .image-gallery-slide{
+      height: 100%;
+      > div{
+        height: 100%;
+      }
+    }
+    .image-gallery-content{
+      height: 305px;
+    }
   }
   &__serv{
-    width: 40%;
+    width: 50%;
     max-height: 391px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -472,11 +549,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    flex-wrap: wrap;
+    padding: 15px 0;
     border-bottom: 1px solid #f5f5f5;
   }
   &__policy{
     width: 25%;
+    @include breakpoint(max-md){
+      width: 50%;
+    }
     .iconText{
       &:last-child{
         padding-bottom: 0;
@@ -484,8 +565,12 @@
     }
   }
   &__type{
-    width: 33%;
+    width: 28%;
     padding: 0 15px;
+    @include breakpoint(max-md){
+      width: 50%;
+      padding: 0 0 0 55px;
+    }
     .iconText{
       padding-bottom: 0;
       padding-left: 35px;
@@ -496,10 +581,18 @@
     padding-right: 15px;
     display: flex;
     justify-content: center;
+    @include breakpoint(max-md){
+      width: 50%;
+      justify-content: left;
+      padding-top: 15px;
+    }
   }
   &__action{
-    width: 17%;
+    width: 22%;
     text-align: right;
+    @include breakpoint(max-md){
+      width: 30%;
+    }
     > p{
       font-size: 12px;
       color: #FF4D4F;
@@ -558,6 +651,10 @@
   }
   &__dropdown{
     text-align: left;
+    @include breakpoint(xl){
+      width: 150px;
+      float: right;
+    }
     &.disabled{
       cursor: not-allowed;
       .dropdown-toggle{
@@ -619,6 +716,9 @@
       &__cont{
         z-index: 3;
         width: 300px;
+        @include breakpoint(max-md){
+          width: 200px;
+        }
       }
     }
   }
@@ -643,24 +743,47 @@
   }
   &__title{
     width: 150px;
+    @include breakpoint(max-md){
+      width: 100px;
+    }
     p{
       margin-bottom: 0;
       font-size: 20px;
       font-weight: 500;
       color: #262626;
+      @include breakpoint(max-md){
+        font-size: 16px;
+      }
     }
   }
   &__cont{
     width: calc(100% - 150px);
     padding-left: 30px;
+    @include breakpoint(max-md){
+      width: calc(100% - 100px);
+    }
     p{
       font-size: 14px;
       color: #262626;
       &.pText{
         max-height: 126px;
         overflow: hidden;
+        position: relative;
+        ;
+        &:before{
+          content: '';
+          width: 100%;
+          height: 40%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background-image:linear-gradient(to bottom,rgba(255, 255, 255, 0),#fff);
+        }
         &.pText_full{
           max-height: initial;
+          &:before{
+            display: none;
+          }
         }
       }
     }
@@ -722,6 +845,8 @@
     }
     .d-flex{
       justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
   }
   &__bot{
@@ -847,6 +972,28 @@
   }
   &__photo{
     display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      width:4px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: #f2f2f2;
+      border-radius: 16px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background:#bcbcbc;
+      border-radius: 16px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+    }
     .dItem{
       + .dItem{
         padding-left: 16px;

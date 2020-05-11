@@ -1,6 +1,10 @@
 .flightList{
   &__body{
     padding: 15px;
+    @include breakpoint(xl){
+      width: 1185px;
+      margin: auto;
+    }
   }
   &__active{
     padding-bottom: 32px;
@@ -247,6 +251,9 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 16px;
+    @include breakpoint(max-md){
+      justify-content: space-around;
+    }
     .alert{
       width: 100%;
       margin-bottom: 0;
@@ -318,12 +325,8 @@
     animation: opacityShow .3s ease-in-out;
     display: none;
     margin-bottom: 8px;
-    .flightTicket{
-      &__btn{
-        position: absolute;
-        bottom: 110px;
-        right: 16px;
-      }
+    @include breakpoint(max-md){
+      padding: 24px 50px 64px 50px;
     }
   }
   &__list{
@@ -414,12 +417,15 @@
   margin-bottom: 30px;
   .flightTicket{
     box-shadow: $shadow;
-    &__airline{}
     &__info{
       padding: 9px 16px;
       .flightTicket__btn{
         width: auto;
         padding-left: 0;
+        @include breakpoint(max-md){
+          width: 200px;
+          margin-top: 15px;
+        }
       }
     }
   }

@@ -1,4 +1,8 @@
 .stStructure{
+  @include breakpoint(xl){
+    width: 1185px;
+    margin: auto;
+  }
   .vntBox{
     width: 80%;
   }

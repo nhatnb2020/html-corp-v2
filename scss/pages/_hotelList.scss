@@ -2,12 +2,17 @@
   &__body{
     display: flex;
     margin: 15px;
+    @include breakpoint(xl){
+      width: 1185px;
+      margin: 15px auto;
+      padding: 0 15px;
+    }
   }
   &__left{
-    width: 356px;
+    width: 30%;
   }
   &__right{
-    width: calc(100% - 356px);
+    width: 70%;
     padding-left: 15px;
   }
   &__top{
@@ -20,19 +25,30 @@
 .hotelSort{
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 15px;
   position: relative;
   li{
-    &:first-child{
-      width: 70px;
-    }
     + li{
       padding-left: 30px;
+      @include breakpoint(max-md){
+        padding-left: 15px;
+      }
     }
     &.liPrice{
-      position: absolute;
-      top: 0;
-      right: 0;
+      @include breakpoint(max-md){
+        width: 100%;
+        padding-left: 0;
+        padding-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+      }
+      @include breakpoint(lg){
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+      }
       .checkbox{
         label{
           strong{
@@ -46,12 +62,7 @@
       font-size: 16px;
       font-weight: 500;
       color: #262626;
-    }
-    .radio{
-      input[type="radio"] + label:before{
-        top: 50%;
-        transform: translateY(-50%);
-      }
+      white-space: nowrap;
     }
   }
 }

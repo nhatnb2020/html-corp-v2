@@ -83,6 +83,10 @@
 .vntHome{
   &__flight{
     padding: 24px 15px;
+    @include breakpoint(xl){
+      width: 1185px;
+      margin: auto;
+    }
     .heading2{
       padding-bottom: 15px;
     }

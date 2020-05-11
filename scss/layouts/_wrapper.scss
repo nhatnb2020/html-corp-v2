@@ -8,6 +8,9 @@
   min-height: 100%;
   margin-left: 255px;
   transition: all .3s;
+  @include breakpoint(max-md){
+    margin-left: 150px;
+  }
   &.main-collapsed{
     margin-left: 88px;
   }

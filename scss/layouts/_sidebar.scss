@@ -7,9 +7,15 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   width: 255px;
   background-color: #fff;
+  @include breakpoint(max-md){
+    width: 150px;
+  }
   &__header{
     padding: 25px;
     transition: all .3s;
+    @include breakpoint(max-md){
+      padding: 15px;
+    }
   }
   &__logo{
     a{
@@ -37,10 +43,10 @@
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
-    padding-right: 12px;
   }
   &__name{
     width: calc(100% - 40px);
+    padding-left: 12px;
     p{
       font-size: 12px;
       line-height: 20px;
@@ -83,7 +89,6 @@
     }
   }
   &__nav{
-    &__list{}
     &__item{
       &.active{
         .sidebar{
@@ -136,6 +141,11 @@
       position: relative;
       padding: 10px 25px;
       transition: all .2s;
+      @include breakpoint(max-md){
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
       &:hover{
         background: #fafafa;
         color: $text-color;
@@ -162,6 +172,9 @@
     z-index: 99;
     border-top: 1px solid $border-color;
     background-color: #fff;
+    @include breakpoint(max-md){
+      width: 150px;
+    }
   }
   &__logout{
     width: 100%;
@@ -205,6 +218,9 @@
     align-items: center;
     justify-content: center;
     transition: all .3s;
+    @include breakpoint(max-md){
+      right: -10px;
+    }
   }
 }
 .ant-layout-sider{
@@ -213,6 +229,12 @@
   min-width: 255px!important;
   width: 255px!important;
   padding-bottom: 0;
+  @include breakpoint(max-md){
+    flex: 0 0 150px!important;
+    max-width: 150px!important;
+    min-width: 150px!important;
+    width: 150px!important;
+  }
   &.ant-layout-sider-collapsed{
     flex: 0 0 88px!important;
     max-width: 88px!important;

@@ -3,9 +3,6 @@
   background-color: #fff;
   padding: 16px;
   position: relative;
-  &__body{
-
-  }
   &__item{
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -26,6 +23,11 @@
     .radio,
     .checkbox{
       margin-bottom: 4px;
+      label{
+        svg{
+          margin-left: 5px;
+        }
+      }
     }
   }
   &__reset{

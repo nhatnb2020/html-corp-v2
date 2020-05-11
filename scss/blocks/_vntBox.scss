@@ -79,9 +79,15 @@
     .d-left{
       border-right: 1px solid $border-color;
       width: 200px;
+      @include breakpoint(max-md){
+        width: 100px;
+      }
     }
     .d-right{
       width: calc(100% - 200px);
+      @include breakpoint(max-md){
+        width: calc(100% - 100px);
+      }
       .d-block,
       .flexGroup{
         border-bottom: 1px solid $border-color;

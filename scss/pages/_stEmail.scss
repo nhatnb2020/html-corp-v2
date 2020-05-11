@@ -1,4 +1,8 @@
 .stEmail{
+  @include breakpoint(xl){
+    width: 1185px;
+    margin: auto;
+  }
   &__table{
     .table{
       td{
