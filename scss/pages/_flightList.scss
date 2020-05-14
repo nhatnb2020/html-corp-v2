@@ -70,14 +70,9 @@
     &.active{
       color: $yellow-2;
     }
-    &.disabled{
-      cursor: not-allowed;
-      opacity: .3;
+    &.vnt-disable{
       &:hover{
         color: #262626;
-      }
-      p{
-        pointer-events: none;
       }
     }
     p{

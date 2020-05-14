@@ -183,9 +183,9 @@
   }
 }
 .vnt-disable{
-  cursor: not-allowed;
+  cursor: not-allowed!important;
   *{
     pointer-events: none;
-    opacity: .5;
+    opacity: .4;
   }
 }
