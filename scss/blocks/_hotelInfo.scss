@@ -4,30 +4,6 @@
   padding: 16px 8px;
   position: sticky;
   top: 0;
-  max-height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-  &::-webkit-scrollbar {
-    width:2px;
-  }
-
-  /* Track */
-  &::-webkit-scrollbar-track {
-    background-color: #f2f2f2;
-    border-radius: 16px;
-  }
-
-  /* Handle */
-  &::-webkit-scrollbar-thumb {
-    background:#bcbcbc;
-    border-radius: 16px;
-  }
-
-  /* Handle on hover */
-  &::-webkit-scrollbar-thumb:hover {
-    background: #bcbcbc;
-  }
   &__price{
     display: flex;
     justify-content: space-between;
@@ -87,6 +63,28 @@
     border: 1px solid #d9d9d9;
     border-radius: 4px;
     padding: 12px;
+    max-height: 350px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width:6px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: #f2f2f2;
+      border-radius: 16px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background:#bcbcbc;
+      border-radius: 16px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bcbcbc;
+    }
     > li{
       padding-bottom: 14px;
       margin-bottom: 14px;
@@ -131,6 +129,16 @@
         font-size: 12px;
         > svg{
           width: 14px;
+        }
+        .tooltip{
+          &:hover{
+            .tooltip__cont{
+              display: block;
+            }
+          }
+          &__cont{
+            display: none;
+          }
         }
       }
     }
