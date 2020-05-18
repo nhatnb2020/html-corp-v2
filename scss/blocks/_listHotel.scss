@@ -12,8 +12,17 @@
   &__img{
     width: 240px;
     height: 152px;
+    position: relative;
+    cursor: pointer;
     @include breakpoint(max-md){
       width: 100px;
+    }
+    &:hover{
+      .hotelItem__overlay{
+        visibility: visible;
+        transform: none;
+        opacity: 1;
+      }
     }
     img{
       width: 100%;
@@ -21,6 +30,23 @@
       object-fit: cover;
     }
 
+  }
+  &__overlay{
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(32, 48, 72, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s;
+    transform: scale(.8);
+    opacity: 0;
+    visibility: hidden;
   }
   &__cont{
     width: calc(100% - 240px);
@@ -32,7 +58,7 @@
     }
   }
   &__info{
-    width: calc(100% - 160px);
+    width: calc(100% - 170px);
     .heading4{
       a{
         color: #262626;
@@ -43,11 +69,12 @@
     }
   }
   &__detail{
-    width: 160px;
+    width: 170px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
+    border-left: 1px solid #f5f5f5;
+    padding: 10px 0 10px 15px;
   }
   &__btn{
     text-align: right;
@@ -118,34 +145,38 @@
   }
 }
 .ratePoint{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: flex-end;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  &__numb{
+    text-align: center;
+  }
+  &__text{
+    padding-left: 6px;
+    span{
+      display: block;
+    }
+  }
   span{
     &.span1{
-      position: relative;
-      font-size: 16px;
+      font-size: 20px;
       font-weight: $medium;
       color: $yellow-2;
+      line-height: 1.2;
       svg{
-        position: absolute;
-        top: -2px;
-        left: 50%;
-        transform: translateX(-50%);
+        display: block;
+        margin: auto;
       }
     }
     &.span2{
       font-size: 12px;
       color: #999;
       width: 100%;
-      text-align: right;
     }
     &.spanText{
       color: $yellow-2;
       font-size: 14px;
       font-weight: 500;
-      padding-left: 4px;
     }
   }
 }

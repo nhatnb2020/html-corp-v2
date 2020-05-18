@@ -139,19 +139,11 @@
     width: 100%;
     padding: 8px;
     .ratePoint{
+      width: 100%;
       background-color: #fff;
       border-radius: 4px;
       justify-content: center;
-      align-items: center;
       padding: 10px;
-      span{
-        &.span2{
-          width: auto;
-        }
-        &.spanText{
-          padding-right: 5px;
-        }
-      }
     }
   }
   &__map{
