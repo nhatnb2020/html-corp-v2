@@ -1,7 +1,7 @@
 .stPosition{
   @include breakpoint(xl){
     width: 1185px;
-    margin: auto;
+    margin: 0 auto;
   }
   &__header{
     display: flex;
