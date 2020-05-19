@@ -63,60 +63,28 @@
   &__col{
     padding: 5px;
     &.col-1{
-      width: 50%;
-      height: 300px;
-      @include breakpoint(max-md){
-        height: 200px;
-      }
+      width: 60%;
+      height: 270px;
     }
     &.col-2{
-      width: 25%;
-      height: 300px;
-      @include breakpoint(max-md){
-        height: 200px;
-      }
+      width: 40%;
+      height: 270px;
     }
     &.col-3{
-      width: 25%;
-      height: 300px;
-      @include breakpoint(max-md){
-        height: 200px;
-      }
+      width: 15%;
+      height: 127px;
     }
     &.col-4{
-      width: 25%;
-      height: 130px;
-      @include breakpoint(max-md){
-        height: 80px;
-      }
+      width: 15%;
+      height: 127px;
     }
     &.col-5{
-      width: 25%;
-      height: 130px;
-      @include breakpoint(max-md){
-        height: 80px;
-      }
+      width: 30%;
+      height: 127px;
     }
     &.col-6{
-      width: 12.5%;
-      height: 130px;
-      @include breakpoint(max-md){
-        height: 80px;
-      }
-    }
-    &.col-7{
-      width: 12.5%;
-      height: 130px;
-      @include breakpoint(max-md){
-        height: 80px;
-      }
-    }
-    &.col-8{
-      width: 25%;
-      height: 130px;
-      @include breakpoint(max-md){
-        height: 80px;
-      }
+      width: 40%;
+      height: 127px;
     }
   }
   &__item{
@@ -143,7 +111,16 @@
       background-color: #fff;
       border-radius: 4px;
       justify-content: center;
-      padding: 10px;
+      padding:5px 10px;
+      margin-top: 0;
+      &__text{
+        display: flex;
+        align-items: baseline;
+        .spanText{
+          white-space: nowrap;
+          margin-right: 5px;
+        }
+      }
     }
   }
   &__map{
@@ -159,30 +136,27 @@
     }
     button{
       position: absolute;
-      background:rgba(54, 53, 62, 0.7);
-      font-size: 13px;
+      background:rgba(46, 58, 89, .7);
+      font-size: 12px;
+      font-weight: 600;
       border: none;
-      display: block;
-      background: #fff;
-      height: auto;
-      top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
+      bottom: 15px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 30px;
-      width: 165px;
-      padding: 10px;
-      color: $yellow-2;
-      @include breakpoint(max-md){
-        width: 100%;
-        padding: 5px 10px;
-        font-size: 10px;
-      }
-      svg,span{
-        vertical-align: middle;
-      }
+      min-width: 142px;
+      height: 32px;
+      padding: 0 10px;
+      color:#fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       svg{
         margin-right: 5px;
+        path{
+          fill: #fff;
+        }
       }
     }
   }
@@ -194,15 +168,10 @@
     bottom: 0;
     background-color:rgba(54, 53, 62, 0.7);
     text-align: center;
-    .d-block{
-      margin: 20px 0 0;
-      @include breakpoint(max-md){
-        margin-top: 10px;
-      }
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img{
-      width: 42px;
-      height: 42px;
       @include breakpoint(max-md){
         display: none;
       }
@@ -222,17 +191,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:rgba(253, 185, 19, 0.7);
+    background-color:rgba(54,53,62,.7);
     text-align: center;
-    .d-block{
-      margin: 20px 0 0;
-      @include breakpoint(max-md){
-        margin-top: 20px;
-      }
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img{
-      width: 42px;
-      height: 42px;
       @include breakpoint(max-md){
         display: none;
       }
@@ -709,7 +673,7 @@
         z-index: 3;
         width: 300px;
         @include breakpoint(max-md){
-          width: 200px;
+          width: 150px;
         }
       }
     }
