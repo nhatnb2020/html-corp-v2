@@ -288,14 +288,18 @@
 }
 .listPlace{
   &__item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    cursor: pointer;
-    transition: all .2s;
-    &:hover{
-      background-color: #fafafa;
+    > button{
+      padding: 12px;
+      cursor: pointer;
+      transition: all .2s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      width: 100%;
+      &:hover{
+        background-color: #fafafa;
+      }
     }
   }
   &__text{

@@ -111,6 +111,11 @@
   &__line{
     display: flex;
     margin: 0 -8px 12px;
+    position: relative;
+    padding-right: 15px;
+    .ant-input-number{
+      width: 100%;
+    }
   }
   &__col{
     width: 50%;
@@ -126,14 +131,25 @@
   &__time{
     .input-inline{
       display: flex;
-      span{
+      > span{
         padding: 6px 8px;
         font-weight: $semibold;
       }
     }
     .ant-row{
       margin-bottom: 0;
+      flex: 1;
     }
+    //.levelForm__line{
+    //  margin-bottom: 25px;
+    //}
+    //.ant-form-item-explain{
+    //  position: absolute;
+    //  white-space: nowrap;
+    //  font-size: 12px;
+    //  z-index: 1;
+    //  bottom: -20px;
+    //}
   }
   &__airlines{
     display: flex;
@@ -166,6 +182,8 @@
   }
   &__remove{
     padding-top: 5px;
+    position: absolute;
+    right: 0;
   }
   .btnInline{
     padding-top: 15px;

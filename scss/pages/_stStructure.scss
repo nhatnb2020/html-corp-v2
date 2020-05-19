@@ -1,7 +1,7 @@
 .stStructure{
   @include breakpoint(xl){
     width: 1185px;
-    margin: 0 auto;
+    margin: auto;
   }
   .vntBox{
     width: 80%;
@@ -184,8 +184,8 @@
         font-size: 14px;
         color: #fff;
         font-weight: 500;
+        margin: 0 10px;
         white-space: nowrap;
-        padding: 0 10px;
         &:hover{
           text-decoration: underline;
         }
