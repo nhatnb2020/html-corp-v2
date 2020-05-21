@@ -19,6 +19,13 @@
     .hotelAnimatedGroup{
       margin-top: 15px;
     }
+    .listHotel{
+      &__item{
+        &:nth-child(n+6){
+          display: none;
+        }
+      }
+    }
   }
   &__hot{
     width: 75%;
