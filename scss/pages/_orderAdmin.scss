@@ -85,7 +85,6 @@
   }
   &__row{
     display: flex;
-    justify-content: space-between;
     margin-bottom: 16px;
   }
   &__col{
@@ -108,8 +107,15 @@
     }
     .btnInline{
       .btn{
+        margin-right: 8px;
         @include breakpoint(max-md){
           margin-top: 8px;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+        + .btn{
+          margin-left: 0;
         }
         &.active{
           background-color: $yellow-2;
