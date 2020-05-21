@@ -145,3 +145,32 @@
     }
   }
 }
+
+.error{
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  &__text{
+    text-align: center;
+    margin-top: 200px;
+    p{
+      &.p1{
+        font-size: 24px;
+        font-weight: 500;
+        color: #262626;
+        margin: 10px 0;
+      }
+      &.p2{
+        font-size: 14px;
+        color: #595959;
+      }
+    }
+    .btn{
+      margin-top: 15px;
+      width: 162px;
+    }
+  }
+}
