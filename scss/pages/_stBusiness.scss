@@ -9,6 +9,9 @@
   &__left{
     width: 50%;
     padding-right: 80px;
+    .ant-select{
+      margin-bottom: 15px!important;
+    }
   }
   &__right{
     width: 50%;
