@@ -181,6 +181,10 @@
     .orderInfo{
       background-color: #fafafa;
       padding: 16px;
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
   }
   &__note{
@@ -210,6 +214,24 @@
       }
       .flightPlace{
         margin-bottom: 0;
+      }
+    }
+  }
+  &__policy{
+    padding: 15px 0;
+  }
+  &__alert{
+    background: #FFF7E6;
+    border: 1px solid #FFD591;
+    border-radius: 2px;
+    padding: 15px 0;
+    ul{
+      list-style: disc;
+      padding-left: 30px;
+      li{
+        font-size: 14px;
+        color: #262626;
+        padding-bottom: 5px;
       }
     }
   }
