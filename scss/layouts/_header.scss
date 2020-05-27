@@ -1,7 +1,85 @@
 .vntHeader{
   background-color: #fff;
   padding: 10px 15px;
+  position: relative;
+  &__account{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
   .breadcrumb{
     margin-bottom: 10px;
+  }
+}
+.notification{
+  position: relative;
+  margin-right: 25px;
+  > svg{
+    display: block;
+  }
+  &__numb{
+    position: absolute;
+    top: -8px;
+    right: -23px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #F5222D;
+    border-radius: 150px;
+    line-height: 1.4;
+    padding: 0 8px;
+    z-index: 10;
+  }
+}
+.accountDropdown{
+  &__name{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-style:normal;
+    color: #fff;
+    background-color: #2E3A59;
+    margin-right: 10px;
+  }
+  &__logout{
+    border-top: 1px solid $border-color;
+  }
+  .dropdown-toggle{
+    border: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #262626;
+    padding-right: 35px;
+  }
+  .dropdown-menu{
+    width: 200px;
+    left: auto;
+    right: 0;
+  }
+  .dropdown-item{
+    &.active{
+      a{
+        color: $yellow-2;
+      }
+    }
+    &:hover{
+      a{
+        color: $yellow-2;
+      }
+    }
+    a{
+      font-size: 14px;
+      color: #595959;
+      display: flex;
+      align-items: center;
+      span{
+        padding-left: 15px;
+      }
+    }
   }
 }

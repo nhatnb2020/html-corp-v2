@@ -1,4 +1,4 @@
-.stAccount{
+.accountInfo{
   @include breakpoint(xl){
     width: 1185px;
     margin: 0 auto;
@@ -20,10 +20,9 @@
     @include breakpoint(max-md){
       width: calc(100% - 370px);
     }
-    .vntBox{
-      margin: 0;
-    }
   }
+}
+.personalInfo{
   &__title{
     font-size: 16px;
     color: #262626;
@@ -51,5 +50,13 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+  .vntBox{
+    margin: 0;
+  }
+}
+.businessPolicy{
+  .vntBox{
+    margin: 0 0 15px;
   }
 }
