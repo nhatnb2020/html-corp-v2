@@ -8,14 +8,15 @@ html(lang="vi")
             include jades/includes/_sidebar
             main.main
                 section.vntHeader
-                    ul.breadcrumb
-                        li
-                            a(href='#') Booking
-                        li
-                            a(href='#') Việt Nam
-                        li
-                            a(href='#') Hồ chí Minh
-                        li.active Innside Saigon Central
+                    .vntHeader__left
+                        ul.breadcrumb
+                            li
+                                a(href='#') Booking
+                            li
+                                a(href='#') Việt Nam
+                            li
+                                a(href='#') Hồ chí Minh
+                            li.active Innside Saigon Central
                     include jades/includes/_vntHeader__account
                 section.vntContent.hotelDetail
                     .hotelDetail__left

@@ -8,11 +8,13 @@ html(lang="vi")
             include jades/includes/_sidebar
             main.main
                 section.vntHeader
-                    ul.breadcrumb
-                        li
-                            a(href='#') Quản lý đơn
-                        li.active Chi tiết đơn
-                    h2.heading2 Chi tiết đơn hàng
+                    .vntHeader__left
+                        ul.breadcrumb
+                            li
+                                a(href='#') Quản lý đơn
+                            li.active Chi tiết đơn
+                        h2.heading2 Chi tiết đơn hàng
+                    include jades/includes/_vntHeader__account
                 section.vntContent.orderDetail
                     .orderDetail__body
                         .orderDetail__header

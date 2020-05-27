@@ -8,11 +8,13 @@ html(lang="vi")
             include jades/includes/_sidebar
             main.main
                 section.vntHeader
-                    ul.breadcrumb
-                        li
-                            a(href='#') Thành viên
-                        li.active Chỉnh sửa thành viên
-                    h2.heading2 Chỉnh sửa thành viên
+                    .vntHeader__left
+                        ul.breadcrumb
+                            li
+                                a(href='#') Thành viên
+                            li.active Chỉnh sửa thành viên
+                        h2.heading2 Chỉnh sửa thành viên
+                    include jades/includes/_vntHeader__account
                 section.vntContent
                     .memberForm
                         .form-group
