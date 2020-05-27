@@ -1,0 +1,103 @@
+- var page = "stAccount";
+doctype html
+html(lang="vi")
+    head
+        include jades/includes/_head
+    body(ontouchstart='')
+        section.pageBody
+            include jades/includes/_sidebar
+            main.main
+                section.vntHeader
+                    h2.heading2.vntHeading Thông tin tài khoản
+                section.vntContent.stAccount
+                    .stAccount__row
+                        .stAccount__left
+                            ul.stTab
+                                li.active
+                                    a.btn.btn_outline.btn_lg(href='#') Thông tin cá nhân
+                                li
+                                    a.btn.btn_outline.btn_lg(href='#') Chính sách công tác
+                                li
+                                    a.btn.btn_outline.btn_lg(href='#') Chính sách phê duyệt
+                                li
+                                    a.btn.btn_outline.btn_lg(href='#') Cài đặt mật khẩu
+                        .stAccount__right
+                            .vntBox
+                                .stAccount__box
+                                    p.stAccount__title Thông tin cá nhân
+                                    .d-flex
+                                        .stAccount__col
+                                            .form-group
+                                                label Họ và tên
+                                                p Vũ Trần Khoa Học
+                                            .form-group
+                                                label Email
+                                                p Khoa.t.h.vu@vntrip.vn
+
+                                            .form-group
+                                                label Số điện thoại
+                                                p 0963 266 688
+
+                                            .form-group
+                                                label Chi nhánh - phòng ban
+                                                p Vntrip Hà Nội - Hành chính nhân sự
+                                        .stAccount__col
+                                            .form-group
+                                                label Ảnh đại diện
+                                                .stAccount__avatar
+                                                    img(src='https://statics.vntrip.vn/images/avatar-default.png')
+                                                p Kích thước nhỏ nhất 300x300. Chấp nhận định dạng ảnh PNG, JPEG, SVG
+                                                label.upload
+                                                    input(type='file')
+                                                    svg(width='12', height='10', viewBox='0 0 12 10', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M4.46875 2.34353H5.4791V6.96872C5.4791 7.02888 5.52832 7.0781 5.58848 7.0781H6.40879C6.46895 7.0781 6.51816 7.02888 6.51816 6.96872V2.34353H7.53125C7.62285 2.34353 7.67344 2.23825 7.61738 2.16716L6.08613 0.228489C6.0759 0.215416 6.06283 0.204844 6.04791 0.197573C6.03298 0.190302 6.0166 0.186523 6 0.186523C5.9834 0.186523 5.96702 0.190302 5.95209 0.197573C5.93717 0.204844 5.9241 0.215416 5.91387 0.228489L4.38262 2.16579C4.32656 2.23825 4.37715 2.34353 4.46875 2.34353ZM11.0039 6.55857H10.1836C10.1234 6.55857 10.0742 6.60779 10.0742 6.66794V8.77341H1.92578V6.66794C1.92578 6.60779 1.87656 6.55857 1.81641 6.55857H0.996094C0.935937 6.55857 0.886719 6.60779 0.886719 6.66794V9.37497C0.886719 9.61697 1.08223 9.81247 1.32422 9.81247H10.6758C10.9178 9.81247 11.1133 9.61697 11.1133 9.37497V6.66794C11.1133 6.60779 11.0641 6.55857 11.0039 6.55857Z', fill='#595959')
+                                                    span Tải lên
+
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
+        script.
+            $('.nav-sub').click(function () {
+                $(this).toggleClass('open');
+            });
+        script.
+            $('.stTab .dropdown-item').click(function (event) {
+                $('#noDeletePopup').modal();
+            });
+        script.
+            $('.switch input').on('change', function (event, state) {
+                var spanText = $(this).parents('.btnSwitch').find('.spanText');
+                var levelForm = $(this).parents('.vntBox').find('.levelForm');
+                var levelNoti = $(this).parents('.vntBox').find('.levelNoti');
+                if ($(this).is(':checked')) {
+                    spanText.text('Giới hạn hạn mức');
+                    levelForm.css('display', 'block');
+                    levelNoti.css('display', 'none');
+                } else {
+                    spanText.text('Không giới hạn hạn mức');
+                    levelForm.css('display', 'none');
+                    levelNoti.css('display', 'block');
+
+                    $('#confirmPopup').modal();
+                }
+            });
+        script.
+            $('.btnAddSetting').click(function (event) {
+                $(this).parents('.levelForm__item').find('.levelForm__row').addClass('open');
+                $(this).css('display', 'none');
+            });
+        script.
+            var stNavbar = $(".stNavbar").offset().top;
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll >= stNavbar) {
+                    $(".stNavbar").addClass('fixedTop');
+                } else {
+                    $(".stNavbar").removeClass('fixedTop');
+                }
+            });
+
+
+
+
+
+
