@@ -1,0 +1,91 @@
+- var page = "stBranchList";
+doctype html
+html(lang="vi")
+    head
+        include jades/includes/_head
+    body(ontouchstart='')
+        section.pageBody
+            include jades/includes/_sidebar
+            main.main
+                section.vntHeader
+                    .vntHeader__left
+                        ul.breadcrumb
+                            li
+                                a(href='stBranchList.html') Chi nhánh
+                            li.active Thông tin chi nhánh
+                        h2.heading2.vntHeading Chỉnh sửa thông tin chi nhánh
+                    include jades/includes/_vntHeader__account
+                section.vntContent.stBranchList
+                    .stBranchList__box
+                        .form-group
+                            label Tên chi nhánh
+                            input.form-control(type='text' value='Công ty TNHH VNTRIP OTA')
+                        .form-group
+                            label Địa chỉ chi nhánh
+                            .dropdown
+                                button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                    span Hà Nội
+                                    svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
+                                ul.dropdown-menu
+                                    li.dropdown-item.active Hồ Chí Minh
+                                    li.dropdown-item Hà Nội
+                                    li.dropdown-item Đà Nẵng
+                                    li.dropdown-item Quảng Trị
+                                    li.dropdown-item Nghệ An
+                                    li.dropdown-item Hải Phòng
+                                    li.dropdown-item Nha Trang
+                            .dropdown
+                                button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                    span Quận 10
+                                    svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
+                                ul.dropdown-menu
+                                    li.dropdown-item.active Quận 10
+                                    li.dropdown-item Quận 10
+                                    li.dropdown-item Quận 9
+                                    li.dropdown-item Quận 8
+                                    li.dropdown-item Quận 7
+                                    li.dropdown-item Quận 6
+                                    li.dropdown-item Quận 5
+                            .dropdown
+                                button.dropdown-toggle(type='button', data-toggle='dropdown')
+                                    span Phường 12
+                                    svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                        path(d='M11.8125 0H10.6406C10.5609 0 10.4859 0.0390626 10.439 0.103125L5.99995 6.22188L1.56089 0.103125C1.51402 0.0390626 1.43902 0 1.35933 0H0.187454C0.0858913 0 0.0265163 0.115625 0.0858913 0.198438L5.59527 7.79375C5.79527 8.06875 6.20464 8.06875 6.40308 7.79375L11.9125 0.198438C11.9734 0.115625 11.914 0 11.8125 0Z', fill='#8C8C8C')
+                                ul.dropdown-menu
+                                    li.dropdown-item.active Phường 12
+                                    li.dropdown-item Phường 11
+                                    li.dropdown-item Phường 10
+                                    li.dropdown-item Phường 9
+                                    li.dropdown-item Phường 8
+                                    li.dropdown-item Phường 7
+                            input.form-control(type='text', value='Tầng 2, Tòa 17T4 Hapulico, Nguyễn Huy Tưởng')
+
+                        .form-group
+                            label Số điện thoại
+                            input.form-control(type='text' value='0963 266 688')
+                        .form-group
+                            label Mã số thuế
+                            input.form-control(type='text' value='12345678')
+                    .btnInline
+                        button.btn.w100(type='button') Lưu
+                        button.btn.btn_outline.w100(type='button') Hủy
+        script(src="js/libs/jquery.min.js")
+        script(src="js/main.js")
+        script.
+            $('.nav-sub').click(function () {
+                $(this).toggleClass('open');
+            });
+        script.
+            $('.stBranchList__remove').click(function () {
+                $(this).parent('.btnGroup').find('.popConfirm').toggleClass('open');
+            });
+            $('.popConfirm .btn_outline').click(function () {
+                $('.popConfirm').removeClass('open');
+            });
+
+
+
+
+

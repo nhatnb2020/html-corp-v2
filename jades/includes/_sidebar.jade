@@ -95,6 +95,14 @@ aside.sidebar
                                 li.sidebar__nav__item
                                     a.sidebar__nav__link(href='stStructure.html')
                                         span Sơ đồ tổ chức
+                            if page === 'stBranchList'
+                                li.sidebar__nav__item.active
+                                    a.sidebar__nav__link(href='stBranchList.html')
+                                        span Danh sách chi nhánh
+                            else
+                                li.sidebar__nav__item
+                                    a.sidebar__nav__link(href='stBranchList.html')
+                                        span Danh sách chi nhánh
                             if page === 'stPosition'
                                 li.sidebar__nav__item.active
                                     a.sidebar__nav__link(href='stPosition.html')

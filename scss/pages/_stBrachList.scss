@@ -1,0 +1,74 @@
+.stBranchList{
+  @include breakpoint(xl){
+    width: 1185px;
+    margin: 0 auto;
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    p{
+      margin-bottom: 0;
+    }
+  }
+  &__btn{
+    .btn{
+      + .btn{
+        margin-left: 8px;
+      }
+      svg{
+        margin-right: 6px;
+      }
+    }
+  }
+  &__table{
+    .table{
+      td{
+        vertical-align: middle;
+        p{
+          margin: 0;
+          color: #262626;
+          font-size: 14px;
+        }
+      }
+    }
+    .btnGroup{
+      position: relative;
+      margin-top: 5px;
+      display: flex;
+      button,a{
+        display: block;
+        margin: 0 3px;
+        svg{
+          display: block;
+        }
+      }
+    }
+    .ant-form-item{
+      margin-bottom: 0;
+    }
+    .ant-form-item-control{
+      line-height: initial;
+    }
+  }
+  &__box{
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    width: 35%;
+    margin: 15px;
+    padding: 24px;
+    .form-group{
+      margin-bottom: 24px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .dropdown{
+        margin-bottom: 15px;
+      }
+    }
+  }
+  > .btnInline{
+    padding: 0 15px;
+  }
+}
