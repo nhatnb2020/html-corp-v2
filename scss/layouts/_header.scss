@@ -84,3 +84,36 @@
     }
   }
 }
+
+.langDropdown{
+  margin-right: 10px;
+  .dropdown-toggle{
+    border: none;
+    padding: 0 30px 0 0;
+    height: auto;
+    color: #262626;
+    span{
+      display: flex;
+      align-items: center;
+      svg{
+        margin-right: 5px;
+      }
+    }
+  }
+  .dropdown-menu{
+    width: 175px;
+    top: calc(100% + 5px) !important;
+    z-index: 99;
+  }
+  .dropdown-item{
+    a{
+      display: flex;
+      align-items: center;
+      color: #262626;
+      span{
+        padding-left: 5px;
+        flex: 1;
+      }
+    }
+  }
+}
