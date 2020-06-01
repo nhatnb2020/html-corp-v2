@@ -97,10 +97,12 @@
   &__flight{
     padding-top: 15px;
     &.flightCollapse{
-      border-top: 1px solid $border-color;
-      margin-top: 25px;
-      display: none;
-      animation: opacityShow .3s ease-in-out;
+      .flightList & {
+        border-top: 1px solid $border-color;
+        margin-top: 25px;
+        animation: opacityShow .3s ease-in-out;
+        display: none;
+      }
       &.open{
         display: block;
       }

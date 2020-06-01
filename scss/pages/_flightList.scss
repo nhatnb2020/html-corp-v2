@@ -102,8 +102,33 @@
 .flightFilter{
   background-color: #fff;
   box-shadow: $shadow;
-  padding: 15px 15px 5px;
+  padding: 15px;
   margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  &__title{
+    font-size: 16px;
+    color: #262626;
+    white-space: nowrap;
+  }
+  &__dropdown{
+    margin-left: 15px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    .dropdown{
+      width: 20%;
+      + .dropdown{
+        margin-left: 15px;
+      }
+    }
+    .checkbox{
+      input[type=checkbox]+label:before{
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
   &__row{
     display: flex;
     align-items: center;

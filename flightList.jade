@@ -643,12 +643,6 @@ html(lang="vi")
                                                         img.logoVnairline(src='https://statics.vntrip.vn/images/icons/vietnamairline.png', alt='logoAirline')
                                             li.dropdown-item
                                                 .checkbox
-                                                    input#vv2(type='checkbox')
-                                                    label(for='vv2')
-                                                        img.logoBamboo(src='https://statics.vntrip.vn/images/icons/bambooairways.png', alt='logoAirline')
-
-                                            li.dropdown-item
-                                                .checkbox
                                                     input#vv3(type='checkbox')
                                                     label(for='vv3')
                                                         img.logoBamboo(src='https://statics.vntrip.vn/images/icons/bambooairways.png', alt='logoAirline')
@@ -701,23 +695,23 @@ html(lang="vi")
                                         ul.dropdown-menu
                                             li.dropdown-item
                                                 .checkbox
-                                                    input#cv1(type='checkbox')
-                                                    label(for='cv1')
+                                                    input#cvu1(type='checkbox')
+                                                    label(for='cvu1')
                                                         span Dưới 10 triệu
                                             li.dropdown-item
                                                 .checkbox
-                                                    input#cv2(type='checkbox')
-                                                    label(for='cv2')
+                                                    input#cvu2(type='checkbox')
+                                                    label(for='cvu2')
                                                         span Từ 10 triệu - 20 triệu
                                             li.dropdown-item
                                                 .checkbox
-                                                    input#cv3(type='checkbox')
-                                                    label(for='cv3')
+                                                    input#cvu3(type='checkbox')
+                                                    label(for='cvu3')
                                                         span Từ 20 triệu - 50 triệu
                                             li.dropdown-item
                                                 .checkbox
-                                                    input#cv4(type='checkbox')
-                                                    label(for='cv4')
+                                                    input#cvu4(type='checkbox')
+                                                    label(for='cvu4')
                                                         span Trên 50 triệu
                                     .dropdown
                                         button.dropdown-toggle(type='button', data-toggle='dropdown')
@@ -727,15 +721,13 @@ html(lang="vi")
 
                                         ul.dropdown-menu
                                             li.dropdown-item
-                                                .checkbox
-                                                    input#rv1(type='checkbox')
-                                                    label(for='rv1')
-                                                        span Bay thẳng
+                                                .radio
+                                                    input(type='radio' id='rv1' name='stop')
+                                                    label(for='rv1') Bay thẳng
                                             li.dropdown-item
-                                                .checkbox
-                                                    input#rv2(type='checkbox')
-                                                    label(for='rv2')
-                                                        span Có điểm dừng
+                                                .radio
+                                                    input(type='radio' id='rv2' name='stop')
+                                                    label(for='rv2') Có điểm dừng
                             .flightSort
                                 ul
                                     li
