@@ -66,6 +66,9 @@
       }
 
     }
+    .flightList & {
+      display: none;
+    }
   }
   &__body{
     padding: 0 0 25px;
