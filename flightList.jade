@@ -292,6 +292,10 @@ html(lang="vi")
                                 .flightDest
                                     p.p1 Chuyến đi:
                                     p.p2 Hà Nội - Hồ Chí Minh
+                                    p.p3
+                                        svg(width='14', height='14', viewBox='0 0 14 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M7 0C3.13438 0 0 3.13438 0 7C0 10.8656 3.13438 14 7 14C10.8656 14 14 10.8656 14 7C14 3.13438 10.8656 0 7 0ZM7.5 10.375C7.5 10.4438 7.44375 10.5 7.375 10.5H6.625C6.55625 10.5 6.5 10.4438 6.5 10.375V6.125C6.5 6.05625 6.55625 6 6.625 6H7.375C7.44375 6 7.5 6.05625 7.5 6.125V10.375ZM7 5C6.80374 4.99599 6.61687 4.91522 6.47948 4.775C6.3421 4.63478 6.26515 4.4463 6.26515 4.25C6.26515 4.0537 6.3421 3.86522 6.47948 3.725C6.61687 3.58478 6.80374 3.50401 7 3.5C7.19626 3.50401 7.38313 3.58478 7.52052 3.725C7.6579 3.86522 7.73485 4.0537 7.73485 4.25C7.73485 4.4463 7.6579 4.63478 7.52052 4.775C7.38313 4.91522 7.19626 4.99599 7 5Z', fill='#FA8C16')
+                                        span Vé đáng vượt hạn mức
                                 .flightTicket
                                     .flightTicket__info
                                         .flightTicket__logo
@@ -426,6 +430,7 @@ html(lang="vi")
                                 .flightDest
                                     p.p1 Chuyến về:
                                     p.p2 Hồ Chí Minh - Hà Nội
+
                                 .flightTicket
                                     .flightTicket__info
                                         .flightTicket__logo
@@ -565,69 +570,6 @@ html(lang="vi")
                                 .flightTotal__btn
                                     button.btn(type='button' onclick="location.href='flightCheckout1.html';") Đặt chỗ
                         .flightList__item
-                            .flightDest
-                                p.p1 Chuyến đi:
-                                p.p2 Hà Nội - Hồ Chí Minh
-                            .flightDate
-                                button.slick-prev.slick-arrow(type='button') Previous
-                                .flightDate__cont
-                                    .flightDate__item.disabled
-                                        p.p1 Thứ 2
-                                        p.p2 15/01/2020
-
-                                    .flightDate__item.active
-                                        p.p1 Thứ 3
-                                        p.p2 16/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 4
-                                        p.p2 17/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 5
-                                        p.p2 18/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 6
-                                        p.p2 19/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 7
-                                        p.p2 20/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Chủ nhật
-                                        p.p2 21/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 2
-                                        p.p2 22/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 3
-                                        p.p2 23/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 4
-                                        p.p2 24/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 5
-                                        p.p2 25/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 6
-                                        p.p2 26/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 7
-                                        p.p2 27/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Chủ nhật
-                                        p.p2 28/01/2020
-
-                                button.slick-next.slick-arrow(type='button') Next
                             .flightFilter
                                 .flightFilter__title
                                     span.medium Lọc theo
@@ -728,15 +670,72 @@ html(lang="vi")
                                                 .radio
                                                     input(type='radio' id='rv2' name='stop')
                                                     label(for='rv2') Có điểm dừng
-                            .flightCount
-                                .flightCount__text
-                                    p
-                                        span Chuyến bay chiều về tốt nhất:&nbsp;
-                                        span.medium Hồ Chí Minh - Hà Nội
-                                .flightCount__numb
-                                    p
-                                        strong 512
-                                        | &nbsp;chuyến
+                            .flightDate
+                                button.slick-prev.slick-arrow(type='button') Previous
+                                .flightDate__cont
+                                    .flightDate__item.disabled
+                                        p.p1 Thứ 2
+                                        p.p2 15/01/2020
+
+                                    .flightDate__item.active
+                                        p.p1 Thứ 3
+                                        p.p2 16/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 4
+                                        p.p2 17/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 5
+                                        p.p2 18/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 6
+                                        p.p2 19/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 7
+                                        p.p2 20/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Chủ nhật
+                                        p.p2 21/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 2
+                                        p.p2 22/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 3
+                                        p.p2 23/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 4
+                                        p.p2 24/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 5
+                                        p.p2 25/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 6
+                                        p.p2 26/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 7
+                                        p.p2 27/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Chủ nhật
+                                        p.p2 28/01/2020
+
+                                button.slick-next.slick-arrow(type='button') Next
+                            .flightDest
+                                p.p1 Chuyến đi:
+                                p.p2 Hà Nội - Hồ Chí Minh
+                                p.p4
+                                    strong 512
+                                    | &nbsp;chuyến
                             .flightSort
                                 ul
                                     li
