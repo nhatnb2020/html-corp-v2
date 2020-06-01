@@ -116,4 +116,41 @@
       }
     }
   }
+  .ant-dropdown-trigger{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #262626;
+    span{
+      display: flex;
+      align-items: center;
+      flex: 1;
+      padding-right: 10px;
+      svg{
+        margin-right: 5px;
+      }
+    }
+  }
+  .ant-dropdown-menu{
+    width: 170px;
+  }
+  .ant-dropdown-menu-item{
+    padding: 0;
+    &.active{
+      background: #FFF7E6!important;
+    }
+    button{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #262626;
+      padding: 7px 15px;
+      text-align: left;
+      span{
+        padding-left: 5px;
+        flex: 1;
+      }
+    }
+  }
 }
