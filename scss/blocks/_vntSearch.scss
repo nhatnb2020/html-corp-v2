@@ -8,6 +8,9 @@
       height: 100%;
       object-fit: cover;
     }
+    .flightList & {
+      display: none;
+    }
   }
   &__cont{
     padding: 0 15px;
@@ -17,6 +20,9 @@
       width: 1185px;
       margin-left: auto;
       margin-right: auto;
+    }
+    .flightList & {
+      margin-top: 20px;
     }
   }
   .heading2{
