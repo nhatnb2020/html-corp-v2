@@ -109,6 +109,7 @@
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  position: relative;
   &__title{
     font-size: 16px;
     color: #262626;
@@ -488,5 +489,30 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+  }
+}
+.flightProgress{
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  progress {
+    height: 3px;
+    background:transparent;
+  }
+  //Chrome
+  progress::-webkit-progress-bar {
+    transition: all .5s;
+  }
+  progress::-webkit-progress-value {
+    transition: all .5s;
+  }
+  //Firefox
+  progress::-moz-progress-bar {
+    transition: all .5s;
+  }
+  //IE
+  progress[value]::-ms-fill {
+    transition: all .5s;
   }
 }

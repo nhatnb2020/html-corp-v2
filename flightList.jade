@@ -570,6 +570,66 @@ html(lang="vi")
                                 .flightTotal__btn
                                     button.btn(type='button' onclick="location.href='flightCheckout1.html';") Đặt chỗ
                         .flightList__item
+                            .flightDate
+                                button.slick-prev.slick-arrow(type='button') Previous
+                                .flightDate__cont
+                                    .flightDate__item.disabled
+                                        p.p1 Thứ 2
+                                        p.p2 15/01/2020
+
+                                    .flightDate__item.active
+                                        p.p1 Thứ 3
+                                        p.p2 16/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 4
+                                        p.p2 17/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 5
+                                        p.p2 18/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 6
+                                        p.p2 19/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 7
+                                        p.p2 20/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Chủ nhật
+                                        p.p2 21/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 2
+                                        p.p2 22/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 3
+                                        p.p2 23/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 4
+                                        p.p2 24/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 5
+                                        p.p2 25/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 6
+                                        p.p2 26/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Thứ 7
+                                        p.p2 27/01/2020
+
+                                    .flightDate__item
+                                        p.p1 Chủ nhật
+                                        p.p2 28/01/2020
+
+                                button.slick-next.slick-arrow(type='button') Next
                             .flightFilter
                                 .flightFilter__title
                                     span.medium Lọc theo
@@ -670,66 +730,8 @@ html(lang="vi")
                                                 .radio
                                                     input(type='radio' id='rv2' name='stop')
                                                     label(for='rv2') Có điểm dừng
-                            .flightDate
-                                button.slick-prev.slick-arrow(type='button') Previous
-                                .flightDate__cont
-                                    .flightDate__item.disabled
-                                        p.p1 Thứ 2
-                                        p.p2 15/01/2020
-
-                                    .flightDate__item.active
-                                        p.p1 Thứ 3
-                                        p.p2 16/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 4
-                                        p.p2 17/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 5
-                                        p.p2 18/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 6
-                                        p.p2 19/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 7
-                                        p.p2 20/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Chủ nhật
-                                        p.p2 21/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 2
-                                        p.p2 22/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 3
-                                        p.p2 23/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 4
-                                        p.p2 24/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 5
-                                        p.p2 25/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 6
-                                        p.p2 26/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Thứ 7
-                                        p.p2 27/01/2020
-
-                                    .flightDate__item
-                                        p.p1 Chủ nhật
-                                        p.p2 28/01/2020
-
-                                button.slick-next.slick-arrow(type='button') Next
+                                .flightProgress
+                                    progress(value='40', max='100')
                             .flightDest
                                 p.p1 Chuyến đi:
                                 p.p2 Hà Nội - Hồ Chí Minh
