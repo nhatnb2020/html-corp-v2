@@ -1,6 +1,6 @@
 .flightList{
   &__body{
-    padding: 15px;
+    padding: 0 15px;
     @include breakpoint(xl){
       width: 1185px;
       margin: auto;
