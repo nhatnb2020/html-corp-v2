@@ -349,7 +349,6 @@
     position: relative;
     animation: opacityShow .3s ease-in-out;
     display: none;
-    margin-bottom: 8px;
     @include breakpoint(max-md){
       padding: 24px 50px 64px 50px;
     }
@@ -442,6 +441,10 @@
   margin-bottom: 30px;
   .flightTicket{
     box-shadow: $shadow;
+    border: 1px solid transparent;
+    &.border{
+      border-color: #40A9FF;
+    }
     &__info{
       padding: 9px 16px;
       .flightTicket__btn{
