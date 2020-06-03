@@ -50,7 +50,7 @@
   }
   .dropdown-toggle{
     border: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     color: #262626;
     padding-right: 35px;
@@ -80,6 +80,15 @@
       align-items: center;
       span{
         padding-left: 15px;
+      }
+    }
+  }
+  .ant-dropdown-trigger{
+    svg{
+      margin-left: 10px;
+      &.svgFlag{
+        margin-left: 0;
+        margin-right: 5px;
       }
     }
   }
