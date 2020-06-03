@@ -189,3 +189,18 @@
     opacity: .4;
   }
 }
+.btnRemove{
+  font-size: 14px;
+  font-weight: 500;
+  color: #F5222D;
+  display: inline-flex;
+  align-items: center;
+  svg{
+    margin-right: 5px;
+  }
+  &:hover{
+    span{
+      text-decoration: underline;
+    }
+  }
+}

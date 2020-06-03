@@ -130,7 +130,7 @@
   flex-wrap: wrap;
   background-color: #fff;
   width: 80%;
-  margin: 15px;
+  margin: 15px auto;
   padding: 12px;
   .form-group{
     margin-bottom: 0;
@@ -140,9 +140,13 @@
       width: 100%;
     }
   }
+  .btnSwitch{
+    padding-top: 30px;
+  }
+
 }
 .memberBtnAction{
-  padding: 15px;
+  float: right;
   .btn{
     + .btn{
       margin-left: 8px;
@@ -169,4 +173,9 @@
   &__search{
     margin-bottom: 16px;
   }
+}
+.memberBtnGroup{
+  overflow: hidden;
+  width: 80%;
+  margin: 15px auto;
 }

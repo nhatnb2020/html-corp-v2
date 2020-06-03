@@ -17,9 +17,15 @@
     width: 50%;
   }
   &__btn{
-    padding: 15px;
+    padding: 15px 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
     .btn{
-      margin-right: 8px;
+      + .btn{
+        margin-left: 8px;
+      }
     }
     .w100{
       width: 100px;
@@ -50,6 +56,7 @@
   }
   .vntBox{
     width: 80%;
+    margin: 15px auto;
     display: none;
     &.open{
       display: block;
