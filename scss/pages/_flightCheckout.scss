@@ -150,20 +150,102 @@
     background: #bcbcbc;
   }
 
-  &__price{
+  &__item{
+    margin-bottom: 15px;
+  }
+  &__cont{
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    padding: 15px;
+  }
+  &__title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 0;
+    margin-bottom: 10px;
     p{
-      font-size: 20px;
+      font-size: 14px;
       margin-bottom: 0;
-      font-weight: 500;
-      &.p1{
-        color: #262626;
+    }
+  }
+  &__logo{
+    width: 50px;
+    img{
+      width: 100%;
+    }
+  }
+  &__ticket{
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    > p{
+      font-size: 14px;
+      color: #262626;
+    }
+    .d-flex{
+      align-items: center;
+    }
+    .flightTrip{
+      width: calc(100% - 50px);
+      padding-right: 0;
+    }
+  }
+  &__price{
+    margin-bottom: 15px;
+    > p{
+      font-size: 14px;
+      color: #262626;
+    }
+    ul{
+      li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+          &.span1{
+            font-size: 12px;
+          }
+          &.span2{
+            font-size: 14px;
+            color: #262626;
+          }
+        }
+        .tooltip{
+          display: inline-block;
+          margin-left: 3px;
+          &__cont{
+            transform: none;
+            left: auto;
+            right: -15px;
+            top: calc(100% + 10px);
+            z-index: 10;
+            p{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+          }
+        }
       }
-      &.p2{
-        color: #096DD9;
+    }
+  }
+  &__total{
+    border-top: 1px solid #d9d9d9;
+    padding-top: 15px;
+    .d-flex{
+      justify-content: space-between;
+      margin-bottom: 5px;
+      p{
+        font-size: 20px;
+        margin-bottom: 0;
+        font-weight: 500;
+        &.p1{
+          color: #262662;
+        }
+        &.p2{
+          color: #096DD9;
+        }
       }
     }
   }
@@ -589,5 +671,16 @@
   }
   100% {
     opacity: .2;
+  }
+}
+.modal-detailFlight{
+  width: 780px;
+  &__item{
+    margin-bottom: 15px;
+    > p{
+      font-size: 16px;
+      color: #262626;
+      font-weight: 500;
+    }
   }
 }
