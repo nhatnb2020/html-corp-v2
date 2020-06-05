@@ -8,9 +8,6 @@
       height: 100%;
       object-fit: cover;
     }
-    .flightList & {
-      display: none;
-    }
   }
   &__cont{
     padding: 0 15px;
@@ -22,7 +19,7 @@
       margin-right: auto;
     }
     .flightList & {
-      margin-top: 20px;
+      margin-top: -55px;
     }
   }
   .heading2{
@@ -526,8 +523,10 @@
         }
       }
     }
-    .memberBtnAction{
-      padding: 12px;
+    .memberBtnGroup{
+      width: 100%;
+      padding: 0 12px;
+      margin: 0;
     }
   }
 }

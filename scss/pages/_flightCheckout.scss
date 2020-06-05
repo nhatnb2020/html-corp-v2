@@ -189,6 +189,21 @@
     .flightTrip{
       width: calc(100% - 50px);
       padding-right: 0;
+      .d-block{
+        width: 35%;
+        &:first-child{
+          text-align: left;
+          padding-right: 15px;
+        }
+        &:last-child{
+          text-align: right;
+          padding-left: 15px;
+        }
+      }
+      .d-svg{
+        width: 30%;
+        padding: 0;
+      }
     }
   }
   &__price{

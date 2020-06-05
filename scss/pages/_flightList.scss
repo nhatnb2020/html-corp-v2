@@ -7,7 +7,7 @@
     }
   }
   &__active{
-    padding-bottom: 32px;
+    padding-bottom: 10px;
   }
 }
 .listFlight{
@@ -106,7 +106,7 @@
   background-color: #fff;
   box-shadow: $shadow;
   padding: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   display: flex;
   align-items: center;
   position: relative;
@@ -438,7 +438,7 @@
   }
 }
 .flightActive{
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   .flightTicket{
     box-shadow: $shadow;
     border: 1px solid transparent;
