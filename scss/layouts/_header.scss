@@ -130,12 +130,10 @@
     align-items: center;
     font-size: 14px;
     color: #262626;
-    span{
-      display: flex;
-      align-items: center;
-      flex: 1;
-      padding-right: 10px;
-      svg{
+    svg{
+      margin-left: 10px;
+      &.svgFlag{
+        margin-left: 0;
         margin-right: 5px;
       }
     }
