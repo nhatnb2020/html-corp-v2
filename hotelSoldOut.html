@@ -179,7 +179,21 @@
                   </li>
                 </ul>
                 <div class="vntSearch__body">
-                  <div class="vntSearch__hotel">
+                  <div class="tripInfo">
+                    <div class="tripInfo__left">
+                      <div class="tripInfo__group">
+                        <div class="tripInfo__detail">
+                          <div class="tripInfo__hotel"><span class="medium">Quận 1, TP Hồ Chí Minh</span></div>
+                          <div class="tripInfo__date"><span>Thứ 4, 21-05-2020</span><span>~</span><span>Thứ 6, 23-05-2020</span></div>
+                          <div class="tripInfo__member"><span>5 thành viên</span></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tripInfo__right">
+                      <button type="button" class="btn btn_outlineOrange tripInfo__btn">Chỉnh sửa tìm kiếm</button>
+                    </div>
+                  </div>
+                  <div class="vntSearch__hotel hotelCollapse">
                     <div class="placeInput">
                       <label for="place">Địa điểm</label>
                       <div class="input-inline">
@@ -878,6 +892,11 @@
               close_accordion();
               formCollapse.addClass('open');
           }
+      });
+    </script>
+    <script>
+      $('.tripInfo__btn').click(function () {
+          $('.hotelCollapse').toggleClass('open');
       });
     </script>
   </body>

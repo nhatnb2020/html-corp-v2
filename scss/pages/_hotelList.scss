@@ -10,10 +10,16 @@
   }
   &__left{
     width: 30%;
+    @include breakpoint(lg){
+      width: 250px;
+    }
   }
   &__right{
     width: 70%;
     padding-left: 15px;
+    @include breakpoint(lg){
+      width: calc(100% - 250px);
+    }
   }
   &__top{
     margin-bottom: 15px;

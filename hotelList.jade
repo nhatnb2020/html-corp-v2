@@ -31,7 +31,22 @@ html(lang="vi")
                                                 path(fill-rule='evenodd', clip-rule='evenodd', d='M0.767578 11.6354C0.767578 11.3776 0.976512 11.1687 1.23424 11.1687H15.9009C16.1586 11.1687 16.3676 11.3776 16.3676 11.6354C16.3676 11.8931 16.1586 12.102 15.9009 12.102H1.23424C0.976512 12.102 0.767578 11.8931 0.767578 11.6354Z', fill='black')
                                             span Máy bay
                                 .vntSearch__body
-                                    .vntSearch__hotel
+                                    .tripInfo
+                                        .tripInfo__left
+                                            .tripInfo__group
+                                                .tripInfo__detail
+                                                    .tripInfo__hotel
+                                                        span.medium Quận 1, TP Hồ Chí Minh
+                                                    .tripInfo__date
+                                                        span Thứ 4, 21-05-2020
+                                                        span ~
+                                                        span Thứ 6, 23-05-2020
+                                                    .tripInfo__member
+                                                        span 5 thành viên
+                                        .tripInfo__right
+                                            button.btn.btn_outlineOrange.tripInfo__btn(type='button') Chỉnh sửa tìm kiếm
+
+                                    .vntSearch__hotel.hotelCollapse
                                         .placeInput
                                             label(for='place') Địa điểm
                                             .input-inline
@@ -349,6 +364,10 @@ html(lang="vi")
                     close_accordion();
                     formCollapse.addClass('open');
                 }
+            });
+        script.
+            $('.tripInfo__btn').click(function () {
+                $('.hotelCollapse').toggleClass('open');
             });
 
 

@@ -3,6 +3,10 @@
   &__banner{
     width: 100%;
     height: 180px;
+    .flightList &,
+    .hotelList &{
+      height: 75px;
+    }
     img{
       width: 100%;
       height: 100%;
@@ -18,8 +22,9 @@
       margin-left: auto;
       margin-right: auto;
     }
-    .flightList & {
-      margin-top: -55px;
+    .flightList &,
+    .hotelList &{
+      margin-top: -35px;
     }
   }
   .heading2{
@@ -63,7 +68,8 @@
       }
 
     }
-    .flightList & {
+    .flightList &,
+    .hotelList &{
       display: none;
     }
   }
@@ -74,6 +80,17 @@
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
+    &.hotelCollapse{
+      .hotelList & {
+        border-top: 1px solid $border-color;
+        margin-top: 25px;
+        animation: opacityShow .3s ease-in-out;
+        display: none;
+      }
+      &.open{
+        display: flex;
+      }
+    }
     .placeInput,
     .dateInput,
     .memberBtn{
@@ -171,6 +188,12 @@
   &__title{
     margin-right: 15px;
     white-space: nowrap;
+    span{
+      color: #262626;
+    }
+  }
+  &__hotel{
+    margin-right: 15px;
     span{
       color: #262626;
     }
