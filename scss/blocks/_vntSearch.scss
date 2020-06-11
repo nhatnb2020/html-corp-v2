@@ -223,6 +223,18 @@
 }
 .dateInput{
   width: 330px;
+  &__row{
+    display: flex;
+    align-items: center;
+    p{
+      flex: 1;
+      margin-bottom: 0;
+      font-size: 14px;
+      color: #262626;
+      font-weight: 500;
+      padding-right: 10px;
+    }
+  }
 }
 .suggestFlight{
   &__header{
