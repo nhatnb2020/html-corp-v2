@@ -1,0 +1,12 @@
+.hotelMap{
+  &__body{
+    display: flex;
+  }
+  &__left{
+    width: 335px;
+  }
+  &__right{
+    width: calc(100% - 335px);
+    padding-left: 15px;
+  }
+}

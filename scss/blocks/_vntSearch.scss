@@ -4,7 +4,8 @@
     width: 100%;
     height: 180px;
     .flightList &,
-    .hotelList &{
+    .hotelList &,
+    .hotelMap &{
       height: 75px;
     }
     img{
@@ -23,7 +24,8 @@
       margin-right: auto;
     }
     .flightList &,
-    .hotelList &{
+    .hotelList &,
+    .hotelMap &{
       margin-top: -35px;
     }
   }
@@ -69,7 +71,8 @@
 
     }
     .flightList &,
-    .hotelList &{
+    .hotelList &,
+    .hotelMap &{
       display: none;
     }
   }
@@ -81,7 +84,8 @@
     align-items: flex-end;
     flex-wrap: wrap;
     &.hotelCollapse{
-      .hotelList & {
+      .hotelList &,
+      .hotelMap &{
         border-top: 1px solid $border-color;
         margin-top: 25px;
         animation: opacityShow .3s ease-in-out;
