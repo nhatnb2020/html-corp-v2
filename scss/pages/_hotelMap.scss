@@ -1,6 +1,7 @@
 .hotelMap{
   &__body{
     display: flex;
+    padding: 0 15px;
   }
   &__left{
     width: 335px;
@@ -8,5 +9,174 @@
   &__right{
     width: calc(100% - 335px);
     padding-left: 15px;
+  }
+  &__action{
+    padding-bottom: 24px;
+    .hotelSort{
+      margin-bottom: 0;
+    }
+  }
+  &__main{
+    position: relative;
+    height: calc(100% - 125px);
+  }
+  &__iframe{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__back{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    .btn{
+      color: #262626;
+      svg,span{
+        vertical-align: middle;
+      }
+      svg{
+        margin-right: 5px;
+      }
+    }
+  }
+  .listHotel{
+    background-color: #e8e8e8;
+    padding: 8px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    &__item{
+      &.active{
+        .hotelItem{
+          box-shadow: 0 0 0 2px $yellow-2;
+        }
+      }
+    }
+  }
+  .hotelItem{
+    padding: 0;
+    transition: all .1s;
+    &:hover{
+      box-shadow: 0 0 0 2px $yellow-2;
+    }
+    &__img{
+      width: 118px;
+      height: auto;
+    }
+    &__overlay{
+      display: none;
+    }
+    &__cont{
+      width: calc(100% - 118px);
+      flex-wrap: wrap;
+      padding: 8px;
+    }
+    &__info{
+      width: 100%;
+      margin-bottom: 15px;
+      .hotelAddr__text{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        button{
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        p{
+          display: none;
+        }
+      }
+      .heading4{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .ratePoint{
+        margin-top: 5px;
+      }
+    }
+    &__detail{
+      padding: 0;
+      width: 100%;
+      border-left: none;
+      .hotelPrice{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.mapFilter{
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  &__cont{
+    display: flex;
+    .dropdown{
+      + .dropdown{
+        margin-left: 15px;
+      }
+    }
+    .dropdown-toggle{
+      border: none;
+      padding: 0 35px 0 0;
+      color: #262626;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    .dropdown-menu{
+      width: 250px;
+      padding: 15px;
+    }
+  }
+  &__remove{
+    button{
+      font-size: 14px;
+      color: $yellow-2;
+      font-weight: 500;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.mapPin{
+  width: 97px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #36353E;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover{
+    .mapPin__price{
+      text-decoration: underline;
+    }
+  }
+  &:before{
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: #36353e transparent transparent;
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__price{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
   }
 }
